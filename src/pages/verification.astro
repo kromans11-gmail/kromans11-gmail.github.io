@@ -55,12 +55,20 @@ const COMMUNITY_SITE_URL = '#';
     </h2>
     <p>
       Listings marked <span class="risk-badge">⚠ At your own risk</span> have
-      not been through these checks. They come from our companion community
+      not passed the checks above. That doesn't necessarily mean something is
+      wrong — this group includes apps that are <em>difficult to verify</em>:
+      some hide everything behind a sign-in page (Gmail, Outlook), some block
+      automated checks entirely (WhatsApp, Canva), and some only load their
+      app manifest through scripts our checker can't run (Instagram, Bluesky).
+      We simply can't machine-confirm them, so we don't badge them.
+    </p>
+    <p>
+      Unbadged listings will also come from our companion community
       directory, where anyone can contribute a PWA
       —{' '}<a href={COMMUNITY_SITE_URL}>browse the community directory</a>{' '}
-      <em>(coming soon)</em>. Community listings can be great finds, but treat
-      them as you would any unknown website: check the address before signing
-      in or granting permissions.
+      <em>(coming soon)</em>. Either way, treat unbadged apps as you would any
+      unknown website: check the address bar before signing in or granting
+      permissions.
     </p>
   </article>
 </Base>

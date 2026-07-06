@@ -519,5 +519,186 @@
     "icon": "🧰",
     "spotlight": false,
     "verified": true
+  },
+  {
+    "slug": "gmail",
+    "name": "Gmail",
+    "url": "https://mail.google.com",
+    "category": "Productivity",
+    "tagline": "Google's email service, installable with offline support.",
+    "description": "Gmail installs as a PWA with search, labels, and offline access to recent mail. Our automated verification can't see past its sign-in page, so it carries the at-your-own-risk label — check that the address is mail.google.com before signing in.",
+    "popularity": 92,
+    "capabilities": [
+      "push",
+      "offline"
+    ],
+    "icon": "✉️",
+    "spotlight": false,
+    "verified": false
+  },
+  {
+    "slug": "instagram",
+    "name": "Instagram",
+    "url": "https://www.instagram.com",
+    "category": "Social & Messaging",
+    "tagline": "Instagram's feed, stories, and DMs from an installable web app.",
+    "description": "Instagram's website is installable and covers the feed, stories, search, and messaging. It loads its app manifest dynamically, which our automated verification can't observe.",
+    "popularity": 91,
+    "capabilities": [
+      "push"
+    ],
+    "icon": "📷",
+    "spotlight": false,
+    "verified": false
+  },
+  {
+    "slug": "whatsapp-web",
+    "name": "WhatsApp Web",
+    "url": "https://web.whatsapp.com",
+    "category": "Social & Messaging",
+    "tagline": "WhatsApp messaging paired to your phone, in the browser.",
+    "description": "WhatsApp Web mirrors your phone's chats with full messaging, media, and calls in supported browsers. It refuses automated requests, so it can't be machine-verified — pair only at web.whatsapp.com.",
+    "popularity": 90,
+    "capabilities": [
+      "push"
+    ],
+    "icon": "💬",
+    "spotlight": false,
+    "verified": false
+  },
+  {
+    "slug": "canva",
+    "name": "Canva",
+    "url": "https://www.canva.com",
+    "category": "Creative & Design",
+    "tagline": "Drag-and-drop design for presentations, posters, and social posts.",
+    "description": "Canva's editor installs as a PWA with thousands of templates for social graphics, slides, and print. It blocks automated checks, so it carries the at-your-own-risk label.",
+    "popularity": 88,
+    "capabilities": [
+      "push"
+    ],
+    "icon": "🎭",
+    "spotlight": false,
+    "verified": false
+  },
+  {
+    "slug": "google-photos",
+    "name": "Google Photos",
+    "url": "https://photos.google.com",
+    "category": "Utilities",
+    "tagline": "Photo backup, search, and editing in an installable web app.",
+    "description": "Google Photos works as a PWA for browsing, searching, and lightly editing your photo library. Automated verification can't see past its sign-in page.",
+    "popularity": 84,
+    "capabilities": [],
+    "icon": "🌅",
+    "spotlight": false,
+    "verified": false
+  },
+  {
+    "slug": "outlook",
+    "name": "Outlook",
+    "url": "https://outlook.live.com",
+    "category": "Productivity",
+    "tagline": "Microsoft's email and calendar as an installable web app.",
+    "description": "Outlook on the web installs as a PWA with mail, calendar, and contacts. Like Gmail, it hides everything behind sign-in, so automated verification can't inspect it.",
+    "popularity": 83,
+    "capabilities": [
+      "push",
+      "offline"
+    ],
+    "icon": "📅",
+    "spotlight": false,
+    "verified": false
+  },
+  {
+    "slug": "google-meet",
+    "name": "Google Meet",
+    "url": "https://meet.google.com",
+    "category": "Productivity",
+    "tagline": "Video meetings straight from the browser, no download.",
+    "description": "Google Meet runs entirely on the web and installs as a PWA for quick access to calls. Automated verification can't see past its account gate.",
+    "popularity": 82,
+    "capabilities": [
+      "geolocation"
+    ],
+    "icon": "🎥",
+    "spotlight": false,
+    "verified": false
+  },
+  {
+    "slug": "bluesky",
+    "name": "Bluesky",
+    "url": "https://bsky.app",
+    "category": "Social & Messaging",
+    "tagline": "The open-protocol social network, installable from bsky.app.",
+    "description": "Bluesky's web client is installable and covers the full experience: feeds, posting, and custom algorithms on the AT Protocol. Its manifest loads via scripts our checker can't run.",
+    "popularity": 80,
+    "capabilities": [
+      "push"
+    ],
+    "icon": "🦋",
+    "spotlight": false,
+    "verified": false
+  },
+  {
+    "slug": "flipkart",
+    "name": "Flipkart",
+    "url": "https://www.flipkart.com",
+    "category": "Shopping & Lifestyle",
+    "tagline": "India's biggest online store — home of the famous Flipkart Lite PWA.",
+    "description": "Flipkart Lite was the case study that put PWAs on the map for e-commerce. The current site no longer exposes its manifest to automated tools, so it carries the at-your-own-risk label.",
+    "popularity": 74,
+    "capabilities": [
+      "lightweight"
+    ],
+    "icon": "🛒",
+    "spotlight": false,
+    "verified": false
+  },
+  {
+    "slug": "dev-to",
+    "name": "DEV Community",
+    "url": "https://dev.to",
+    "category": "Developer Tools",
+    "tagline": "A friendly blogging community for software developers.",
+    "description": "dev.to was long a showcase open-source PWA known for instant page loads. Its current pages don't expose a manifest to our checker, so it's listed unverified.",
+    "popularity": 72,
+    "capabilities": [
+      "lightweight",
+      "no-account"
+    ],
+    "icon": "👩‍💻",
+    "spotlight": false,
+    "verified": false
+  },
+  {
+    "slug": "pocket-casts",
+    "name": "Pocket Casts",
+    "url": "https://play.pocketcasts.com",
+    "category": "Media & Entertainment",
+    "tagline": "A polished podcast player for the web.",
+    "description": "Pocket Casts' web player syncs subscriptions and playback position across devices. The landing page doesn't expose the manifest to automated checks, so it's listed unverified.",
+    "popularity": 71,
+    "capabilities": [
+      "media-keys"
+    ],
+    "icon": "🎙️",
+    "spotlight": false,
+    "verified": false
+  },
+  {
+    "slug": "tidal",
+    "name": "TIDAL",
+    "url": "https://listen.tidal.com",
+    "category": "Media & Entertainment",
+    "tagline": "Hi-fi music streaming in the browser.",
+    "description": "TIDAL's web player streams its lossless catalog and installs for app-like listening. It blocks automated requests, so it can't be machine-verified.",
+    "popularity": 70,
+    "capabilities": [
+      "media-keys"
+    ],
+    "icon": "🌊",
+    "spotlight": false,
+    "verified": false
   }
 ]

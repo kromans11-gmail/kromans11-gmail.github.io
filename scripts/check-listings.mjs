@@ -91,10 +91,18 @@ for (let i = 0; i < apps.length; i += CONCURRENCY) {
   results.push(...(await Promise.all(batch.map(checkApp))));
 }
 
+// Unverified listings already carry the at-your-own-risk badge; their
+// failures are informational and must not trip the monthly alarm.
 let failed = 0;
+for (const result of results) {
+  if (!result.app.verified) {
+    result.warnings.unshift(...result.failures.splice(0));
+  }
+}
 for (const { app, failures, warnings } of results) {
   const status = failures.length ? '✖ FAIL' : warnings.length ? '⚠ WARN' : '✔ OK  ';
-  console.log(`${status}  ${app.name.padEnd(22)} ${app.url}`);
+  const tag = app.verified ? '' : ' (unverified — informational)';
+  console.log(`${status}  ${app.name.padEnd(22)} ${app.url}${tag}`);
   for (const f of failures) console.log(`         └─ ${f}`);
   for (const w of warnings) console.log(`         └─ ${w}`);
   if (failures.length) failed++;
