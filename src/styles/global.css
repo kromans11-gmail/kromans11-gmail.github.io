@@ -257,6 +257,16 @@ header.site .container {
   color: var(--accent);
 }
 
+.vote-btn.voted {
+  background: var(--ok);
+  border-color: var(--ok);
+  color: var(--accent-contrast);
+}
+
+.votes-chip {
+  color: var(--ok);
+}
+
 .verified-badge,
 .risk-badge {
   flex-shrink: 0;

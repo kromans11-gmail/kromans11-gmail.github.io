@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import AppRow from '../components/AppRow.astro';
 import apps from '../data/apps.json';
+import { SUPABASE } from '../data/supabase';
 
 const SUBMIT_URL =
   'https://github.com/kromans11-gmail/kromans11-gmail.github.io/issues/new?template=submit-app.yml';
@@ -61,4 +62,36 @@ const categories = [...byCategory.entries()].sort((a, b) => b[1].length - a[1].l
       </section>
     ))
   }
+
+  <script define:vars={{ sb: SUPABASE }}>
+    // Show community vote counts on each row and rank rows by votes.
+    if (sb.url && sb.key) {
+      const headers = { apikey: sb.key, authorization: `Bearer ${sb.key}` };
+      fetch(`${sb.url}/rest/v1/vote_counts?select=app_slug,votes`, { headers })
+        .then((r) => r.json())
+        .then((rows) => {
+          const votes = new Map(rows.map((r) => [r.app_slug, r.votes]));
+          for (const list of document.querySelectorAll('.list')) {
+            const items = [...list.children];
+            for (const row of items) {
+              const n = votes.get(row.dataset.slug) ?? 0;
+              if (n > 0) {
+                const chip = document.createElement('span');
+                chip.className = 'pop votes-chip';
+                chip.title = 'Community votes';
+                chip.textContent = `👍 ${n}`;
+                row.querySelector('.pop')?.before(chip);
+              }
+            }
+            items
+              .sort(
+                (a, b) =>
+                  (votes.get(b.dataset.slug) ?? 0) - (votes.get(a.dataset.slug) ?? 0)
+              )
+              .forEach((row) => list.append(row));
+          }
+        })
+        .catch(() => {});
+    }
+  </script>
 </Base>

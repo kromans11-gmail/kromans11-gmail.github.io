@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import apps from '../../data/apps.json';
 import { capabilityLabel } from '../../data/capabilities';
+import { SUPABASE } from '../../data/supabase';
 
 export function getStaticPaths() {
   return apps.map((app) => ({ params: { slug: app.slug }, props: { app } }));
@@ -51,6 +52,9 @@ const { app } = Astro.props;
       <a class="btn primary" href={app.url} target="_blank" rel="noopener">
         Open {app.name} ↗
       </a>
+      <button class="btn vote-btn" id="vote-btn" hidden>
+        👍 Useful · <span id="vote-count">…</span>
+      </button>
       <a class="btn" href="/">← Back to home</a>
     </div>
 
@@ -70,6 +74,66 @@ const { app } = Astro.props;
       </ol>
     </div>
   </article>
+
+  <script define:vars={{ slug: app.slug, sb: SUPABASE }}>
+    // Community voting: one vote per device per app, stored in Supabase.
+    const btn = document.getElementById('vote-btn');
+    const countEl = document.getElementById('vote-count');
+    if (sb.url && sb.key && btn) {
+      const headers = { apikey: sb.key, authorization: `Bearer ${sb.key}` };
+      const deviceId =
+        localStorage.getItem('pwafinder-device') ??
+        (() => {
+          const id = crypto.randomUUID();
+          localStorage.setItem('pwafinder-device', id);
+          return id;
+        })();
+      const votedKey = 'pwafinder-voted';
+      const voted = () => new Set(JSON.parse(localStorage.getItem(votedKey) ?? '[]'));
+      const setVoted = (s) => localStorage.setItem(votedKey, JSON.stringify([...s]));
+
+      let count = 0;
+      const render = () => {
+        countEl.textContent = String(count);
+        btn.classList.toggle('voted', voted().has(slug));
+      };
+
+      fetch(`${sb.url}/rest/v1/vote_counts?app_slug=eq.${encodeURIComponent(slug)}`, { headers })
+        .then((r) => r.json())
+        .then((rows) => {
+          count = rows[0]?.votes ?? 0;
+          render();
+          btn.hidden = false;
+        })
+        .catch(() => {});
+
+      btn.addEventListener('click', async () => {
+        btn.disabled = true;
+        const v = voted();
+        try {
+          if (v.has(slug)) {
+            await fetch(
+              `${sb.url}/rest/v1/votes?app_slug=eq.${encodeURIComponent(slug)}&device_id=eq.${deviceId}`,
+              { method: 'DELETE', headers }
+            );
+            v.delete(slug);
+            count = Math.max(0, count - 1);
+          } else {
+            const res = await fetch(`${sb.url}/rest/v1/votes`, {
+              method: 'POST',
+              headers: { ...headers, 'content-type': 'application/json', prefer: 'return=minimal' },
+              body: JSON.stringify({ app_slug: slug, device_id: deviceId }),
+            });
+            if (res.ok || res.status === 409) v.add(slug);
+            if (res.ok) count += 1;
+          }
+          setVoted(v);
+          render();
+        } catch {}
+        btn.disabled = false;
+      });
+    }
+  </script>
 
   <script>
     const ua = navigator.userAgent;
