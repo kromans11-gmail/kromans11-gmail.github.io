@@ -1,0 +1,49 @@
+name: Interaction notifications
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate notification emails
+        env:
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$SUPABASE_SECRET_KEY" ] || [ -z "${{ secrets.MAIL_PASSWORD }}" ]; then
+            echo "Notification secrets not configured yet; skipping quietly."
+            exit 0
+          fi
+          node scripts/notify-interactions.mjs
+
+      - name: Send queued emails
+        env:
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+          MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+        run: |
+          shopt -s nullglob
+          sent=0
+          for f in notify-out/*.eml; do
+            curl -sS --ssl-reqd --url 'smtps://smtp.gmail.com:465' \
+              --user "$MAIL_USERNAME:$MAIL_PASSWORD" \
+              --mail-from "$MAIL_USERNAME" \
+              --mail-rcpt 'kromans.dev@gmail.com' \
+              --upload-file "$f"
+            sent=$((sent + 1))
+          done
+          echo "Sent $sent email(s)."
