@@ -225,5 +225,299 @@
     "icon": "🪐",
     "spotlight": false,
     "verified": true
+  },
+  {
+    "slug": "youtube",
+    "name": "YouTube",
+    "url": "https://www.youtube.com",
+    "category": "Media & Entertainment",
+    "tagline": "The world's largest video platform, installable as an app.",
+    "description": "YouTube's site is a full PWA: install it for an app-like window with the complete video catalog, subscriptions, and playlists. Works with system media keys and picture-in-picture.",
+    "popularity": 96,
+    "capabilities": [
+      "media-keys",
+      "no-account"
+    ],
+    "icon": "▶️",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "x",
+    "name": "X (Twitter)",
+    "url": "https://x.com",
+    "category": "Social & Messaging",
+    "tagline": "The full X/Twitter experience — the original 'Twitter Lite' PWA.",
+    "description": "X's web app descends from Twitter Lite, one of the most influential PWAs ever shipped. Timeline, posting, DMs, and push notifications, in a fraction of the native app's size.",
+    "popularity": 93,
+    "capabilities": [
+      "push"
+    ],
+    "icon": "🐦",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "tiktok",
+    "name": "TikTok",
+    "url": "https://www.tiktok.com",
+    "category": "Social & Messaging",
+    "tagline": "Browse and post TikTok videos from an installable web app.",
+    "description": "TikTok's website is an installable PWA with the full For You feed, search, and posting. Handy for watching without the native app's battery and data appetite.",
+    "popularity": 88,
+    "capabilities": [
+      "no-account"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "github",
+    "name": "GitHub",
+    "url": "https://github.com",
+    "category": "Developer Tools",
+    "tagline": "The world's largest code-hosting platform, installable from the browser.",
+    "description": "GitHub ships a web app manifest, so you can install it and manage repositories, issues, and pull requests in a standalone window. Pairs well with vscode.dev for editing.",
+    "popularity": 86,
+    "capabilities": [
+      "push"
+    ],
+    "icon": "🐙",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "duolingo",
+    "name": "Duolingo",
+    "url": "https://www.duolingo.com",
+    "category": "Education",
+    "tagline": "Gamified language lessons in an installable web app.",
+    "description": "Duolingo's web app covers the full course catalog with streaks, leagues, and practice reminders. Installing the PWA gives you lessons in their own window without the mobile app.",
+    "popularity": 85,
+    "capabilities": [
+      "push"
+    ],
+    "icon": "🦉",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "soundcloud",
+    "name": "SoundCloud",
+    "url": "https://soundcloud.com",
+    "category": "Media & Entertainment",
+    "tagline": "Stream independent music and podcasts from an installable player.",
+    "description": "SoundCloud's web player installs as a PWA with the platform's entire catalog of independent artists, DJ sets, and podcasts, plus system media-key support.",
+    "popularity": 82,
+    "capabilities": [
+      "media-keys",
+      "no-account"
+    ],
+    "icon": "🔊",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "chess-com",
+    "name": "Chess.com",
+    "url": "https://www.chess.com",
+    "category": "Games & Leisure",
+    "tagline": "Play chess online with millions of players, puzzles, and lessons.",
+    "description": "Chess.com's web app is installable and offers live games, daily correspondence chess, tactics puzzles, and lessons — the complete experience without the native app.",
+    "popularity": 81,
+    "capabilities": [
+      "push"
+    ],
+    "icon": "♟️",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "lichess",
+    "name": "Lichess",
+    "url": "https://lichess.org",
+    "category": "Games & Leisure",
+    "tagline": "Free, open-source, ad-free online chess.",
+    "description": "Lichess is a beloved open-source chess server: instant games, puzzles, studies, and tournaments with no ads and no account required. Fast, lightweight, and installable.",
+    "popularity": 79,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "♞",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "replit",
+    "name": "Replit",
+    "url": "https://replit.com",
+    "category": "Developer Tools",
+    "tagline": "Write, run, and host code in dozens of languages from the browser.",
+    "description": "Replit is a full development environment in a tab: editors, terminals, package management, and one-click hosting. Installing the PWA makes it feel like a desktop IDE.",
+    "popularity": 78,
+    "capabilities": [],
+    "icon": "🛠️",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "diagrams-net",
+    "name": "diagrams.net (draw.io)",
+    "url": "https://app.diagrams.net",
+    "category": "Productivity",
+    "tagline": "Free flowchart and diagram editor that works fully offline.",
+    "description": "diagrams.net (formerly draw.io) is the standard free tool for flowcharts, network diagrams, and org charts. The PWA works completely offline and saves to local files or cloud drives without an account.",
+    "popularity": 78,
+    "capabilities": [
+      "offline",
+      "no-account",
+      "file-system"
+    ],
+    "icon": "📊",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "weather-channel",
+    "name": "The Weather Channel",
+    "url": "https://weather.com",
+    "category": "News & Weather",
+    "tagline": "Forecasts, radar, and severe-weather alerts on the web.",
+    "description": "weather.com is an installable PWA with local forecasts, interactive radar maps, and severe-weather alerts — one of the early large-scale PWA deployments.",
+    "popularity": 77,
+    "capabilities": [
+      "geolocation",
+      "push"
+    ],
+    "icon": "⛅",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "tinder",
+    "name": "Tinder",
+    "url": "https://tinder.com",
+    "category": "Shopping & Lifestyle",
+    "tagline": "Tinder's swipe-to-match dating app on the web.",
+    "description": "Tinder Online is a deliberate PWA case study: the swipe experience in a web app far smaller than the native download, with matches and messaging included.",
+    "popularity": 76,
+    "capabilities": [
+      "push",
+      "geolocation"
+    ],
+    "icon": "❤️‍🔥",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "mastodon",
+    "name": "Mastodon",
+    "url": "https://mastodon.social",
+    "category": "Social & Messaging",
+    "tagline": "Decentralized, open-source social network you can install.",
+    "description": "Mastodon's web client is a PWA on every server; mastodon.social is the flagship instance run by the Mastodon nonprofit. Timelines, posting, and push notifications, no algorithmic feed.",
+    "popularity": 74,
+    "capabilities": [
+      "push"
+    ],
+    "icon": "🐘",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "windy",
+    "name": "Windy",
+    "url": "https://www.windy.com",
+    "category": "News & Weather",
+    "tagline": "Stunning animated wind, weather, and radar maps.",
+    "description": "Windy visualizes wind, rain, temperature, and dozens of other layers on a beautiful animated globe. Loved by pilots, sailors, and storm watchers; installs as a PWA.",
+    "popularity": 74,
+    "capabilities": [
+      "geolocation",
+      "no-account"
+    ],
+    "icon": "🌬️",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "tldraw",
+    "name": "tldraw",
+    "url": "https://www.tldraw.com",
+    "category": "Creative & Design",
+    "tagline": "A fast, minimal infinite-canvas whiteboard.",
+    "description": "tldraw is an open-source infinite canvas for quick sketches and diagrams with real-time multiplayer. Instant to load, no account needed, installable as an app.",
+    "popularity": 73,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🖊️",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "pixlr",
+    "name": "Pixlr",
+    "url": "https://pixlr.com",
+    "category": "Creative & Design",
+    "tagline": "Quick photo editing and templates in the browser.",
+    "description": "Pixlr offers layer-based photo editing and design templates aimed at fast social-media work. Lighter than Photopea for quick fixes, and installable as a PWA.",
+    "popularity": 72,
+    "capabilities": [
+      "no-account"
+    ],
+    "icon": "🖼️",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "2048",
+    "name": "2048",
+    "url": "https://play2048.co",
+    "category": "Games & Leisure",
+    "tagline": "The original tile-sliding puzzle game by its creator.",
+    "description": "Gabriele Cirulli's original 2048 — slide tiles, merge numbers, chase the 2048 tile. The official site is a tiny installable PWA, perfect for offline commutes.",
+    "popularity": 68,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🔢",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "financial-times",
+    "name": "Financial Times",
+    "url": "https://app.ft.com",
+    "category": "News & Weather",
+    "tagline": "The FT's pioneering offline-capable news web app.",
+    "description": "app.ft.com is one of the earliest serious news PWAs: the Financial Times built it to escape app stores, with offline reading and fast load on any device. Subscription required for full access.",
+    "popularity": 66,
+    "capabilities": [
+      "offline"
+    ],
+    "icon": "📰",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "pwabuilder",
+    "name": "PWABuilder",
+    "url": "https://www.pwabuilder.com",
+    "category": "Developer Tools",
+    "tagline": "Microsoft's tool for packaging PWAs for app stores.",
+    "description": "PWABuilder analyzes your PWA, scores its manifest and service worker, and packages it for the Microsoft, Google, and Apple stores. Fittingly, it is itself an installable PWA.",
+    "popularity": 65,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🧰",
+    "spotlight": false,
+    "verified": true
   }
 ]
