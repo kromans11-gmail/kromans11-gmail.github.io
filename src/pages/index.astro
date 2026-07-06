@@ -70,7 +70,13 @@ const categories = [...byCategory.entries()].sort(
         {categories.map(([name]) => <option value={catId(name)}>{name}</option>)}
       </select>
     </div>
-    <div class="filters" role="group" aria-label="Filter by capability">
+    <div class="filters" role="group" aria-label="Filter apps">
+      <button class="filter-chip status-verified" data-status="true" aria-pressed="false">
+        ✔ Verified
+      </button>
+      <button class="filter-chip status-risk" data-status="false" aria-pressed="false">
+        ⚠ At your own risk
+      </button>
       {
         filterCaps.map((c) => (
           <button class="filter-chip" data-cap={c} aria-pressed="false">
@@ -149,9 +155,11 @@ const categories = [...byCategory.entries()].sort(
     const input = document.getElementById('search') as HTMLInputElement;
     const cards = [...document.querySelectorAll<HTMLElement>('[data-app]')];
     const sections = [...document.querySelectorAll<HTMLElement>('[data-category-section]')];
-    const chips = [...document.querySelectorAll<HTMLButtonElement>('.filter-chip')];
+    const chips = [...document.querySelectorAll<HTMLButtonElement>('.filter-chip[data-cap]')];
+    const statusChips = [...document.querySelectorAll<HTMLButtonElement>('.filter-chip[data-status]')];
     const noResults = document.getElementById('no-results')!;
     const activeCaps = new Set<string>();
+    const activeStatus = new Set<string>();
 
     function applyFilters() {
       const q = input?.value.trim().toLowerCase() ?? '';
@@ -159,7 +167,9 @@ const categories = [...byCategory.entries()].sort(
         const caps = (card.dataset.caps ?? '').split(' ');
         const matchesText = !q || card.dataset.text!.includes(q);
         const matchesCaps = [...activeCaps].every((c) => caps.includes(c));
-        card.classList.toggle('hidden', !(matchesText && matchesCaps));
+        const matchesStatus =
+          activeStatus.size === 0 || activeStatus.has(card.dataset.verified!);
+        card.classList.toggle('hidden', !(matchesText && matchesCaps && matchesStatus));
       }
       let anyVisible = false;
       for (const section of sections) {
@@ -185,6 +195,17 @@ const categories = [...byCategory.entries()].sort(
     }
 
     input?.addEventListener('input', applyFilters);
+    for (const chip of statusChips) {
+      chip.addEventListener('click', () => {
+        const v = chip.dataset.status!;
+        if (activeStatus.has(v)) activeStatus.delete(v);
+        else activeStatus.add(v);
+        const on = activeStatus.has(v);
+        chip.classList.toggle('active', on);
+        chip.setAttribute('aria-pressed', String(on));
+        applyFilters();
+      });
+    }
     const jump = document.getElementById('jump') as HTMLSelectElement;
     jump?.addEventListener('change', () => {
       const target = jump.value && document.getElementById(jump.value);

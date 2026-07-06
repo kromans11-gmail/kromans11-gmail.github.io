@@ -22,6 +22,7 @@ const { app } = Astro.props;
   class="row"
   data-app
   data-slug={app.slug}
+  data-verified={app.verified ? 'true' : 'false'}
   data-caps={app.capabilities.join(' ')}
   data-text={`${app.name} ${app.tagline} ${app.category}`.toLowerCase()}
 >

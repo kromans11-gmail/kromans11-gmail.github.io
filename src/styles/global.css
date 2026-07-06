@@ -163,6 +163,28 @@ header.site .container {
   color: var(--accent-contrast);
 }
 
+.filter-chip.status-verified:hover {
+  border-color: var(--ok);
+  color: var(--ok);
+}
+
+.filter-chip.status-verified.active {
+  background: var(--ok);
+  border-color: var(--ok);
+  color: var(--accent-contrast);
+}
+
+.filter-chip.status-risk:hover {
+  border-color: var(--warn);
+  color: var(--warn);
+}
+
+.filter-chip.status-risk.active {
+  background: var(--warn);
+  border-color: var(--warn);
+  color: var(--accent-contrast);
+}
+
 .category {
   margin: 2rem 0;
   scroll-margin-top: 0.75rem;
