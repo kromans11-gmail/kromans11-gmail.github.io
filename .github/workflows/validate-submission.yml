@@ -1,0 +1,49 @@
+name: Validate app submission
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  validate:
+    if: contains(github.event.issue.labels.*.name, 'app-submission')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Extract submitted URL
+        id: extract
+        env:
+          BODY: ${{ github.event.issue.body }}
+        run: |
+          url=$(printf '%s\n' "$BODY" | awk '/^### App URL/{found=1; next} found && NF {print; exit}' | tr -d '[:space:]')
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+
+      - name: Run checks
+        id: check
+        continue-on-error: true
+        env:
+          URL: ${{ steps.extract.outputs.url }}
+        run: node scripts/validate-submission.mjs "$URL" | tee report.md
+
+      - name: Post results on the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body-file report.md
+          if [ "${{ steps.check.outcome }}" = "success" ]; then
+            gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --add-label checks-passed --remove-label checks-failed 2>/dev/null || \
+            gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --add-label checks-passed
+          else
+            gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --add-label checks-failed --remove-label checks-passed 2>/dev/null || \
+            gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --add-label checks-failed
+          fi

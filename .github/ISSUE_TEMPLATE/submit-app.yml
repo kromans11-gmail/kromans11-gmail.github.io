@@ -1,0 +1,68 @@
+name: Submit a PWA
+description: Suggest a Progressive Web App for the community directory
+title: "[App] "
+labels: ["app-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing! An automated check will run on your submission,
+        and the curator reviews everything before it appears in the directory.
+        Community listings are shown with an "At your own risk" label.
+  - type: input
+    id: name
+    attributes:
+      label: App name
+      placeholder: My App
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: App URL
+      description: The app's official address, starting with https://
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Productivity
+        - Creative & Design
+        - Media & Entertainment
+        - Social & Messaging
+        - Developer Tools
+        - Utilities
+        - Games & Leisure
+        - Shopping & Lifestyle
+        - News & Weather
+        - Education
+        - Business & Finance
+        - Health & Lifestyle
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: tagline
+    attributes:
+      label: One-line description
+      description: What is the app for? Shown on the listing row.
+      placeholder: Compress images right in your browser.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Longer description (optional)
+      description: A sentence or two more for the app's details page.
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Content rules
+      options:
+        - label: This app contains no adult, dating, or sexual content, and does not imply any illegal or illegitimate purpose.
+          required: true
+        - label: This is a real, working web app (not a landing page, blog post, or demo).
+          required: true

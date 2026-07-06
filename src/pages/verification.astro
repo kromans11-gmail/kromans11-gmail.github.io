@@ -1,8 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 
-// Future community-contributed sister site; swap in the real URL when it exists.
-const COMMUNITY_SITE_URL = '#';
+const COMMUNITY_SITE_URL = '/community/';
 ---
 
 <Base
@@ -63,10 +62,10 @@ const COMMUNITY_SITE_URL = '#';
       We simply can't machine-confirm them, so we don't badge them.
     </p>
     <p>
-      Unbadged listings will also come from our companion community
-      directory, where anyone can contribute a PWA
-      —{' '}<a href={COMMUNITY_SITE_URL}>browse the community directory</a>{' '}
-      <em>(coming soon)</em>. Either way, treat unbadged apps as you would any
+      Unbadged listings also come from our community directory, where anyone
+      can contribute a PWA
+      —{' '}<a href={COMMUNITY_SITE_URL}>browse the community directory</a>.
+      Either way, treat unbadged apps as you would any
       unknown website: check the address bar before signing in or granting
       permissions.
     </p>

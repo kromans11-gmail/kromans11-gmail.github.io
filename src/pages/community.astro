@@ -1,0 +1,64 @@
+---
+import Base from '../layouts/Base.astro';
+import AppRow from '../components/AppRow.astro';
+import apps from '../data/apps.json';
+
+const SUBMIT_URL =
+  'https://github.com/kromans11-gmail/kromans11-gmail.github.io/issues/new?template=submit-app.yml';
+
+const community = apps
+  .filter((app) => !app.verified)
+  .sort((a, b) => b.popularity - a.popularity);
+
+const byCategory = new Map<string, typeof community>();
+for (const app of community) {
+  const list = byCategory.get(app.category) ?? [];
+  list.push(app);
+  byCategory.set(app.category, list);
+}
+const categories = [...byCategory.entries()].sort((a, b) => b[1].length - a[1].length);
+---
+
+<Base
+  title="Community directory — PWA Finder"
+  description="Community-contributed Progressive Web Apps. Not verified by PWA Finder — use at your own risk."
+>
+  <section class="hero">
+    <h1>Community directory</h1>
+    <p>
+      Apps contributed by the community. These listings are
+      <strong>not verified</strong> by PWA Finder — an automated check
+      confirms they're live and installable, and the curator reviews every
+      submission, but we can't vouch for the publisher. Use them as you would
+      any unknown website: check the address bar before signing in or
+      granting permissions. See <a href="/verification/">how verification
+      works</a>.
+    </p>
+    <div class="actions" style="justify-content: center;">
+      <a class="btn primary" href={SUBMIT_URL} target="_blank" rel="noopener">
+        Submit an app
+      </a>
+      <a class="btn" href="/">← Verified directory</a>
+    </div>
+    <p class="note">
+      Submitting takes a free GitHub account. Your app is checked
+      automatically (HTTPS, real domain, installable) and reviewed by the
+      curator before it appears. No adult or dating content; nothing illegal.
+    </p>
+  </section>
+
+  {
+    categories.map(([name, list]) => (
+      <section class="category">
+        <h2>
+          {name} <span class="count">{list.length} apps</span>
+        </h2>
+        <div class="list">
+          {list.map((app) => (
+            <AppRow app={app} />
+          ))}
+        </div>
+      </section>
+    ))
+  }
+</Base>
