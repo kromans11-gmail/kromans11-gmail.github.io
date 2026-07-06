@@ -337,11 +337,18 @@ header.site .container {
   .row,
   .row-main {
     flex-wrap: wrap;
-    row-gap: 0.2rem;
+    row-gap: 0.35rem;
   }
 
-  .row h3 {
+  /* Name and tagline take the full width; badges, score, and links
+     wrap onto their own line underneath. */
+  .row-main {
+    flex-basis: 100%;
+  }
+
+  .row-main h3 {
     flex: 1;
+    white-space: normal;
   }
 
   .row .tagline {
@@ -351,7 +358,6 @@ header.site .container {
   }
 
   .row .badges {
-    order: 4;
     flex-wrap: wrap;
   }
 }
