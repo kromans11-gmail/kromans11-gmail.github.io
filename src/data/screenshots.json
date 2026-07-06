@@ -1,0 +1,333 @@
+{
+  "3d-house-editor": [
+    {
+      "src": "https://3dhouseplanner.com/assets/images/object1.png"
+    },
+    {
+      "src": "https://3dhouseplanner.com/assets/images/object2.png"
+    }
+  ],
+  "air-horner": [
+    {
+      "src": "https://airhorner.com/images/screenshots/1-360x640.png"
+    },
+    {
+      "src": "https://airhorner.com/images/screenshots/2-360x640.png"
+    }
+  ],
+  "booksie": [
+    {
+      "src": "https://www.booksie.org/assets/screenshots/1.webp"
+    },
+    {
+      "src": "https://www.booksie.org/assets/screenshots/2.webp"
+    },
+    {
+      "src": "https://www.booksie.org/assets/screenshots/3.webp"
+    },
+    {
+      "src": "https://www.booksie.org/assets/screenshots/4.webp"
+    }
+  ],
+  "bulkpictools": [
+    {
+      "src": "https://bulkpictools.com/screenshot-desktop.png",
+      "label": "Bulk Image Cropper"
+    },
+    {
+      "src": "https://bulkpictools.com/screenshot-mobile.png",
+      "label": "Mobile View"
+    }
+  ],
+  "bundle": [
+    {
+      "src": "https://bundle.js.org/favicon/screenshot-desktop.png"
+    },
+    {
+      "src": "https://bundle.js.org/favicon/screenshot-bundled.png"
+    },
+    {
+      "src": "https://bundle.js.org/favicon/screenshot-light-mode.png"
+    },
+    {
+      "src": "https://bundle.js.org/favicon/screenshot-error.png"
+    }
+  ],
+  "cat-safe-foods": [
+    {
+      "src": "https://catsafefoods.com/img/screenshot1.png"
+    },
+    {
+      "src": "https://catsafefoods.com/img/screenshot2.png"
+    },
+    {
+      "src": "https://catsafefoods.com/img/screenshot3.png"
+    }
+  ],
+  "chitchatter": [
+    {
+      "src": "https://chitchatter.im/screenshots/home-desktop.png"
+    },
+    {
+      "src": "https://chitchatter.im/screenshots/public-room-desktop.png"
+    },
+    {
+      "src": "https://chitchatter.im/screenshots/public-room-desktop-with-video.png"
+    },
+    {
+      "src": "https://chitchatter.im/screenshots/home-mobile-dark.png"
+    }
+  ],
+  "closerintime": [
+    {
+      "src": "https://closerinti.me/screenshots/desktop.png",
+      "label": "Timeline view on desktop"
+    },
+    {
+      "src": "https://closerinti.me/screenshots/mobile.png",
+      "label": "Timeline view on mobile"
+    }
+  ],
+  "computerbase": [
+    {
+      "src": "https://www.computerbase.de/img/app/screenshot-1.png"
+    },
+    {
+      "src": "https://www.computerbase.de/img/app/screenshot-2.png"
+    },
+    {
+      "src": "https://www.computerbase.de/img/app/screenshot-3.png"
+    },
+    {
+      "src": "https://www.computerbase.de/img/app/screenshot-4.png"
+    }
+  ],
+  "dog-safe-foods": [
+    {
+      "src": "https://dogsafefoods.com/img/screenshot1.png"
+    },
+    {
+      "src": "https://dogsafefoods.com/img/screenshot2.png"
+    },
+    {
+      "src": "https://dogsafefoods.com/img/screenshot3.png"
+    }
+  ],
+  "epub-player": [
+    {
+      "src": "https://www.epubplayer.com/screenshots/library.png",
+      "label": "Library - Your audiobook collection"
+    },
+    {
+      "src": "https://www.epubplayer.com/screenshots/now-playing.png",
+      "label": "Now Playing - Listen with full controls"
+    },
+    {
+      "src": "https://www.epubplayer.com/screenshots/settings.png",
+      "label": "Settings - Customize TTS and playback"
+    }
+  ],
+  "excalidraw": [
+    {
+      "src": "https://excalidraw.com/screenshots/virtual-whiteboard.png"
+    },
+    {
+      "src": "https://excalidraw.com/screenshots/wireframe.png"
+    },
+    {
+      "src": "https://excalidraw.com/screenshots/illustration.png"
+    },
+    {
+      "src": "https://excalidraw.com/screenshots/shapes.png"
+    }
+  ],
+  "mconverter": [
+    {
+      "src": "https://mconverter.eu/img/screenshots/mobile-home.png"
+    },
+    {
+      "src": "https://mconverter.eu/img/screenshots/mobile-pick-format.png"
+    },
+    {
+      "src": "https://mconverter.eu/img/screenshots/mobile-share-file.png"
+    },
+    {
+      "src": "https://mconverter.eu/img/screenshots/mobile-convert-dark.png"
+    }
+  ],
+  "passky": [
+    {
+      "src": "https://vault.passky.org/images/screenshots/1.jpg"
+    },
+    {
+      "src": "https://vault.passky.org/images/screenshots/2.jpg"
+    },
+    {
+      "src": "https://vault.passky.org/images/screenshots/3.jpg"
+    },
+    {
+      "src": "https://vault.passky.org/images/screenshots/4.jpg"
+    }
+  ],
+  "pixlr": [
+    {
+      "src": "https://pixlr.com/images/pwa-screen1.webp",
+      "label": "Pixlr Express AI Tools"
+    },
+    {
+      "src": "https://pixlr.com/images/pwa-screen2.webp",
+      "label": "Advanced image adjustments"
+    },
+    {
+      "src": "https://pixlr.com/images/pwa-screen3.webp",
+      "label": "Full suite or creative AI powered tools"
+    },
+    {
+      "src": "https://pixlr.com/images/pwa-screen4.webp",
+      "label": "AI Image Generator"
+    }
+  ],
+  "proxx": [
+    {
+      "src": "https://proxx.app/assets/home-android-58d763a0.webp",
+      "label": "the PROXX home screen with difficulty settings and start button"
+    },
+    {
+      "src": "https://proxx.app/assets/new-game-android-773d2180.webp",
+      "label": "a PROXX game board with a grid of 64 uncleared tiles"
+    },
+    {
+      "src": "https://proxx.app/assets/ongoing-game-android-1ea0521d.webp",
+      "label": "a PROXX game board with an ongoing game; some tiles have bean cleared, some flagged, and some uncleared"
+    },
+    {
+      "src": "https://proxx.app/assets/you-win-android-8fa95da3.webp",
+      "label": "a win screen saying \"You win!\" and showing both a score and a best score with buttons to play again or go to main menu"
+    }
+  ],
+  "pwabuilder": [
+    {
+      "src": "https://www.pwabuilder.com/assets/screenshots/screen1.png"
+    },
+    {
+      "src": "https://www.pwabuilder.com/assets/screenshots/screen2.png"
+    },
+    {
+      "src": "https://www.pwabuilder.com/assets/screenshots/screen3.png"
+    },
+    {
+      "src": "https://www.pwabuilder.com/assets/screenshots/screen4.png"
+    }
+  ],
+  "qr-code-scanner": [
+    {
+      "src": "https://qrcodescan.in/images/screenshots/screenshot1.png"
+    },
+    {
+      "src": "https://qrcodescan.in/images/screenshots/screenshot2.png"
+    },
+    {
+      "src": "https://qrcodescan.in/images/screenshots/screenshot3.png"
+    }
+  ],
+  "soundslice": [
+    {
+      "src": "https://files.soundslice.com/media/images/pwa/narrow-player-4ca58a322d7d7a8c27ba2915741fec13.png",
+      "label": "Interactive player"
+    },
+    {
+      "src": "https://files.soundslice.com/media/images/pwa/narrow-community-94dab845a9ce910d52b788e5391845a9.png",
+      "label": "Community"
+    },
+    {
+      "src": "https://files.soundslice.com/media/images/pwa/narrow-list-d1e6cb1bf62272ef78c81b0cc7e6fcb9.png",
+      "label": "Practice list"
+    },
+    {
+      "src": "https://files.soundslice.com/media/images/pwa/narrow-manage-579f7202b8ee24232b90b49fbc7721e9.png",
+      "label": "Slice manager"
+    }
+  ],
+  "squoosh": [
+    {
+      "src": "https://squoosh.app/c/screenshot1-0ff68546.png"
+    },
+    {
+      "src": "https://squoosh.app/c/screenshot2-1f78c4db.jpg"
+    },
+    {
+      "src": "https://squoosh.app/c/screenshot3-c1e02216.jpg"
+    },
+    {
+      "src": "https://squoosh.app/c/screenshot4-3a706c3c.png"
+    }
+  ],
+  "swahili-dictionary": [
+    {
+      "src": "https://swahili-dictionary.com/static/img/screenshot1.png"
+    },
+    {
+      "src": "https://swahili-dictionary.com/static/img/screenshot2.png"
+    }
+  ],
+  "taleforge": [
+    {
+      "src": "https://www.tale-forge.com/og-image.png",
+      "label": "TaleForge Dashboard"
+    }
+  ],
+  "versus": [
+    {
+      "src": "https://versus.com/img/1_compare-min.png"
+    },
+    {
+      "src": "https://versus.com/img/2_discover-min.png"
+    },
+    {
+      "src": "https://versus.com/img/3_buy-min.png"
+    }
+  ],
+  "what-can-do-today": [
+    {
+      "src": "https://whatpwacando.today/src/img/screenshots/shot1.png"
+    },
+    {
+      "src": "https://whatpwacando.today/src/img/screenshots/shot2.png"
+    },
+    {
+      "src": "https://whatpwacando.today/src/img/screenshots/shot3.png"
+    },
+    {
+      "src": "https://whatpwacando.today/src/img/screenshots/shot4.png"
+    }
+  ],
+  "worddb": [
+    {
+      "src": "https://www.worddb.com/assets/images/worddb/mobile_ss_1_v2.png",
+      "label": "Home Page"
+    },
+    {
+      "src": "https://www.worddb.com/assets/images/worddb/mobile_ss_3_v2.png",
+      "label": "Wordle Solver"
+    },
+    {
+      "src": "https://www.worddb.com/assets/images/worddb/mobile_ss_6_v2.png",
+      "label": "Rhyme Finder"
+    },
+    {
+      "src": "https://www.worddb.com/assets/images/worddb/desktop_ss_1_v2.png",
+      "label": "Home Page"
+    }
+  ],
+  "wormhole": [
+    {
+      "src": "https://wormhole.app/webmanifest/android-screenshot-1439x2700-1.jpg"
+    },
+    {
+      "src": "https://wormhole.app/webmanifest/android-screenshot-1439x2700-2.jpg"
+    },
+    {
+      "src": "https://wormhole.app/webmanifest/android-screenshot-1439x2700-3.jpg"
+    }
+  ]
+}

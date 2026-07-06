@@ -17,6 +17,7 @@ A curated, ranked directory of the best Progressive Web Apps — itself built as
 | `npm run build`   | Build the production site to `./dist/`       |
 | `npm run preview` | Preview the production build locally         |
 | `npm run check`   | Re-check all listings (monthly verification) |
+| `npm run screenshots` | Refresh screenshots from app manifests   |
 
 Note: the service worker lives in `public/sw.js` and only registers meaningfully against the production build (`npm run build && npm run preview`), not the dev server.
 
@@ -59,9 +60,11 @@ Report-only by default; `npm run check -- --apply` stamps `lastChecked` on every
 
 Run it monthly by hand, or schedule it (e.g. a monthly GitHub Actions cron once the repo is on GitHub) — non-zero exit on failures makes it CI-friendly.
 
+## Screenshots
+
+`npm run screenshots` reads every listed app's web app manifest and saves up to 4 validated screenshot URLs per app to `src/data/screenshots.json`; detail pages render them as a scrollable strip. Images are hotlinked from each app's own origin, so re-run the script occasionally (and rebuild) to refresh or prune dead ones.
+
 ## Roadmap
 
-- Community submissions with automated manifest/Lighthouse validation
 - Blended popularity score (votes + traffic rank + GitHub stars)
-- Screenshots pulled from each app's manifest
-- Companion community directory ("at your own risk" listings)
+- Sign-in-gated voting if anonymous voting gets abused

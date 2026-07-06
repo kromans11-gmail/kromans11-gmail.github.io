@@ -485,6 +485,25 @@ header.site .container {
   border-color: var(--accent);
 }
 
+.screenshots {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  margin: 1.5rem 0 0;
+  padding-bottom: 0.5rem;
+}
+
+.screenshots img {
+  height: 19rem;
+  max-height: 55vh;
+  width: auto;
+  max-width: none;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background: var(--badge-bg);
+}
+
 .install-help {
   background: var(--surface);
   border: 1px solid var(--border);

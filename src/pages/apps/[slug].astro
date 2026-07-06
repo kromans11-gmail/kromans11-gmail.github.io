@@ -3,12 +3,16 @@ import Base from '../../layouts/Base.astro';
 import apps from '../../data/apps.json';
 import { capabilityLabel } from '../../data/capabilities';
 import { SUPABASE } from '../../data/supabase';
+import screenshotData from '../../data/screenshots.json';
 
 export function getStaticPaths() {
   return apps.map((app) => ({ params: { slug: app.slug }, props: { app } }));
 }
 
 const { app } = Astro.props;
+
+const screenshots: { src: string; label?: string }[] =
+  (screenshotData as Record<string, { src: string; label?: string }[]>)[app.slug] ?? [];
 ---
 
 <Base title={`${app.name} — PWA Finder`} description={app.tagline}>
@@ -57,6 +61,21 @@ const { app } = Astro.props;
       </button>
       <a class="btn" href="/">← Back to home</a>
     </div>
+
+    {
+      screenshots.length > 0 && (
+        <div class="screenshots" aria-label="Screenshots from the app's manifest">
+          {screenshots.map((s) => (
+            <img
+              src={s.src}
+              alt={s.label || `${app.name} screenshot`}
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            />
+          ))}
+        </div>
+      )
+    }
 
     <div class="install-help">
       <h2>How to install it as an app</h2>

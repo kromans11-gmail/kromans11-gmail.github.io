@@ -10,6 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "node scripts/check-listings.mjs",
+    "screenshots": "node scripts/fetch-screenshots.mjs",
     "astro": "astro"
   },
   "dependencies": {
