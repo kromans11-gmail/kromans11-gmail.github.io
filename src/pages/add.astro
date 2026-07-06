@@ -18,7 +18,9 @@ const existingCategories = [...new Set(apps.map((app) => app.category))];
       cross-referenced sources —
       see{' '}<a href="/verification/">how verification works</a>). This generates the
       entry to paste into <code>src/data/apps.json</code>; rebuild the site
-      and it appears in the catalog.
+      and it appears in the catalog. New listings start at a popularity score
+      of 40 — scores aren't self-assigned, they're adjusted later based on
+      adoption.
     </p>
 
     <form class="app-form" id="app-form">
@@ -54,10 +56,6 @@ const existingCategories = [...new Set(apps.map((app) => app.category))];
       <label>
         Icon (one emoji)
         <input type="text" name="icon" placeholder="🚀" maxlength="8" />
-      </label>
-      <label>
-        Popularity score (0–100)
-        <input type="number" name="popularity" min="0" max="100" value="50" />
       </label>
       <fieldset class="checks-field">
         <legend>Capabilities</legend>
@@ -112,7 +110,9 @@ const existingCategories = [...new Set(apps.map((app) => app.category))];
         category: String(data.get('category') ?? '').trim(),
         tagline: String(data.get('tagline') ?? '').trim(),
         description: String(data.get('description') ?? '').trim(),
-        popularity: Number(data.get('popularity') ?? 50),
+        // Not a form field: submitters must not set their own score. New
+        // listings start at the baseline and earn a higher score later.
+        popularity: 40,
         capabilities: data.getAll('cap').map(String),
         icon: String(data.get('icon') ?? '').trim() || '🌐',
         spotlight: data.get('spotlight') !== null,
