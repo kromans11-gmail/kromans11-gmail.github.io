@@ -1,0 +1,229 @@
+[
+  {
+    "slug": "photopea",
+    "name": "Photopea",
+    "url": "https://www.photopea.com",
+    "category": "Creative & Design",
+    "tagline": "A full Photoshop-class image editor that runs entirely in your browser.",
+    "description": "Photopea opens PSD, XCF, Sketch, and RAW files and offers layers, masks, smart objects, and filters — no download, no account. It is one of the strongest demonstrations of what a PWA can do, matching desktop software feature-for-feature.",
+    "popularity": 95,
+    "capabilities": [
+      "offline",
+      "no-account"
+    ],
+    "icon": "🎨",
+    "highlyUseful": true,
+    "spotlight": true,
+    "verified": true
+  },
+  {
+    "slug": "spotify",
+    "name": "Spotify Web Player",
+    "url": "https://open.spotify.com",
+    "category": "Media & Entertainment",
+    "tagline": "Stream Spotify's full music and podcast catalog without installing the desktop app.",
+    "description": "The Spotify web player is an installable PWA with the full streaming catalog, playlists, and podcast support. It launches in its own window and integrates with system media keys.",
+    "popularity": 94,
+    "capabilities": [
+      "media-keys"
+    ],
+    "icon": "🎧",
+    "highlyUseful": false,
+    "spotlight": true,
+    "verified": true
+  },
+  {
+    "slug": "excalidraw",
+    "name": "Excalidraw",
+    "url": "https://excalidraw.com",
+    "category": "Productivity",
+    "tagline": "A hand-drawn-style virtual whiteboard for sketching diagrams and ideas.",
+    "description": "Excalidraw is an open-source whiteboard with a distinctive sketchy aesthetic. It works fully offline, requires no account, supports real-time collaboration via shareable links, and exports to PNG and SVG.",
+    "popularity": 92,
+    "capabilities": [
+      "offline",
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "✏️",
+    "highlyUseful": true,
+    "spotlight": true,
+    "verified": true
+  },
+  {
+    "slug": "youtube-music",
+    "name": "YouTube Music",
+    "url": "https://music.youtube.com",
+    "category": "Media & Entertainment",
+    "tagline": "Google's music streaming service, installable straight from the browser.",
+    "description": "YouTube Music runs as a first-class PWA with background playback in its own window, media-key support, and the full YouTube music catalog including live performances and remixes.",
+    "popularity": 90,
+    "capabilities": [
+      "media-keys",
+      "push"
+    ],
+    "icon": "🎵",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "pinterest",
+    "name": "Pinterest",
+    "url": "https://www.pinterest.com",
+    "category": "Social & Messaging",
+    "tagline": "Visual discovery and bookmarking — one of the original PWA success stories.",
+    "description": "Pinterest's PWA rebuild famously increased engagement by 60% and became a canonical case study. It offers the full pin, board, and discovery experience with push notifications and a fast, app-like feel.",
+    "popularity": 89,
+    "capabilities": [
+      "push"
+    ],
+    "icon": "📌",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "telegram-web",
+    "name": "Telegram Web",
+    "url": "https://web.telegram.org",
+    "category": "Social & Messaging",
+    "tagline": "Full-featured Telegram messaging from any browser.",
+    "description": "Telegram Web is a complete messaging client with chats, channels, media sharing, and push notifications. It syncs instantly with your phone and installs as a standalone app window.",
+    "popularity": 88,
+    "capabilities": [
+      "push"
+    ],
+    "icon": "✈️",
+    "spotlight": true,
+    "verified": true
+  },
+  {
+    "slug": "vscode-web",
+    "name": "VS Code for the Web",
+    "url": "https://vscode.dev",
+    "category": "Developer Tools",
+    "tagline": "Visual Studio Code running fully in the browser, no install required.",
+    "description": "vscode.dev brings the real VS Code editor to the browser: open local folders with the File System Access API, edit GitHub repos directly, and use many extensions. Installs as a desktop-class PWA.",
+    "popularity": 87,
+    "capabilities": [
+      "offline",
+      "file-system"
+    ],
+    "icon": "💻",
+    "spotlight": true,
+    "verified": true
+  },
+  {
+    "slug": "squoosh",
+    "name": "Squoosh",
+    "url": "https://squoosh.app",
+    "category": "Utilities",
+    "tagline": "Compress and convert images with instant side-by-side comparison.",
+    "description": "Squoosh, built by the Chrome team, compresses images to WebP, AVIF, MozJPEG and more — entirely on-device, so nothing is uploaded. It works fully offline and weighs almost nothing.",
+    "popularity": 85,
+    "capabilities": [
+      "offline",
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🗜️",
+    "spotlight": true,
+    "verified": true
+  },
+  {
+    "slug": "todoist",
+    "name": "Todoist",
+    "url": "https://app.todoist.com",
+    "category": "Productivity",
+    "tagline": "A polished cross-platform task manager with offline support.",
+    "description": "Todoist's web app is an installable PWA with natural-language task entry, projects, labels, and reminders. Changes made offline sync automatically when you reconnect.",
+    "popularity": 84,
+    "capabilities": [
+      "offline",
+      "push"
+    ],
+    "icon": "✅",
+    "spotlight": true,
+    "verified": true
+  },
+  {
+    "slug": "stackblitz",
+    "name": "StackBlitz",
+    "url": "https://stackblitz.com",
+    "category": "Developer Tools",
+    "tagline": "Instant full-stack dev environments that boot in your browser.",
+    "description": "StackBlitz runs Node.js inside the browser via WebContainers, so npm installs and dev servers work with no local setup. Great for prototyping, bug repros, and sharing runnable examples.",
+    "popularity": 82,
+    "capabilities": [
+      "no-account"
+    ],
+    "icon": "⚡",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "uber",
+    "name": "Uber",
+    "url": "https://m.uber.com",
+    "category": "Shopping & Lifestyle",
+    "tagline": "Request rides from a web app small enough to load on 2G.",
+    "description": "Uber built m.uber.com so riders on low-end devices and slow networks could book without the native app. The core ride-request flow loads in seconds even on constrained connections.",
+    "popularity": 80,
+    "capabilities": [
+      "lightweight",
+      "geolocation"
+    ],
+    "icon": "🚗",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "starbucks",
+    "name": "Starbucks",
+    "url": "https://app.starbucks.com",
+    "category": "Shopping & Lifestyle",
+    "tagline": "Browse the menu and order ahead — even while offline.",
+    "description": "The Starbucks PWA lets customers browse the menu, customize drinks, and build orders offline, syncing when a connection returns. It is roughly 99% smaller than the iOS app and doubled daily active web users.",
+    "popularity": 78,
+    "capabilities": [
+      "offline",
+      "lightweight"
+    ],
+    "icon": "☕",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "monkeytype",
+    "name": "Monkeytype",
+    "url": "https://monkeytype.com",
+    "category": "Games & Leisure",
+    "tagline": "A minimalist, endlessly customizable typing test.",
+    "description": "Monkeytype is the most popular typing practice site on the web, with themes, test modes, and detailed stats. It installs as a lightweight PWA and needs no account to use.",
+    "popularity": 76,
+    "capabilities": [
+      "offline",
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "⌨️",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "proxx",
+    "name": "Proxx",
+    "url": "https://proxx.app",
+    "category": "Games & Leisure",
+    "tagline": "A space-themed Minesweeper that runs on anything, even feature phones.",
+    "description": "Proxx, built by the Chrome team as a PWA showcase, is a polished Minesweeper-style game that works offline and runs smoothly on everything from flagship phones to KaiOS feature phones.",
+    "popularity": 70,
+    "capabilities": [
+      "offline",
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🪐",
+    "spotlight": false,
+    "verified": true
+  }
+]

@@ -1,0 +1,78 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <div class="offline-banner">You're offline — showing the cached catalog.</div>
+    <header class="site">
+      <div class="container">
+        <a href="/" class="brand"><span>📦</span> PWA Finder</a>
+        <button id="install-site" class="btn primary">Install this app</button>
+      </div>
+    </header>
+    <main class="container">
+      <slot />
+    </main>
+    <footer class="site">
+      <div class="container">
+        PWA Finder is itself a PWA — install it and the whole catalog works offline.
+        Popularity scores are editorially seeded for v1; community voting is planned.
+        <br />
+        <a href="/verification/">How verification works</a> ·
+        <a href="/add/">Add an app</a>
+      </div>
+    </footer>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js');
+      }
+
+      function reflectConnectivity() {
+        document.documentElement.classList.toggle('is-offline', !navigator.onLine);
+      }
+      addEventListener('online', reflectConnectivity);
+      addEventListener('offline', reflectConnectivity);
+      reflectConnectivity();
+
+      let deferredPrompt: any = null;
+      const installBtn = document.getElementById('install-site');
+      addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        installBtn?.classList.add('available');
+      });
+      installBtn?.addEventListener('click', async () => {
+        if (!deferredPrompt) return;
+        deferredPrompt.prompt();
+        await deferredPrompt.userChoice;
+        deferredPrompt = null;
+        installBtn.classList.remove('available');
+      });
+      addEventListener('appinstalled', () => {
+        installBtn?.classList.remove('available');
+      });
+    </script>
+  </body>
+</html>

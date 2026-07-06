@@ -1,0 +1,131 @@
+---
+import Base from '../layouts/Base.astro';
+import apps from '../data/apps.json';
+import { CAPABILITY_LABELS } from '../data/capabilities';
+
+const existingCategories = [...new Set(apps.map((app) => app.category))];
+---
+
+<Base
+  title="Add an app — PWA Finder"
+  description="Curator tool: build a catalog entry for a personally verified PWA."
+>
+  <article class="detail">
+    <a class="back-link" href="/">← Back to home</a>
+    <h1>Add an app</h1>
+    <p>
+      Curator tool: fill in the app you've personally verified (official URL,
+      cross-referenced sources —
+      see{' '}<a href="/verification/">how verification works</a>). This generates the
+      entry to paste into <code>src/data/apps.json</code>; rebuild the site
+      and it appears in the catalog.
+    </p>
+
+    <form class="app-form" id="app-form">
+      <label>
+        App name
+        <input type="text" name="name" placeholder="My App" required />
+      </label>
+      <label>
+        Official URL
+        <input type="url" name="url" placeholder="https://example.com" required />
+      </label>
+      <label>
+        Category
+        <input
+          type="text"
+          name="category"
+          list="category-options"
+          placeholder="Productivity"
+          required
+        />
+        <datalist id="category-options">
+          {existingCategories.map((c) => <option value={c} />)}
+        </datalist>
+      </label>
+      <label>
+        One-line use (shown on the list row)
+        <input type="text" name="tagline" placeholder="What the app is for." required />
+      </label>
+      <label>
+        Longer description (shown on the Details page)
+        <textarea name="description" rows="3"></textarea>
+      </label>
+      <label>
+        Icon (one emoji)
+        <input type="text" name="icon" placeholder="🚀" maxlength="8" />
+      </label>
+      <label>
+        Popularity score (0–100)
+        <input type="number" name="popularity" min="0" max="100" value="50" />
+      </label>
+      <fieldset class="checks-field">
+        <legend>Capabilities</legend>
+        <span class="checks">
+          {
+            Object.entries(CAPABILITY_LABELS).map(([key, label]) => (
+              <label class="check">
+                <input type="checkbox" name="cap" value={key} /> {label}
+              </label>
+            ))
+          }
+        </span>
+      </fieldset>
+      <fieldset class="checks-field">
+        <legend>Placement</legend>
+        <span class="checks">
+          <label class="check">
+            <input type="checkbox" name="spotlight" /> Spotlight (rotates
+            between Featured and Highly Useful)
+          </label>
+          <label class="check">
+            <input type="checkbox" name="verified" checked /> Verified
+            publisher (I checked the URL and cross-references myself)
+          </label>
+        </span>
+      </fieldset>
+    </form>
+
+    <div class="install-help">
+      <h2>Generated entry for <code>apps.json</code></h2>
+      <pre id="output">Fill in the form above…</pre>
+      <button class="btn primary" id="copy" type="button">Copy to clipboard</button>
+    </div>
+  </article>
+
+  <script>
+    const form = document.getElementById('app-form') as HTMLFormElement;
+    const output = document.getElementById('output')!;
+    const copyBtn = document.getElementById('copy') as HTMLButtonElement;
+
+    function slugify(name: string) {
+      return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    }
+
+    function buildEntry() {
+      const data = new FormData(form);
+      const name = String(data.get('name') ?? '').trim();
+      const entry = {
+        slug: slugify(name),
+        name,
+        url: String(data.get('url') ?? '').trim(),
+        category: String(data.get('category') ?? '').trim(),
+        tagline: String(data.get('tagline') ?? '').trim(),
+        description: String(data.get('description') ?? '').trim(),
+        popularity: Number(data.get('popularity') ?? 50),
+        capabilities: data.getAll('cap').map(String),
+        icon: String(data.get('icon') ?? '').trim() || '🌐',
+        spotlight: data.get('spotlight') !== null,
+        verified: data.get('verified') !== null,
+      };
+      output.textContent = JSON.stringify(entry, null, 2) + ',';
+    }
+
+    form.addEventListener('input', buildEntry);
+    copyBtn.addEventListener('click', async () => {
+      await navigator.clipboard.writeText(output.textContent ?? '');
+      copyBtn.textContent = 'Copied!';
+      setTimeout(() => (copyBtn.textContent = 'Copy to clipboard'), 1500);
+    });
+  </script>
+</Base>

@@ -1,0 +1,66 @@
+---
+import Base from '../layouts/Base.astro';
+
+// Future community-contributed sister site; swap in the real URL when it exists.
+const COMMUNITY_SITE_URL = '#';
+---
+
+<Base
+  title="How verification works — PWA Finder"
+  description="What the Verified publisher badge on PWA Finder means and how listings earn it."
+>
+  <article class="detail">
+    <a class="back-link" href="/">← Back to home</a>
+    <h1>How verification works</h1>
+    <p>
+      Every listing with a <span class="verified-badge">✔ Verified</span> badge
+      has passed the checks below. The badge doesn't certify that an app is
+      good or bug-free — it certifies that the listing points to
+      the{' '}<em>genuine publisher's</em> app, not an imitation.
+    </p>
+
+    <div class="install-help">
+      <h2>1. Official URL, not a lookalike</h2>
+      <p>
+        The listing links to the publisher's canonical domain (for
+        example{' '}<code>photopea.com</code>), served over HTTPS. The browser's
+        certificate system proves the site is controlled by whoever owns that
+        domain, so our job is confirming it's the <em>right</em> domain — not
+        a clone like <code>photopea-editor.app</code>.
+      </p>
+    </div>
+
+    <div class="install-help">
+      <h2>2. Cross-referenced against authoritative sources</h2>
+      <p>
+        We confirm the domain is the one the publisher's own official
+        channels point to — their company site, official documentation, or
+        source-code repository. A lookalike domain can copy an app's design,
+        but it can't make the publisher's real channels link to it.
+      </p>
+    </div>
+
+    <div class="install-help">
+      <h2>3. Re-checked monthly</h2>
+      <p>
+        Domains can be sold, abandoned, or compromised after a listing is
+        added, so verified listings are re-checked every month. If a listing
+        stops passing the checks above, the badge is removed until it passes
+        again.
+      </p>
+    </div>
+
+    <h2 id="at-your-own-risk" style="margin-top:2rem;">
+      Apps without the badge
+    </h2>
+    <p>
+      Listings marked <span class="risk-badge">⚠ At your own risk</span> have
+      not been through these checks. They come from our companion community
+      directory, where anyone can contribute a PWA
+      —{' '}<a href={COMMUNITY_SITE_URL}>browse the community directory</a>{' '}
+      <em>(coming soon)</em>. Community listings can be great finds, but treat
+      them as you would any unknown website: check the address before signing
+      in or granting permissions.
+    </p>
+  </article>
+</Base>

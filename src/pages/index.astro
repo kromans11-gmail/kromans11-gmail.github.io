@@ -1,0 +1,205 @@
+---
+import Base from '../layouts/Base.astro';
+import AppRow from '../components/AppRow.astro';
+import apps from '../data/apps.json';
+import { CAPABILITY_LABELS } from '../data/capabilities';
+
+const usedCaps = new Set(apps.flatMap((app) => app.capabilities));
+const filterCaps = Object.keys(CAPABILITY_LABELS).filter((c) => usedCaps.has(c));
+
+const catId = (name: string) =>
+  name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+const sorted = [...apps].sort((a, b) => b.popularity - a.popularity);
+
+// Apps flagged "spotlight" rotate between Featured and Highly Useful: each
+// day a different window of 3 is Featured and the rest fall to Highly Useful.
+// This build-time split is a default; a client script re-applies the same
+// formula with the visitor's current date so the rotation advances daily
+// without rebuilding the site.
+const pool = sorted.filter((app) => app.spotlight);
+const FEATURED_COUNT = Math.min(3, pool.length);
+const dayOfYear = Math.floor(
+  (Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000
+);
+const offset = pool.length ? dayOfYear % pool.length : 0;
+const featured = Array.from(
+  { length: FEATURED_COUNT },
+  (_, i) => pool[(offset + i) % pool.length]
+);
+const featuredSlugs = new Set(featured.map((app) => app.slug));
+const highlyUseful = pool.filter((app) => !featuredSlugs.has(app.slug));
+
+// Group into categories, ordered by the total popularity of their apps so the
+// strongest categories appear first.
+const byCategory = new Map<string, typeof sorted>();
+for (const app of sorted) {
+  const list = byCategory.get(app.category) ?? [];
+  list.push(app);
+  byCategory.set(app.category, list);
+}
+const categories = [...byCategory.entries()].sort(
+  (a, b) =>
+    b[1].reduce((s, x) => s + x.popularity, 0) -
+    a[1].reduce((s, x) => s + x.popularity, 0)
+);
+---
+
+<Base
+  title="PWA Finder — discover the best Progressive Web Apps"
+  description="A curated, ranked directory of the best Progressive Web Apps, organized by category with popularity scores and capability badges."
+>
+  <section class="hero">
+    <h1>Find the best Progressive Web Apps</h1>
+    <p>
+      Installable web apps, ranked by popularity and organized by category. No
+      app store required — every listing is one tap away from running.
+    </p>
+    <div class="search-wrap">
+      <input
+        id="search"
+        type="search"
+        placeholder="Search apps, categories, or features…"
+        autocomplete="off"
+        aria-label="Search apps"
+      />
+      <select id="jump" aria-label="Jump to category">
+        <option value="" selected>Categories…</option>
+        <option value="featured">✨ Featured</option>
+        <option value="highly-useful">⭐ Highly Useful</option>
+        {categories.map(([name]) => <option value={catId(name)}>{name}</option>)}
+      </select>
+    </div>
+    <div class="filters" role="group" aria-label="Filter by capability">
+      {
+        filterCaps.map((c) => (
+          <button class="filter-chip" data-cap={c} aria-pressed="false">
+            {CAPABILITY_LABELS[c]}
+          </button>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="category" id="featured" data-category-section>
+    <h2>✨ Featured <span class="count">rotates daily</span></h2>
+    <div class="list" id="featured-list">
+      {featured.map((app) => <AppRow app={app} />)}
+    </div>
+  </section>
+
+  <section class="category" id="highly-useful" data-category-section>
+    <h2>⭐ Highly Useful <span class="count">{highlyUseful.length} apps</span></h2>
+    <div class="list" id="useful-list">
+      {highlyUseful.map((app) => <AppRow app={app} />)}
+    </div>
+  </section>
+
+  {
+    categories.map(([name, list]) => (
+      <section class="category" id={catId(name)} data-category-section>
+        <h2>
+          {name} <span class="count">{list.length} apps</span>
+        </h2>
+        <div class="list">
+          {list.map((app) => (
+            <AppRow app={app} />
+          ))}
+        </div>
+      </section>
+    ))
+  }
+
+  <p class="note" id="no-results" hidden>No apps match your search.</p>
+  <p class="note">
+    ★ Popularity is a 0–100 score. In v1 it is editorially seeded from adoption,
+    reputation, and case-study data; community voting and automated traffic
+    signals are on the roadmap.
+  </p>
+
+  <script define:vars={{ poolSlugs: pool.map((app) => app.slug) }}>
+    // Re-apply the daily Featured/Highly Useful rotation with the visitor's
+    // current date, so the split stays fresh even if the site isn't rebuilt.
+    const featuredList = document.getElementById('featured-list');
+    const usefulList = document.getElementById('useful-list');
+    if (featuredList && usefulList && poolSlugs.length) {
+      const rows = new Map(
+        [...featuredList.children, ...usefulList.children].map((row) => [
+          row.dataset.slug,
+          row,
+        ])
+      );
+      const now = new Date();
+      const dayOfYear = Math.floor(
+        (now - new Date(now.getFullYear(), 0, 0)) / 86400000
+      );
+      const offset = dayOfYear % poolSlugs.length;
+      const count = Math.min(3, poolSlugs.length);
+      const featured = new Set(
+        Array.from({ length: count }, (_, i) => poolSlugs[(offset + i) % poolSlugs.length])
+      );
+      for (const slug of poolSlugs) {
+        const row = rows.get(slug);
+        if (row) (featured.has(slug) ? featuredList : usefulList).append(row);
+      }
+    }
+  </script>
+
+  <script>
+    const input = document.getElementById('search') as HTMLInputElement;
+    const cards = [...document.querySelectorAll<HTMLElement>('[data-app]')];
+    const sections = [...document.querySelectorAll<HTMLElement>('[data-category-section]')];
+    const chips = [...document.querySelectorAll<HTMLButtonElement>('.filter-chip')];
+    const noResults = document.getElementById('no-results')!;
+    const activeCaps = new Set<string>();
+
+    function applyFilters() {
+      const q = input?.value.trim().toLowerCase() ?? '';
+      for (const card of cards) {
+        const caps = (card.dataset.caps ?? '').split(' ');
+        const matchesText = !q || card.dataset.text!.includes(q);
+        const matchesCaps = [...activeCaps].every((c) => caps.includes(c));
+        card.classList.toggle('hidden', !(matchesText && matchesCaps));
+      }
+      let anyVisible = false;
+      for (const section of sections) {
+        const visible = section.querySelector('[data-app]:not(.hidden)') !== null;
+        section.classList.toggle('hidden', !visible);
+        anyVisible ||= visible;
+      }
+      noResults.hidden = anyVisible;
+    }
+
+    function toggleCap(cap: string) {
+      if (activeCaps.has(cap)) activeCaps.delete(cap);
+      else activeCaps.add(cap);
+      for (const chip of chips) {
+        const on = activeCaps.has(chip.dataset.cap!);
+        chip.classList.toggle('active', on);
+        chip.setAttribute('aria-pressed', String(on));
+      }
+      document
+        .querySelectorAll<HTMLElement>('[data-app] .badge[data-cap]')
+        .forEach((b) => b.classList.toggle('active', activeCaps.has(b.dataset.cap!)));
+      applyFilters();
+    }
+
+    input?.addEventListener('input', applyFilters);
+    const jump = document.getElementById('jump') as HTMLSelectElement;
+    jump?.addEventListener('change', () => {
+      const target = jump.value && document.getElementById(jump.value);
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+      jump.value = '';
+    });
+    for (const chip of chips) {
+      chip.addEventListener('click', () => toggleCap(chip.dataset.cap!));
+    }
+    // The badges on each row toggle the same filters.
+    document.addEventListener('click', (e) => {
+      const badge = (e.target as HTMLElement).closest<HTMLElement>(
+        '[data-app] .badge[data-cap]'
+      );
+      if (badge) toggleCap(badge.dataset.cap!);
+    });
+  </script>
+</Base>

@@ -1,0 +1,85 @@
+---
+import Base from '../../layouts/Base.astro';
+import apps from '../../data/apps.json';
+import { capabilityLabel } from '../../data/capabilities';
+
+export function getStaticPaths() {
+  return apps.map((app) => ({ params: { slug: app.slug }, props: { app } }));
+}
+
+const { app } = Astro.props;
+---
+
+<Base title={`${app.name} — PWA Finder`} description={app.tagline}>
+  <article class="detail">
+    <a class="back-link" href="/">← Back to home</a>
+    <div class="card-head">
+      <span class="app-icon" aria-hidden="true">{app.icon}</span>
+      <div>
+        <h1>{app.name}</h1>
+        <p class="tagline">{app.category}</p>
+      </div>
+      <span class="pop" title="Popularity score (0–100)">★ {app.popularity}</span>
+    </div>
+
+    <p>{app.description}</p>
+
+    <div class="badges">
+      {
+        app.verified ? (
+          <a
+            class="verified-badge"
+            href="/verification/"
+            title="See how verification works"
+          >
+            ✔ Verified publisher — how we verify
+          </a>
+        ) : (
+          <a
+            class="risk-badge"
+            href="/verification/#at-your-own-risk"
+            title="Community listing — not verified"
+          >
+            ⚠ At your own risk — what this means
+          </a>
+        )
+      }
+      {app.capabilities.map((c) => <span class="badge">{capabilityLabel(c)}</span>)}
+    </div>
+
+    <div class="actions">
+      <a class="btn primary" href={app.url} target="_blank" rel="noopener">
+        Open {app.name} ↗
+      </a>
+      <a class="btn" href="/">← Back to home</a>
+    </div>
+
+    <div class="install-help">
+      <h2>How to install it as an app</h2>
+      <ol data-platform="desktop">
+        <li>Open <a href={app.url} target="_blank" rel="noopener">{new URL(app.url).hostname}</a> in Chrome or Edge.</li>
+        <li>Click the install icon in the address bar (or menu → “Install app”).</li>
+      </ol>
+      <ol data-platform="android" hidden>
+        <li>Open the app in Chrome on Android.</li>
+        <li>Tap the ⋮ menu → “Add to Home screen” or “Install app”.</li>
+      </ol>
+      <ol data-platform="ios" hidden>
+        <li>Open the app in Safari on iOS.</li>
+        <li>Tap the Share button → “Add to Home Screen”.</li>
+      </ol>
+    </div>
+  </article>
+
+  <script>
+    const ua = navigator.userAgent;
+    const platform = /iPhone|iPad|iPod/.test(ua)
+      ? 'ios'
+      : /Android/.test(ua)
+        ? 'android'
+        : 'desktop';
+    document.querySelectorAll<HTMLElement>('[data-platform]').forEach((el) => {
+      el.hidden = el.dataset.platform !== platform;
+    });
+  </script>
+</Base>

@@ -1,0 +1,71 @@
+---
+import { capabilityLabel } from '../data/capabilities';
+
+interface Props {
+  app: {
+    slug: string;
+    name: string;
+    url: string;
+    category: string;
+    tagline: string;
+    popularity: number;
+    capabilities: string[];
+    icon: string;
+    verified?: boolean;
+  };
+}
+
+const { app } = Astro.props;
+---
+
+<div
+  class="row"
+  data-app
+  data-slug={app.slug}
+  data-caps={app.capabilities.join(' ')}
+  data-text={`${app.name} ${app.tagline} ${app.category}`.toLowerCase()}
+>
+  <a
+    class="row-main"
+    href={app.url}
+    target="_blank"
+    rel="noopener"
+    title={`Open ${app.name} in a new tab`}
+  >
+    <span class="app-icon" aria-hidden="true">{app.icon}</span>
+    <h3>{app.name}</h3>
+    <p class="tagline">{app.tagline}</p>
+  </a>
+  <span class="badges">
+    {
+      app.capabilities.map((c) => (
+        <span class="badge" data-cap={c} title={`Filter by “${capabilityLabel(c)}”`}>
+          {capabilityLabel(c)}
+        </span>
+      ))
+    }
+  </span>
+  <span class="pop" title="Popularity score (0–100)">★ {app.popularity}</span>
+  {
+    app.verified ? (
+      <a
+        class="verified-badge"
+        href="/verification/"
+        title="Verified publisher — see how verification works"
+      >
+        ✔ Verified
+      </a>
+    ) : (
+      <a
+        class="risk-badge"
+        href="/verification/#at-your-own-risk"
+        title="Community listing — not verified, use at your own risk"
+      >
+        ⚠ At your own risk
+      </a>
+    )
+  }
+  <a class="details-link" href={`/apps/${app.slug}/`} title={`About ${app.name}`}>
+    Details
+  </a>
+</div>
