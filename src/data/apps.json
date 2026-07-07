@@ -3461,5 +3461,23 @@
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
+  },
+  {
+    "slug": "kromans-reader",
+    "name": "kromans-Reader",
+    "url": "https://reader-pwa-5w1.pages.dev",
+    "category": "Education",
+    "tagline": "Photograph pages of a physical book and have them read aloud in order.",
+    "description": "Reader turns printed pages into audio: photograph the pages of a physical book and the app reads them back to you in order. Books are stored on your device, it works offline once installed, and no account is needed. Personally built and verified by the PWA Finder curator.",
+    "popularity": 90,
+    "capabilities": [
+      "offline",
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "📖",
+    "spotlight": true,
+    "verified": true,
+    "lastChecked": "2026-07-07"
   }
 ]
