@@ -10,8 +10,8 @@
  *
  * Hard failures: unreachable, HTTP error status, downgrade to http://,
  * redirect to a different domain.
- * Warnings (never revoke automatically): bot-blocking responses (403/429),
- * missing manifest tag.
+ * Warnings (never revoke automatically): bot-blocking responses (401/403/429
+ * or redirect loops aimed at automated clients), missing manifest tag.
  *
  * Usage:
  *   npm run check            report only
@@ -47,13 +47,17 @@ async function checkApp(app) {
     // not a dead or hijacked site, so don't revoke over it.
     if (code === 'UND_ERR_HEADERS_OVERFLOW') {
       result.warnings.push('response too large for automated check — verify manually');
+    } else if (err.message === 'fetch failed' && /redirect count exceeded/.test(err.cause?.message ?? '')) {
+      // Endless redirects for non-browser clients (e.g. xe.com) — bot
+      // defense, not a dead site.
+      result.warnings.push('redirect loop for automated clients (bot protection) — verify manually');
     } else {
       result.failures.push(`unreachable: ${code}`);
     }
     return result;
   }
 
-  if (res.status === 403 || res.status === 429) {
+  if (res.status === 401 || res.status === 403 || res.status === 429) {
     result.warnings.push(`blocked automated check (HTTP ${res.status}) — verify manually`);
     return result;
   }
