@@ -3479,5 +3479,19 @@
     "spotlight": true,
     "verified": true,
     "lastChecked": "2026-07-07"
+  },
+  {
+    "slug": "openrouter",
+    "name": "OpenRouter",
+    "url": "https://openrouter.ai",
+    "category": "Developer Tools",
+    "tagline": "Chat with hundreds of AI models through one account.",
+    "description": "OpenRouter is a marketplace and router for AI models: one account gives you chat and API access to hundreds of models from many providers, with unified billing and automatic fallbacks. The installed app opens straight into its chat interface.",
+    "popularity": 68,
+    "capabilities": [],
+    "icon": "🤖",
+    "spotlight": false,
+    "verified": true,
+    "lastChecked": "2026-07-07"
   }
 ]
