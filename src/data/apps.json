@@ -3447,5 +3447,19 @@
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
+  },
+  {
+    "slug": "google-keep",
+    "name": "Google Keep",
+    "url": "https://keep.google.com",
+    "category": "Productivity",
+    "tagline": "Quick notes, lists, and reminders synced to your Google account.",
+    "description": "Google Keep captures notes, checklists, and reminders and syncs them instantly across all your devices. Sign in with a Google account, then install it as an app straight from the browser.",
+    "popularity": 82,
+    "capabilities": [],
+    "icon": "📒",
+    "spotlight": false,
+    "verified": true,
+    "lastChecked": "2026-07-07"
   }
 ]
