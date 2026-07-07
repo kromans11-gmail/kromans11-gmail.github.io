@@ -131,10 +131,13 @@ const screenshots: { src: string; label?: string }[] =
         const v = voted();
         try {
           if (v.has(slug)) {
-            await fetch(
-              `${sb.url}/rest/v1/votes?app_slug=eq.${encodeURIComponent(slug)}&device_id=eq.${deviceId}`,
-              { method: 'DELETE', headers }
-            );
+            // Vote rows are unreadable by design, so withdrawal goes through
+            // a security-definer function instead of a direct DELETE.
+            await fetch(`${sb.url}/rest/v1/rpc/unvote`, {
+              method: 'POST',
+              headers: { ...headers, 'content-type': 'application/json' },
+              body: JSON.stringify({ p_app_slug: slug, p_device_id: deviceId }),
+            });
             v.delete(slug);
             count = Math.max(0, count - 1);
           } else {

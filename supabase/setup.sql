@@ -15,12 +15,22 @@ create policy "anon can vote"
   on public.votes for insert to anon
   with check (true);
 
--- A device may withdraw a vote. There is deliberately NO select policy on
--- this table: device ids stay unlistable, so a vote can only be deleted by
--- the device that knows its own random id.
-create policy "anon can unvote"
-  on public.votes for delete to anon
-  using (true);
+-- There is deliberately NO select policy on this table: device ids stay
+-- unlistable. That also means a direct DELETE can never match rows, so vote
+-- withdrawal goes through a security-definer function that deletes only the
+-- exact (app, device) pair it is given.
+create or replace function public.unvote(p_app_slug text, p_device_id uuid)
+returns void
+language sql
+security definer
+set search_path = public
+as $$
+  delete from public.votes
+  where app_slug = p_app_slug and device_id = p_device_id;
+$$;
+
+revoke all on function public.unvote(text, uuid) from public;
+grant execute on function public.unvote(text, uuid) to anon;
 
 -- Public, aggregate-only view for displaying counts (no device ids exposed).
 create view public.vote_counts as
