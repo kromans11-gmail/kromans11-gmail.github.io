@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Interaction notifications for PWA Finder.
+ * Interaction notifications for Web App Finder.
  *
  * Interactions = community votes (Supabase) + app submissions (GitHub issues).
  * Designed to run every 10 minutes from GitHub Actions:
@@ -106,7 +106,7 @@ function describe(i) {
 
 function email(subject, body) {
   return [
-    `From: PWA Finder <${FROM}>`,
+    `From: Web App Finder <${FROM}>`,
     `To: ${TO}`,
     `Subject: ${subject}`,
     'Content-Type: text/plain; charset=utf-8',
@@ -135,7 +135,7 @@ for (const [idx, i] of hourSoFar.entries()) {
   if (i.type === 'vote') {
     const name = appName.get(i.slug) ?? i.slug;
     await save(
-      `PWA Finder: new vote for ${name}`,
+      `Web App Finder: new vote for ${name}`,
       [
         'A community member found an app useful.',
         '',
@@ -148,7 +148,7 @@ for (const [idx, i] of hourSoFar.entries()) {
     );
   } else {
     await save(
-      `PWA Finder: new app submission — ${i.title}`,
+      `Web App Finder: new app submission — ${i.title}`,
       [
         'Someone submitted an app to the community directory.',
         '',
@@ -169,7 +169,7 @@ if (now.getTime() - hourStart.getTime() < WINDOW_MS) {
   if (prev.length > HOURLY_CAP) {
     const rest = prev.slice(HOURLY_CAP);
     await save(
-      `PWA Finder: ${rest.length} more interaction(s) last hour`,
+      `Web App Finder: ${rest.length} more interaction(s) last hour`,
       [
         `The hour ${fmt(prevStart)}–${fmt(hourStart)} had ${prev.length} interactions.`,
         `The first ${HOURLY_CAP} were emailed individually; here are the rest:`,

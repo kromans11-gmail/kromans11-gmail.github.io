@@ -1,4 +1,4 @@
--- PWA Finder community voting schema.
+-- Web App Finder community voting schema.
 -- Run this once in the Supabase dashboard: SQL Editor -> New query -> paste -> Run.
 
 create table public.votes (

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Curator actions for the PWA Finder catalog, driven by the "Curate catalog"
+ * Curator actions for the Web App Finder catalog, driven by the "Curate catalog"
  * GitHub Actions form (.github/workflows/curate.yml). Only the repo owner can
  * run that form, which is what makes this a personal tool.
  *

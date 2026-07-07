@@ -1,6 +1,6 @@
 {
-  "name": "PWA Finder — discover the best Progressive Web Apps",
-  "short_name": "PWA Finder",
+  "name": "Web App Finder — discover the best Progressive Web Apps",
+  "short_name": "Web App Finder",
   "description": "A curated, ranked directory of the best Progressive Web Apps.",
   "start_url": "/",
   "scope": "/",

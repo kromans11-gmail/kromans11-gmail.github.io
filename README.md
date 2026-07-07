@@ -1,4 +1,4 @@
-# PWA Finder
+# Web App Finder
 
 A curated, ranked directory of the best Progressive Web Apps — itself built as a PWA.
 
@@ -43,7 +43,7 @@ Add an entry to `src/data/apps.json`:
 
 The `/add/` page is a curator tool: fill in the form and it generates this JSON for you to paste.
 
-`verified: true` shows a green "✔ Verified" badge linking to `/verification/`, which documents the checks (official canonical URL, cross-referenced authoritative sources, monthly re-checks). Unverified apps show an amber "⚠ At your own risk" badge instead, pointing to the planned community-contributed sister site (set its URL in `src/pages/verification.astro`).
+`verified: true` shows a green "✔ Verified" badge linking to `/verification/`, which documents the checks (official canonical URL, cross-referenced authoritative sources, monthly re-checks). Unverified apps show an amber "⚠ At your own risk" badge instead, pointing to the planned community-contributed sister site (set its URL in `src/pages/verification.astro`). `verified: "unverifiable"` is a third state for apps fully hidden behind a sign-in page (e.g. Gmail) — they get a gray "🔒 Unverifiable" badge.
 
 Capability keys are defined in `src/data/capabilities.ts`. Popularity is a 0–100 score, editorially seeded in v1.
 
