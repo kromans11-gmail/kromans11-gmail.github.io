@@ -31,13 +31,21 @@ const screenshots: { src: string; label?: string }[] =
 
     <div class="badges">
       {
-        app.verified ? (
+        app.verified === true ? (
           <a
             class="verified-badge"
             href="/verification/"
             title="See how verification works"
           >
             ✔ Verified publisher — how we verify
+          </a>
+        ) : app.verified === 'unverifiable' ? (
+          <a
+            class="unverifiable-badge"
+            href="/verification/#unverifiable"
+            title="Hidden behind a sign-in page — we can't check it either way"
+          >
+            🔒 Unverifiable — what this means
           </a>
         ) : (
           <a

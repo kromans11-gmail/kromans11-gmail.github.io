@@ -56,9 +56,8 @@ const COMMUNITY_SITE_URL = '/community/';
       Listings marked <span class="risk-badge">⚠ At your own risk</span> have
       not passed the checks above. That doesn't necessarily mean something is
       wrong — this group includes apps that are <em>difficult to verify</em>:
-      some hide everything behind a sign-in page (Gmail, Outlook), some block
-      automated checks entirely (WhatsApp, Canva), and some only load their
-      app manifest through scripts our checker can't run (Instagram, Bluesky).
+      some block automated checks entirely (Uber, CodePen, Unsplash), and some
+      only load their app manifest through scripts our checker can't run.
       We simply can't machine-confirm them, so we don't badge them.
     </p>
     <p>
@@ -68,6 +67,19 @@ const COMMUNITY_SITE_URL = '/community/';
       Either way, treat unbadged apps as you would any
       unknown website: check the address bar before signing in or granting
       permissions.
+    </p>
+
+    <h2 id="unverifiable" style="margin-top:2rem;">
+      Unverifiable apps
+    </h2>
+    <p>
+      A few listings are marked
+      {' '}<span class="unverifiable-badge">🔒 Unverifiable</span>. These apps
+      keep everything — including the technical files our checker looks
+      for — behind a sign-in page (Gmail and Google Keep, for example). We
+      can't confirm them, but we also found nothing wrong; the label simply
+      means our checks can't see past the login screen, so judge these apps
+      by the reputation of their publisher.
     </p>
   </article>
 </Base>

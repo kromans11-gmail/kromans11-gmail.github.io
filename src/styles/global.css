@@ -189,6 +189,12 @@ header.site .container {
   color: var(--accent-contrast);
 }
 
+.filter-chip.status-unverifiable.active {
+  background: var(--text-muted);
+  border-color: var(--text-muted);
+  color: var(--accent-contrast);
+}
+
 .category {
   margin: 2rem 0;
   scroll-margin-top: 0.75rem;
@@ -359,7 +365,8 @@ header.site .container {
 }
 
 .verified-badge,
-.risk-badge {
+.risk-badge,
+.unverifiable-badge {
   flex-shrink: 0;
   font-size: 0.75rem;
   font-weight: 600;
@@ -378,8 +385,13 @@ header.site .container {
   color: var(--warn);
 }
 
+.unverifiable-badge {
+  color: var(--text-muted);
+}
+
 .verified-badge:hover,
-.risk-badge:hover {
+.risk-badge:hover,
+.unverifiable-badge:hover {
   text-decoration: underline;
 }
 

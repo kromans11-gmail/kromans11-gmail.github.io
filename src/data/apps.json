@@ -175,7 +175,8 @@
     ],
     "icon": "🚗",
     "spotlight": false,
-    "verified": true
+    "verified": false,
+    "lastChecked": "2026-07-07"
   },
   {
     "slug": "starbucks",
@@ -519,7 +520,8 @@
     ],
     "icon": "✉️",
     "spotlight": false,
-    "verified": false
+    "verified": "unverifiable",
+    "lastChecked": "2026-07-07"
   },
   {
     "slug": "instagram",
@@ -684,7 +686,8 @@
     ],
     "icon": "🌊",
     "spotlight": false,
-    "verified": false
+    "verified": false,
+    "lastChecked": "2026-07-07"
   },
   {
     "slug": "bitmidi",
@@ -697,7 +700,7 @@
     "capabilities": [],
     "icon": "🎹",
     "spotlight": false,
-    "verified": true,
+    "verified": false,
     "lastChecked": "2026-07-07"
   },
   {
@@ -1312,7 +1315,8 @@
     "capabilities": [],
     "icon": "🏘️",
     "spotlight": false,
-    "verified": false
+    "verified": false,
+    "lastChecked": "2026-07-07"
   },
   {
     "slug": "versus",
@@ -1608,7 +1612,7 @@
   {
     "slug": "onlyoffice-docspace",
     "name": "ONLYOFFICE DocSpace",
-    "url": "https://www.onlyoffice.com/docspace.aspx",
+    "url": "https://app.onlyoffice.com",
     "category": "Productivity",
     "tagline": "Collaborative rooms for editing office documents online.",
     "description": "ONLYOFFICE DocSpace organizes documents, spreadsheets, and presentations into shared rooms with fine-grained permissions, built on the well-established open-source ONLYOFFICE editors.",
@@ -1636,7 +1640,7 @@
   {
     "slug": "bangle-io",
     "name": "Bangle.io",
-    "url": "https://bangle.io",
+    "url": "https://app.bangle.io",
     "category": "Productivity",
     "tagline": "Markdown note-taking that saves straight to your local files.",
     "description": "Bangle.io is an open-source note app that edits Markdown files directly on your device using the browser's file-system access — your notes never leave your computer.",
@@ -1700,7 +1704,7 @@
   {
     "slug": "notesnook",
     "name": "Notesnook",
-    "url": "https://notesnook.com",
+    "url": "https://app.notesnook.com",
     "category": "Productivity",
     "tagline": "Private, end-to-end encrypted note-taking that syncs everywhere.",
     "description": "Notesnook is an open-source notes app with zero-knowledge encryption — notebooks, tags, and rich-text notes sync across devices without the company being able to read them.",
@@ -1774,7 +1778,7 @@
   {
     "slug": "nocodb",
     "name": "NocoDB",
-    "url": "https://nocodb.com",
+    "url": "https://app.nocodb.com",
     "category": "Productivity",
     "tagline": "Turn any database into a smart spreadsheet interface.",
     "description": "NocoDB is a popular open-source Airtable alternative that gives databases a friendly spreadsheet, gallery, and form interface — self-hostable or cloud.",
@@ -1786,23 +1790,9 @@
     "lastChecked": "2026-07-07"
   },
   {
-    "slug": "appflowy",
-    "name": "AppFlowy",
-    "url": "https://appflowy.com",
-    "category": "Productivity",
-    "tagline": "An open-source Notion alternative you control.",
-    "description": "AppFlowy offers Notion-style documents, wikis, and kanban boards as an open-source project focused on data privacy and self-hosting.",
-    "popularity": 50,
-    "capabilities": [],
-    "icon": "📔",
-    "spotlight": false,
-    "verified": true,
-    "lastChecked": "2026-07-07"
-  },
-  {
     "slug": "affine",
     "name": "AFFiNE",
-    "url": "https://affine.pro",
+    "url": "https://app.affine.pro",
     "category": "Productivity",
     "tagline": "Docs, whiteboards, and databases merged into one canvas.",
     "description": "AFFiNE is an open-source workspace where a page can be a document, an edgeless whiteboard, or a database — a privacy-first alternative to Notion and Miro.",
@@ -1874,27 +1864,13 @@
   {
     "slug": "pixelfed",
     "name": "Pixelfed",
-    "url": "https://pixelfed.org",
+    "url": "https://pixelfed.social",
     "category": "Social & Messaging",
     "tagline": "Ad-free photo sharing on the open fediverse.",
     "description": "Pixelfed is a decentralized, open-source photo sharing network — an Instagram alternative with no ads and no tracking, connected to the wider fediverse.",
     "popularity": 55,
     "capabilities": [],
     "icon": "📸",
-    "spotlight": false,
-    "verified": true,
-    "lastChecked": "2026-07-07"
-  },
-  {
-    "slug": "peertube",
-    "name": "PeerTube",
-    "url": "https://joinpeertube.org",
-    "category": "Media & Entertainment",
-    "tagline": "Decentralized video hosting powered by its viewers.",
-    "description": "PeerTube is an open-source, federated video platform where independent instances share the load through peer-to-peer streaming — a community-run YouTube alternative.",
-    "popularity": 55,
-    "capabilities": [],
-    "icon": "📺",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2275,7 +2251,7 @@
     ],
     "icon": "🔎",
     "spotlight": false,
-    "verified": true,
+    "verified": false,
     "lastChecked": "2026-07-07"
   },
   {
@@ -2388,7 +2364,7 @@
     "capabilities": [],
     "icon": "🖊️",
     "spotlight": false,
-    "verified": true,
+    "verified": false,
     "lastChecked": "2026-07-07"
   },
   {
@@ -2635,7 +2611,7 @@
   {
     "slug": "invoice-ninja",
     "name": "Invoice Ninja",
-    "url": "https://www.invoiceninja.com",
+    "url": "https://app.invoiceninja.com",
     "category": "Business & Finance",
     "tagline": "Invoicing, payments, and expenses for freelancers.",
     "description": "Invoice Ninja is a long-running open-source invoicing platform — create branded invoices, accept online payments, and track time and expenses.",
@@ -2657,7 +2633,7 @@
     "capabilities": [],
     "icon": "💱",
     "spotlight": false,
-    "verified": true,
+    "verified": false,
     "lastChecked": "2026-07-07"
   },
   {
@@ -2672,20 +2648,6 @@
     "icon": "📜",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-07"
-  },
-  {
-    "slug": "firefly-iii",
-    "name": "Firefly III",
-    "url": "https://www.firefly-iii.org",
-    "category": "Business & Finance",
-    "tagline": "Self-hosted personal finance and budgeting.",
-    "description": "Firefly III is a widely used open-source personal finance manager — track accounts, budgets, and bills on a server you control, with your financial data staying yours.",
-    "popularity": 52,
-    "capabilities": [],
-    "icon": "🔥",
-    "spotlight": false,
-    "verified": true,
     "lastChecked": "2026-07-07"
   },
   {
@@ -2713,21 +2675,7 @@
     "capabilities": [],
     "icon": "📄",
     "spotlight": false,
-    "verified": false,
-    "lastChecked": "2026-07-07"
-  },
-  {
-    "slug": "listmonk",
-    "name": "listmonk",
-    "url": "https://listmonk.app",
-    "category": "Business & Finance",
-    "tagline": "Self-hosted newsletters and mailing lists at scale.",
-    "description": "listmonk is a high-performance open-source newsletter and mailing list manager from the team at Zerodha — send campaigns from your own server.",
-    "popularity": 50,
-    "capabilities": [],
-    "icon": "📨",
-    "spotlight": false,
-    "verified": true,
+    "verified": "unverifiable",
     "lastChecked": "2026-07-07"
   },
   {
@@ -2908,20 +2856,6 @@
     "lastChecked": "2026-07-07"
   },
   {
-    "slug": "zotero",
-    "name": "Zotero",
-    "url": "https://www.zotero.org",
-    "category": "Education",
-    "tagline": "Collect, organize, and cite research sources for free.",
-    "description": "Zotero is the free, open-source reference manager trusted across academia — save sources with one click, organize your library, and generate citations in any style.",
-    "popularity": 65,
-    "capabilities": [],
-    "icon": "📚",
-    "spotlight": false,
-    "verified": true,
-    "lastChecked": "2026-07-07"
-  },
-  {
     "slug": "overleaf",
     "name": "Overleaf",
     "url": "https://www.overleaf.com",
@@ -3076,20 +3010,6 @@
       "lightweight"
     ],
     "icon": "⏳",
-    "spotlight": false,
-    "verified": false,
-    "lastChecked": "2026-07-07"
-  },
-  {
-    "slug": "waistline",
-    "name": "Waistline",
-    "url": "https://waistline.app",
-    "category": "Health & Lifestyle",
-    "tagline": "Open-source calorie counting and weight tracking.",
-    "description": "Waistline is an open-source nutrition tracker using the Open Food Facts database — log meals by barcode or search and watch weight and calorie trends.",
-    "popularity": 35,
-    "capabilities": [],
-    "icon": "⚖️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -3328,7 +3248,7 @@
   {
     "slug": "padloc",
     "name": "Padloc",
-    "url": "https://padloc.app",
+    "url": "https://web.padloc.app",
     "category": "Utilities",
     "tagline": "A clean, open-source password manager for everyone.",
     "description": "Padloc is an open-source password manager focused on simplicity — end-to-end encrypted vaults with apps for every platform and a clear, friendly interface.",
@@ -3388,22 +3308,6 @@
     "lastChecked": "2026-07-07"
   },
   {
-    "slug": "flathub",
-    "name": "Flathub",
-    "url": "https://flathub.org",
-    "category": "Utilities",
-    "tagline": "The app store for Linux — browse thousands of Flatpaks.",
-    "description": "Flathub is the central hub for Flatpak apps on Linux desktop — browse, search, and discover thousands of applications for any distribution.",
-    "popularity": 60,
-    "capabilities": [
-      "no-account"
-    ],
-    "icon": "📦",
-    "spotlight": false,
-    "verified": true,
-    "lastChecked": "2026-07-07"
-  },
-  {
     "slug": "2brew",
     "name": "2brew",
     "url": "https://2brew.github.io",
@@ -3432,7 +3336,7 @@
     "capabilities": [],
     "icon": "📷",
     "spotlight": false,
-    "verified": true,
+    "verified": false,
     "lastChecked": "2026-07-07"
   },
   {
@@ -3460,7 +3364,7 @@
     "capabilities": [],
     "icon": "📒",
     "spotlight": false,
-    "verified": true,
+    "verified": "unverifiable",
     "lastChecked": "2026-07-07"
   },
   {

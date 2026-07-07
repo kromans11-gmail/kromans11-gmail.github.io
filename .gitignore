@@ -27,3 +27,6 @@ pnpm-debug.log*
 .claude/settings.local.json*
 
 notify-out/
+
+# generated audit snapshot (rerun scripts/audit-manifests.mjs)
+audit-report.json

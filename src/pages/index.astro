@@ -77,6 +77,9 @@ const categories = [...byCategory.entries()].sort(
       <button class="filter-chip status-risk" data-status="false" aria-pressed="false">
         ⚠ At your own risk
       </button>
+      <button class="filter-chip status-unverifiable" data-status="unverifiable" aria-pressed="false">
+        🔒 Unverifiable
+      </button>
       {
         filterCaps.map((c) => (
           <button class="filter-chip" data-cap={c} aria-pressed="false">
