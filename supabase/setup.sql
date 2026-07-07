@@ -5,6 +5,7 @@ create table public.votes (
   app_slug   text        not null,
   device_id  uuid        not null,
   created_at timestamptz not null default now(),
+  comment    text        check (char_length(comment) <= 500), -- optional, shown publicly
   primary key (app_slug, device_id) -- one vote per device per app
 );
 
@@ -39,3 +40,11 @@ create view public.vote_counts as
   group by app_slug;
 
 grant select on public.vote_counts to anon;
+
+-- Public, read-only view of comments left with votes (again: no device ids).
+create view public.app_comments as
+  select app_slug, comment, created_at
+  from public.votes
+  where comment is not null and length(trim(comment)) > 0;
+
+grant select on public.app_comments to anon;

@@ -62,6 +62,20 @@ const screenshots: { src: string; label?: string }[] =
       <a class="btn" href="/">← Back to home</a>
     </div>
 
+    <div class="comment-box" id="comment-box" hidden>
+      <textarea
+        id="vote-comment"
+        maxlength="500"
+        rows="2"
+        placeholder="Optional: say why it's useful — posted publicly with your vote"
+      ></textarea>
+    </div>
+
+    <section class="comments" id="comments" hidden aria-label="Community comments">
+      <h2>What the community says</h2>
+      <ul id="comment-list"></ul>
+    </section>
+
     {
       screenshots.length > 0 && (
         <div class="screenshots" aria-label="Screenshots from the app's manifest">
@@ -96,8 +110,14 @@ const screenshots: { src: string; label?: string }[] =
 
   <script define:vars={{ slug: app.slug, sb: SUPABASE }}>
     // Community voting: one vote per device per app, stored in Supabase.
+    // A vote may carry an optional public comment (same row, shown via the
+    // app_comments view, which exposes no device ids).
     const btn = document.getElementById('vote-btn');
     const countEl = document.getElementById('vote-count');
+    const commentBox = document.getElementById('comment-box');
+    const commentInput = document.getElementById('vote-comment');
+    const commentsSection = document.getElementById('comments');
+    const commentList = document.getElementById('comment-list');
     if (sb.url && sb.key && btn) {
       const headers = { apikey: sb.key, authorization: `Bearer ${sb.key}` };
       const deviceId =
@@ -114,17 +134,44 @@ const screenshots: { src: string; label?: string }[] =
       let count = 0;
       const render = () => {
         countEl.textContent = String(count);
-        btn.classList.toggle('voted', voted().has(slug));
+        const hasVoted = voted().has(slug);
+        btn.classList.toggle('voted', hasVoted);
+        // The comment rides along with the vote, so the box only shows
+        // before you have voted.
+        commentBox.hidden = hasVoted || btn.hidden;
+      };
+
+      const loadComments = async () => {
+        try {
+          const res = await fetch(
+            `${sb.url}/rest/v1/app_comments?app_slug=eq.${encodeURIComponent(slug)}&order=created_at.desc&limit=50`,
+            { headers }
+          );
+          if (!res.ok) return;
+          const rows = await res.json();
+          commentList.textContent = '';
+          for (const row of rows) {
+            const li = document.createElement('li');
+            const p = document.createElement('p');
+            p.textContent = row.comment; // textContent: comments are untrusted
+            const time = document.createElement('time');
+            time.textContent = new Date(row.created_at).toLocaleDateString();
+            li.append(p, time);
+            commentList.append(li);
+          }
+          commentsSection.hidden = rows.length === 0;
+        } catch {}
       };
 
       fetch(`${sb.url}/rest/v1/vote_counts?app_slug=eq.${encodeURIComponent(slug)}`, { headers })
         .then((r) => r.json())
         .then((rows) => {
           count = rows[0]?.votes ?? 0;
-          render();
           btn.hidden = false;
+          render();
         })
         .catch(() => {});
+      loadComments();
 
       btn.addEventListener('click', async () => {
         btn.disabled = true;
@@ -132,7 +179,8 @@ const screenshots: { src: string; label?: string }[] =
         try {
           if (v.has(slug)) {
             // Vote rows are unreadable by design, so withdrawal goes through
-            // a security-definer function instead of a direct DELETE.
+            // a security-definer function instead of a direct DELETE. The
+            // row's comment (if any) is deleted with it.
             await fetch(`${sb.url}/rest/v1/rpc/unvote`, {
               method: 'POST',
               headers: { ...headers, 'content-type': 'application/json' },
@@ -140,14 +188,24 @@ const screenshots: { src: string; label?: string }[] =
             });
             v.delete(slug);
             count = Math.max(0, count - 1);
+            loadComments();
           } else {
+            const comment = commentInput.value.trim().slice(0, 500);
+            const body = { app_slug: slug, device_id: deviceId };
+            if (comment) body.comment = comment;
             const res = await fetch(`${sb.url}/rest/v1/votes`, {
               method: 'POST',
               headers: { ...headers, 'content-type': 'application/json', prefer: 'return=minimal' },
-              body: JSON.stringify({ app_slug: slug, device_id: deviceId }),
+              body: JSON.stringify(body),
             });
             if (res.ok || res.status === 409) v.add(slug);
-            if (res.ok) count += 1;
+            if (res.ok) {
+              count += 1;
+              if (comment) {
+                commentInput.value = '';
+                loadComments();
+              }
+            }
           }
           setVoted(v);
           render();

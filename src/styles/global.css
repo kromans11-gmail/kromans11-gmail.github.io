@@ -286,6 +286,58 @@ header.site .container {
   color: var(--ok);
 }
 
+/* Optional comment posted along with a vote. */
+.comment-box {
+  margin: 0.75rem 0;
+}
+
+.comment-box textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background: inherit;
+  color: inherit;
+  font: inherit;
+  font-size: 0.9rem;
+  resize: vertical;
+}
+
+.comments {
+  margin: 1.5rem 0;
+}
+
+.comments h2 {
+  font-size: 1.05rem;
+}
+
+.comments ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.comments li {
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  padding: 0.6rem 0.75rem;
+}
+
+.comments li p {
+  margin: 0;
+  font-size: 0.92rem;
+  overflow-wrap: anywhere;
+}
+
+.comments li time {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
 .verified-badge,
 .risk-badge {
   flex-shrink: 0;

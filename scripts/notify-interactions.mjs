@@ -39,13 +39,14 @@ const appName = new Map(apps.map((a) => [a.slug, a.name]));
 const sbHeaders = { apikey: KEY, authorization: `Bearer ${KEY}` };
 
 async function votesBetween(fromIso, toIso) {
-  const q = `${SUPABASE_URL}/rest/v1/votes?select=app_slug,created_at&created_at=gte.${fromIso}&created_at=lt.${toIso}&order=created_at.asc`;
+  const q = `${SUPABASE_URL}/rest/v1/votes?select=app_slug,created_at,comment&created_at=gte.${fromIso}&created_at=lt.${toIso}&order=created_at.asc`;
   const res = await fetch(q, { headers: sbHeaders });
   if (!res.ok) throw new Error(`votes fetch: HTTP ${res.status}`);
   return (await res.json()).map((v) => ({
     type: 'vote',
     time: new Date(v.created_at),
     slug: v.app_slug,
+    comment: v.comment ?? null,
   }));
 }
 
@@ -97,7 +98,8 @@ const fmt = (d) => d.toISOString().replace('T', ' ').slice(0, 16) + ' UTC';
 function describe(i) {
   if (i.type === 'vote') {
     const name = appName.get(i.slug) ?? i.slug;
-    return `${fmt(i.time)} — 👍 vote for ${name} (total now: ${voteTotals.get(i.slug) ?? '?'})`;
+    const note = i.comment ? ` — “${i.comment.slice(0, 200)}”` : '';
+    return `${fmt(i.time)} — 👍 vote for ${name} (total now: ${voteTotals.get(i.slug) ?? '?'})${note}`;
   }
   return `${fmt(i.time)} — 📥 app submission #${i.number} "${i.title}" by ${i.author} (${i.link})`;
 }
@@ -139,6 +141,7 @@ for (const [idx, i] of hourSoFar.entries()) {
         '',
         `App: ${name} (${i.slug})`,
         `When: ${fmt(i.time)}`,
+        ...(i.comment ? [`Comment: “${i.comment}”`] : []),
         `Total votes for this app: ${voteTotals.get(i.slug) ?? '?'}`,
         `Interaction #${idx + 1} this hour.`,
       ].join('\n')
