@@ -3490,7 +3490,7 @@
     "popularity": 68,
     "capabilities": [],
     "icon": "🤖",
-    "spotlight": false,
+    "spotlight": true,
     "verified": true,
     "lastChecked": "2026-07-07"
   }
