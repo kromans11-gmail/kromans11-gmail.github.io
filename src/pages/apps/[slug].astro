@@ -109,6 +109,16 @@ const screenshots: { src: string; label?: string }[] =
   </article>
 
   <script define:vars={{ slug: app.slug, sb: SUPABASE }}>
+    // Count opens toward the home page's "Personal PWA's" section (two opens
+    // pin the app there; the count lives only in this browser's storage).
+    document.querySelector('.actions .btn.primary')?.addEventListener('click', () => {
+      try {
+        const c = JSON.parse(localStorage.getItem('pwafinder-opens') ?? '{}');
+        c[slug] = (c[slug] ?? 0) + 1;
+        localStorage.setItem('pwafinder-opens', JSON.stringify(c));
+      } catch {}
+    });
+
     // Community voting: one vote per device per app, stored in Supabase.
     // A vote may carry an optional public comment (same row, shown via the
     // app_comments view, which exposes no device ids).

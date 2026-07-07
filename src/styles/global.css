@@ -276,6 +276,26 @@ header.site .container {
   color: var(--accent);
 }
 
+/* Remove button on rows in the Personal PWA's section. */
+.remove-personal {
+  flex-shrink: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.remove-personal:hover {
+  border-color: var(--warn);
+  color: var(--warn);
+}
+
 .vote-btn.voted {
   background: var(--ok);
   border-color: var(--ok);

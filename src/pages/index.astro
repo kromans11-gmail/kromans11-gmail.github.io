@@ -87,6 +87,13 @@ const categories = [...byCategory.entries()].sort(
     </div>
   </section>
 
+  <!-- Filled client-side from this device's open history; stays hidden until
+       the visitor has opened an app at least twice. -->
+  <section class="category" id="personal" data-category-section hidden>
+    <h2>📌 Personal PWA's <span class="count">apps you open often — saved only on this device</span></h2>
+    <div class="list" id="personal-list"></div>
+  </section>
+
   <section class="category" id="featured" data-category-section>
     <h2>✨ Featured <span class="count">rotates daily</span></h2>
     <div class="list" id="featured-list">
@@ -153,8 +160,85 @@ const categories = [...byCategory.entries()].sort(
   </script>
 
   <script>
+    // Personal PWA's: any app this visitor has opened twice gets pinned in a
+    // section at the top. Open counts live only in this browser's storage.
+    const OPENS_KEY = 'pwafinder-opens';
+    const readOpens = (): Record<string, number> => {
+      try {
+        return JSON.parse(localStorage.getItem(OPENS_KEY) ?? '{}');
+      } catch {
+        return {};
+      }
+    };
+    const writeOpens = (c: Record<string, number>) =>
+      localStorage.setItem(OPENS_KEY, JSON.stringify(c));
+
+    const personalSection = document.getElementById('personal')!;
+    const personalList = document.getElementById('personal-list')!;
+    const jumpSelect = document.getElementById('jump') as HTMLSelectElement;
+    const personalOption = document.createElement('option');
+    personalOption.value = 'personal';
+    personalOption.textContent = "📌 Personal PWA's";
+
+    function buildPersonal() {
+      personalList.textContent = '';
+      const counts = readOpens();
+      for (const slug of Object.keys(counts).filter((s) => counts[s] >= 2)) {
+        const original = document.querySelector<HTMLElement>(
+          `[data-app][data-slug="${slug}"]`
+        );
+        if (!original) continue; // app no longer in the catalog
+        const clone = original.cloneNode(true) as HTMLElement;
+        const remove = document.createElement('button');
+        remove.className = 'remove-personal';
+        remove.textContent = '✕';
+        remove.title = "Remove from Personal PWA's";
+        remove.setAttribute('aria-label', `Remove ${slug} from Personal PWA's`);
+        remove.addEventListener('click', () => {
+          const c = readOpens();
+          delete c[slug];
+          writeOpens(c);
+          clone.remove();
+          syncPersonalVisibility();
+          collectCards();
+        });
+        clone.append(remove);
+        personalList.append(clone);
+      }
+      syncPersonalVisibility();
+    }
+
+    function syncPersonalVisibility() {
+      const has = personalList.children.length > 0;
+      personalSection.hidden = !has;
+      const present = jumpSelect.querySelector('option[value="personal"]');
+      if (has && !present) jumpSelect.insertBefore(personalOption, jumpSelect.options[1]);
+      if (!has && present) present.remove();
+    }
+
+    buildPersonal();
+
+    // Count opens from the list rows (each app link opens in a new tab, so
+    // this page stays alive to record the click).
+    document.addEventListener('click', (e) => {
+      const link = (e.target as HTMLElement).closest<HTMLElement>('[data-app] .row-main');
+      if (!link) return;
+      const slug = link.closest<HTMLElement>('[data-app]')!.dataset.slug!;
+      const c = readOpens();
+      c[slug] = (c[slug] ?? 0) + 1;
+      writeOpens(c);
+      if (c[slug] === 2) {
+        buildPersonal();
+        collectCards();
+        applyFilters();
+      }
+    });
+
     const input = document.getElementById('search') as HTMLInputElement;
-    const cards = [...document.querySelectorAll<HTMLElement>('[data-app]')];
+    let cards = [...document.querySelectorAll<HTMLElement>('[data-app]')];
+    const collectCards = () => {
+      cards = [...document.querySelectorAll<HTMLElement>('[data-app]')];
+    };
     const sections = [...document.querySelectorAll<HTMLElement>('[data-category-section]')];
     const chips = [...document.querySelectorAll<HTMLButtonElement>('.filter-chip[data-cap]')];
     const statusChips = [...document.querySelectorAll<HTMLButtonElement>('.filter-chip[data-status]')];
