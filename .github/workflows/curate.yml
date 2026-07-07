@@ -1,0 +1,106 @@
+name: Curate catalog
+
+# Personal curator tool: only people with write access to this repo (i.e. the
+# owner) can run it. Actions tab -> "Curate catalog" -> "Run workflow".
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: What to do
+        required: true
+        type: choice
+        options:
+          - add
+          - remove
+          - verify
+          - unverify
+          - set-score
+          - spotlight-on
+          - spotlight-off
+      app:
+        description: 'App: web address (for add) or name/slug (for everything else)'
+        required: true
+        type: string
+      name:
+        description: 'Display name (add only; taken from the app''s manifest if blank)'
+        type: string
+      category:
+        description: 'Category (add only; Utilities if blank)'
+        type: choice
+        options:
+          - ''
+          - Productivity
+          - Creative & Design
+          - Media & Entertainment
+          - Social & Messaging
+          - Developer Tools
+          - Utilities
+          - Games & Leisure
+          - Shopping & Lifestyle
+          - News & Weather
+          - Education
+          - Business & Finance
+          - Health & Lifestyle
+      tagline:
+        description: 'One-line tagline (add only; taken from the manifest if blank)'
+        type: string
+      score:
+        description: 'Popularity 0-100 (set-score; optional starting score for add)'
+        type: string
+      mark_verified:
+        description: 'Grant the verified badge? (add only)'
+        type: choice
+        options:
+          - 'no'
+          - 'yes'
+        default: 'no'
+
+permissions:
+  contents: write
+  actions: write # to kick the Pages deploy after committing
+
+concurrency:
+  group: curate
+  cancel-in-progress: false
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Apply curation
+        env:
+          ACTION: ${{ inputs.action }}
+          APP: ${{ inputs.app }}
+          NAME: ${{ inputs.name }}
+          CATEGORY: ${{ inputs.category }}
+          TAGLINE: ${{ inputs.tagline }}
+          SCORE: ${{ inputs.score }}
+          MARK_VERIFIED: ${{ inputs.mark_verified }}
+        run: node scripts/curate.mjs
+
+      - name: Commit and deploy
+        env:
+          ACTION: ${{ inputs.action }}
+          APP: ${{ inputs.app }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet; then
+            echo "Catalog unchanged; nothing to deploy."
+            exit 0
+          fi
+          git config user.name "PWA Finder curator"
+          git config user.email "actions@users.noreply.github.com"
+          git add src/data/apps.json
+          git commit -m "Curate: $ACTION $APP"
+          git push
+          # Pushes made with the workflow token don't trigger the on-push
+          # deploy, so kick it explicitly.
+          gh workflow run "Deploy to GitHub Pages" --ref main
+          echo "Committed and started the site deploy."
