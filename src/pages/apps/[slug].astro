@@ -67,8 +67,34 @@ const screenshots: { src: string; label?: string }[] =
       <button class="btn vote-btn" id="vote-btn" hidden>
         👍 Useful · <span id="vote-count">…</span>
       </button>
+      <button class="btn warn-btn" id="warn-btn" hidden>⚠ Report a problem</button>
       <a class="btn" href="/">← Back to home</a>
     </div>
+
+    <form class="comment-box warn-form" id="warn-form" hidden>
+      <p><strong>Report a problem with {app.name}</strong> — goes privately to the curator, who reviews every report.</p>
+      <fieldset id="warn-reasons">
+        <label><input type="checkbox" value="broken" /> Doesn't load or is broken</label>
+        <label><input type="checkbox" value="misleading" /> Misleading — not what it claims to be</label>
+        <label><input type="checkbox" value="permissions" /> Asks for permissions it shouldn't need</label>
+        <label><input type="checkbox" value="scam" /> Suspected scam or phishing</label>
+        <label><input type="checkbox" value="adult" /> Adult content</label>
+        <label><input type="checkbox" value="ads" /> Excessive ads or an immediate paywall</label>
+      </fieldset>
+      <textarea
+        id="warn-comment"
+        minlength="10"
+        maxlength="500"
+        rows="3"
+        required
+        placeholder="Required: describe what you saw (at least 10 characters)"
+      ></textarea>
+      <div class="actions">
+        <button class="btn primary" type="submit">Send report</button>
+        <button class="btn" type="button" id="warn-cancel">Cancel</button>
+      </div>
+      <p class="note" id="warn-status" hidden></p>
+    </form>
 
     <div class="comment-box" id="comment-box" hidden>
       <textarea
@@ -138,6 +164,31 @@ const screenshots: { src: string; label?: string }[] =
     const commentList = document.getElementById('comment-list');
     if (sb.url && sb.key && btn) {
       const headers = { apikey: sb.key, authorization: `Bearer ${sb.key}` };
+
+      // Immediate suspension: any unprocessed warning pulls the app pending
+      // curator review (checked live, so no rebuild is needed to suspend or
+      // restore). The Open button is disabled and a notice shown.
+      fetch(
+        `${sb.url}/rest/v1/suspended_apps?app_slug=eq.${encodeURIComponent(slug)}`,
+        { headers }
+      )
+        .then((r) => r.json())
+        .then((rows) => {
+          if (!rows.length) return;
+          const open = document.querySelector('.actions .btn.primary');
+          if (open) {
+            open.removeAttribute('href');
+            open.setAttribute('aria-disabled', 'true');
+            open.classList.add('suspended');
+            open.textContent = '⏸ Temporarily suspended';
+          }
+          const notice = document.createElement('p');
+          notice.className = 'note suspend-note';
+          notice.textContent =
+            'This listing is suspended while the curator reviews a community report. It will be restored if the report is not confirmed.';
+          document.querySelector('.actions')?.after(notice);
+        })
+        .catch(() => {});
       const deviceId =
         localStorage.getItem('pwafinder-device') ??
         (() => {
@@ -229,6 +280,54 @@ const screenshots: { src: string; label?: string }[] =
           render();
         } catch {}
         btn.disabled = false;
+      });
+
+      // Problem reports: write-only to the private warnings table (no select
+      // policy — reports are visible only to the curator). One per device per
+      // app; commentary is required.
+      const warnBtn = document.getElementById('warn-btn');
+      const warnForm = document.getElementById('warn-form');
+      const warnComment = document.getElementById('warn-comment');
+      const warnStatus = document.getElementById('warn-status');
+      const warnedKey = 'pwafinder-warned';
+      const warned = () => new Set(JSON.parse(localStorage.getItem(warnedKey) ?? '[]'));
+      warnBtn.hidden = false;
+      if (warned().has(slug)) warnBtn.textContent = '⚠ Problem reported — thanks';
+      warnBtn.addEventListener('click', () => {
+        if (warned().has(slug)) return;
+        warnForm.hidden = !warnForm.hidden;
+      });
+      document.getElementById('warn-cancel').addEventListener('click', () => {
+        warnForm.hidden = true;
+      });
+      warnForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const comment = warnComment.value.trim();
+        if (comment.length < 10) return;
+        const reasons = [...warnForm.querySelectorAll('#warn-reasons input:checked')].map(
+          (c) => c.value
+        );
+        try {
+          const res = await fetch(`${sb.url}/rest/v1/warnings`, {
+            method: 'POST',
+            headers: { ...headers, 'content-type': 'application/json', prefer: 'return=minimal' },
+            body: JSON.stringify({ app_slug: slug, device_id: deviceId, reasons, comment }),
+          });
+          if (res.ok || res.status === 409) {
+            const w = warned();
+            w.add(slug);
+            localStorage.setItem(warnedKey, JSON.stringify([...w]));
+            warnForm.hidden = true;
+            warnBtn.textContent = '⚠ Problem reported — thanks';
+            warnStatus.hidden = true;
+          } else {
+            warnStatus.textContent = 'Could not send the report — please try again later.';
+            warnStatus.hidden = false;
+          }
+        } catch {
+          warnStatus.textContent = 'Could not send the report — please try again later.';
+          warnStatus.hidden = false;
+        }
       });
     }
   </script>

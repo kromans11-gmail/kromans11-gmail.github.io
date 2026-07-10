@@ -1,0 +1,99 @@
+name: Weekly listing check
+
+# Re-verify every catalog listing once a week (the daily publish only checks
+# incoming apps, never the existing list). Applies results automatically:
+# stamps lastChecked on every app and revokes the verified badge on hard
+# failures (unreachable, HTTP error, off-domain redirect); an issue is opened
+# so the curator can decide whether to fix the URL or remove the listing.
+
+on:
+  schedule:
+    # 06:00 UTC every Monday
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  actions: write # to kick the Pages deploy after committing
+
+concurrency:
+  group: curate # shares the catalog-write lock with the publish workflows
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Re-check all listings and apply results
+        id: check
+        continue-on-error: true
+        run: npm run check -- --apply | tee check-report.txt
+
+      - name: Commit and deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- src/data/apps.json; then
+            echo "Catalog unchanged; nothing to deploy."
+            exit 0
+          fi
+          git config user.name "Web App Finder curator"
+          git config user.email "actions@users.noreply.github.com"
+          git add src/data/apps.json
+          git commit -m "Weekly check: $(date -u +%Y-%m-%d)"
+          git push
+          gh workflow run "Deploy to GitHub Pages" --ref main
+
+      # Advisory reputation sweep: with a (free) urlscan.io API key configured,
+      # every listing gets a fresh scan. Malicious verdicts open their own
+      # issue for review on the curator's safe machine; they never auto-remove.
+      - name: urlscan.io reputation sweep
+        id: urlscan
+        continue-on-error: true
+        env:
+          URLSCAN_API_KEY: ${{ secrets.URLSCAN_API_KEY }}
+        run: |
+          if [ -z "$URLSCAN_API_KEY" ]; then
+            echo "URLSCAN_API_KEY not set; skipping the reputation sweep."
+            exit 0
+          fi
+          node scripts/urlscan-check.mjs --all
+
+      - name: Open an issue on malicious verdicts
+        if: steps.urlscan.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --repo "$GITHUB_REPOSITORY" \
+            --title "⚠️ urlscan flagged listed app(s) as malicious ($(date -u +%Y-%m-%d))" \
+            --body-file urlscan-report.md
+
+      - name: Open an issue on hard failures
+        if: steps.check.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "The weekly verification re-check found hard failures (unreachable listing, HTTP error, or off-domain redirect). Verified badges on those apps were revoked automatically."
+            echo
+            echo "Decide per app: fix its URL, or remove it with the \"Curate catalog\" workflow."
+            echo
+            echo '```'
+            grep -A2 'FAIL' check-report.txt || true
+            echo '```'
+            echo
+            echo "Full run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          } > issue-body.md
+          gh issue create --repo "$GITHUB_REPOSITORY" \
+            --title "Weekly listing check: hard failures ($(date -u +%Y-%m-%d))" \
+            --body-file issue-body.md

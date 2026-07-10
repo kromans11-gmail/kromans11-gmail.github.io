@@ -85,6 +85,50 @@ async function interactionsBetween(from, to) {
   return [...votes, ...subs].sort((a, b) => a.time - b.time);
 }
 
+// Warnings are handled outside the vote/submission stream: every one is
+// emailed immediately with an unmissable subject (never capped, never
+// batched into the hourly summary) and opens an app-warning GitHub issue.
+async function warningsBetween(fromIso, toIso) {
+  const q = `${SUPABASE_URL}/rest/v1/warnings?select=app_slug,created_at,reasons,comment&created_at=gte.${fromIso}&created_at=lt.${toIso}&order=created_at.asc`;
+  const res = await fetch(q, { headers: sbHeaders });
+  if (!res.ok) throw new Error(`warnings fetch: HTTP ${res.status}`);
+  return res.json();
+}
+
+async function openWarningIssue(name, slug, w) {
+  if (!GH) return null;
+  const res = await fetch(`https://api.github.com/repos/${REPO}/issues`, {
+    method: 'POST',
+    headers: {
+      accept: 'application/vnd.github+json',
+      'user-agent': 'pwa-finder-notify',
+      authorization: `Bearer ${GH}`,
+      'content-type': 'application/json',
+    },
+    body: JSON.stringify({
+      title: `⚠️ Warning reported: ${name}`,
+      labels: ['app-warning'],
+      body: [
+        `A community member reported a problem with **${name}** (\`${slug}\`).`,
+        '',
+        `- Problems flagged: ${w.reasons?.length ? w.reasons.join(', ') : 'none checked'}`,
+        `- Report: “${w.comment}”`,
+        `- When: ${w.created_at}`,
+        '',
+        '**Process on your safe machine/VM** (urlscan.io first, then a snapshot-reverted VM):',
+        `- Listing: https://webappfinder.app/apps/${slug}/`,
+        '- If bad: remove via the "Curate catalog" workflow (action: remove).',
+        '- If fine: mark the warning processed in Supabase and close this issue.',
+      ].join('\n'),
+    }),
+  });
+  if (!res.ok) {
+    console.error(`warning issue: HTTP ${res.status}`);
+    return null;
+  }
+  return (await res.json()).html_url;
+}
+
 let voteTotals = new Map();
 try {
   const res = await fetch(`${SUPABASE_URL}/rest/v1/vote_counts?select=app_slug,votes`, {
@@ -127,6 +171,29 @@ const save = async (subject, body) => {
   await writeFile(new URL(`${String(n).padStart(3, '0')}.eml`, OUT), email(subject, body));
   console.log(`queued: ${subject}`);
 };
+
+// Warnings first: every one, immediately, uncapped, unmissable subject.
+for (const w of await warningsBetween(windowStart.toISOString(), now.toISOString())) {
+  const name = appName.get(w.app_slug) ?? w.app_slug;
+  const issueUrl = await openWarningIssue(name, w.app_slug, w);
+  await save(
+    `⚠️ APP WARNING: ${name} — needs your review`,
+    [
+      'A community member reported a problem with a listed app.',
+      '',
+      `App: ${name} (${w.app_slug})`,
+      `Problems flagged: ${w.reasons?.length ? w.reasons.join(', ') : 'none checked'}`,
+      `Report: “${w.comment}”`,
+      `When: ${w.created_at}`,
+      '',
+      'Process this on your safe machine/VM — urlscan.io first, then a',
+      'snapshot-reverted VM. Nothing is shown publicly until you act.',
+      `Listing: https://webappfinder.app/apps/${w.app_slug}/`,
+      ...(issueUrl ? [`Tracking issue: ${issueUrl}`] : []),
+      'If bad: Curate catalog workflow → remove. If fine: set processed=true in Supabase.',
+    ].join('\n')
+  );
+}
 
 // Individual emails: new interactions in this window, within the hour's first 10.
 const hourSoFar = await interactionsBetween(hourStart, now);

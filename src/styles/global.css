@@ -728,3 +728,40 @@ footer.site {
 .hidden {
   display: none !important;
 }
+
+/* Problem-report form (warnings go privately to the curator). */
+.warn-form {
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  padding: 0.75rem 1rem;
+}
+
+.warn-form fieldset {
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.warn-form fieldset label {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.warn-btn:hover {
+  border-color: var(--warn);
+  color: var(--warn);
+}
+
+.btn.suspended {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.suspend-note {
+  color: var(--warn);
+}

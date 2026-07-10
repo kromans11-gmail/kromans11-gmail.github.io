@@ -7,7 +7,7 @@ on:
 
 permissions:
   contents: read
-  issues: read
+  issues: write # read submissions; open app-warning issues
 
 jobs:
   notify:

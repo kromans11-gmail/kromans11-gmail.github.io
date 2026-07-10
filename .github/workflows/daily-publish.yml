@@ -1,0 +1,73 @@
+name: Daily publish
+
+# Once a day, publish every queued community submission (open issues labeled
+# app-submission + checks-passed). Each app is re-checked at publish time,
+# tagged (category icon, capabilities, screenshots), committed, and deployed;
+# a digest issue gives the curator an after-the-fact review list.
+
+on:
+  schedule:
+    # 09:00 UTC daily — the publish time promised to submitters
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  actions: write # to kick the Pages deploy after committing
+
+concurrency:
+  group: curate # shares the catalog-write lock with the Curate workflow
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Publish the queue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/daily-publish.mjs
+
+      - name: Fetch screenshots for the new apps
+        run: |
+          slugs=$(cat new-slugs.txt)
+          if [ -n "$slugs" ]; then
+            node scripts/fetch-screenshots.mjs $slugs
+          fi
+
+      - name: Commit and deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- src/data; then
+            echo "Catalog unchanged; nothing to deploy."
+            exit 0
+          fi
+          git config user.name "Web App Finder curator"
+          git config user.email "actions@users.noreply.github.com"
+          git add src/data/apps.json src/data/screenshots.json
+          git commit -m "Daily publish: $(date -u +%Y-%m-%d)"
+          git push
+          # Pushes made with the workflow token don't trigger the on-push
+          # deploy, so kick it explicitly.
+          gh workflow run "Deploy to GitHub Pages" --ref main
+          echo "Committed and started the site deploy."
+
+      - name: Post the digest for curator review
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git log -1 --format=%s | grep -q "^Daily publish: $(date -u +%Y-%m-%d)"; then
+            gh issue create --repo "$GITHUB_REPOSITORY" \
+              --title "Daily publish digest ($(date -u +%Y-%m-%d))" \
+              --body-file digest.md
+          else
+            echo "Nothing published today; no digest issue."
+          fi

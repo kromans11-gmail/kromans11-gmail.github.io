@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import AppRow from '../components/AppRow.astro';
 import apps from '../data/apps.json';
 import { CAPABILITY_LABELS } from '../data/capabilities';
+import { SUPABASE } from '../data/supabase';
 
 const usedCaps = new Set(apps.flatMap((app) => app.capabilities));
 const filterCaps = Object.keys(CAPABILITY_LABELS).filter((c) => usedCaps.has(c));
@@ -30,10 +31,22 @@ const featured = Array.from(
 const featuredSlugs = new Set(featured.map((app) => app.slug));
 const highlyUseful = pool.filter((app) => !featuredSlugs.has(app.slug));
 
+// Apps added in the last week live solely on the "New apps" shelf before
+// graduating to their category. The build renders a 14-day candidate window
+// (deploys happen at least weekly); a client script applies the exact 7-day
+// cutoff with the visitor's date and moves graduates to their category, so
+// the shelf stays correct without a rebuild.
+const NEW_APP_DAYS = 7;
+const isNewCandidate = (app: { addedAt?: string }) =>
+  app.addedAt && Date.now() - new Date(app.addedAt).getTime() < 14 * 86400000;
+const newApps = sorted
+  .filter(isNewCandidate)
+  .sort((a, b) => (b.addedAt! < a.addedAt! ? -1 : 1));
+
 // Group into categories, ordered by the total popularity of their apps so the
 // strongest categories appear first.
 const byCategory = new Map<string, typeof sorted>();
-for (const app of sorted) {
+for (const app of sorted.filter((app) => !isNewCandidate(app))) {
   const list = byCategory.get(app.category) ?? [];
   list.push(app);
   byCategory.set(app.category, list);
@@ -67,6 +80,7 @@ const categories = [...byCategory.entries()].sort(
         <option value="" selected>Categories…</option>
         <option value="featured">✨ Featured</option>
         <option value="highly-useful">⭐ Highly Useful</option>
+        {newApps.length > 0 && <option value="new-apps">🆕 New apps</option>}
         {categories.map(([name]) => <option value={catId(name)}>{name}</option>)}
       </select>
     </div>
@@ -108,6 +122,16 @@ const categories = [...byCategory.entries()].sort(
     <h2>⭐ Highly Useful <span class="count">{highlyUseful.length} apps</span></h2>
     <div class="list" id="useful-list">
       {highlyUseful.map((app) => <AppRow app={app} />)}
+    </div>
+  </section>
+
+  <section class="category" id="new-apps" data-category-section hidden={newApps.length === 0}>
+    <h2>
+      🆕 New apps — tell us what you think
+      <span class="count">listed this week · vote or report on each app's Details page</span>
+    </h2>
+    <div class="list" id="new-apps-list">
+      {newApps.map((app) => <AppRow app={app} />)}
     </div>
   </section>
 
@@ -158,6 +182,44 @@ const categories = [...byCategory.entries()].sort(
       for (const slug of poolSlugs) {
         const row = rows.get(slug);
         if (row) (featured.has(slug) ? featuredList : usefulList).append(row);
+      }
+    }
+  </script>
+
+  <script define:vars={{ sb: SUPABASE }}>
+    // Hide rows for apps suspended pending curator review (any unprocessed
+    // community warning suspends; checked live so no rebuild is needed).
+    if (sb.url && sb.key) {
+      fetch(`${sb.url}/rest/v1/suspended_apps?select=app_slug`, {
+        headers: { apikey: sb.key, authorization: `Bearer ${sb.key}` },
+      })
+        .then((r) => r.json())
+        .then((rows) => {
+          for (const { app_slug } of rows) {
+            document
+              .querySelectorAll(`[data-app][data-slug="${CSS.escape(app_slug)}"]`)
+              .forEach((el) => el.remove());
+          }
+        })
+        .catch(() => {});
+    }
+  </script>
+
+  <script>
+    // New-apps shelf: apply the exact 7-day window with the visitor's date.
+    // Rows older than a week graduate to their category section; the shelf
+    // hides itself when empty (build renders a 14-day candidate window).
+    {
+      const shelf = document.getElementById('new-apps');
+      const shelfList = document.getElementById('new-apps-list');
+      if (shelf && shelfList) {
+        const cutoff = Date.now() - 7 * 86400000;
+        for (const row of [...shelfList.children] as HTMLElement[]) {
+          if (new Date(row.dataset.added ?? 0).getTime() >= cutoff) continue;
+          const home = document.querySelector(`#${row.dataset.cat} .list`);
+          if (home) home.append(row);
+        }
+        shelf.hidden = shelfList.children.length === 0;
       }
     }
   </script>

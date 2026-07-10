@@ -6,9 +6,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for contributing! An automated check will run on your submission,
-        and the curator reviews everything before it appears in the directory.
-        Community listings are shown with an "At your own risk" label.
+        Thanks for contributing! An automated check runs on your submission right
+        away; submissions that pass go live at the next daily publish (09:00 UTC)
+        — you'll get a comment here with the live link. Community listings are
+        shown with an "At your own risk" label, and the curator reviews the
+        directory daily; listings that break the content rules are removed.
   - type: input
     id: name
     attributes:
@@ -57,6 +59,19 @@ body:
     attributes:
       label: Longer description (optional)
       description: A sentence or two more for the app's details page.
+  - type: checkboxes
+    id: capabilities
+    attributes:
+      label: Capabilities (optional)
+      description: Check the badges that apply — they're shown on the listing. ("Works offline" is also detected automatically.)
+      options:
+        - label: Works offline
+        - label: Push notifications
+        - label: No account required
+        - label: Lightweight
+        - label: Media key support
+        - label: Local file access
+        - label: Uses location
   - type: checkboxes
     id: rules
     attributes:

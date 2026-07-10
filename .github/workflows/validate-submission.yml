@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   validate:
-    if: contains(github.event.issue.labels.*.name, 'app-submission')
+    if: contains(github.event.issue.labels.*.name, 'app-submission') && github.event.issue.state == 'open'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -34,13 +34,36 @@ jobs:
           URL: ${{ steps.extract.outputs.url }}
         run: node scripts/validate-submission.mjs "$URL" | tee report.md
 
+      - name: urlscan.io reputation check
+        id: scan
+        continue-on-error: true
+        env:
+          URLSCAN_API_KEY: ${{ secrets.URLSCAN_API_KEY }}
+          URL: ${{ steps.extract.outputs.url }}
+        run: |
+          if [ -z "$URLSCAN_API_KEY" ]; then
+            echo "- ℹ️ urlscan.io reputation check skipped (no API key configured)" >> report.md
+            exit 0
+          fi
+          if node scripts/urlscan-check.mjs "$URL"; then
+            echo "- ✅ urlscan.io: no malicious verdict (advisory, not proof of safety)" >> report.md
+          else
+            echo "- ❌ urlscan.io flagged this URL as **malicious** — the curator will review" >> report.md
+            exit 1
+          fi
+
       - name: Post results on the issue
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE: ${{ github.event.issue.number }}
         run: |
+          if [ "${{ steps.check.outcome }}" = "success" ] && [ "${{ steps.scan.outcome }}" = "success" ]; then
+            printf '\n⏳ **Queued for publication.** New apps go live once a day at 09:00 UTC — this submission is in the next batch. You will get a comment here with the live link.\n' >> report.md
+          else
+            printf '\n✏️ Fix the problems above and **edit this issue** — the checks re-run automatically on every edit.\n' >> report.md
+          fi
           gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body-file report.md
-          if [ "${{ steps.check.outcome }}" = "success" ]; then
+          if [ "${{ steps.check.outcome }}" = "success" ] && [ "${{ steps.scan.outcome }}" = "success" ]; then
             gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --add-label checks-passed --remove-label checks-failed 2>/dev/null || \
             gh issue edit "$ISSUE" --repo "$GITHUB_REPOSITORY" --add-label checks-passed
           else

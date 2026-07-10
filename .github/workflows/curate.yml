@@ -45,6 +45,12 @@ on:
       tagline:
         description: 'One-line tagline (add only; taken from the manifest if blank)'
         type: string
+      capabilities:
+        description: 'Comma-separated capability keys (add only; e.g. offline,no-account)'
+        type: string
+      icon:
+        description: 'Emoji icon (add only; 🌐 if blank)'
+        type: string
       score:
         description: 'Popularity 0-100 (set-score; optional starting score for add)'
         type: string
@@ -81,6 +87,8 @@ jobs:
           NAME: ${{ inputs.name }}
           CATEGORY: ${{ inputs.category }}
           TAGLINE: ${{ inputs.tagline }}
+          CAPABILITIES: ${{ inputs.capabilities }}
+          ICON: ${{ inputs.icon }}
           SCORE: ${{ inputs.score }}
           MARK_VERIFIED: ${{ inputs.mark_verified }}
         run: node scripts/curate.mjs

@@ -9,7 +9,9 @@
  * render as a screenshot strip. Images are hotlinked from the app's own
  * origin, not copied — re-run this script to refresh.
  *
- * Usage: npm run screenshots
+ * Usage: npm run screenshots            refresh every app (rewrites the file)
+ *        npm run screenshots -- <slug>… only the named apps (merges into the
+ *                                       existing file, other apps untouched)
  */
 import { readFile, writeFile } from 'node:fs/promises';
 
@@ -74,10 +76,21 @@ async function forApp(app) {
   }
 }
 
-const apps = JSON.parse(await readFile(APPS_PATH, 'utf8'));
+const onlySlugs = process.argv.slice(2).filter((a) => !a.startsWith('-'));
+let apps = JSON.parse(await readFile(APPS_PATH, 'utf8'));
+if (onlySlugs.length) {
+  const missing = onlySlugs.filter((s) => !apps.some((a) => a.slug === s));
+  if (missing.length) {
+    console.error(`No such app slug(s): ${missing.join(', ')}`);
+    process.exit(1);
+  }
+  apps = apps.filter((a) => onlySlugs.includes(a.slug));
+}
 console.log(`Checking manifests of ${apps.length} apps for screenshots…`);
 
-const out = {};
+const out = onlySlugs.length
+  ? JSON.parse(await readFile(OUT_PATH, 'utf8').catch(() => '{}'))
+  : {};
 for (let i = 0; i < apps.length; i += 8) {
   const batch = apps.slice(i, i + 8);
   const results = await Promise.all(batch.map(forApp));

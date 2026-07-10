@@ -11,6 +11,11 @@
  *   NAME           optional display name (add)
  *   CATEGORY       optional category (add); defaults to Utilities
  *   TAGLINE        optional one-line tagline (add)
+ *   DESCRIPTION    optional longer description (add); falls back to the
+ *                  manifest description, then the tagline
+ *   CAPABILITIES   optional comma-separated capability keys (add); must be
+ *                  keys defined in src/data/capabilities.ts
+ *   ICON           optional emoji icon (add); defaults to 🌐
  *   SCORE          popularity 0-100 (set-score; optional starting score for add)
  *   MARK_VERIFIED  yes | no (add); default no
  *
@@ -20,6 +25,14 @@
 import { readFile, writeFile, appendFile } from 'node:fs/promises';
 
 const APPS_PATH = new URL('../src/data/apps.json', import.meta.url);
+const CAPABILITIES_PATH = new URL('../src/data/capabilities.ts', import.meta.url);
+
+// Capability keys are defined once, in src/data/capabilities.ts.
+async function knownCapabilities() {
+  const src = await readFile(CAPABILITIES_PATH, 'utf8');
+  return [...src.matchAll(/^\s*'?([a-z-]+)'?:\s*'/gm)].map((m) => m[1]);
+}
+
 const CATEGORIES = [
   'Productivity',
   'Creative & Design',
@@ -198,19 +211,30 @@ switch (action) {
       env('TAGLINE') || manifest.description || `Installable web app at ${domain}.`;
     const score = parseScore(false);
     if (score === null) await fail('**score** must be a number from 0 to 100.');
+    const known = await knownCapabilities();
+    const capabilities = env('CAPABILITIES')
+      ? env('CAPABILITIES').split(',').map((c) => c.trim()).filter(Boolean)
+      : [];
+    const unknown = capabilities.filter((c) => !known.includes(c));
+    if (unknown.length) {
+      await fail(
+        `Unknown capabilities: ${unknown.join(', ')}. Choose from: ${known.join(', ')}.`
+      );
+    }
     apps.push({
       slug,
       name,
       url,
       category,
       tagline,
-      description: manifest.description || tagline,
+      description: env('DESCRIPTION') || manifest.description || tagline,
       popularity: score ?? 40,
-      capabilities: [],
-      icon: '🌐',
+      capabilities,
+      icon: env('ICON') || '🌐',
       spotlight: false,
       verified: env('MARK_VERIFIED') === 'yes',
       lastChecked: today(),
+      addedAt: today(), // drives the "New apps" shelf (first week after listing)
     });
     say(`✅ Added **${name}** (\`${slug}\`) to **${category}**, score ${score ?? 40}, ` +
         (env('MARK_VERIFIED') === 'yes' ? 'verified.' : 'at your own risk.'));

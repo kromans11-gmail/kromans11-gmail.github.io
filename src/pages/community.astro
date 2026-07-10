@@ -29,11 +29,11 @@ const categories = [...byCategory.entries()].sort((a, b) => b[1].length - a[1].l
     <p>
       Apps contributed by the community. These listings are
       <strong>not verified</strong> by Web App Finder — an automated check
-      confirms they're live and installable, and the curator reviews every
-      submission, but we can't vouch for the publisher. Use them as you would
-      any unknown website: check the address bar before signing in or
-      granting permissions. See <a href="/verification/">how verification
-      works</a>.
+      confirms they're live and installable before they're published, and the
+      curator reviews the directory daily, but we can't vouch for the
+      publisher. Use them as you would any unknown website: check the address
+      bar before signing in or granting permissions. See
+      <a href="/verification/">how verification works</a>.
     </p>
     <div class="actions" style="justify-content: center;">
       <a class="btn primary" href={SUBMIT_URL} target="_blank" rel="noopener">
@@ -43,8 +43,11 @@ const categories = [...byCategory.entries()].sort((a, b) => b[1].length - a[1].l
     </div>
     <p class="note">
       Submitting takes a free GitHub account. Your app is checked
-      automatically (HTTPS, real domain, installable) and reviewed by the
-      curator before it appears. No adult or dating content; nothing illegal.
+      automatically (HTTPS, real domain, installable) and, if it passes, goes
+      live at the next daily publish (09:00 UTC). No adult or dating content;
+      nothing illegal — the curator reviews new listings daily and removes
+      what breaks the rules. Want to hear about new apps? Subscribe to the
+      <a href="/feed.xml">new-listings feed</a> with any feed reader.
     </p>
   </section>
 
@@ -89,6 +92,25 @@ const categories = [...byCategory.entries()].sort((a, b) => b[1].length - a[1].l
                   (votes.get(b.dataset.slug) ?? 0) - (votes.get(a.dataset.slug) ?? 0)
               )
               .forEach((row) => list.append(row));
+          }
+        })
+        .catch(() => {});
+    }
+  </script>
+
+  <script define:vars={{ sb: SUPABASE }}>
+    // Hide rows for apps suspended pending curator review (any unprocessed
+    // community warning suspends; checked live so no rebuild is needed).
+    if (sb.url && sb.key) {
+      fetch(`${sb.url}/rest/v1/suspended_apps?select=app_slug`, {
+        headers: { apikey: sb.key, authorization: `Bearer ${sb.key}` },
+      })
+        .then((r) => r.json())
+        .then((rows) => {
+          for (const { app_slug } of rows) {
+            document
+              .querySelectorAll(`[data-app][data-slug="${CSS.escape(app_slug)}"]`)
+              .forEach((el) => el.remove());
           }
         })
         .catch(() => {});
