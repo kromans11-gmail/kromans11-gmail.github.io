@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { GOATCOUNTER } from '../data/goatcounter';
 
 interface Props {
   title: string;
@@ -23,6 +24,22 @@ const { title, description } = Astro.props;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Web App Finder — new apps"
+      href="/feed.xml"
+    />
+    {
+      GOATCOUNTER && (
+        <script
+          is:inline
+          data-goatcounter={GOATCOUNTER}
+          async
+          src="https://gc.zgo.at/count.js"
+        />
+      )
+    }
   </head>
   <body>
     <div class="offline-banner">You're offline — showing the cached catalog.</div>
