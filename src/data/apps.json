@@ -5,13 +5,13 @@
     "url": "https://www.photopea.com",
     "category": "Creative & Design",
     "tagline": "A full Photoshop-class image editor that runs entirely in your browser.",
-    "description": "Photopea opens PSD, XCF, Sketch, and RAW files and offers layers, masks, smart objects, and filters \u2014 no download, no account. It is one of the strongest demonstrations of what a PWA can do, matching desktop software feature-for-feature.",
+    "description": "Photopea opens PSD, XCF, Sketch, and RAW files and offers layers, masks, smart objects, and filters — no download, no account. It is one of the strongest demonstrations of what a PWA can do, matching desktop software feature-for-feature.",
     "popularity": 95,
     "capabilities": [
       "offline",
       "no-account"
     ],
-    "icon": "\ud83c\udfa8",
+    "icon": "🎨",
     "highlyUseful": true,
     "spotlight": true,
     "verified": true
@@ -27,7 +27,7 @@
     "capabilities": [
       "media-keys"
     ],
-    "icon": "\ud83c\udfa7",
+    "icon": "🎧",
     "highlyUseful": false,
     "spotlight": true,
     "verified": true
@@ -45,7 +45,7 @@
       "no-account",
       "lightweight"
     ],
-    "icon": "\u270f\ufe0f",
+    "icon": "✏️",
     "highlyUseful": true,
     "spotlight": true,
     "verified": true
@@ -62,7 +62,7 @@
       "media-keys",
       "push"
     ],
-    "icon": "\ud83c\udfb5",
+    "icon": "🎵",
     "spotlight": false,
     "verified": true
   },
@@ -71,13 +71,13 @@
     "name": "Pinterest",
     "url": "https://www.pinterest.com",
     "category": "Social & Messaging",
-    "tagline": "Visual discovery and bookmarking \u2014 one of the original PWA success stories.",
+    "tagline": "Visual discovery and bookmarking — one of the original PWA success stories.",
     "description": "Pinterest's PWA rebuild famously increased engagement by 60% and became a canonical case study. It offers the full pin, board, and discovery experience with push notifications and a fast, app-like feel.",
     "popularity": 89,
     "capabilities": [
       "push"
     ],
-    "icon": "\ud83d\udccc",
+    "icon": "📌",
     "spotlight": false,
     "verified": true
   },
@@ -92,7 +92,7 @@
     "capabilities": [
       "push"
     ],
-    "icon": "\u2708\ufe0f",
+    "icon": "✈️",
     "spotlight": true,
     "verified": true
   },
@@ -108,7 +108,7 @@
       "offline",
       "file-system"
     ],
-    "icon": "\ud83d\udcbb",
+    "icon": "💻",
     "spotlight": false,
     "verified": true
   },
@@ -118,14 +118,14 @@
     "url": "https://squoosh.app",
     "category": "Utilities",
     "tagline": "Compress and convert images with instant side-by-side comparison.",
-    "description": "Squoosh, built by the Chrome team, compresses images to WebP, AVIF, MozJPEG and more \u2014 entirely on-device, so nothing is uploaded. It works fully offline and weighs almost nothing.",
+    "description": "Squoosh, built by the Chrome team, compresses images to WebP, AVIF, MozJPEG and more — entirely on-device, so nothing is uploaded. It works fully offline and weighs almost nothing.",
     "popularity": 85,
     "capabilities": [
       "offline",
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\udddc\ufe0f",
+    "icon": "🗜️",
     "spotlight": true,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -142,7 +142,7 @@
       "offline",
       "push"
     ],
-    "icon": "\u2705",
+    "icon": "✅",
     "spotlight": true,
     "verified": true
   },
@@ -157,7 +157,7 @@
     "capabilities": [
       "no-account"
     ],
-    "icon": "\u26a1",
+    "icon": "⚡",
     "spotlight": false,
     "verified": true
   },
@@ -173,7 +173,7 @@
       "lightweight",
       "geolocation"
     ],
-    "icon": "\ud83d\ude97",
+    "icon": "🚗",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -183,14 +183,14 @@
     "name": "Starbucks",
     "url": "https://app.starbucks.com",
     "category": "Shopping & Lifestyle",
-    "tagline": "Browse the menu and order ahead \u2014 even while offline.",
+    "tagline": "Browse the menu and order ahead — even while offline.",
     "description": "The Starbucks PWA lets customers browse the menu, customize drinks, and build orders offline, syncing when a connection returns. It is roughly 99% smaller than the iOS app and doubled daily active web users.",
     "popularity": 78,
     "capabilities": [
       "offline",
       "lightweight"
     ],
-    "icon": "\u2615",
+    "icon": "☕",
     "spotlight": false,
     "verified": true
   },
@@ -207,7 +207,7 @@
       "no-account",
       "lightweight"
     ],
-    "icon": "\u2328\ufe0f",
+    "icon": "⌨️",
     "spotlight": false,
     "verified": true
   },
@@ -224,7 +224,7 @@
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83e\ude90",
+    "icon": "🪐",
     "spotlight": false,
     "verified": true
   },
@@ -240,7 +240,7 @@
       "media-keys",
       "no-account"
     ],
-    "icon": "\u25b6\ufe0f",
+    "icon": "▶️",
     "spotlight": false,
     "verified": true
   },
@@ -249,13 +249,13 @@
     "name": "X (Twitter)",
     "url": "https://x.com",
     "category": "Social & Messaging",
-    "tagline": "The full X/Twitter experience \u2014 the original 'Twitter Lite' PWA.",
+    "tagline": "The full X/Twitter experience — the original 'Twitter Lite' PWA.",
     "description": "X's web app descends from Twitter Lite, one of the most influential PWAs ever shipped. Timeline, posting, DMs, and push notifications, in a fraction of the native app's size.",
     "popularity": 93,
     "capabilities": [
       "push"
     ],
-    "icon": "\ud83d\udc26",
+    "icon": "🐦",
     "spotlight": false,
     "verified": true
   },
@@ -270,7 +270,7 @@
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83c\udfac",
+    "icon": "🎬",
     "spotlight": false,
     "verified": true
   },
@@ -285,7 +285,7 @@
     "capabilities": [
       "push"
     ],
-    "icon": "\ud83d\udc19",
+    "icon": "🐙",
     "spotlight": false,
     "verified": true
   },
@@ -300,7 +300,7 @@
     "capabilities": [
       "push"
     ],
-    "icon": "\ud83e\udd89",
+    "icon": "🦉",
     "spotlight": false,
     "verified": true
   },
@@ -316,7 +316,7 @@
       "media-keys",
       "no-account"
     ],
-    "icon": "\ud83d\udd0a",
+    "icon": "🔊",
     "spotlight": false,
     "verified": true
   },
@@ -326,12 +326,12 @@
     "url": "https://www.chess.com",
     "category": "Games & Leisure",
     "tagline": "Play chess online with millions of players, puzzles, and lessons.",
-    "description": "Chess.com's web app is installable and offers live games, daily correspondence chess, tactics puzzles, and lessons \u2014 the complete experience without the native app.",
+    "description": "Chess.com's web app is installable and offers live games, daily correspondence chess, tactics puzzles, and lessons — the complete experience without the native app.",
     "popularity": 81,
     "capabilities": [
       "push"
     ],
-    "icon": "\u265f\ufe0f",
+    "icon": "♟️",
     "spotlight": false,
     "verified": true
   },
@@ -347,7 +347,7 @@
       "no-account",
       "lightweight"
     ],
-    "icon": "\u265e",
+    "icon": "♞",
     "spotlight": false,
     "verified": true
   },
@@ -360,7 +360,7 @@
     "description": "Replit is a full development environment in a tab: editors, terminals, package management, and one-click hosting. Installing the PWA makes it feel like a desktop IDE.",
     "popularity": 78,
     "capabilities": [],
-    "icon": "\ud83d\udee0\ufe0f",
+    "icon": "🛠️",
     "spotlight": false,
     "verified": true
   },
@@ -377,7 +377,7 @@
       "no-account",
       "file-system"
     ],
-    "icon": "\ud83d\udcca",
+    "icon": "📊",
     "spotlight": false,
     "verified": true
   },
@@ -387,13 +387,13 @@
     "url": "https://weather.com",
     "category": "News & Weather",
     "tagline": "Forecasts, radar, and severe-weather alerts on the web.",
-    "description": "weather.com is an installable PWA with local forecasts, interactive radar maps, and severe-weather alerts \u2014 one of the early large-scale PWA deployments.",
+    "description": "weather.com is an installable PWA with local forecasts, interactive radar maps, and severe-weather alerts — one of the early large-scale PWA deployments.",
     "popularity": 77,
     "capabilities": [
       "geolocation",
       "push"
     ],
-    "icon": "\u26c5",
+    "icon": "⛅",
     "spotlight": false,
     "verified": true
   },
@@ -408,7 +408,7 @@
     "capabilities": [
       "push"
     ],
-    "icon": "\ud83d\udc18",
+    "icon": "🐘",
     "spotlight": false,
     "verified": true
   },
@@ -424,7 +424,7 @@
       "geolocation",
       "no-account"
     ],
-    "icon": "\ud83c\udf2c\ufe0f",
+    "icon": "🌬️",
     "spotlight": false,
     "verified": true
   },
@@ -440,7 +440,7 @@
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\udd8a\ufe0f",
+    "icon": "🖊️",
     "spotlight": false,
     "verified": true
   },
@@ -455,7 +455,7 @@
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83d\uddbc\ufe0f",
+    "icon": "🖼️",
     "spotlight": false,
     "verified": true
   },
@@ -465,13 +465,13 @@
     "url": "https://play2048.co",
     "category": "Games & Leisure",
     "tagline": "The original tile-sliding puzzle game by its creator.",
-    "description": "Gabriele Cirulli's original 2048 \u2014 slide tiles, merge numbers, chase the 2048 tile. The official site is a tiny installable PWA, perfect for offline commutes.",
+    "description": "Gabriele Cirulli's original 2048 — slide tiles, merge numbers, chase the 2048 tile. The official site is a tiny installable PWA, perfect for offline commutes.",
     "popularity": 68,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\udd22",
+    "icon": "🔢",
     "spotlight": false,
     "verified": true
   },
@@ -486,7 +486,7 @@
     "capabilities": [
       "offline"
     ],
-    "icon": "\ud83d\udcf0",
+    "icon": "📰",
     "spotlight": false,
     "verified": true
   },
@@ -502,7 +502,7 @@
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83e\uddf0",
+    "icon": "🧰",
     "spotlight": false,
     "verified": true
   },
@@ -512,13 +512,13 @@
     "url": "https://mail.google.com",
     "category": "Productivity",
     "tagline": "Google's email service, installable with offline support.",
-    "description": "Gmail installs as a PWA with search, labels, and offline access to recent mail. Our automated verification can't see past its sign-in page, so it carries the at-your-own-risk label \u2014 check that the address is mail.google.com before signing in.",
+    "description": "Gmail installs as a PWA with search, labels, and offline access to recent mail. Our automated verification can't see past its sign-in page, so it carries the at-your-own-risk label — check that the address is mail.google.com before signing in.",
     "popularity": 92,
     "capabilities": [
       "push",
       "offline"
     ],
-    "icon": "\u2709\ufe0f",
+    "icon": "✉️",
     "spotlight": false,
     "verified": "unverifiable",
     "lastChecked": "2026-07-07"
@@ -534,7 +534,7 @@
     "capabilities": [
       "push"
     ],
-    "icon": "\ud83d\udcf7",
+    "icon": "📷",
     "spotlight": false,
     "verified": false
   },
@@ -544,12 +544,12 @@
     "url": "https://web.whatsapp.com",
     "category": "Social & Messaging",
     "tagline": "WhatsApp messaging paired to your phone, in the browser.",
-    "description": "WhatsApp Web mirrors your phone's chats with full messaging, media, and calls in supported browsers. It refuses automated requests, so it can't be machine-verified \u2014 pair only at web.whatsapp.com.",
+    "description": "WhatsApp Web mirrors your phone's chats with full messaging, media, and calls in supported browsers. It refuses automated requests, so it can't be machine-verified — pair only at web.whatsapp.com.",
     "popularity": 90,
     "capabilities": [
       "push"
     ],
-    "icon": "\ud83d\udcac",
+    "icon": "💬",
     "spotlight": false,
     "verified": false
   },
@@ -564,7 +564,7 @@
     "capabilities": [
       "push"
     ],
-    "icon": "\ud83c\udfad",
+    "icon": "🎭",
     "spotlight": false,
     "verified": false
   },
@@ -577,7 +577,7 @@
     "description": "Google Photos works as a PWA for browsing, searching, and lightly editing your photo library. Automated verification can't see past its sign-in page.",
     "popularity": 84,
     "capabilities": [],
-    "icon": "\ud83c\udf05",
+    "icon": "🌅",
     "spotlight": false,
     "verified": false
   },
@@ -593,7 +593,7 @@
       "push",
       "offline"
     ],
-    "icon": "\ud83d\udcc5",
+    "icon": "📅",
     "spotlight": false,
     "verified": false
   },
@@ -608,7 +608,7 @@
     "capabilities": [
       "geolocation"
     ],
-    "icon": "\ud83c\udfa5",
+    "icon": "🎥",
     "spotlight": false,
     "verified": false
   },
@@ -623,7 +623,7 @@
     "capabilities": [
       "push"
     ],
-    "icon": "\ud83e\udd8b",
+    "icon": "🦋",
     "spotlight": false,
     "verified": false
   },
@@ -632,13 +632,13 @@
     "name": "Flipkart",
     "url": "https://www.flipkart.com",
     "category": "Shopping & Lifestyle",
-    "tagline": "India's biggest online store \u2014 home of the famous Flipkart Lite PWA.",
+    "tagline": "India's biggest online store — home of the famous Flipkart Lite PWA.",
     "description": "Flipkart Lite was the case study that put PWAs on the map for e-commerce. The current site no longer exposes its manifest to automated tools, so it carries the at-your-own-risk label.",
     "popularity": 74,
     "capabilities": [
       "lightweight"
     ],
-    "icon": "\ud83d\uded2",
+    "icon": "🛒",
     "spotlight": false,
     "verified": false
   },
@@ -654,7 +654,7 @@
       "lightweight",
       "no-account"
     ],
-    "icon": "\ud83d\udc69\u200d\ud83d\udcbb",
+    "icon": "👩‍💻",
     "spotlight": false,
     "verified": false
   },
@@ -669,7 +669,7 @@
     "capabilities": [
       "media-keys"
     ],
-    "icon": "\ud83c\udf99\ufe0f",
+    "icon": "🎙️",
     "spotlight": false,
     "verified": false
   },
@@ -684,7 +684,7 @@
     "capabilities": [
       "media-keys"
     ],
-    "icon": "\ud83c\udf0a",
+    "icon": "🌊",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -695,10 +695,10 @@
     "url": "https://bitmidi.com",
     "category": "Media & Entertainment",
     "tagline": "Listen to a huge archive of free MIDI files.",
-    "description": "Listen to a huge archive of free MIDI files. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Listen to a huge archive of free MIDI files. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 60,
     "capabilities": [],
-    "icon": "\ud83c\udfb9",
+    "icon": "🎹",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -709,10 +709,10 @@
     "url": "https://joybox.rosano.ca",
     "category": "Media & Entertainment",
     "tagline": "A pinboard for audiovisual media.",
-    "description": "A pinboard for audiovisual media. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "A pinboard for audiovisual media. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 42,
     "capabilities": [],
-    "icon": "\ud83d\udcfb",
+    "icon": "📻",
     "spotlight": false,
     "verified": false
   },
@@ -722,10 +722,10 @@
     "url": "https://lofimusic.app/",
     "category": "Media & Entertainment",
     "tagline": "Relaxing lo-fi internet radio stations in one click.",
-    "description": "Relaxing lo-fi internet radio stations in one click. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Relaxing lo-fi internet radio stations in one click. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 52,
     "capabilities": [],
-    "icon": "\ud83c\udfa7",
+    "icon": "🎧",
     "spotlight": false,
     "verified": false
   },
@@ -735,10 +735,10 @@
     "url": "https://www.omnicamapp.com/",
     "category": "Media & Entertainment",
     "tagline": "Live streaming webcams around the world.",
-    "description": "Live streaming webcams around the world. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Live streaming webcams around the world. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 45,
     "capabilities": [],
-    "icon": "\ud83c\udfa6",
+    "icon": "🎦",
     "spotlight": false,
     "verified": false
   },
@@ -748,10 +748,10 @@
     "url": "https://www.soundslice.com",
     "category": "Media & Entertainment",
     "tagline": "Interactive sheet music that plays in sync with recordings.",
-    "description": "Interactive sheet music that plays in sync with recordings. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Interactive sheet music that plays in sync with recordings. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 68,
     "capabilities": [],
-    "icon": "\ud83c\udfbc",
+    "icon": "🎼",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -761,11 +761,11 @@
     "name": "VideoTrim",
     "url": "https://videotrim.app",
     "category": "Utilities",
-    "tagline": "Trim videos right in the browser \u2014 nothing gets uploaded.",
-    "description": "Trim videos right in the browser \u2014 nothing gets uploaded. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "tagline": "Trim videos right in the browser — nothing gets uploaded.",
+    "description": "Trim videos right in the browser — nothing gets uploaded. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 48,
     "capabilities": [],
-    "icon": "\u2702\ufe0f",
+    "icon": "✂️",
     "spotlight": false,
     "verified": false
   },
@@ -775,10 +775,10 @@
     "url": "https://remove-audio.com",
     "category": "Utilities",
     "tagline": "Strip soundtracks from videos locally with WebAssembly.",
-    "description": "Strip soundtracks from videos locally with WebAssembly. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Strip soundtracks from videos locally with WebAssembly. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 46,
     "capabilities": [],
-    "icon": "\ud83d\udd07",
+    "icon": "🔇",
     "spotlight": false,
     "verified": false
   },
@@ -788,10 +788,10 @@
     "url": "https://farmos.app/",
     "category": "Business & Finance",
     "tagline": "Open-source farm record keeping.",
-    "description": "Open-source farm record keeping. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Open-source farm record keeping. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 50,
     "capabilities": [],
-    "icon": "\ud83d\ude9c",
+    "icon": "🚜",
     "spotlight": false,
     "verified": false
   },
@@ -801,10 +801,10 @@
     "url": "https://justinvoice.netlify.app/app",
     "category": "Business & Finance",
     "tagline": "An invoice manager that works completely offline in the browser.",
-    "description": "An invoice manager that works completely offline in the browser. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "An invoice manager that works completely offline in the browser. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 42,
     "capabilities": [],
-    "icon": "\ud83e\uddfe",
+    "icon": "🧾",
     "spotlight": false,
     "verified": false
   },
@@ -814,10 +814,10 @@
     "url": "https://moneytracker.cc/",
     "category": "Business & Finance",
     "tagline": "Track personal finances in a simple web app.",
-    "description": "Track personal finances in a simple web app. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Track personal finances in a simple web app. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 48,
     "capabilities": [],
-    "icon": "\ud83d\udcb0",
+    "icon": "💰",
     "spotlight": false,
     "verified": false
   },
@@ -826,11 +826,11 @@
     "name": "Vaulted",
     "url": "https://vaultedworth.com",
     "category": "Business & Finance",
-    "tagline": "Local-first net worth tracker \u2014 no account, no bank sync, no server.",
-    "description": "Local-first net worth tracker \u2014 no account, no bank sync, no server. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "tagline": "Local-first net worth tracker — no account, no bank sync, no server.",
+    "description": "Local-first net worth tracker — no account, no bank sync, no server. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 44,
     "capabilities": [],
-    "icon": "\ud83c\udfe6",
+    "icon": "🏦",
     "spotlight": false,
     "verified": false
   },
@@ -840,10 +840,10 @@
     "url": "https://www.mtgstocks.com/news",
     "category": "Games & Leisure",
     "tagline": "Price tracker for Magic: The Gathering cards.",
-    "description": "Price tracker for Magic: The Gathering cards. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Price tracker for Magic: The Gathering cards. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 52,
     "capabilities": [],
-    "icon": "\ud83c\udccf",
+    "icon": "🃏",
     "spotlight": false,
     "verified": false
   },
@@ -853,10 +853,10 @@
     "url": "https://rydeen.app/",
     "category": "Productivity",
     "tagline": "Task management for individuals.",
-    "description": "Task management for individuals. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Task management for individuals. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 40,
     "capabilities": [],
-    "icon": "\ud83d\uddd3\ufe0f",
+    "icon": "🗓️",
     "spotlight": false,
     "verified": false
   },
@@ -866,10 +866,10 @@
     "url": "https://splittypie.com",
     "category": "Business & Finance",
     "tagline": "Split group expenses with friends, no sign-up needed.",
-    "description": "Split group expenses with friends, no sign-up needed. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Split group expenses with friends, no sign-up needed. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 50,
     "capabilities": [],
-    "icon": "\ud83e\udd67",
+    "icon": "🥧",
     "spotlight": false,
     "verified": false
   },
@@ -878,11 +878,11 @@
     "name": "Chitchatter",
     "url": "https://chitchatter.im/",
     "category": "Social & Messaging",
-    "tagline": "Secure peer-to-peer chat \u2014 serverless, decentralized, ephemeral.",
-    "description": "Secure peer-to-peer chat \u2014 serverless, decentralized, ephemeral. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "tagline": "Secure peer-to-peer chat — serverless, decentralized, ephemeral.",
+    "description": "Secure peer-to-peer chat — serverless, decentralized, ephemeral. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 55,
     "capabilities": [],
-    "icon": "\ud83d\udd75\ufe0f",
+    "icon": "🕵️",
     "spotlight": false,
     "verified": false
   },
@@ -892,10 +892,10 @@
     "url": "https://emberclear.io",
     "category": "Social & Messaging",
     "tagline": "Encrypted chat with no history and no logs.",
-    "description": "Encrypted chat with no history and no logs. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Encrypted chat with no history and no logs. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 45,
     "capabilities": [],
-    "icon": "\ud83d\udd10",
+    "icon": "🔐",
     "spotlight": false,
     "verified": false
   },
@@ -905,10 +905,10 @@
     "url": "https://3dhouseplanner.com/app2.php",
     "category": "Creative & Design",
     "tagline": "Free 3D floor planner in the browser.",
-    "description": "Free 3D floor planner in the browser. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Free 3D floor planner in the browser. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 46,
     "capabilities": [],
-    "icon": "\ud83c\udfe0",
+    "icon": "🏠",
     "spotlight": false,
     "verified": false
   },
@@ -918,10 +918,10 @@
     "url": "https://bundle.js.org/",
     "category": "Developer Tools",
     "tagline": "Bundle, minify, and compress JavaScript projects online.",
-    "description": "Bundle, minify, and compress JavaScript projects online. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Bundle, minify, and compress JavaScript projects online. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 55,
     "capabilities": [],
-    "icon": "\ud83d\udce6",
+    "icon": "📦",
     "spotlight": false,
     "verified": false
   },
@@ -931,10 +931,10 @@
     "url": "https://colorbeta.com",
     "category": "Creative & Design",
     "tagline": "Advanced CSS gradient generator.",
-    "description": "Advanced CSS gradient generator. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Advanced CSS gradient generator. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 48,
     "capabilities": [],
-    "icon": "\ud83c\udf08",
+    "icon": "🌈",
     "spotlight": false,
     "verified": false
   },
@@ -944,10 +944,10 @@
     "url": "https://devdocs.io/",
     "category": "Developer Tools",
     "tagline": "Fast, offline-capable API documentation browser for 100+ projects.",
-    "description": "Fast, offline-capable API documentation browser for 100+ projects. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Fast, offline-capable API documentation browser for 100+ projects. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 74,
     "capabilities": [],
-    "icon": "\ud83d\udcda",
+    "icon": "📚",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -958,10 +958,10 @@
     "url": "https://launchlet.dev",
     "category": "Developer Tools",
     "tagline": "Customize any website with your own JavaScript or CSS.",
-    "description": "Customize any website with your own JavaScript or CSS. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Customize any website with your own JavaScript or CSS. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 40,
     "capabilities": [],
-    "icon": "\ud83d\ude80",
+    "icon": "🚀",
     "spotlight": false,
     "verified": false
   },
@@ -971,10 +971,10 @@
     "url": "https://pixelcraft.web.app",
     "category": "Creative & Design",
     "tagline": "Simple pixel-art editor with animation support.",
-    "description": "Simple pixel-art editor with animation support. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Simple pixel-art editor with animation support. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 45,
     "capabilities": [],
-    "icon": "\ud83d\udfe9",
+    "icon": "🟩",
     "spotlight": false,
     "verified": false
   },
@@ -984,10 +984,10 @@
     "url": "https://regex101.com/",
     "category": "Developer Tools",
     "tagline": "Build, test, and debug regular expressions with live explanations.",
-    "description": "Build, test, and debug regular expressions with live explanations. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Build, test, and debug regular expressions with live explanations. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 76,
     "capabilities": [],
-    "icon": "\ud83d\udd0d",
+    "icon": "🔍",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -998,10 +998,10 @@
     "url": "https://themer.dev",
     "category": "Developer Tools",
     "tagline": "Generate matching themes for your editor, terminal, and wallpaper.",
-    "description": "Generate matching themes for your editor, terminal, and wallpaper. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Generate matching themes for your editor, terminal, and wallpaper. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 50,
     "capabilities": [],
-    "icon": "\ud83c\udfa8",
+    "icon": "🎨",
     "spotlight": false,
     "verified": false
   },
@@ -1011,10 +1011,10 @@
     "url": "https://www.booksie.org/",
     "category": "Education",
     "tagline": "An open catalog of free picture storybooks for children.",
-    "description": "An open catalog of free picture storybooks for children. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "An open catalog of free picture storybooks for children. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 50,
     "capabilities": [],
-    "icon": "\ud83d\udcd6",
+    "icon": "📖",
     "spotlight": false,
     "verified": false
   },
@@ -1024,10 +1024,10 @@
     "url": "https://epubplayer.com",
     "category": "Education",
     "tagline": "Turn EPUB books into audiobooks with in-browser text-to-speech.",
-    "description": "Turn EPUB books into audiobooks with in-browser text-to-speech. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Turn EPUB books into audiobooks with in-browser text-to-speech. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 46,
     "capabilities": [],
-    "icon": "\ud83c\udfa7",
+    "icon": "🎧",
     "spotlight": false,
     "verified": false
   },
@@ -1036,11 +1036,11 @@
     "name": "Swahili Dictionary",
     "url": "https://swahili-dictionary.com/",
     "category": "Education",
-    "tagline": "Offline Swahili\u2013English dictionary.",
-    "description": "Offline Swahili\u2013English dictionary. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "tagline": "Offline Swahili–English dictionary.",
+    "description": "Offline Swahili–English dictionary. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 42,
     "capabilities": [],
-    "icon": "\ud83d\udde3\ufe0f",
+    "icon": "🗣️",
     "spotlight": false,
     "verified": false
   },
@@ -1050,10 +1050,10 @@
     "url": "https://unalengua.com/ipa",
     "category": "Education",
     "tagline": "Translate text into IPA phonetic notation.",
-    "description": "Translate text into IPA phonetic notation. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Translate text into IPA phonetic notation. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 44,
     "capabilities": [],
-    "icon": "\ud83d\udd24",
+    "icon": "🔤",
     "spotlight": false,
     "verified": false
   },
@@ -1063,10 +1063,10 @@
     "url": "https://www.worddb.com",
     "category": "Education",
     "tagline": "Word finder, thesaurus, crossword solver, and rhyme finder.",
-    "description": "Word finder, thesaurus, crossword solver, and rhyme finder. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Word finder, thesaurus, crossword solver, and rhyme finder. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 48,
     "capabilities": [],
-    "icon": "\ud83d\udcd4",
+    "icon": "📔",
     "spotlight": false,
     "verified": false
   },
@@ -1075,11 +1075,11 @@
     "name": "Air Horner",
     "url": "https://airhorner.com/",
     "category": "Games & Leisure",
-    "tagline": "The classic one-button air horn \u2014 a beloved PWA demo.",
-    "description": "The classic one-button air horn \u2014 a beloved PWA demo. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "tagline": "The classic one-button air horn — a beloved PWA demo.",
+    "description": "The classic one-button air horn — a beloved PWA demo. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 58,
     "capabilities": [],
-    "icon": "\ud83d\udce2",
+    "icon": "📢",
     "spotlight": false,
     "verified": false
   },
@@ -1089,10 +1089,10 @@
     "url": "https://cybercar.pages.dev",
     "category": "Games & Leisure",
     "tagline": "Free neon arcade survival game with boss battles and leaderboards.",
-    "description": "Free neon arcade survival game with boss battles and leaderboards. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Free neon arcade survival game with boss battles and leaderboards. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 42,
     "capabilities": [],
-    "icon": "\ud83c\udfce\ufe0f",
+    "icon": "🏎️",
     "spotlight": false,
     "verified": false
   },
@@ -1102,10 +1102,10 @@
     "url": "https://nikochan.utcode.net",
     "category": "Games & Leisure",
     "tagline": "Simple and cute rhythm game where anyone can create charts.",
-    "description": "Simple and cute rhythm game where anyone can create charts. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Simple and cute rhythm game where anyone can create charts. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 40,
     "capabilities": [],
-    "icon": "\ud83c\udfb6",
+    "icon": "🎶",
     "spotlight": false,
     "verified": false
   },
@@ -1115,10 +1115,10 @@
     "url": "https://www.farmhand.life/",
     "category": "Games & Leisure",
     "tagline": "A resource-management farming game that fits in your pocket.",
-    "description": "A resource-management farming game that fits in your pocket. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "A resource-management farming game that fits in your pocket. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 48,
     "capabilities": [],
-    "icon": "\ud83c\udf3e",
+    "icon": "🌾",
     "spotlight": false,
     "verified": false
   },
@@ -1128,10 +1128,10 @@
     "url": "https://match-a-movie.com/",
     "category": "Games & Leisure",
     "tagline": "Swipe through movies with friends to find one everyone wants to watch.",
-    "description": "Swipe through movies with friends to find one everyone wants to watch. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Swipe through movies with friends to find one everyone wants to watch. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 44,
     "capabilities": [],
-    "icon": "\ud83c\udfac",
+    "icon": "🎬",
     "spotlight": false,
     "verified": false
   },
@@ -1141,10 +1141,10 @@
     "url": "https://murlok.io/",
     "category": "Games & Leisure",
     "tagline": "Class guides and builds for World of Warcraft.",
-    "description": "Class guides and builds for World of Warcraft. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Class guides and builds for World of Warcraft. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 50,
     "capabilities": [],
-    "icon": "\u2694\ufe0f",
+    "icon": "⚔️",
     "spotlight": false,
     "verified": false
   },
@@ -1153,11 +1153,11 @@
     "name": "Pokedex",
     "url": "https://pokedex.org/",
     "category": "Games & Leisure",
-    "tagline": "A famously fast offline Pok\u00e9dex and early PWA showcase.",
-    "description": "A famously fast offline Pok\u00e9dex and early PWA showcase. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "tagline": "A famously fast offline Pokédex and early PWA showcase.",
+    "description": "A famously fast offline Pokédex and early PWA showcase. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 62,
     "capabilities": [],
-    "icon": "\ud83d\udd34",
+    "icon": "🔴",
     "spotlight": false,
     "verified": false
   },
@@ -1167,10 +1167,10 @@
     "url": "https://slitherlinks.com",
     "category": "Games & Leisure",
     "tagline": "1900+ Slitherlink puzzles with daily challenges.",
-    "description": "1900+ Slitherlink puzzles with daily challenges. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "1900+ Slitherlink puzzles with daily challenges. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 44,
     "capabilities": [],
-    "icon": "\ud83e\udde9",
+    "icon": "🧩",
     "spotlight": false,
     "verified": false
   },
@@ -1180,10 +1180,10 @@
     "url": "https://soodoku.com/",
     "category": "Games & Leisure",
     "tagline": "Clean sudoku that works offline, without ads.",
-    "description": "Clean sudoku that works offline, without ads. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Clean sudoku that works offline, without ads. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 46,
     "capabilities": [],
-    "icon": "9\ufe0f\u20e3",
+    "icon": "9️⃣",
     "spotlight": false,
     "verified": false
   },
@@ -1193,10 +1193,10 @@
     "url": "https://aerko.app",
     "category": "Health & Lifestyle",
     "tagline": "Offline-first fitness and nutrition tracker with on-device AI.",
-    "description": "Offline-first fitness and nutrition tracker with on-device AI. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Offline-first fitness and nutrition tracker with on-device AI. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 40,
     "capabilities": [],
-    "icon": "\ud83c\udfcb\ufe0f",
+    "icon": "🏋️",
     "spotlight": false,
     "verified": false
   },
@@ -1206,10 +1206,10 @@
     "url": "https://carecards.io",
     "category": "Health & Lifestyle",
     "tagline": "Gentle prompt cards for self-care and reflection.",
-    "description": "Gentle prompt cards for self-care and reflection. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Gentle prompt cards for self-care and reflection. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 40,
     "capabilities": [],
-    "icon": "\ud83e\udef6",
+    "icon": "🫶",
     "spotlight": false,
     "verified": false
   },
@@ -1219,10 +1219,10 @@
     "url": "https://catsafefoods.com",
     "category": "Health & Lifestyle",
     "tagline": "Check whether a food is safe to share with your cat.",
-    "description": "Check whether a food is safe to share with your cat. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Check whether a food is safe to share with your cat. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 44,
     "capabilities": [],
-    "icon": "\ud83d\udc31",
+    "icon": "🐱",
     "spotlight": false,
     "verified": false
   },
@@ -1232,10 +1232,10 @@
     "url": "https://dogsafefoods.com",
     "category": "Health & Lifestyle",
     "tagline": "Check whether a food is safe to share with your dog.",
-    "description": "Check whether a food is safe to share with your dog. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Check whether a food is safe to share with your dog. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 44,
     "capabilities": [],
-    "icon": "\ud83d\udc36",
+    "icon": "🐶",
     "spotlight": false,
     "verified": false
   },
@@ -1245,10 +1245,10 @@
     "url": "https://veganify.app",
     "category": "Health & Lifestyle",
     "tagline": "Check if a product is vegan by name or barcode.",
-    "description": "Check if a product is vegan by name or barcode. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Check if a product is vegan by name or barcode. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 46,
     "capabilities": [],
-    "icon": "\ud83c\udf31",
+    "icon": "🌱",
     "spotlight": false,
     "verified": false
   },
@@ -1258,10 +1258,10 @@
     "url": "https://brutalisthackernews.com",
     "category": "News & Weather",
     "tagline": "A Hacker News reader with a brutalist, retro-computing look.",
-    "description": "A Hacker News reader with a brutalist, retro-computing look. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "A Hacker News reader with a brutalist, retro-computing look. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 48,
     "capabilities": [],
-    "icon": "\ud83d\udcdf",
+    "icon": "📟",
     "spotlight": false,
     "verified": false
   },
@@ -1271,10 +1271,10 @@
     "url": "https://www.computerbase.de/",
     "category": "News & Weather",
     "tagline": "One of Germany's biggest technology news sites.",
-    "description": "One of Germany's biggest technology news sites. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "One of Germany's biggest technology news sites. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 52,
     "capabilities": [],
-    "icon": "\ud83d\udda5\ufe0f",
+    "icon": "🖥️",
     "spotlight": false,
     "verified": false
   },
@@ -1284,23 +1284,10 @@
     "url": "https://www.qireader.com/",
     "category": "News & Weather",
     "tagline": "A modern web RSS reader.",
-    "description": "A modern web RSS reader. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "A modern web RSS reader. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 50,
     "capabilities": [],
-    "icon": "\ud83d\udce5",
-    "spotlight": false,
-    "verified": false
-  },
-  {
-    "slug": "digikala",
-    "name": "Digikala",
-    "url": "https://www.digikala.com/",
-    "category": "Shopping & Lifestyle",
-    "tagline": "Iran's largest online retailer, long a PWA flagship.",
-    "description": "Iran's largest online retailer, long a PWA flagship. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
-    "popularity": 55,
-    "capabilities": [],
-    "icon": "\ud83d\udecd\ufe0f",
+    "icon": "📥",
     "spotlight": false,
     "verified": false
   },
@@ -1310,10 +1297,10 @@
     "url": "https://www.housing.com",
     "category": "Shopping & Lifestyle",
     "tagline": "Real-estate search across India.",
-    "description": "Real-estate search across India. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Real-estate search across India. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 50,
     "capabilities": [],
-    "icon": "\ud83c\udfd8\ufe0f",
+    "icon": "🏘️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -1324,10 +1311,10 @@
     "url": "https://versus.com/en",
     "category": "Shopping & Lifestyle",
     "tagline": "Side-by-side spec comparisons for consumer electronics.",
-    "description": "Side-by-side spec comparisons for consumer electronics. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Side-by-side spec comparisons for consumer electronics. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 52,
     "capabilities": [],
-    "icon": "\u2696\ufe0f",
+    "icon": "⚖️",
     "spotlight": false,
     "verified": false
   },
@@ -1337,10 +1324,10 @@
     "url": "https://alarmdj.com",
     "category": "Utilities",
     "tagline": "Online alarm clock that wakes you with MP3s or YouTube.",
-    "description": "Online alarm clock that wakes you with MP3s or YouTube. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Online alarm clock that wakes you with MP3s or YouTube. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 44,
     "capabilities": [],
-    "icon": "\u23f0",
+    "icon": "⏰",
     "spotlight": false,
     "verified": false
   },
@@ -1350,10 +1337,10 @@
     "url": "https://anonynote.org",
     "category": "Utilities",
     "tagline": "Anonymous, account-free note taking.",
-    "description": "Anonymous, account-free note taking. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Anonymous, account-free note taking. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 42,
     "capabilities": [],
-    "icon": "\ud83d\udcdd",
+    "icon": "📝",
     "spotlight": false,
     "verified": false
   },
@@ -1363,10 +1350,10 @@
     "url": "https://bulkpictools.com",
     "category": "Utilities",
     "tagline": "Privacy-first bulk image optimizer that runs in your browser.",
-    "description": "Privacy-first bulk image optimizer that runs in your browser. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Privacy-first bulk image optimizer that runs in your browser. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 44,
     "capabilities": [],
-    "icon": "\ud83d\uddbc\ufe0f",
+    "icon": "🖼️",
     "spotlight": false,
     "verified": false
   },
@@ -1376,10 +1363,10 @@
     "url": "https://gpacalculator.io",
     "category": "Education",
     "tagline": "Calculate your college GPA.",
-    "description": "Calculate your college GPA. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Calculate your college GPA. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 44,
     "capabilities": [],
-    "icon": "\ud83c\udf93",
+    "icon": "🎓",
     "spotlight": false,
     "verified": false
   },
@@ -1389,10 +1376,10 @@
     "url": "https://mconverter.eu",
     "category": "Utilities",
     "tagline": "Online converter for hundreds of file formats.",
-    "description": "Online converter for hundreds of file formats. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Online converter for hundreds of file formats. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 48,
     "capabilities": [],
-    "icon": "\ud83d\udd04",
+    "icon": "🔄",
     "spotlight": false,
     "verified": false
   },
@@ -1401,11 +1388,11 @@
     "name": "OmniConvert",
     "url": "https://tools.sagasu.art",
     "category": "Utilities",
-    "tagline": "Open-source file and unit converter \u2014 100% client-side.",
-    "description": "Open-source file and unit converter \u2014 100% client-side. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "tagline": "Open-source file and unit converter — 100% client-side.",
+    "description": "Open-source file and unit converter — 100% client-side. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 42,
     "capabilities": [],
-    "icon": "\u267b\ufe0f",
+    "icon": "♻️",
     "spotlight": false,
     "verified": false
   },
@@ -1415,10 +1402,10 @@
     "url": "https://www.nanocell-csv.com/",
     "category": "Utilities",
     "tagline": "Lightweight open-source CSV viewer and editor.",
-    "description": "Lightweight open-source CSV viewer and editor. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Lightweight open-source CSV viewer and editor. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 42,
     "capabilities": [],
-    "icon": "\ud83d\udcd1",
+    "icon": "📑",
     "spotlight": false,
     "verified": false
   },
@@ -1428,10 +1415,10 @@
     "url": "https://vault.passky.org/",
     "category": "Utilities",
     "tagline": "Free and open-source password manager.",
-    "description": "Free and open-source password manager. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Free and open-source password manager. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 50,
     "capabilities": [],
-    "icon": "\ud83d\udd11",
+    "icon": "🔑",
     "spotlight": false,
     "verified": false
   },
@@ -1441,10 +1428,10 @@
     "url": "https://pasteepad.com/",
     "category": "Utilities",
     "tagline": "Free and simple notepad app.",
-    "description": "Free and simple notepad app. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Free and simple notepad app. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 42,
     "capabilities": [],
-    "icon": "\ud83d\uddd2\ufe0f",
+    "icon": "🗒️",
     "spotlight": false,
     "verified": false
   },
@@ -1453,11 +1440,11 @@
     "name": "PDFGem",
     "url": "https://pdfgem.io/",
     "category": "Utilities",
-    "tagline": "Merge, split, compress, OCR, and sign PDFs \u2014 all client-side.",
-    "description": "Merge, split, compress, OCR, and sign PDFs \u2014 all client-side. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "tagline": "Merge, split, compress, OCR, and sign PDFs — all client-side.",
+    "description": "Merge, split, compress, OCR, and sign PDFs — all client-side. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 50,
     "capabilities": [],
-    "icon": "\ud83d\udcc4",
+    "icon": "📄",
     "spotlight": false,
     "verified": false
   },
@@ -1467,10 +1454,10 @@
     "url": "https://pomotimer.com/",
     "category": "Productivity",
     "tagline": "A clean Pomodoro technique timer.",
-    "description": "A clean Pomodoro technique timer. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "A clean Pomodoro technique timer. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 48,
     "capabilities": [],
-    "icon": "\ud83c\udf45",
+    "icon": "🍅",
     "spotlight": false,
     "verified": false
   },
@@ -1480,10 +1467,10 @@
     "url": "https://ppresume.com/",
     "category": "Productivity",
     "tagline": "A LaTeX-based resume builder with beautiful typesetting.",
-    "description": "A LaTeX-based resume builder with beautiful typesetting. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "A LaTeX-based resume builder with beautiful typesetting. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 44,
     "capabilities": [],
-    "icon": "\ud83d\udcc4",
+    "icon": "📄",
     "spotlight": false,
     "verified": false
   },
@@ -1493,10 +1480,10 @@
     "url": "https://qrcodescan.in/",
     "category": "Utilities",
     "tagline": "Scan QR codes using your camera, right from the browser.",
-    "description": "Scan QR codes using your camera, right from the browser. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Scan QR codes using your camera, right from the browser. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 50,
     "capabilities": [],
-    "icon": "\ud83d\udcf1",
+    "icon": "📱",
     "spotlight": false,
     "verified": false
   },
@@ -1506,10 +1493,10 @@
     "url": "https://app.super-productivity.com",
     "category": "Productivity",
     "tagline": "Open-source to-do list and time tracker with Jira/GitHub sync.",
-    "description": "Open-source to-do list and time tracker with Jira/GitHub sync. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Open-source to-do list and time tracker with Jira/GitHub sync. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 70,
     "capabilities": [],
-    "icon": "\u2611\ufe0f",
+    "icon": "☑️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1520,10 +1507,10 @@
     "url": "https://www.tale-forge.com/",
     "category": "Creative & Design",
     "tagline": "Creative-writing studio with book, manga, and screenplay editors.",
-    "description": "Creative-writing studio with book, manga, and screenplay editors. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Creative-writing studio with book, manga, and screenplay editors. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 44,
     "capabilities": [],
-    "icon": "\ud83d\udcdc",
+    "icon": "📜",
     "spotlight": false,
     "verified": false
   },
@@ -1533,10 +1520,10 @@
     "url": "https://vizua.io/",
     "category": "Utilities",
     "tagline": "91 client-side image tools: compress, convert, upscale, OCR.",
-    "description": "91 client-side image tools: compress, convert, upscale, OCR. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "91 client-side image tools: compress, convert, upscale, OCR. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 46,
     "capabilities": [],
-    "icon": "\ud83e\ude84",
+    "icon": "🪄",
     "spotlight": false,
     "verified": false
   },
@@ -1546,10 +1533,10 @@
     "url": "https://wormhole.app/",
     "category": "Utilities",
     "tagline": "Share files up to 10 GB with end-to-end encryption.",
-    "description": "Share files up to 10 GB with end-to-end encryption. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Share files up to 10 GB with end-to-end encryption. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 72,
     "capabilities": [],
-    "icon": "\ud83d\udd73\ufe0f",
+    "icon": "🕳️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1560,10 +1547,10 @@
     "url": "https://ztable.io/",
     "category": "Education",
     "tagline": "Z-table lookup and z-score calculator.",
-    "description": "Z-table lookup and z-score calculator. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Z-table lookup and z-score calculator. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 40,
     "capabilities": [],
-    "icon": "\ud83d\udcc8",
+    "icon": "📈",
     "spotlight": false,
     "verified": false
   },
@@ -1573,10 +1560,10 @@
     "url": "https://closerinti.me",
     "category": "Games & Leisure",
     "tagline": "Discover which historical events are surprisingly close in time.",
-    "description": "Discover which historical events are surprisingly close in time. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "Discover which historical events are surprisingly close in time. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 46,
     "capabilities": [],
-    "icon": "\u23f3",
+    "icon": "⏳",
     "spotlight": false,
     "verified": false
   },
@@ -1586,10 +1573,10 @@
     "url": "https://whatpwacando.today/",
     "category": "Developer Tools",
     "tagline": "A live showcase of every capability PWAs have today.",
-    "description": "A live showcase of every capability PWAs have today. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher \u2014 use at your own risk.",
+    "description": "A live showcase of every capability PWAs have today. Community-sourced listing (found via the awesome-pwa list on GitHub); Web App Finder has not verified the publisher — use at your own risk.",
     "popularity": 60,
     "capabilities": [],
-    "icon": "\ud83e\uddea",
+    "icon": "🧪",
     "spotlight": false,
     "verified": false
   },
@@ -1599,12 +1586,12 @@
     "url": "https://cryptpad.fr",
     "category": "Productivity",
     "tagline": "End-to-end encrypted documents, spreadsheets, and kanban boards.",
-    "description": "CryptPad is an open-source office suite where everything is encrypted in your browser before it leaves your device \u2014 the server can't read your documents. Guests can collaborate without an account.",
+    "description": "CryptPad is an open-source office suite where everything is encrypted in your browser before it leaves your device — the server can't read your documents. Guests can collaborate without an account.",
     "popularity": 62,
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83d\udd10",
+    "icon": "🔐",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1618,7 +1605,7 @@
     "description": "ONLYOFFICE DocSpace organizes documents, spreadsheets, and presentations into shared rooms with fine-grained permissions, built on the well-established open-source ONLYOFFICE editors.",
     "popularity": 58,
     "capabilities": [],
-    "icon": "\ud83d\udcc4",
+    "icon": "📄",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1632,7 +1619,7 @@
     "description": "Grist combines the flexibility of a spreadsheet with the structure of a database. It's open source, supports Python formulas, and can be self-hosted or used in the cloud.",
     "popularity": 55,
     "capabilities": [],
-    "icon": "\ud83d\udcca",
+    "icon": "📊",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1643,14 +1630,14 @@
     "url": "https://app.bangle.io",
     "category": "Productivity",
     "tagline": "Markdown note-taking that saves straight to your local files.",
-    "description": "Bangle.io is an open-source note app that edits Markdown files directly on your device using the browser's file-system access \u2014 your notes never leave your computer.",
+    "description": "Bangle.io is an open-source note app that edits Markdown files directly on your device using the browser's file-system access — your notes never leave your computer.",
     "popularity": 42,
     "capabilities": [
       "no-account",
       "file-system",
       "offline"
     ],
-    "icon": "\ud83d\udcdd",
+    "icon": "📝",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -1664,7 +1651,7 @@
     "description": "Taskade blends to-do lists, structured outlines, and mind maps with real-time collaboration and built-in video chat, syncing across every device.",
     "popularity": 60,
     "capabilities": [],
-    "icon": "\u2705",
+    "icon": "✅",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1678,7 +1665,7 @@
     "description": "Taiga is a long-running open-source project management platform for agile teams, offering backlogs, sprints, kanban boards, and issue tracking.",
     "popularity": 55,
     "capabilities": [],
-    "icon": "\ud83d\udccb",
+    "icon": "📋",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1689,14 +1676,14 @@
     "url": "https://hyperdraft.rosano.ca",
     "category": "Productivity",
     "tagline": "Turn your notes into a lightweight personal website.",
-    "description": "Hyperdraft is a minimalist note-taking tool that doubles as a website generator \u2014 write notes and publish them instantly. Works offline and requires no account.",
+    "description": "Hyperdraft is a minimalist note-taking tool that doubles as a website generator — write notes and publish them instantly. Works offline and requires no account.",
     "popularity": 35,
     "capabilities": [
       "offline",
       "no-account",
       "lightweight"
     ],
-    "icon": "\u270d\ufe0f",
+    "icon": "✍️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -1707,12 +1694,12 @@
     "url": "https://app.notesnook.com",
     "category": "Productivity",
     "tagline": "Private, end-to-end encrypted note-taking that syncs everywhere.",
-    "description": "Notesnook is an open-source notes app with zero-knowledge encryption \u2014 notebooks, tags, and rich-text notes sync across devices without the company being able to read them.",
+    "description": "Notesnook is an open-source notes app with zero-knowledge encryption — notebooks, tags, and rich-text notes sync across devices without the company being able to read them.",
     "popularity": 58,
     "capabilities": [
       "offline"
     ],
-    "icon": "\ud83d\udcd3",
+    "icon": "📓",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1728,7 +1715,7 @@
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83e\udddc",
+    "icon": "🧜",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1742,7 +1729,7 @@
     "description": "Tana organizes notes as a graph of connected outline nodes with 'supertags' that turn plain notes into structured data, plus built-in AI features.",
     "popularity": 52,
     "capabilities": [],
-    "icon": "\ud83e\udde0",
+    "icon": "🧠",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1756,7 +1743,7 @@
     "description": "Linear is a polished project and issue tracking tool known for its speed and keyboard-first design. Its web app installs cleanly as a PWA on the desktop.",
     "popularity": 75,
     "capabilities": [],
-    "icon": "\ud83d\udcd0",
+    "icon": "📐",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1766,11 +1753,11 @@
     "name": "Cal.com",
     "url": "https://cal.com",
     "category": "Productivity",
-    "tagline": "Open-source scheduling \u2014 share a link, get booked.",
+    "tagline": "Open-source scheduling — share a link, get booked.",
     "description": "Cal.com is the open-source alternative to Calendly: share your booking link and let people schedule meetings that respect your availability across calendars.",
     "popularity": 62,
     "capabilities": [],
-    "icon": "\ud83d\udcc5",
+    "icon": "📅",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1781,10 +1768,10 @@
     "url": "https://app.nocodb.com",
     "category": "Productivity",
     "tagline": "Turn any database into a smart spreadsheet interface.",
-    "description": "NocoDB is a popular open-source Airtable alternative that gives databases a friendly spreadsheet, gallery, and form interface \u2014 self-hostable or cloud.",
+    "description": "NocoDB is a popular open-source Airtable alternative that gives databases a friendly spreadsheet, gallery, and form interface — self-hostable or cloud.",
     "popularity": 55,
     "capabilities": [],
-    "icon": "\ud83d\uddc3\ufe0f",
+    "icon": "🗃️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1795,10 +1782,10 @@
     "url": "https://app.affine.pro",
     "category": "Productivity",
     "tagline": "Docs, whiteboards, and databases merged into one canvas.",
-    "description": "AFFiNE is an open-source workspace where a page can be a document, an edgeless whiteboard, or a database \u2014 a privacy-first alternative to Notion and Miro.",
+    "description": "AFFiNE is an open-source workspace where a page can be a document, an edgeless whiteboard, or a database — a privacy-first alternative to Notion and Miro.",
     "popularity": 50,
     "capabilities": [],
-    "icon": "\ud83e\udde9",
+    "icon": "🧩",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1809,12 +1796,12 @@
     "url": "https://anytype.io",
     "category": "Productivity",
     "tagline": "A local-first, encrypted 'everything app' for notes and knowledge.",
-    "description": "Anytype stores your notes, tasks, and collections locally with encryption and peer-to-peer sync \u2014 an offline-first take on the personal knowledge base.",
+    "description": "Anytype stores your notes, tasks, and collections locally with encryption and peer-to-peer sync — an offline-first take on the personal knowledge base.",
     "popularity": 52,
     "capabilities": [
       "offline"
     ],
-    "icon": "\ud83e\ude90",
+    "icon": "🪐",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1825,10 +1812,10 @@
     "url": "https://n8n.io",
     "category": "Developer Tools",
     "tagline": "Connect apps and automate workflows with a visual editor.",
-    "description": "n8n is a leading open-source workflow automation tool \u2014 drag nodes onto a canvas to connect hundreds of services, with the option to self-host everything.",
+    "description": "n8n is a leading open-source workflow automation tool — drag nodes onto a canvas to connect hundreds of services, with the option to self-host everything.",
     "popularity": 65,
     "capabilities": [],
-    "icon": "\ud83d\udd00",
+    "icon": "🔀",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1839,10 +1826,10 @@
     "url": "https://baserow.io",
     "category": "Productivity",
     "tagline": "Open-source no-code database and Airtable alternative.",
-    "description": "Baserow lets you build databases as easily as spreadsheets, with views, forms, and an API \u2014 open source and self-hostable.",
+    "description": "Baserow lets you build databases as easily as spreadsheets, with views, forms, and an API — open source and self-hostable.",
     "popularity": 50,
     "capabilities": [],
-    "icon": "\ud83e\uddf1",
+    "icon": "🧱",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1853,10 +1840,10 @@
     "url": "https://app.element.io",
     "category": "Social & Messaging",
     "tagline": "Secure, decentralized team chat on the Matrix network.",
-    "description": "Element is the flagship client for Matrix, the open, decentralized messaging protocol. End-to-end encrypted chats, rooms, and calls \u2014 no single company controls the network.",
+    "description": "Element is the flagship client for Matrix, the open, decentralized messaging protocol. End-to-end encrypted chats, rooms, and calls — no single company controls the network.",
     "popularity": 65,
     "capabilities": [],
-    "icon": "\ud83d\udcac",
+    "icon": "💬",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1867,10 +1854,10 @@
     "url": "https://pixelfed.social",
     "category": "Social & Messaging",
     "tagline": "Ad-free photo sharing on the open fediverse.",
-    "description": "Pixelfed is a decentralized, open-source photo sharing network \u2014 an Instagram alternative with no ads and no tracking, connected to the wider fediverse.",
+    "description": "Pixelfed is a decentralized, open-source photo sharing network — an Instagram alternative with no ads and no tracking, connected to the wider fediverse.",
     "popularity": 55,
     "capabilities": [],
-    "icon": "\ud83d\udcf8",
+    "icon": "📸",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1880,13 +1867,13 @@
     "name": "Jitsi Meet",
     "url": "https://meet.jit.si",
     "category": "Social & Messaging",
-    "tagline": "Free video meetings \u2014 no account, just share a link.",
+    "tagline": "Free video meetings — no account, just share a link.",
     "description": "Jitsi Meet is the well-known open-source video conferencing service: start an encrypted meeting instantly and invite anyone with a link, no sign-up required.",
     "popularity": 70,
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83c\udfa5",
+    "icon": "🎥",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1900,7 +1887,7 @@
     "description": "Nostter is a community-built client for Nostr, the decentralized social protocol. Listed from a community directory; we could not fully verify the publisher.",
     "popularity": 35,
     "capabilities": [],
-    "icon": "\u26a1",
+    "icon": "⚡",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -1911,10 +1898,10 @@
     "url": "https://web.threema.com",
     "category": "Social & Messaging",
     "tagline": "Use the privacy-focused Threema messenger from your browser.",
-    "description": "Threema Web mirrors the Swiss end-to-end encrypted messenger to your desktop browser \u2014 Threema is one of the most privacy-focused paid messengers available.",
+    "description": "Threema Web mirrors the Swiss end-to-end encrypted messenger to your desktop browser — Threema is one of the most privacy-focused paid messengers available.",
     "popularity": 55,
     "capabilities": [],
-    "icon": "\ud83d\udee1\ufe0f",
+    "icon": "🛡️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1928,7 +1915,7 @@
     "description": "Proton Mail is the widely used end-to-end encrypted email service from Switzerland. The web app installs as a PWA and covers mail, contacts, and calendar.",
     "popularity": 78,
     "capabilities": [],
-    "icon": "\u2709\ufe0f",
+    "icon": "✉️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1942,7 +1929,7 @@
     "description": "HEY, from the makers of Basecamp, rethinks email with a screener for first-time senders, a focused Imbox, and built-in privacy protection against tracking pixels.",
     "popularity": 55,
     "capabilities": [],
-    "icon": "\ud83d\udc4b",
+    "icon": "👋",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1956,7 +1943,7 @@
     "description": "Fastmail is a long-established independent email provider. Its web app is famously quick, works as an installable PWA, and includes calendar and contacts.",
     "popularity": 60,
     "capabilities": [],
-    "icon": "\ud83d\udce7",
+    "icon": "📧",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -1967,10 +1954,10 @@
     "url": "https://lofi.co",
     "category": "Media & Entertainment",
     "tagline": "Chill lo-fi music with customizable ambient scenes.",
-    "description": "Lofi.co plays curated lo-fi streams over animated scenes you can customize with rain, caf\u00e9 noise, and other ambient sounds \u2014 a focus companion for work or study.",
+    "description": "Lofi.co plays curated lo-fi streams over animated scenes you can customize with rain, café noise, and other ambient sounds — a focus companion for work or study.",
     "popularity": 45,
     "capabilities": [],
-    "icon": "\ud83c\udfa7",
+    "icon": "🎧",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -1981,14 +1968,14 @@
     "url": "https://alexgibson.github.io/wavepad/",
     "category": "Media & Entertainment",
     "tagline": "A touch-friendly synthesizer you play in the browser.",
-    "description": "An open-source experimental synth pad \u2014 drag your finger or pointer to bend frequency and filters. Simple, free, and works offline.",
+    "description": "An open-source experimental synth pad — drag your finger or pointer to bend frequency and filters. Simple, free, and works offline.",
     "popularity": 30,
     "capabilities": [
       "offline",
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83c\udfb9",
+    "icon": "🎹",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2004,7 +1991,7 @@
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83c\udf9b\ufe0f",
+    "icon": "🎛️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2015,14 +2002,14 @@
     "url": "https://audiomass.co",
     "category": "Media & Entertainment",
     "tagline": "A full audio editor that runs entirely in your browser.",
-    "description": "AudioMass is an open-source waveform editor \u2014 trim, fade, apply effects, and export audio without uploading anything; processing happens on your device.",
+    "description": "AudioMass is an open-source waveform editor — trim, fade, apply effects, and export audio without uploading anything; processing happens on your device.",
     "popularity": 45,
     "capabilities": [
       "offline",
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83c\udf9a\ufe0f",
+    "icon": "🎚️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2033,10 +2020,10 @@
     "url": "https://bandcamp.com",
     "category": "Media & Entertainment",
     "tagline": "Discover and directly support independent musicians.",
-    "description": "Bandcamp is the leading storefront for independent music \u2014 stream albums for free and buy downloads or merch where most of the money goes to the artists.",
+    "description": "Bandcamp is the leading storefront for independent music — stream albums for free and buy downloads or merch where most of the money goes to the artists.",
     "popularity": 75,
     "capabilities": [],
-    "icon": "\ud83c\udfb5",
+    "icon": "🎵",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2050,7 +2037,7 @@
     "description": "Ambient Mixer lets you blend rain, fireplaces, fantasy taverns, and thousands of other community-made audio atmospheres, with individual volume control per sound.",
     "popularity": 45,
     "capabilities": [],
-    "icon": "\ud83c\udf0a",
+    "icon": "🌊",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2061,12 +2048,12 @@
     "url": "https://radio.garden",
     "category": "Media & Entertainment",
     "tagline": "Spin the globe and tune into live radio anywhere on Earth.",
-    "description": "Radio Garden puts thousands of live radio stations on a 3D globe \u2014 drag to any city in the world and listen to its local stations instantly, no account needed.",
+    "description": "Radio Garden puts thousands of live radio stations on a 3D globe — drag to any city in the world and listen to its local stations instantly, no account needed.",
     "popularity": 68,
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83d\udcfb",
+    "icon": "📻",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2082,7 +2069,7 @@
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83c\udfd6\ufe0f",
+    "icon": "🏖️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2093,10 +2080,10 @@
     "url": "https://opencut.app",
     "category": "Creative & Design",
     "tagline": "A free, open-source video editor in the browser.",
-    "description": "OpenCut is an open-source CapCut alternative \u2014 timeline video editing that runs in the browser with your footage staying on your device.",
+    "description": "OpenCut is an open-source CapCut alternative — timeline video editing that runs in the browser with your footage staying on your device.",
     "popularity": 45,
     "capabilities": [],
-    "icon": "\ud83c\udfac",
+    "icon": "🎬",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2107,10 +2094,10 @@
     "url": "https://clideo.com",
     "category": "Creative & Design",
     "tagline": "Quick online tools to trim, merge, and compress video.",
-    "description": "Clideo bundles simple one-task video tools \u2014 cut, crop, add subtitles, compress \u2014 that work from any browser without installing an editor.",
+    "description": "Clideo bundles simple one-task video tools — cut, crop, add subtitles, compress — that work from any browser without installing an editor.",
     "popularity": 50,
     "capabilities": [],
-    "icon": "\u2702\ufe0f",
+    "icon": "✂️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2121,10 +2108,10 @@
     "url": "https://www.veed.io",
     "category": "Creative & Design",
     "tagline": "Online video editing with auto-subtitles and templates.",
-    "description": "VEED is a popular browser-based video editor aimed at creators and marketers \u2014 trim, caption, add music, and export without desktop software.",
+    "description": "VEED is a popular browser-based video editor aimed at creators and marketers — trim, caption, add music, and export without desktop software.",
     "popularity": 62,
     "capabilities": [],
-    "icon": "\ud83c\udf9e\ufe0f",
+    "icon": "🎞️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2138,7 +2125,7 @@
     "description": "Kapwing is a well-known collaborative video editor in the browser, with subtitling, resizing, and template tools used widely by social media teams.",
     "popularity": 60,
     "capabilities": [],
-    "icon": "\ud83c\udfa6",
+    "icon": "🎦",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2149,10 +2136,10 @@
     "url": "https://www.descript.com",
     "category": "Creative & Design",
     "tagline": "Edit video and podcasts by editing the transcript.",
-    "description": "Descript transcribes your recording and lets you edit the media by editing text \u2014 delete a sentence from the transcript and it's cut from the audio and video.",
+    "description": "Descript transcribes your recording and lets you edit the media by editing text — delete a sentence from the transcript and it's cut from the audio and video.",
     "popularity": 62,
     "capabilities": [],
-    "icon": "\ud83c\udf99\ufe0f",
+    "icon": "🎙️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2163,14 +2150,14 @@
     "url": "https://jakearchibald.github.io/svgomg/",
     "category": "Developer Tools",
     "tagline": "Optimize SVG files with a live before/after preview.",
-    "description": "SVGOMG is the go-to web interface for SVGO, the standard SVG optimizer \u2014 drop in an SVG, toggle optimizations, and watch the file size shrink. Works offline.",
+    "description": "SVGOMG is the go-to web interface for SVGO, the standard SVG optimizer — drop in an SVG, toggle optimizations, and watch the file size shrink. Works offline.",
     "popularity": 60,
     "capabilities": [
       "offline",
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\uddbc\ufe0f",
+    "icon": "🖼️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2181,10 +2168,10 @@
     "url": "https://codesandbox.io",
     "category": "Developer Tools",
     "tagline": "Spin up full development environments in the browser.",
-    "description": "CodeSandbox runs instant cloud development environments for web projects \u2014 prototype, share, and collaborate on code without any local setup.",
+    "description": "CodeSandbox runs instant cloud development environments for web projects — prototype, share, and collaborate on code without any local setup.",
     "popularity": 70,
     "capabilities": [],
-    "icon": "\ud83d\udce6",
+    "icon": "📦",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2195,13 +2182,13 @@
     "url": "https://transform.tools",
     "category": "Developer Tools",
     "tagline": "Convert between dozens of code and data formats.",
-    "description": "Transform is a polyglot converter for developers \u2014 JSON to TypeScript, SVG to JSX, CSS to Tailwind, and dozens more transformations in one page.",
+    "description": "Transform is a polyglot converter for developers — JSON to TypeScript, SVG to JSX, CSS to Tailwind, and dozens more transformations in one page.",
     "popularity": 48,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\udd04",
+    "icon": "🔄",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2217,7 +2204,7 @@
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83c\udfde\ufe0f",
+    "icon": "🏞️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2228,12 +2215,12 @@
     "url": "https://jsoncrack.com",
     "category": "Developer Tools",
     "tagline": "Visualize JSON, YAML, and CSV as interactive graphs.",
-    "description": "JSON Crack turns raw data files into zoomable node graphs so you can actually see the structure \u2014 a widely used open-source tool for debugging payloads.",
+    "description": "JSON Crack turns raw data files into zoomable node graphs so you can actually see the structure — a widely used open-source tool for debugging payloads.",
     "popularity": 58,
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83d\udd78\ufe0f",
+    "icon": "🕸️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2244,12 +2231,12 @@
     "url": "https://grep.app",
     "category": "Developer Tools",
     "tagline": "Search code across a million public GitHub repositories.",
-    "description": "grep.app searches over a million public GitHub repositories with regex support \u2014 a fast way to find real-world usage examples of any API or pattern.",
+    "description": "grep.app searches over a million public GitHub repositories with regex support — a fast way to find real-world usage examples of any API or pattern.",
     "popularity": 55,
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83d\udd0e",
+    "icon": "🔎",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2260,12 +2247,12 @@
     "url": "https://webhook.site",
     "category": "Developer Tools",
     "tagline": "Instantly inspect any webhook or HTTP request.",
-    "description": "Webhook.site gives you a unique URL that captures and displays every request sent to it \u2014 the standard quick tool for debugging webhooks and callbacks.",
+    "description": "Webhook.site gives you a unique URL that captures and displays every request sent to it — the standard quick tool for debugging webhooks and callbacks.",
     "popularity": 55,
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83e\ude9d",
+    "icon": "🪝",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2276,13 +2263,13 @@
     "url": "https://jwt.io",
     "category": "Developer Tools",
     "tagline": "Decode and verify JSON Web Tokens on the spot.",
-    "description": "JWT.io, maintained by Auth0, decodes JSON Web Tokens so you can inspect headers, payloads, and signatures \u2014 a staple of every web developer's toolbox.",
+    "description": "JWT.io, maintained by Auth0, decodes JSON Web Tokens so you can inspect headers, payloads, and signatures — a staple of every web developer's toolbox.",
     "popularity": 62,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83c\udfab",
+    "icon": "🎫",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2293,13 +2280,13 @@
     "url": "https://crontab.guru",
     "category": "Developer Tools",
     "tagline": "Cron schedule expressions, translated into plain English.",
-    "description": "Crontab Guru explains cron expressions in human language as you type \u2014 the reference site virtually every developer uses to double-check schedules.",
+    "description": "Crontab Guru explains cron expressions in human language as you type — the reference site virtually every developer uses to double-check schedules.",
     "popularity": 60,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\u23f0",
+    "icon": "⏰",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2315,7 +2302,7 @@
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83d\udcd1",
+    "icon": "📑",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2326,13 +2313,13 @@
     "url": "https://explainshell.com",
     "category": "Developer Tools",
     "tagline": "Paste a shell command and see every part explained.",
-    "description": "ExplainShell matches each flag and argument of a shell command against the actual man pages and annotates the whole line \u2014 invaluable for decoding cryptic one-liners.",
+    "description": "ExplainShell matches each flag and argument of a shell command against the actual man pages and annotates the whole line — invaluable for decoding cryptic one-liners.",
     "popularity": 52,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\udc1a",
+    "icon": "🐚",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2348,7 +2335,7 @@
     "capabilities": [
       "no-account"
     ],
-    "icon": "\u2b1b",
+    "icon": "⬛",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2359,10 +2346,10 @@
     "url": "https://codepen.io",
     "category": "Developer Tools",
     "tagline": "The front-end playground for HTML, CSS, and JavaScript.",
-    "description": "CodePen is the best-known social development environment for front-end code \u2014 build demos live in the browser and explore millions of community 'pens'.",
+    "description": "CodePen is the best-known social development environment for front-end code — build demos live in the browser and explore millions of community 'pens'.",
     "popularity": 78,
     "capabilities": [],
-    "icon": "\ud83d\udd8a\ufe0f",
+    "icon": "🖊️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2376,7 +2363,7 @@
     "description": "PostHog bundles product analytics, session recordings, feature flags, and A/B testing in one open-source platform that you can self-host or use in the cloud.",
     "popularity": 60,
     "capabilities": [],
-    "icon": "\ud83e\udd94",
+    "icon": "🦔",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2390,7 +2377,7 @@
     "description": "Wakapi tracks how much time you spend coding per project and language, as a lightweight open-source alternative to WakaTime. Listed from a community directory.",
     "popularity": 35,
     "capabilities": [],
-    "icon": "\ud83d\udcc8",
+    "icon": "📈",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2400,13 +2387,13 @@
     "name": "Netlify Drop",
     "url": "https://app.netlify.com/drop",
     "category": "Developer Tools",
-    "tagline": "Drag a folder onto the page \u2014 get a live website.",
+    "tagline": "Drag a folder onto the page — get a live website.",
     "description": "Netlify Drop deploys a static site by literally dragging a folder into the browser window. From Netlify, one of the largest web hosting platforms.",
     "popularity": 55,
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83d\ude80",
+    "icon": "🚀",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2416,11 +2403,11 @@
     "name": "Penpot",
     "url": "https://penpot.app",
     "category": "Creative & Design",
-    "tagline": "Open-source design and prototyping \u2014 the Figma alternative.",
+    "tagline": "Open-source design and prototyping — the Figma alternative.",
     "description": "Penpot is the leading open-source design platform for UI design and prototyping, built on web standards (SVG) and free for teams of any size.",
     "popularity": 65,
     "capabilities": [],
-    "icon": "\ud83d\udd8b\ufe0f",
+    "icon": "🖋️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2436,7 +2423,7 @@
     "capabilities": [
       "no-account"
     ],
-    "icon": "\u270f\ufe0f",
+    "icon": "✏️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2453,7 +2440,7 @@
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83c\udf08",
+    "icon": "🌈",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2464,10 +2451,10 @@
     "url": "https://coolors.co",
     "category": "Creative & Design",
     "tagline": "Generate perfect color palettes with the space bar.",
-    "description": "Coolors is the super-fast palette generator used by millions of designers \u2014 tap the space bar to cycle schemes, lock colors you like, and export anywhere.",
+    "description": "Coolors is the super-fast palette generator used by millions of designers — tap the space bar to cycle schemes, lock colors you like, and export anywhere.",
     "popularity": 68,
     "capabilities": [],
-    "icon": "\ud83d\udd8c\ufe0f",
+    "icon": "🖌️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2478,12 +2465,12 @@
     "url": "https://shots.so",
     "category": "Creative & Design",
     "tagline": "Wrap screenshots in gorgeous device mockups.",
-    "description": "Shots turns plain screenshots into polished presentation images with device frames, backgrounds, and shadows \u2014 no design skills needed.",
+    "description": "Shots turns plain screenshots into polished presentation images with device frames, backgrounds, and shadows — no design skills needed.",
     "popularity": 45,
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83d\uddbc\ufe0f",
+    "icon": "🖼️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2494,10 +2481,10 @@
     "url": "https://www.remove.bg",
     "category": "Creative & Design",
     "tagline": "Remove image backgrounds automatically in seconds.",
-    "description": "remove.bg erases the background from any photo with one click using AI \u2014 the best-known dedicated background removal service on the web.",
+    "description": "remove.bg erases the background from any photo with one click using AI — the best-known dedicated background removal service on the web.",
     "popularity": 70,
     "capabilities": [],
-    "icon": "\ud83e\ude84",
+    "icon": "🪄",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2508,12 +2495,12 @@
     "url": "https://haikei.app",
     "category": "Creative & Design",
     "tagline": "Generate unique SVG backgrounds, blobs, and waves.",
-    "description": "Haikei generates SVG design assets \u2014 layered waves, blobs, grids, and gradients \u2014 that you can customize and export for websites and slides.",
+    "description": "Haikei generates SVG design assets — layered waves, blobs, grids, and gradients — that you can customize and export for websites and slides.",
     "popularity": 42,
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83c\udf00",
+    "icon": "🌀",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2524,13 +2511,13 @@
     "url": "https://fontjoy.com",
     "category": "Creative & Design",
     "tagline": "Generate font pairings with machine learning.",
-    "description": "Fontjoy suggests Google Font combinations that look good together \u2014 lock the fonts you like and regenerate the rest until the pairing feels right.",
+    "description": "Fontjoy suggests Google Font combinations that look good together — lock the fonts you like and regenerate the rest until the pairing feels right.",
     "popularity": 42,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\udd24",
+    "icon": "🔤",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2541,13 +2528,13 @@
     "url": "https://typescale.com",
     "category": "Creative & Design",
     "tagline": "Preview harmonious typographic scales for the web.",
-    "description": "Typescale previews modular type scales \u2014 pick a ratio and instantly see heading and body sizes that work together, with CSS ready to copy.",
+    "description": "Typescale previews modular type scales — pick a ratio and instantly see heading and body sizes that work together, with CSS ready to copy.",
     "popularity": 42,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\udd20",
+    "icon": "🔠",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2561,7 +2548,7 @@
     "description": "Whimsical is a fast visual workspace for flowcharts, wireframes, sticky notes, and mind maps, popular with product teams for quick thinking-out-loud diagrams.",
     "popularity": 60,
     "capabilities": [],
-    "icon": "\ud83d\udcad",
+    "icon": "💭",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2572,10 +2559,10 @@
     "url": "https://lospec.com",
     "category": "Creative & Design",
     "tagline": "Pixel art tools, palettes, and tutorials for low-spec art.",
-    "description": "Lospec is the home of the pixel art community \u2014 a huge palette database, browser-based pixel editors, and tutorials for restrictive 'low-spec' art styles.",
+    "description": "Lospec is the home of the pixel art community — a huge palette database, browser-based pixel editors, and tutorials for restrictive 'low-spec' art styles.",
     "popularity": 48,
     "capabilities": [],
-    "icon": "\ud83d\udc7e",
+    "icon": "👾",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2586,10 +2573,10 @@
     "url": "https://www.figma.com",
     "category": "Creative & Design",
     "tagline": "The collaborative interface design standard, in your browser.",
-    "description": "Figma is the industry-standard collaborative design tool \u2014 UI design, prototyping, and whiteboarding (FigJam) that runs entirely on the web and installs as an app.",
+    "description": "Figma is the industry-standard collaborative design tool — UI design, prototyping, and whiteboarding (FigJam) that runs entirely on the web and installs as an app.",
     "popularity": 90,
     "capabilities": [],
-    "icon": "\u2712\ufe0f",
+    "icon": "✒️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2599,11 +2586,11 @@
     "name": "DocuSeal",
     "url": "https://www.docuseal.com",
     "category": "Business & Finance",
-    "tagline": "Open-source document signing \u2014 a DocuSign alternative.",
+    "tagline": "Open-source document signing — a DocuSign alternative.",
     "description": "DocuSeal handles legally binding e-signatures with an open-source core: create fillable PDF forms, send for signature, and self-host if you want full control.",
     "popularity": 50,
     "capabilities": [],
-    "icon": "\u2712\ufe0f",
+    "icon": "✒️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2614,10 +2601,10 @@
     "url": "https://app.invoiceninja.com",
     "category": "Business & Finance",
     "tagline": "Invoicing, payments, and expenses for freelancers.",
-    "description": "Invoice Ninja is a long-running open-source invoicing platform \u2014 create branded invoices, accept online payments, and track time and expenses.",
+    "description": "Invoice Ninja is a long-running open-source invoicing platform — create branded invoices, accept online payments, and track time and expenses.",
     "popularity": 55,
     "capabilities": [],
-    "icon": "\ud83e\uddfe",
+    "icon": "🧾",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2628,10 +2615,10 @@
     "url": "https://www.xe.com",
     "category": "Business & Finance",
     "tagline": "Live exchange rates and currency conversion since 1993.",
-    "description": "XE is one of the oldest and most trusted currency sites \u2014 live mid-market exchange rates, historical charts, and conversion for every world currency.",
+    "description": "XE is one of the oldest and most trusted currency sites — live mid-market exchange rates, historical charts, and conversion for every world currency.",
     "popularity": 70,
     "capabilities": [],
-    "icon": "\ud83d\udcb1",
+    "icon": "💱",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2645,7 +2632,7 @@
     "description": "A lightweight tool for drafting and managing contracts. Listed from a community directory; we could not fully verify the publisher.",
     "popularity": 30,
     "capabilities": [],
-    "icon": "\ud83d\udcdc",
+    "icon": "📜",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2656,10 +2643,10 @@
     "url": "https://plausible.io",
     "category": "Business & Finance",
     "tagline": "Privacy-first website analytics without cookies.",
-    "description": "Plausible is the popular lightweight, open-source alternative to Google Analytics \u2014 no cookies, no personal data collection, and a simple one-page dashboard.",
+    "description": "Plausible is the popular lightweight, open-source alternative to Google Analytics — no cookies, no personal data collection, and a simple one-page dashboard.",
     "popularity": 62,
     "capabilities": [],
-    "icon": "\ud83d\udcc9",
+    "icon": "📉",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2669,11 +2656,11 @@
     "name": "Papermark",
     "url": "https://www.papermark.com",
     "category": "Business & Finance",
-    "tagline": "Share documents with link analytics \u2014 open-source DocSend.",
+    "tagline": "Share documents with link analytics — open-source DocSend.",
     "description": "Papermark lets you share pitch decks and documents via trackable links with page-by-page analytics, as an open-source DocSend alternative.",
     "popularity": 42,
     "capabilities": [],
-    "icon": "\ud83d\udcc4",
+    "icon": "📄",
     "spotlight": false,
     "verified": "unverifiable",
     "lastChecked": "2026-07-07"
@@ -2683,11 +2670,11 @@
     "name": "Metabase",
     "url": "https://www.metabase.com",
     "category": "Business & Finance",
-    "tagline": "Ask questions of your data \u2014 open-source BI dashboards.",
+    "tagline": "Ask questions of your data — open-source BI dashboards.",
     "description": "Metabase is one of the most-deployed open-source business intelligence tools: connect a database and build charts and dashboards without writing SQL.",
     "popularity": 62,
     "capabilities": [],
-    "icon": "\ud83d\udcca",
+    "icon": "📊",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2698,10 +2685,10 @@
     "url": "https://umami.is",
     "category": "Business & Finance",
     "tagline": "Simple, privacy-focused web analytics you can self-host.",
-    "description": "Umami is a popular open-source analytics platform that collects no personal data and needs no cookie banner \u2014 a clean dashboard for the metrics that matter.",
+    "description": "Umami is a popular open-source analytics platform that collects no personal data and needs no cookie banner — a clean dashboard for the metrics that matter.",
     "popularity": 55,
     "capabilities": [],
-    "icon": "\ud83c\udf5c",
+    "icon": "🍜",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2719,7 +2706,7 @@
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83c\udccf",
+    "icon": "🃏",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2730,10 +2717,10 @@
     "url": "https://languagetool.org",
     "category": "Education",
     "tagline": "Grammar and style checking in over 25 languages.",
-    "description": "LanguageTool is the leading open-source grammar checker \u2014 paste text and get corrections for grammar, punctuation, and style in dozens of languages.",
+    "description": "LanguageTool is the leading open-source grammar checker — paste text and get corrections for grammar, punctuation, and style in dozens of languages.",
     "popularity": 72,
     "capabilities": [],
-    "icon": "\ud83d\udd8a\ufe0f",
+    "icon": "🖊️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2747,7 +2734,7 @@
     "description": "Khan Academy is the nonprofit education platform offering free lessons, exercises, and mastery tracking across math, science, computing, humanities, and test prep.",
     "popularity": 85,
     "capabilities": [],
-    "icon": "\ud83c\udf93",
+    "icon": "🎓",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2758,10 +2745,10 @@
     "url": "https://brilliant.org",
     "category": "Education",
     "tagline": "Learn math, logic, and CS through interactive puzzles.",
-    "description": "Brilliant teaches STEM subjects through hands-on interactive problem solving rather than lectures \u2014 short guided lessons in math, logic, data, and programming.",
+    "description": "Brilliant teaches STEM subjects through hands-on interactive problem solving rather than lectures — short guided lessons in math, logic, data, and programming.",
     "popularity": 72,
     "capabilities": [],
-    "icon": "\ud83d\udca1",
+    "icon": "💡",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2772,10 +2759,10 @@
     "url": "https://ankiweb.net",
     "category": "Education",
     "tagline": "The web home of Anki spaced-repetition flashcards.",
-    "description": "AnkiWeb is the official sync service and web client for Anki, the most widely used spaced-repetition flashcard system \u2014 study your decks from any browser.",
+    "description": "AnkiWeb is the official sync service and web client for Anki, the most widely used spaced-repetition flashcard system — study your decks from any browser.",
     "popularity": 68,
     "capabilities": [],
-    "icon": "\ud83d\uddc2\ufe0f",
+    "icon": "🗂️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2786,12 +2773,12 @@
     "url": "https://www.desmos.com/calculator",
     "category": "Education",
     "tagline": "The graphing calculator used in classrooms worldwide.",
-    "description": "Desmos is the beloved free graphing calculator \u2014 plot functions, sliders, and tables with instant feedback. Used by millions of students and standardized tests.",
+    "description": "Desmos is the beloved free graphing calculator — plot functions, sliders, and tables with instant feedback. Used by millions of students and standardized tests.",
     "popularity": 75,
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83d\udcc8",
+    "icon": "📈",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2802,10 +2789,10 @@
     "url": "https://www.geogebra.org",
     "category": "Education",
     "tagline": "Interactive geometry, algebra, and calculus tools.",
-    "description": "GeoGebra provides free interactive math apps \u2014 dynamic geometry, graphing, 3D, and CAS \u2014 used in schools around the world, with a huge library of shared activities.",
+    "description": "GeoGebra provides free interactive math apps — dynamic geometry, graphing, 3D, and CAS — used in schools around the world, with a huge library of shared activities.",
     "popularity": 70,
     "capabilities": [],
-    "icon": "\ud83d\udccf",
+    "icon": "📏",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2816,10 +2803,10 @@
     "url": "https://www.wolframalpha.com",
     "category": "Education",
     "tagline": "Compute expert-level answers to almost anything.",
-    "description": "Wolfram Alpha is the computational knowledge engine \u2014 type a math problem, unit conversion, or factual query and get computed, step-by-step answers.",
+    "description": "Wolfram Alpha is the computational knowledge engine — type a math problem, unit conversion, or factual query and get computed, step-by-step answers.",
     "popularity": 78,
     "capabilities": [],
-    "icon": "\ud83e\uddee",
+    "icon": "🧮",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2830,10 +2817,10 @@
     "url": "https://scrimba.com",
     "category": "Education",
     "tagline": "Interactive coding screencasts you can edit and run.",
-    "description": "Scrimba teaches web development through 'scrims' \u2014 video lessons where you can pause at any moment and edit the instructor's actual code right in the player.",
+    "description": "Scrimba teaches web development through 'scrims' — video lessons where you can pause at any moment and edit the instructor's actual code right in the player.",
     "popularity": 58,
     "capabilities": [],
-    "icon": "\ud83d\udda5\ufe0f",
+    "icon": "🖥️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2844,13 +2831,13 @@
     "url": "https://flexboxfroggy.com",
     "category": "Education",
     "tagline": "Learn CSS flexbox by guiding frogs to lily pads.",
-    "description": "Flexbox Froggy is the classic game for learning CSS flexbox \u2014 write real CSS to move frogs onto their lily pads across 24 progressively trickier levels.",
+    "description": "Flexbox Froggy is the classic game for learning CSS flexbox — write real CSS to move frogs onto their lily pads across 24 progressively trickier levels.",
     "popularity": 55,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\udc38",
+    "icon": "🐸",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2861,10 +2848,10 @@
     "url": "https://www.overleaf.com",
     "category": "Education",
     "tagline": "Collaborative LaTeX editing for papers and theses.",
-    "description": "Overleaf is the standard online LaTeX editor \u2014 write scientific documents with live preview and real-time collaboration, with thousands of journal templates.",
+    "description": "Overleaf is the standard online LaTeX editor — write scientific documents with live preview and real-time collaboration, with thousands of journal templates.",
     "popularity": 70,
     "capabilities": [],
-    "icon": "\ud83c\udf43",
+    "icon": "🍃",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2875,12 +2862,12 @@
     "url": "https://narrow.one",
     "category": "Games & Leisure",
     "tagline": "Multiplayer bow-and-arrow battles in your browser.",
-    "description": "Narrow One is a free multiplayer archery game \u2014 capture the flag with friends in quick browser matches, no install or account required.",
+    "description": "Narrow One is a free multiplayer archery game — capture the flag with friends in quick browser matches, no install or account required.",
     "popularity": 50,
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83c\udff9",
+    "icon": "🏹",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2890,13 +2877,13 @@
     "name": "Gartic Phone",
     "url": "https://garticphone.com",
     "category": "Games & Leisure",
-    "tagline": "The telephone game with drawings \u2014 chaos guaranteed.",
+    "tagline": "The telephone game with drawings — chaos guaranteed.",
     "description": "Gartic Phone is the hugely popular party game where players alternate writing prompts and drawing them, producing gloriously garbled results to review together.",
     "popularity": 68,
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83d\udcde",
+    "icon": "📞",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2907,13 +2894,13 @@
     "url": "https://skribbl.io",
     "category": "Games & Leisure",
     "tagline": "Free multiplayer drawing and guessing game.",
-    "description": "skribbl.io is the classic browser Pictionary \u2014 one player draws, everyone else races to guess the word. Private rooms make it a video-call favorite.",
+    "description": "skribbl.io is the classic browser Pictionary — one player draws, everyone else races to guess the word. Private rooms make it a video-call favorite.",
     "popularity": 68,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\udd8d\ufe0f",
+    "icon": "🖍️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2929,7 +2916,7 @@
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83d\udd79\ufe0f",
+    "icon": "🕹️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2946,7 +2933,7 @@
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\udfe9",
+    "icon": "🟩",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2960,7 +2947,7 @@
     "description": "Backgammon Galaxy pairs you with players worldwide and analyzes every move against the computer's best play, making it a favorite for improving players.",
     "popularity": 45,
     "capabilities": [],
-    "icon": "\ud83c\udfb2",
+    "icon": "🎲",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -2970,11 +2957,11 @@
     "name": "GeoGuessr",
     "url": "https://www.geoguessr.com",
     "category": "Games & Leisure",
-    "tagline": "Get dropped anywhere on Earth \u2014 guess where you are.",
-    "description": "GeoGuessr drops you into a random street view and challenges you to pin the location on a map \u2014 the closer your guess, the more points you score.",
+    "tagline": "Get dropped anywhere on Earth — guess where you are.",
+    "description": "GeoGuessr drops you into a random street view and challenges you to pin the location on a map — the closer your guess, the more points you score.",
     "popularity": 75,
     "capabilities": [],
-    "icon": "\ud83c\udf0d",
+    "icon": "🌍",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -2985,13 +2972,13 @@
     "url": "https://hackertyper.net",
     "category": "Games & Leisure",
     "tagline": "Mash the keyboard, look like a movie hacker.",
-    "description": "Hacker Typer fills the screen with convincing-looking code no matter what you type \u2014 the internet's favorite way to pretend you're in a heist film.",
+    "description": "Hacker Typer fills the screen with convincing-looking code no matter what you type — the internet's favorite way to pretend you're in a heist film.",
     "popularity": 48,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\u2328\ufe0f",
+    "icon": "⌨️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -3002,14 +2989,14 @@
     "url": "https://fasttrack.netlify.app",
     "category": "Health & Lifestyle",
     "tagline": "Track intermittent fasting windows offline.",
-    "description": "FastTrack is a small open-source intermittent fasting timer \u2014 start a fast, watch the window, and review history, all stored on your device.",
+    "description": "FastTrack is a small open-source intermittent fasting timer — start a fast, watch the window, and review history, all stored on your device.",
     "popularity": 30,
     "capabilities": [
       "offline",
       "no-account",
       "lightweight"
     ],
-    "icon": "\u23f3",
+    "icon": "⏳",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -3020,10 +3007,10 @@
     "url": "https://cronometer.com",
     "category": "Health & Lifestyle",
     "tagline": "Track nutrition down to 84 micronutrients.",
-    "description": "Cronometer is the nutrition tracker known for data accuracy \u2014 log food against lab-verified databases and see vitamins and minerals, not just calories.",
+    "description": "Cronometer is the nutrition tracker known for data accuracy — log food against lab-verified databases and see vitamins and minerals, not just calories.",
     "popularity": 62,
     "capabilities": [],
-    "icon": "\ud83e\udd57",
+    "icon": "🥗",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -3034,10 +3021,10 @@
     "url": "https://www.inoreader.com",
     "category": "News & Weather",
     "tagline": "A powerful RSS reader for serious news followers.",
-    "description": "Inoreader is a full-featured feed reader \u2014 follow websites, newsletters, and social feeds in one inbox with rules, filters, and offline reading.",
+    "description": "Inoreader is a full-featured feed reader — follow websites, newsletters, and social feeds in one inbox with rules, filters, and offline reading.",
     "popularity": 60,
     "capabilities": [],
-    "icon": "\ud83d\udcf0",
+    "icon": "📰",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -3048,13 +3035,13 @@
     "url": "https://hnpwa.com",
     "category": "News & Weather",
     "tagline": "Hacker News readers built as reference PWAs.",
-    "description": "HNPWA collects Hacker News reader implementations built with different frameworks as reference Progressive Web Apps \u2014 pick one and browse HN fast.",
+    "description": "HNPWA collects Hacker News reader implementations built with different frameworks as reference Progressive Web Apps — pick one and browse HN fast.",
     "popularity": 40,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\uddde\ufe0f",
+    "icon": "🗞️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -3064,11 +3051,11 @@
     "name": "Readwise Reader",
     "url": "https://read.readwise.io",
     "category": "News & Weather",
-    "tagline": "Save articles, PDFs, and newsletters \u2014 read and highlight anywhere.",
+    "tagline": "Save articles, PDFs, and newsletters — read and highlight anywhere.",
     "description": "Reader by Readwise is a read-it-later app that unifies articles, PDFs, ebooks, and newsletters with excellent highlighting that syncs to your notes tools.",
     "popularity": 58,
     "capabilities": [],
-    "icon": "\ud83d\udcd6",
+    "icon": "📖",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -3079,12 +3066,12 @@
     "url": "https://www.openstreetmap.org",
     "category": "Shopping & Lifestyle",
     "tagline": "The free, editable map of the whole world.",
-    "description": "OpenStreetMap is the Wikipedia of maps \u2014 a world map built by millions of contributors, free to use and powering thousands of other apps.",
+    "description": "OpenStreetMap is the Wikipedia of maps — a world map built by millions of contributors, free to use and powering thousands of other apps.",
     "popularity": 78,
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83d\uddfa\ufe0f",
+    "icon": "🗺️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -3095,10 +3082,10 @@
     "url": "https://www.flightradar24.com",
     "category": "Shopping & Lifestyle",
     "tagline": "Watch every flight in the sky in real time.",
-    "description": "Flightradar24 tracks aircraft worldwide live on a map \u2014 tap any plane for route, altitude, speed, and aircraft details. The standard for flight tracking.",
+    "description": "Flightradar24 tracks aircraft worldwide live on a map — tap any plane for route, altitude, speed, and aircraft details. The standard for flight tracking.",
     "popularity": 72,
     "capabilities": [],
-    "icon": "\u2708\ufe0f",
+    "icon": "✈️",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -3109,10 +3096,10 @@
     "url": "https://felt.com",
     "category": "Shopping & Lifestyle",
     "tagline": "Make and share beautiful custom maps in minutes.",
-    "description": "Felt is a modern collaborative mapping tool \u2014 draw on maps, add data layers, and share interactive maps as easily as a document.",
+    "description": "Felt is a modern collaborative mapping tool — draw on maps, add data layers, and share interactive maps as easily as a document.",
     "popularity": 50,
     "capabilities": [],
-    "icon": "\ud83d\udccd",
+    "icon": "📍",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -3126,7 +3113,7 @@
     "description": "Bitwarden's web vault gives you full access to your encrypted passwords from any browser. Open source, independently audited, with a generous free tier.",
     "popularity": 80,
     "capabilities": [],
-    "icon": "\ud83d\udd11",
+    "icon": "🔑",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -3142,7 +3129,7 @@
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83d\udc12",
+    "icon": "🐒",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -3159,7 +3146,7 @@
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\udd22",
+    "icon": "🔢",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -3175,7 +3162,7 @@
     "capabilities": [
       "lightweight"
     ],
-    "icon": "\ud83d\uddd2\ufe0f",
+    "icon": "🗒️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -3186,13 +3173,13 @@
     "url": "https://morsecode.world/international/translator.html",
     "category": "Utilities",
     "tagline": "Translate to and from Morse code with sound and light.",
-    "description": "Morse Code World's translator converts text to Morse and back with authentic audio playback, flashing light, and adjustable speed \u2014 great for learning.",
+    "description": "Morse Code World's translator converts text to Morse and back with authentic audio playback, flashing light, and adjustable speed — great for learning.",
     "popularity": 45,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\udce1",
+    "icon": "📡",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -3203,12 +3190,12 @@
     "url": "https://www.calculator.net",
     "category": "Utilities",
     "tagline": "Hundreds of free calculators for every situation.",
-    "description": "Calculator.net hosts hundreds of specialized calculators \u2014 mortgages, BMI, percentages, dates, loans \u2014 each simple, fast, and free.",
+    "description": "Calculator.net hosts hundreds of specialized calculators — mortgages, BMI, percentages, dates, loans — each simple, fast, and free.",
     "popularity": 60,
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83e\uddee",
+    "icon": "🧮",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -3219,12 +3206,12 @@
     "url": "https://tableconvert.com",
     "category": "Utilities",
     "tagline": "Convert tables between Excel, Markdown, JSON, and more.",
-    "description": "TableConvert transforms table data between formats \u2014 paste from Excel and get Markdown, LaTeX, SQL, JSON, or CSV out, with an editable grid in between.",
+    "description": "TableConvert transforms table data between formats — paste from Excel and get Markdown, LaTeX, SQL, JSON, or CSV out, with an editable grid in between.",
     "popularity": 42,
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83d\udd01",
+    "icon": "🔁",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -3234,13 +3221,13 @@
     "name": "TinyWow",
     "url": "https://tinywow.com",
     "category": "Utilities",
-    "tagline": "Free PDF, image, and video mini-tools \u2014 no signup.",
+    "tagline": "Free PDF, image, and video mini-tools — no signup.",
     "description": "TinyWow offers hundreds of small free tools for PDFs, images, video, and writing with no account or watermarks. Supported by ads.",
     "popularity": 55,
     "capabilities": [
       "no-account"
     ],
-    "icon": "\ud83d\udee0\ufe0f",
+    "icon": "🛠️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -3251,10 +3238,10 @@
     "url": "https://web.padloc.app",
     "category": "Utilities",
     "tagline": "A clean, open-source password manager for everyone.",
-    "description": "Padloc is an open-source password manager focused on simplicity \u2014 end-to-end encrypted vaults with apps for every platform and a clear, friendly interface.",
+    "description": "Padloc is an open-source password manager focused on simplicity — end-to-end encrypted vaults with apps for every platform and a clear, friendly interface.",
     "popularity": 48,
     "capabilities": [],
-    "icon": "\ud83d\udd10",
+    "icon": "🔐",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -3264,14 +3251,14 @@
     "name": "PrivateBin",
     "url": "https://privatebin.net",
     "category": "Utilities",
-    "tagline": "Encrypted pastebin \u2014 the server can't read your paste.",
+    "tagline": "Encrypted pastebin — the server can't read your paste.",
     "description": "PrivateBin is the widely deployed open-source pastebin where pastes are encrypted in the browser before upload, with optional expiry and burn-after-reading.",
     "popularity": 52,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\udccb",
+    "icon": "📋",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -3285,7 +3272,7 @@
     "description": "GIPHY's official GIF Maker turns video files, YouTube links, or images into GIFs with captions and stickers, ready to share anywhere.",
     "popularity": 60,
     "capabilities": [],
-    "icon": "\ud83c\udf89",
+    "icon": "🎉",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -3296,13 +3283,13 @@
     "url": "https://www.sharedrop.io",
     "category": "Utilities",
     "tagline": "AirDrop-style file sharing between any devices.",
-    "description": "ShareDrop transfers files directly between devices on the same network (or via link) using peer-to-peer connections \u2014 nothing is stored on a server.",
+    "description": "ShareDrop transfers files directly between devices on the same network (or via link) using peer-to-peer connections — nothing is stored on a server.",
     "popularity": 45,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\udce4",
+    "icon": "📤",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -3313,14 +3300,14 @@
     "url": "https://2brew.github.io",
     "category": "Shopping & Lifestyle",
     "tagline": "Step-by-step timers for brewing better coffee.",
-    "description": "2brew guides you through coffee brewing recipes \u2014 AeroPress, V60, French press \u2014 with step-by-step timers. Listed from a community directory.",
+    "description": "2brew guides you through coffee brewing recipes — AeroPress, V60, French press — with step-by-step timers. Listed from a community directory.",
     "popularity": 30,
     "capabilities": [
       "offline",
       "no-account",
       "lightweight"
     ],
-    "icon": "\u2615",
+    "icon": "☕",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -3331,10 +3318,10 @@
     "url": "https://unsplash.com",
     "category": "Creative & Design",
     "tagline": "Over five million freely usable high-quality photos.",
-    "description": "Unsplash is the internet's source of freely usable images \u2014 millions of high-resolution photos gifted by photographers, searchable and free for most uses.",
+    "description": "Unsplash is the internet's source of freely usable images — millions of high-resolution photos gifted by photographers, searchable and free for most uses.",
     "popularity": 75,
     "capabilities": [],
-    "icon": "\ud83d\udcf7",
+    "icon": "📷",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-07"
@@ -3345,10 +3332,10 @@
     "url": "https://photoeditor.polarr.com",
     "category": "Creative & Design",
     "tagline": "Pro-grade photo editing with filters and masks.",
-    "description": "Polarr's web photo editor brings advanced editing \u2014 curves, selective masks, and stylish filters \u2014 to the browser, with offline support once loaded.",
+    "description": "Polarr's web photo editor brings advanced editing — curves, selective masks, and stylish filters — to the browser, with offline support once loaded.",
     "popularity": 55,
     "capabilities": [],
-    "icon": "\ud83c\udf05",
+    "icon": "🌅",
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -3362,7 +3349,7 @@
     "description": "Google Keep captures notes, checklists, and reminders and syncs them instantly across all your devices. Sign in with a Google account, then install it as an app straight from the browser.",
     "popularity": 82,
     "capabilities": [],
-    "icon": "\ud83d\udcd2",
+    "icon": "📒",
     "spotlight": false,
     "verified": "unverifiable",
     "lastChecked": "2026-07-07"
@@ -3380,7 +3367,7 @@
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\udcd6",
+    "icon": "📖",
     "spotlight": true,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -3394,7 +3381,7 @@
     "description": "OpenRouter is a marketplace and router for AI models: one account gives you chat and API access to hundreds of models from many providers, with unified billing and automatic fallbacks. The installed app opens straight into its chat interface.",
     "popularity": 68,
     "capabilities": [],
-    "icon": "\ud83e\udd16",
+    "icon": "🤖",
     "spotlight": true,
     "verified": true,
     "lastChecked": "2026-07-07"
@@ -3404,14 +3391,14 @@
     "name": "Angular HN",
     "url": "https://angular2-hn.firebaseapp.com/",
     "category": "News & Weather",
-    "tagline": "Hacker News reader built with Angular \u2014 an HNPWA reference app.",
-    "description": "Hacker News reader built with Angular \u2014 an HNPWA reference app.",
+    "tagline": "Hacker News reader built with Angular — an HNPWA reference app.",
+    "description": "Hacker News reader built with Angular — an HNPWA reference app.",
     "popularity": 35,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\uddde\ufe0f",
+    "icon": "🗞️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-10",
@@ -3422,14 +3409,14 @@
     "name": "Polymer HN",
     "url": "https://hn-polymer-2.firebaseapp.com",
     "category": "News & Weather",
-    "tagline": "Hacker News reader built with Polymer \u2014 an HNPWA reference app.",
-    "description": "Hacker News reader built with Polymer \u2014 an HNPWA reference app.",
+    "tagline": "Hacker News reader built with Polymer — an HNPWA reference app.",
+    "description": "Hacker News reader built with Polymer — an HNPWA reference app.",
     "popularity": 35,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\uddde\ufe0f",
+    "icon": "🗞️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-10",
@@ -3440,14 +3427,14 @@
     "name": "Mithril HN",
     "url": "https://mithril-hn.firebaseapp.com",
     "category": "News & Weather",
-    "tagline": "Hacker News reader built with Mithril \u2014 an HNPWA reference app.",
-    "description": "Hacker News reader built with Mithril \u2014 an HNPWA reference app.",
+    "tagline": "Hacker News reader built with Mithril — an HNPWA reference app.",
+    "description": "Hacker News reader built with Mithril — an HNPWA reference app.",
     "popularity": 35,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\uddde\ufe0f",
+    "icon": "🗞️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-10",
@@ -3458,14 +3445,14 @@
     "name": "HNPWA Vue",
     "url": "https://anubhav7495.github.io/hnpwa-vue/",
     "category": "News & Weather",
-    "tagline": "Hacker News reader built with Vue \u2014 an HNPWA reference app.",
-    "description": "Hacker News reader built with Vue \u2014 an HNPWA reference app.",
+    "tagline": "Hacker News reader built with Vue — an HNPWA reference app.",
+    "description": "Hacker News reader built with Vue — an HNPWA reference app.",
     "popularity": 35,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\uddde\ufe0f",
+    "icon": "🗞️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-10",
@@ -3476,14 +3463,14 @@
     "name": "Zuix HN",
     "url": "https://zuix-hn.firebaseapp.com/",
     "category": "News & Weather",
-    "tagline": "Hacker News reader built with ZUIX \u2014 an HNPWA reference app.",
-    "description": "Hacker News reader built with ZUIX \u2014 an HNPWA reference app.",
+    "tagline": "Hacker News reader built with ZUIX — an HNPWA reference app.",
+    "description": "Hacker News reader built with ZUIX — an HNPWA reference app.",
     "popularity": 35,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\uddde\ufe0f",
+    "icon": "🗞️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-10",
@@ -3494,14 +3481,14 @@
     "name": "Vanilla HN",
     "url": "https://hnpwa-vanilla.firebaseapp.com/",
     "category": "News & Weather",
-    "tagline": "Hacker News reader \u2014 an HNPWA reference app.",
+    "tagline": "Hacker News reader — an HNPWA reference app.",
     "description": "Hacker News PWA built with vanilla javascript - part of hnpwa.com",
     "popularity": 35,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\uddde\ufe0f",
+    "icon": "🗞️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-10",
@@ -3512,14 +3499,14 @@
     "name": "Glimmer HN",
     "url": "https://glimmer-hn-pwa.firebaseapp.com/",
     "category": "News & Weather",
-    "tagline": "Hacker News reader built with Glimmer.js \u2014 an HNPWA reference app.",
-    "description": "Hacker News reader built with Glimmer.js \u2014 an HNPWA reference app.",
+    "tagline": "Hacker News reader built with Glimmer.js — an HNPWA reference app.",
+    "description": "Hacker News reader built with Glimmer.js — an HNPWA reference app.",
     "popularity": 35,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\uddde\ufe0f",
+    "icon": "🗞️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-10",
@@ -3530,14 +3517,14 @@
     "name": "Angular Hacker News (alfredoperez)",
     "url": "https://ngx-hn.firebaseapp.com",
     "category": "News & Weather",
-    "tagline": "Hacker News reader built with Angular \u2014 an HNPWA reference app.",
-    "description": "Hacker News reader built with Angular \u2014 an HNPWA reference app.",
+    "tagline": "Hacker News reader built with Angular — an HNPWA reference app.",
+    "description": "Hacker News reader built with Angular — an HNPWA reference app.",
     "popularity": 35,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\uddde\ufe0f",
+    "icon": "🗞️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-10",
@@ -3548,14 +3535,14 @@
     "name": "React HN (stephenkingsley)",
     "url": "https://hn-pwa-d8b2e.firebaseapp.com/",
     "category": "News & Weather",
-    "tagline": "Hacker News reader built with React \u2014 an HNPWA reference app.",
-    "description": "Hacker News reader built with React \u2014 an HNPWA reference app.",
+    "tagline": "Hacker News reader built with React — an HNPWA reference app.",
+    "description": "Hacker News reader built with React — an HNPWA reference app.",
     "popularity": 35,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\uddde\ufe0f",
+    "icon": "🗞️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-10",
@@ -3566,14 +3553,14 @@
     "name": "Elm HN",
     "url": "https://elm-hnpwa.firebaseapp.com",
     "category": "News & Weather",
-    "tagline": "Hacker News reader built with Elm 0.19 \u2014 an HNPWA reference app.",
-    "description": "Hacker News reader built with Elm 0.19 \u2014 an HNPWA reference app.",
+    "tagline": "Hacker News reader built with Elm 0.19 — an HNPWA reference app.",
+    "description": "Hacker News reader built with Elm 0.19 — an HNPWA reference app.",
     "popularity": 35,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\uddde\ufe0f",
+    "icon": "🗞️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-10",
@@ -3584,14 +3571,14 @@
     "name": "Vanilla Web Components with Compost mixins",
     "url": "https://compost-35844.firebaseapp.com",
     "category": "News & Weather",
-    "tagline": "Hacker News reader \u2014 an HNPWA reference app.",
+    "tagline": "Hacker News reader — an HNPWA reference app.",
     "description": "A HackerNews reader, build using compost",
     "popularity": 35,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\uddde\ufe0f",
+    "icon": "🗞️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-10",
@@ -3602,14 +3589,14 @@
     "name": "Vanilla Web Components HN",
     "url": "https://vanilla-wc-hnpwa.firebaseapp.com",
     "category": "News & Weather",
-    "tagline": "Hacker News reader \u2014 an HNPWA reference app.",
+    "tagline": "Hacker News reader — an HNPWA reference app.",
     "description": "Vanilla Hacker News PWA built with Web Components",
     "popularity": 35,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\uddde\ufe0f",
+    "icon": "🗞️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-10",
@@ -3620,14 +3607,14 @@
     "name": "CxJS Hacker News",
     "url": "https://hn.cxjs.io/",
     "category": "News & Weather",
-    "tagline": "Hacker News reader built with CxJS \u2014 an HNPWA reference app.",
-    "description": "Hacker News reader built with CxJS \u2014 an HNPWA reference app.",
+    "tagline": "Hacker News reader built with CxJS — an HNPWA reference app.",
+    "description": "Hacker News reader built with CxJS — an HNPWA reference app.",
     "popularity": 35,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\uddde\ufe0f",
+    "icon": "🗞️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-10",
@@ -3638,14 +3625,14 @@
     "name": "Cycle HN",
     "url": "https://cyclejs-hn.firebaseapp.com",
     "category": "News & Weather",
-    "tagline": "Hacker News reader built with CycleJS \u2014 an HNPWA reference app.",
-    "description": "Hacker News reader built with CycleJS \u2014 an HNPWA reference app.",
+    "tagline": "Hacker News reader built with CycleJS — an HNPWA reference app.",
+    "description": "Hacker News reader built with CycleJS — an HNPWA reference app.",
     "popularity": 35,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\uddde\ufe0f",
+    "icon": "🗞️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-10",
@@ -3656,14 +3643,14 @@
     "name": "AppRun HN",
     "url": "https://yysun.github.io/apprun-hn",
     "category": "News & Weather",
-    "tagline": "Hacker News reader built with AppRun \u2014 an HNPWA reference app.",
-    "description": "Hacker News reader built with AppRun \u2014 an HNPWA reference app.",
+    "tagline": "Hacker News reader built with AppRun — an HNPWA reference app.",
+    "description": "Hacker News reader built with AppRun — an HNPWA reference app.",
     "popularity": 35,
     "capabilities": [
       "no-account",
       "lightweight"
     ],
-    "icon": "\ud83d\uddde\ufe0f",
+    "icon": "🗞️",
     "spotlight": false,
     "verified": false,
     "lastChecked": "2026-07-10",
