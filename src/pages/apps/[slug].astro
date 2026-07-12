@@ -139,13 +139,28 @@ const screenshots: { src: string; label?: string }[] =
     {
       app.pwa === false ? (
         <div class="install-help">
-          <h2>Runs in your browser — no install</h2>
+          <h2>Runs in your browser — pin it like an app</h2>
           <p>
-            {app.name} is a regular web app, not a PWA: it doesn't offer
-            browser installation, so you won't see an install button. It works
-            fully in a normal browser tab — bookmark{' '}
-            <a href={app.url} target="_blank" rel="noopener">{new URL(app.url).hostname}</a>{' '}
-            to come back to it. <a href="/verification/#non-pwa">What "Non-PWA" means →</a>
+            {app.name} is a regular web app, not a PWA, so it won't offer an
+            install button. Your browser can still pin it with its own icon
+            and window:
+          </p>
+          <ol data-platform="desktop">
+            <li>Open <a href={app.url} target="_blank" rel="noopener">{new URL(app.url).hostname}</a> in Chrome or Edge.</li>
+            <li>Chrome: ⋮ menu → “Cast, save, and share” → “Install page as app…”. Edge: ⋯ menu → “Apps” → “Install this site as an app”.</li>
+          </ol>
+          <ol data-platform="android" hidden>
+            <li>Open the app in Chrome on Android.</li>
+            <li>Tap the ⋮ menu → “Add to Home screen” → “Add”.</li>
+          </ol>
+          <ol data-platform="ios" hidden>
+            <li>Open the app in Safari on iOS.</li>
+            <li>Tap the Share button → “Add to Home Screen”.</li>
+          </ol>
+          <p class="note">
+            Pinning gives you a shortcut in an app-style window; offline use
+            and notifications stay up to the publisher.{' '}
+            <a href="/verification/#non-pwa">What “Non-PWA” means →</a>
           </p>
         </div>
       ) : (
