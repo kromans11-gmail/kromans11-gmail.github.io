@@ -12,6 +12,7 @@ interface Props {
     capabilities: string[];
     icon: string;
     verified?: boolean | 'unverifiable';
+    pwa?: boolean;
     addedAt?: string;
   };
 }
@@ -27,6 +28,7 @@ const catId = (name: string) =>
   data-app
   data-slug={app.slug}
   data-verified={String(app.verified ?? false)}
+  data-pwa={String(app.pwa !== false)}
   data-caps={app.capabilities.join(' ')}
   data-text={`${app.name} ${app.tagline} ${app.category}`.toLowerCase()}
   data-added={app.addedAt}
@@ -53,6 +55,17 @@ const catId = (name: string) =>
     }
   </span>
   <span class="pop" title="Popularity score (0–100)">★ {app.popularity}</span>
+  {
+    app.pwa === false && (
+      <a
+        class="nonpwa-badge"
+        href="/verification/#non-pwa"
+        title="Runs in the browser tab — not installable as an app"
+      >
+        🌐 Non-PWA
+      </a>
+    )
+  }
   {
     app.verified === true ? (
       <a

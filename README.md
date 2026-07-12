@@ -1,6 +1,6 @@
 # Web App Finder
 
-A curated, ranked directory of the best Progressive Web Apps — itself built as a PWA.
+A curated, ranked directory of the best web apps — itself built as a PWA. Installable PWAs are highlighted; non-PWA web apps are accepted too, as long as they are fully useful in the browser without installation (tagged 🌐 Non-PWA, added by the curator via `non_pwa: yes` on the Curate workflow — the automated submission pipeline still requires a manifest).
 
 - **Astro static site** — every app gets a real, crawlable URL for SEO.
 - **Popularity-ranked categories** — apps sorted by a transparent 0–100 score.

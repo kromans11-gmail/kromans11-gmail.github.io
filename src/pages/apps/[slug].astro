@@ -31,6 +31,17 @@ const screenshots: { src: string; label?: string }[] =
 
     <div class="badges">
       {
+        app.pwa === false && (
+          <a
+            class="nonpwa-badge"
+            href="/verification/#non-pwa"
+            title="Runs in the browser tab — not installable as an app"
+          >
+            🌐 Non-PWA web app — what this means
+          </a>
+        )
+      }
+      {
         app.verified === true ? (
           <a
             class="verified-badge"
@@ -125,21 +136,36 @@ const screenshots: { src: string; label?: string }[] =
       )
     }
 
-    <div class="install-help">
-      <h2>How to install it as an app</h2>
-      <ol data-platform="desktop">
-        <li>Open <a href={app.url} target="_blank" rel="noopener">{new URL(app.url).hostname}</a> in Chrome or Edge.</li>
-        <li>Click the install icon in the address bar (or menu → “Install app”).</li>
-      </ol>
-      <ol data-platform="android" hidden>
-        <li>Open the app in Chrome on Android.</li>
-        <li>Tap the ⋮ menu → “Add to Home screen” or “Install app”.</li>
-      </ol>
-      <ol data-platform="ios" hidden>
-        <li>Open the app in Safari on iOS.</li>
-        <li>Tap the Share button → “Add to Home Screen”.</li>
-      </ol>
-    </div>
+    {
+      app.pwa === false ? (
+        <div class="install-help">
+          <h2>Runs in your browser — no install</h2>
+          <p>
+            {app.name} is a regular web app, not a PWA: it doesn't offer
+            browser installation, so you won't see an install button. It works
+            fully in a normal browser tab — bookmark{' '}
+            <a href={app.url} target="_blank" rel="noopener">{new URL(app.url).hostname}</a>{' '}
+            to come back to it. <a href="/verification/#non-pwa">What "Non-PWA" means →</a>
+          </p>
+        </div>
+      ) : (
+        <div class="install-help">
+          <h2>How to install it as an app</h2>
+          <ol data-platform="desktop">
+            <li>Open <a href={app.url} target="_blank" rel="noopener">{new URL(app.url).hostname}</a> in Chrome or Edge.</li>
+            <li>Click the install icon in the address bar (or menu → “Install app”).</li>
+          </ol>
+          <ol data-platform="android" hidden>
+            <li>Open the app in Chrome on Android.</li>
+            <li>Tap the ⋮ menu → “Add to Home screen” or “Install app”.</li>
+          </ol>
+          <ol data-platform="ios" hidden>
+            <li>Open the app in Safari on iOS.</li>
+            <li>Tap the Share button → “Add to Home Screen”.</li>
+          </ol>
+        </div>
+      )
+    }
   </article>
 
   <script define:vars={{ slug: app.slug, sb: SUPABASE }}>

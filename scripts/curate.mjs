@@ -18,6 +18,12 @@
  *   ICON           optional emoji icon (add); defaults to 🌐
  *   SCORE          popularity 0-100 (set-score; optional starting score for add)
  *   MARK_VERIFIED  yes | no (add); default no
+ *   NON_PWA        yes | no (add); default no. "yes" lists a regular web app
+ *                  that has no web app manifest: the manifest requirement is
+ *                  skipped and the entry is tagged pwa:false (🌐 Non-PWA
+ *                  badge). Policy: non-PWA apps must be fully useful in the
+ *                  browser without installation — curator's judgment, which
+ *                  is why the automated daily publish never sets this.
  *
  * The script edits src/data/apps.json; the workflow commits and redeploys.
  * All human-readable results go to the run's summary page.
@@ -186,10 +192,12 @@ switch (action) {
     if (check.failures.length) {
       await fail(`The address failed the listing check: ${check.failures.join('; ')}`);
     }
-    if (check.manifestHref === null) {
+    const nonPwa = env('NON_PWA') === 'yes';
+    if (check.manifestHref === null && !nonPwa) {
       await fail(
         'The page has **no web app manifest**, so it is not installable as an app. ' +
-          'If the app lives one level deeper (for example app.example.com), give that address instead.'
+          'If the app lives one level deeper (for example app.example.com), give that address instead. ' +
+          'If it is a regular web app that is fully useful without installation, rerun with **non_pwa: yes** to list it with the 🌐 Non-PWA tag.'
       );
     }
     let manifest = {};
@@ -208,7 +216,9 @@ switch (action) {
       await fail(`Unknown category “${category}”. Choose one of: ${CATEGORIES.join(', ')}.`);
     }
     const tagline =
-      env('TAGLINE') || manifest.description || `Installable web app at ${domain}.`;
+      env('TAGLINE') ||
+      manifest.description ||
+      (nonPwa ? `Web app at ${domain}.` : `Installable web app at ${domain}.`);
     const score = parseScore(false);
     if (score === null) await fail('**score** must be a number from 0 to 100.');
     const known = await knownCapabilities();
@@ -233,11 +243,13 @@ switch (action) {
       icon: env('ICON') || '🌐',
       spotlight: false,
       verified: env('MARK_VERIFIED') === 'yes',
+      ...(nonPwa ? { pwa: false } : {}),
       lastChecked: today(),
       addedAt: today(), // drives the "New apps" shelf (first week after listing)
     });
     say(`✅ Added **${name}** (\`${slug}\`) to **${category}**, score ${score ?? 40}, ` +
-        (env('MARK_VERIFIED') === 'yes' ? 'verified.' : 'at your own risk.'));
+        (env('MARK_VERIFIED') === 'yes' ? 'verified' : 'at your own risk') +
+        (nonPwa ? ', tagged 🌐 Non-PWA.' : '.'));
     for (const w of check.warnings) say(`⚠️ ${w}`);
     break;
   }

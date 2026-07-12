@@ -76,7 +76,8 @@ async function checkApp(app) {
 
   try {
     const html = await res.text();
-    if (!/<link[^>]+rel=["']?manifest/i.test(html)) {
+    // Apps tagged pwa:false are declared non-PWAs — no manifest is expected.
+    if (app.pwa !== false && !/<link[^>]+rel=["']?manifest/i.test(html)) {
       result.warnings.push('no web app manifest tag found on landing page');
     }
   } catch {

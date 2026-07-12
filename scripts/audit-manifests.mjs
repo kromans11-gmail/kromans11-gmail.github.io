@@ -259,8 +259,12 @@ console.log(`OK not listed individually: ${byVerdict.ok?.length ?? 0} apps.`);
 // fresh 'none' means the manifest has since disappeared.
 if (previousVerdicts) {
   const appBySlug = new Map(apps.map((a) => [a.slug, a]));
+  // Apps tagged pwa:false are declared non-PWAs; a 'none' verdict is expected.
   const regressions = results.filter(
-    (r) => r.verdict === 'none' && previousVerdicts.get(r.slug) !== 'none'
+    (r) =>
+      r.verdict === 'none' &&
+      previousVerdicts.get(r.slug) !== 'none' &&
+      appBySlug.get(r.slug)?.pwa !== false
   );
   if (regressions.length) {
     console.log(`\nMANIFEST REGRESSIONS (${regressions.length}):`);
@@ -293,7 +297,8 @@ if (APPLY) {
   const kept = [];
   for (const app of apps) {
     const r = verdictOf.get(app.slug);
-    if (r.verdict === 'none') continue; // not installable anywhere — drop
+    // Declared non-PWAs (pwa:false) are listed on purpose — never drop them.
+    if (r.verdict === 'none' && app.pwa !== false) continue; // not installable anywhere — drop
     if (r.verdict === 'relink') {
       app.url = r.to;
       app.lastChecked = today;

@@ -11,6 +11,11 @@ body:
         — you'll get a comment here with the live link. Community listings are
         shown with an "At your own risk" label, and the curator reviews the
         directory daily; listings that break the content rules are removed.
+
+        Auto-publish requires a web app manifest (an installable PWA). A great
+        non-PWA web app that is fully useful in the browser can still be listed
+        — it fails the automated check, but the curator can accept it manually
+        with the 🌐 Non-PWA tag, so submit it anyway and mention it's not a PWA.
   - type: input
     id: name
     attributes:

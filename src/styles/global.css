@@ -189,7 +189,8 @@ header.site .container {
   color: var(--accent-contrast);
 }
 
-.filter-chip.status-unverifiable.active {
+.filter-chip.status-unverifiable.active,
+.filter-chip.pwa-chip.active {
   background: var(--text-muted);
   border-color: var(--text-muted);
   color: var(--accent-contrast);
@@ -366,7 +367,8 @@ header.site .container {
 
 .verified-badge,
 .risk-badge,
-.unverifiable-badge {
+.unverifiable-badge,
+.nonpwa-badge {
   flex-shrink: 0;
   font-size: 0.75rem;
   font-weight: 600;
@@ -389,9 +391,15 @@ header.site .container {
   color: var(--text-muted);
 }
 
+.nonpwa-badge {
+  color: var(--text-muted);
+  border-style: dashed;
+}
+
 .verified-badge:hover,
 .risk-badge:hover,
-.unverifiable-badge:hover {
+.unverifiable-badge:hover,
+.nonpwa-badge:hover {
   text-decoration: underline;
 }
 

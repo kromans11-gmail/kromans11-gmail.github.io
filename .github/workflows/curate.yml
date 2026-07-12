@@ -61,6 +61,13 @@ on:
           - 'no'
           - 'yes'
         default: 'no'
+      non_pwa:
+        description: 'Non-PWA web app? (add only) — skips the manifest requirement and tags the listing 🌐 Non-PWA; only for apps fully useful without installation'
+        type: choice
+        options:
+          - 'no'
+          - 'yes'
+        default: 'no'
 
 permissions:
   contents: write
@@ -91,6 +98,7 @@ jobs:
           ICON: ${{ inputs.icon }}
           SCORE: ${{ inputs.score }}
           MARK_VERIFIED: ${{ inputs.mark_verified }}
+          NON_PWA: ${{ inputs.non_pwa }}
         run: node scripts/curate.mjs
 
       - name: Commit and deploy

@@ -579,7 +579,8 @@
     "capabilities": [],
     "icon": "🌅",
     "spotlight": false,
-    "verified": false
+    "verified": false,
+    "pwa": false
   },
   {
     "slug": "outlook",
@@ -595,7 +596,8 @@
     ],
     "icon": "📅",
     "spotlight": false,
-    "verified": false
+    "verified": false,
+    "pwa": false
   },
   {
     "slug": "google-meet",
@@ -610,7 +612,8 @@
     ],
     "icon": "🎥",
     "spotlight": false,
-    "verified": false
+    "verified": false,
+    "pwa": false
   },
   {
     "slug": "bluesky",
@@ -625,7 +628,8 @@
     ],
     "icon": "🦋",
     "spotlight": false,
-    "verified": false
+    "verified": false,
+    "pwa": false
   },
   {
     "slug": "flipkart",
@@ -640,7 +644,8 @@
     ],
     "icon": "🛒",
     "spotlight": false,
-    "verified": false
+    "verified": false,
+    "pwa": false
   },
   {
     "slug": "dev-to",
@@ -656,7 +661,8 @@
     ],
     "icon": "👩‍💻",
     "spotlight": false,
-    "verified": false
+    "verified": false,
+    "pwa": false
   },
   {
     "slug": "pocket-casts",
@@ -671,7 +677,8 @@
     ],
     "icon": "🎙️",
     "spotlight": false,
-    "verified": false
+    "verified": false,
+    "pwa": false
   },
   {
     "slug": "tidal",
@@ -1594,7 +1601,8 @@
     "icon": "🔐",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "onlyoffice-docspace",
@@ -1622,7 +1630,8 @@
     "icon": "📊",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "bangle-io",
@@ -1818,7 +1827,8 @@
     "icon": "🔀",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "baserow",
@@ -1832,7 +1842,8 @@
     "icon": "🧱",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "element",
@@ -2026,7 +2037,8 @@
     "icon": "🎵",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "ambient-mixer",
@@ -2072,7 +2084,8 @@
     "icon": "🏖️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "opencut",
@@ -2100,7 +2113,8 @@
     "icon": "✂️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "veed",
@@ -2142,7 +2156,8 @@
     "icon": "🎙️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "svgomg",
@@ -2174,7 +2189,8 @@
     "icon": "📦",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "transform-tools",
@@ -2289,7 +2305,8 @@
     "icon": "⏰",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "quickref",
@@ -2305,7 +2322,8 @@
     "icon": "📑",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "explainshell",
@@ -2322,7 +2340,8 @@
     "icon": "🐚",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "carbon",
@@ -2396,7 +2415,8 @@
     "icon": "🚀",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "penpot",
@@ -2410,7 +2430,8 @@
     "icon": "🖋️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "graphite",
@@ -2426,7 +2447,8 @@
     "icon": "✏️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "css-gradient",
@@ -2443,7 +2465,8 @@
     "icon": "🌈",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "coolors",
@@ -2503,7 +2526,8 @@
     "icon": "🌀",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "fontjoy",
@@ -2520,7 +2544,8 @@
     "icon": "🔤",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "type-scale",
@@ -2537,7 +2562,8 @@
     "icon": "🔠",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "whimsical",
@@ -2551,7 +2577,8 @@
     "icon": "💭",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "lospec",
@@ -2593,7 +2620,8 @@
     "icon": "✒️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "invoice-ninja",
@@ -2649,7 +2677,8 @@
     "icon": "📉",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "papermark",
@@ -2737,7 +2766,8 @@
     "icon": "🎓",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "brilliant",
@@ -2751,7 +2781,8 @@
     "icon": "💡",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "ankiweb",
@@ -2765,7 +2796,8 @@
     "icon": "🗂️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "desmos",
@@ -2809,7 +2841,8 @@
     "icon": "🧮",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "scrimba",
@@ -2840,7 +2873,8 @@
     "icon": "🐸",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "overleaf",
@@ -2886,7 +2920,8 @@
     "icon": "📞",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "skribbl",
@@ -2903,7 +2938,8 @@
     "icon": "🖍️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "retroarch-web",
@@ -2919,7 +2955,8 @@
     "icon": "🕹️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "wordle",
@@ -2999,7 +3036,8 @@
     "icon": "⏳",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "cronometer",
@@ -3013,7 +3051,8 @@
     "icon": "🥗",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "inoreader",
@@ -3088,7 +3127,8 @@
     "icon": "✈️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "felt",
@@ -3102,7 +3142,8 @@
     "icon": "📍",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "bitwarden",
@@ -3132,7 +3173,8 @@
     "icon": "🐒",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "word-counter",
@@ -3149,7 +3191,8 @@
     "icon": "🔢",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "notella",
@@ -3230,7 +3273,8 @@
     "icon": "🛠️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "padloc",
@@ -3275,7 +3319,8 @@
     "icon": "🎉",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "sharedrop",
@@ -3292,7 +3337,8 @@
     "icon": "📤",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "2brew",
@@ -3338,7 +3384,8 @@
     "icon": "🌅",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-07"
+    "lastChecked": "2026-07-07",
+    "pwa": false
   },
   {
     "slug": "google-keep",

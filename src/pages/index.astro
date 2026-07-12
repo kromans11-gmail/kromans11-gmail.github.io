@@ -60,13 +60,16 @@ const categories = [...byCategory.entries()].sort(
 
 <Base
   title="Web App Finder — discover the best Progressive Web Apps"
-  description="A curated, ranked directory of the best Progressive Web Apps, organized by category with popularity scores and capability badges."
+  description="A curated, ranked directory of the best web apps. Installable PWAs are highlighted; great non-PWA web apps that run fully in the browser are listed too."
 >
   <section class="hero" id="top">
     <h1>Find the best Progressive Web Apps</h1>
     <p>
-      Installable web apps, ranked by popularity and organized by category. No
-      app store required — every listing is one tap away from running.
+      Web apps ranked by popularity and organized by category. Installable
+      PWAs take the spotlight, and we also list great non-PWA web apps — as
+      long as they're fully useful right in the browser, no install needed.
+      Every listing is one tap away from running; nothing requires an app
+      store.
     </p>
     <div class="search-wrap">
       <input
@@ -93,6 +96,12 @@ const categories = [...byCategory.entries()].sort(
       </button>
       <button class="filter-chip status-unverifiable" data-status="unverifiable" aria-pressed="false">
         🔒 Unverifiable
+      </button>
+      <button class="filter-chip pwa-chip" data-pwa="true" aria-pressed="false">
+        📲 Installable PWA
+      </button>
+      <button class="filter-chip pwa-chip" data-pwa="false" aria-pressed="false">
+        🌐 Non-PWA
       </button>
       {
         filterCaps.map((c) => (
@@ -307,9 +316,11 @@ const categories = [...byCategory.entries()].sort(
     const sections = [...document.querySelectorAll<HTMLElement>('[data-category-section]')];
     const chips = [...document.querySelectorAll<HTMLButtonElement>('.filter-chip[data-cap]')];
     const statusChips = [...document.querySelectorAll<HTMLButtonElement>('.filter-chip[data-status]')];
+    const pwaChips = [...document.querySelectorAll<HTMLButtonElement>('.filter-chip[data-pwa]')];
     const noResults = document.getElementById('no-results')!;
     const activeCaps = new Set<string>();
     const activeStatus = new Set<string>();
+    const activePwa = new Set<string>();
 
     function applyFilters() {
       const q = input?.value.trim().toLowerCase() ?? '';
@@ -319,7 +330,11 @@ const categories = [...byCategory.entries()].sort(
         const matchesCaps = [...activeCaps].every((c) => caps.includes(c));
         const matchesStatus =
           activeStatus.size === 0 || activeStatus.has(card.dataset.verified!);
-        card.classList.toggle('hidden', !(matchesText && matchesCaps && matchesStatus));
+        const matchesPwa = activePwa.size === 0 || activePwa.has(card.dataset.pwa!);
+        card.classList.toggle(
+          'hidden',
+          !(matchesText && matchesCaps && matchesStatus && matchesPwa)
+        );
       }
       let anyVisible = false;
       for (const section of sections) {
@@ -351,6 +366,17 @@ const categories = [...byCategory.entries()].sort(
         if (activeStatus.has(v)) activeStatus.delete(v);
         else activeStatus.add(v);
         const on = activeStatus.has(v);
+        chip.classList.toggle('active', on);
+        chip.setAttribute('aria-pressed', String(on));
+        applyFilters();
+      });
+    }
+    for (const chip of pwaChips) {
+      chip.addEventListener('click', () => {
+        const v = chip.dataset.pwa!;
+        if (activePwa.has(v)) activePwa.delete(v);
+        else activePwa.add(v);
+        const on = activePwa.has(v);
         chip.classList.toggle('active', on);
         chip.setAttribute('aria-pressed', String(on));
         applyFilters();
