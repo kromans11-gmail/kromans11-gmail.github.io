@@ -3432,5 +3432,22 @@
     "spotlight": true,
     "verified": true,
     "lastChecked": "2026-07-07"
+  },
+  {
+    "slug": "kromans-sports",
+    "name": "kromans-Sports",
+    "url": "https://kromans-sports-production.up.railway.app",
+    "category": "Games & Leisure",
+    "tagline": "Live scores, finals, and results for the teams and golfers you follow.",
+    "description": "kromans-Sports tracks your teams across NFL, NBA, MLB, NHL, college sports, golf, and international soccer including the World Cup. Follow up to five teams free, see live scores while the app is open, browse championship and playoff games in every sport, and tap through to each team's full season results. Installs to your home screen and works without an account.",
+    "popularity": 40,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🏟️",
+    "spotlight": true,
+    "verified": true,
+    "lastChecked": "2026-07-12"
   }
 ]
