@@ -16,6 +16,13 @@
  * defense; judged manually), dead (unreachable), none (no manifest
  * anywhere — not installable).
  *
+ * Regression sweep: when a previous audit-report.json exists, any listing
+ * whose fresh verdict is 'none' but whose previous verdict wasn't (i.e. the
+ * app apparently dropped its PWA support) is written to
+ * manifest-regressions.md and the script exits non-zero. The weekly-check
+ * workflow runs this, commits the updated report as the next baseline, and
+ * opens a curator issue from that file — regressions never auto-remove.
+ *
  * Usage:
  *   node scripts/audit-manifests.mjs            report to audit-report.json
  *   node scripts/audit-manifests.mjs --apply    also rewrite apps.json:
@@ -215,6 +222,15 @@ async function auditApp(app) {
 }
 
 const apps = JSON.parse(await readFile(APPS_PATH, 'utf8'));
+
+// Previous verdicts are the regression baseline; load before overwriting.
+let previousVerdicts = null;
+try {
+  previousVerdicts = new Map(
+    JSON.parse(await readFile(REPORT_PATH, 'utf8')).map((r) => [r.slug, r.verdict])
+  );
+} catch {}
+
 console.log(`Auditing ${apps.length} listings for installability…`);
 
 const results = [];
@@ -236,6 +252,37 @@ for (const [verdict, list] of Object.entries(byVerdict)) {
   }
 }
 console.log(`OK not listed individually: ${byVerdict.ok?.length ?? 0} apps.`);
+
+// Regression sweep: previously installable (or at least never confirmed
+// uninstallable), now 'none'. A slug missing from the previous report also
+// counts — new listings passed curate's manifest gate when added, so a
+// fresh 'none' means the manifest has since disappeared.
+if (previousVerdicts) {
+  const appBySlug = new Map(apps.map((a) => [a.slug, a]));
+  const regressions = results.filter(
+    (r) => r.verdict === 'none' && previousVerdicts.get(r.slug) !== 'none'
+  );
+  if (regressions.length) {
+    console.log(`\nMANIFEST REGRESSIONS (${regressions.length}):`);
+    const lines = [
+      'The installability audit found listings whose web app manifest was present',
+      'on the previous audit but is gone now — the app may have dropped PWA support.',
+      '',
+    ];
+    for (const r of regressions) {
+      const app = appBySlug.get(r.slug);
+      const prev = previousVerdicts.get(r.slug) ?? 'not audited before';
+      console.log(`  ${r.slug} (was: ${prev})`);
+      lines.push(`- **${app?.name ?? r.slug}** (\`${r.slug}\`) — ${app?.url ?? ''} — previous verdict: ${prev}`);
+    }
+    lines.push(
+      '',
+      'Decide per app: wait a week if it looks transient, relink to the URL that serves the manifest, or remove it with the "Curate catalog" workflow (action: remove).'
+    );
+    await writeFile('manifest-regressions.md', lines.join('\n') + '\n');
+    process.exitCode = 1;
+  }
+}
 
 await writeFile(REPORT_PATH, JSON.stringify(results, null, 2) + '\n');
 console.log(`\nFull report: audit-report.json`);

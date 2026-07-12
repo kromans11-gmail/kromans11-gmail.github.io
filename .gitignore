@@ -28,5 +28,7 @@ pnpm-debug.log*
 
 notify-out/
 
-# generated audit snapshot (rerun scripts/audit-manifests.mjs)
-audit-report.json
+# audit-report.json is committed on purpose: it is the baseline the weekly
+# manifest-regression sweep (scripts/audit-manifests.mjs) diffs against.
+# Its regressions output is transient (becomes the curator issue body).
+manifest-regressions.md

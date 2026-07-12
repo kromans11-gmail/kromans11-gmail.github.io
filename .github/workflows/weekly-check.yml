@@ -5,6 +5,11 @@ name: Weekly listing check
 # stamps lastChecked on every app and revokes the verified badge on hard
 # failures (unreachable, HTTP error, off-domain redirect); an issue is opened
 # so the curator can decide whether to fix the URL or remove the listing.
+#
+# Also re-runs the installability audit (scripts/audit-manifests.mjs) against
+# the committed audit-report.json baseline: a listing whose manifest was
+# present last audit but is gone now (the app dropped PWA support) gets a
+# curator issue. Advisory only — regressions never auto-remove a listing.
 
 on:
   schedule:
@@ -39,20 +44,32 @@ jobs:
         continue-on-error: true
         run: npm run check -- --apply | tee check-report.txt
 
+      # Deep installability sweep: static fetch + headless-Chrome render per
+      # listing (Chrome is preinstalled on ubuntu-latest). Exits non-zero and
+      # writes manifest-regressions.md when a listing lost its manifest since
+      # the committed baseline.
+      - name: Installability audit (manifest regressions)
+        id: audit
+        continue-on-error: true
+        run: node scripts/audit-manifests.mjs
+
       - name: Commit and deploy
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if git diff --quiet -- src/data/apps.json; then
-            echo "Catalog unchanged; nothing to deploy."
+          git add src/data/apps.json audit-report.json
+          if git diff --cached --quiet; then
+            echo "Catalog and audit baseline unchanged; nothing to commit."
             exit 0
           fi
           git config user.name "Web App Finder curator"
           git config user.email "actions@users.noreply.github.com"
-          git add src/data/apps.json
           git commit -m "Weekly check: $(date -u +%Y-%m-%d)"
           git push
-          gh workflow run "Deploy to GitHub Pages" --ref main
+          # Only a catalog change needs a site deploy; a baseline refresh doesn't.
+          if git show --name-only --format= HEAD | grep -q 'src/data/apps.json'; then
+            gh workflow run "Deploy to GitHub Pages" --ref main
+          fi
 
       # Advisory reputation sweep: with a (free) urlscan.io API key configured,
       # every listing gets a fresh scan. Malicious verdicts open their own
@@ -77,6 +94,19 @@ jobs:
           gh issue create --repo "$GITHUB_REPOSITORY" \
             --title "⚠️ urlscan flagged listed app(s) as malicious ($(date -u +%Y-%m-%d))" \
             --body-file urlscan-report.md
+
+      - name: Open an issue on manifest regressions
+        if: steps.audit.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ ! -f manifest-regressions.md ]; then
+            echo "Audit step failed without a regressions report (script error) — check the run log."
+            exit 0
+          fi
+          gh issue create --repo "$GITHUB_REPOSITORY" \
+            --title "Weekly audit: listings lost their web app manifest ($(date -u +%Y-%m-%d))" \
+            --body-file manifest-regressions.md
 
       - name: Open an issue on hard failures
         if: steps.check.outcome == 'failure'

@@ -1,0 +1,938 @@
+[
+  {
+    "slug": "photopea",
+    "verdict": "ok"
+  },
+  {
+    "slug": "spotify",
+    "verdict": "ok"
+  },
+  {
+    "slug": "excalidraw",
+    "verdict": "ok"
+  },
+  {
+    "slug": "youtube-music",
+    "verdict": "ok",
+    "detail": "probed"
+  },
+  {
+    "slug": "pinterest",
+    "verdict": "ok"
+  },
+  {
+    "slug": "telegram-web",
+    "verdict": "ok"
+  },
+  {
+    "slug": "vscode-web",
+    "verdict": "ok",
+    "detail": "rendered"
+  },
+  {
+    "slug": "squoosh",
+    "verdict": "ok"
+  },
+  {
+    "slug": "todoist",
+    "verdict": "ok"
+  },
+  {
+    "slug": "stackblitz",
+    "verdict": "ok",
+    "detail": "probed"
+  },
+  {
+    "slug": "uber",
+    "verdict": "blocked"
+  },
+  {
+    "slug": "starbucks",
+    "verdict": "ok"
+  },
+  {
+    "slug": "monkeytype",
+    "verdict": "ok"
+  },
+  {
+    "slug": "proxx",
+    "verdict": "ok"
+  },
+  {
+    "slug": "youtube",
+    "verdict": "ok"
+  },
+  {
+    "slug": "x",
+    "verdict": "ok"
+  },
+  {
+    "slug": "tiktok",
+    "verdict": "ok"
+  },
+  {
+    "slug": "github",
+    "verdict": "ok"
+  },
+  {
+    "slug": "duolingo",
+    "verdict": "ok"
+  },
+  {
+    "slug": "soundcloud",
+    "verdict": "ok"
+  },
+  {
+    "slug": "chess-com",
+    "verdict": "ok"
+  },
+  {
+    "slug": "lichess",
+    "verdict": "ok"
+  },
+  {
+    "slug": "replit",
+    "verdict": "ok"
+  },
+  {
+    "slug": "diagrams-net",
+    "verdict": "ok"
+  },
+  {
+    "slug": "weather-channel",
+    "verdict": "ok"
+  },
+  {
+    "slug": "mastodon",
+    "verdict": "ok"
+  },
+  {
+    "slug": "windy",
+    "verdict": "ok"
+  },
+  {
+    "slug": "tldraw",
+    "verdict": "ok"
+  },
+  {
+    "slug": "pixlr",
+    "verdict": "ok"
+  },
+  {
+    "slug": "2048",
+    "verdict": "ok"
+  },
+  {
+    "slug": "financial-times",
+    "verdict": "ok"
+  },
+  {
+    "slug": "pwabuilder",
+    "verdict": "ok"
+  },
+  {
+    "slug": "gmail",
+    "verdict": "login-walled"
+  },
+  {
+    "slug": "instagram",
+    "verdict": "ok"
+  },
+  {
+    "slug": "whatsapp-web",
+    "verdict": "ok"
+  },
+  {
+    "slug": "canva",
+    "verdict": "blocked"
+  },
+  {
+    "slug": "google-photos",
+    "verdict": "none"
+  },
+  {
+    "slug": "outlook",
+    "verdict": "none"
+  },
+  {
+    "slug": "google-meet",
+    "verdict": "none"
+  },
+  {
+    "slug": "bluesky",
+    "verdict": "none"
+  },
+  {
+    "slug": "flipkart",
+    "verdict": "none"
+  },
+  {
+    "slug": "dev-to",
+    "verdict": "none"
+  },
+  {
+    "slug": "pocket-casts",
+    "verdict": "none"
+  },
+  {
+    "slug": "tidal",
+    "verdict": "blocked"
+  },
+  {
+    "slug": "bitmidi",
+    "verdict": "ok"
+  },
+  {
+    "slug": "joybox",
+    "verdict": "ok"
+  },
+  {
+    "slug": "lofi-music",
+    "verdict": "ok"
+  },
+  {
+    "slug": "omnicam",
+    "verdict": "ok"
+  },
+  {
+    "slug": "soundslice",
+    "verdict": "ok"
+  },
+  {
+    "slug": "videotrim",
+    "verdict": "ok"
+  },
+  {
+    "slug": "remove-audio",
+    "verdict": "ok"
+  },
+  {
+    "slug": "farmos",
+    "verdict": "ok"
+  },
+  {
+    "slug": "justinvoice",
+    "verdict": "ok"
+  },
+  {
+    "slug": "moneytracker",
+    "verdict": "ok"
+  },
+  {
+    "slug": "vaulted",
+    "verdict": "ok"
+  },
+  {
+    "slug": "mtgstocks",
+    "verdict": "ok"
+  },
+  {
+    "slug": "rydeen",
+    "verdict": "ok"
+  },
+  {
+    "slug": "splittypie",
+    "verdict": "ok"
+  },
+  {
+    "slug": "chitchatter",
+    "verdict": "ok"
+  },
+  {
+    "slug": "emberclear",
+    "verdict": "ok"
+  },
+  {
+    "slug": "3d-house-editor",
+    "verdict": "ok"
+  },
+  {
+    "slug": "bundle",
+    "verdict": "ok"
+  },
+  {
+    "slug": "colorbeta",
+    "verdict": "ok"
+  },
+  {
+    "slug": "devdocs",
+    "verdict": "ok"
+  },
+  {
+    "slug": "launchlet",
+    "verdict": "ok"
+  },
+  {
+    "slug": "pixelcraft",
+    "verdict": "ok"
+  },
+  {
+    "slug": "regex101",
+    "verdict": "ok"
+  },
+  {
+    "slug": "themer",
+    "verdict": "ok"
+  },
+  {
+    "slug": "booksie",
+    "verdict": "ok"
+  },
+  {
+    "slug": "epub-player",
+    "verdict": "ok"
+  },
+  {
+    "slug": "swahili-dictionary",
+    "verdict": "ok"
+  },
+  {
+    "slug": "unalengua-ipa-translator",
+    "verdict": "ok"
+  },
+  {
+    "slug": "worddb",
+    "verdict": "ok"
+  },
+  {
+    "slug": "air-horner",
+    "verdict": "ok"
+  },
+  {
+    "slug": "cybercar",
+    "verdict": "ok"
+  },
+  {
+    "slug": "falling-nikochan",
+    "verdict": "ok"
+  },
+  {
+    "slug": "farmhand",
+    "verdict": "ok"
+  },
+  {
+    "slug": "match-a-movie",
+    "verdict": "dead",
+    "detail": "HTTP 509"
+  },
+  {
+    "slug": "murlok-io",
+    "verdict": "ok"
+  },
+  {
+    "slug": "pokedex",
+    "verdict": "ok"
+  },
+  {
+    "slug": "slitherlinks",
+    "verdict": "ok"
+  },
+  {
+    "slug": "soodoku",
+    "verdict": "ok"
+  },
+  {
+    "slug": "aerko",
+    "verdict": "ok"
+  },
+  {
+    "slug": "care-cards",
+    "verdict": "ok"
+  },
+  {
+    "slug": "cat-safe-foods",
+    "verdict": "ok"
+  },
+  {
+    "slug": "dog-safe-foods",
+    "verdict": "ok"
+  },
+  {
+    "slug": "veganify",
+    "verdict": "ok"
+  },
+  {
+    "slug": "brutalist-hacker-news",
+    "verdict": "ok"
+  },
+  {
+    "slug": "computerbase",
+    "verdict": "ok"
+  },
+  {
+    "slug": "qi-reader",
+    "verdict": "ok"
+  },
+  {
+    "slug": "housing-go",
+    "verdict": "blocked"
+  },
+  {
+    "slug": "versus",
+    "verdict": "ok"
+  },
+  {
+    "slug": "alarmdj",
+    "verdict": "ok"
+  },
+  {
+    "slug": "anonynote",
+    "verdict": "ok"
+  },
+  {
+    "slug": "bulkpictools",
+    "verdict": "ok"
+  },
+  {
+    "slug": "gpa-calculator",
+    "verdict": "ok"
+  },
+  {
+    "slug": "mconverter",
+    "verdict": "ok"
+  },
+  {
+    "slug": "omniconvert",
+    "verdict": "ok"
+  },
+  {
+    "slug": "nanocell-csv",
+    "verdict": "ok"
+  },
+  {
+    "slug": "passky",
+    "verdict": "ok"
+  },
+  {
+    "slug": "pasteepad",
+    "verdict": "ok"
+  },
+  {
+    "slug": "pdfgem",
+    "verdict": "ok"
+  },
+  {
+    "slug": "pomotimer",
+    "verdict": "ok"
+  },
+  {
+    "slug": "ppresume",
+    "verdict": "ok"
+  },
+  {
+    "slug": "qr-code-scanner",
+    "verdict": "ok"
+  },
+  {
+    "slug": "super-productivity",
+    "verdict": "ok"
+  },
+  {
+    "slug": "taleforge",
+    "verdict": "ok"
+  },
+  {
+    "slug": "vizua",
+    "verdict": "ok"
+  },
+  {
+    "slug": "wormhole",
+    "verdict": "ok"
+  },
+  {
+    "slug": "ztable-io",
+    "verdict": "ok"
+  },
+  {
+    "slug": "closerintime",
+    "verdict": "ok"
+  },
+  {
+    "slug": "what-can-do-today",
+    "verdict": "ok"
+  },
+  {
+    "slug": "cryptpad",
+    "verdict": "none"
+  },
+  {
+    "slug": "onlyoffice-docspace",
+    "verdict": "ok"
+  },
+  {
+    "slug": "grist",
+    "verdict": "none"
+  },
+  {
+    "slug": "bangle-io",
+    "verdict": "ok"
+  },
+  {
+    "slug": "taskade",
+    "verdict": "ok",
+    "detail": "probed"
+  },
+  {
+    "slug": "taiga",
+    "verdict": "ok"
+  },
+  {
+    "slug": "hyperdraft",
+    "verdict": "ok"
+  },
+  {
+    "slug": "notesnook",
+    "verdict": "ok"
+  },
+  {
+    "slug": "mermaid-live",
+    "verdict": "ok"
+  },
+  {
+    "slug": "tana",
+    "verdict": "ok"
+  },
+  {
+    "slug": "linear",
+    "verdict": "ok"
+  },
+  {
+    "slug": "cal-com",
+    "verdict": "ok"
+  },
+  {
+    "slug": "nocodb",
+    "verdict": "ok"
+  },
+  {
+    "slug": "affine",
+    "verdict": "ok"
+  },
+  {
+    "slug": "anytype",
+    "verdict": "ok"
+  },
+  {
+    "slug": "n8n",
+    "verdict": "none"
+  },
+  {
+    "slug": "baserow",
+    "verdict": "none"
+  },
+  {
+    "slug": "element",
+    "verdict": "ok"
+  },
+  {
+    "slug": "pixelfed",
+    "verdict": "ok"
+  },
+  {
+    "slug": "jitsi-meet",
+    "verdict": "ok",
+    "detail": "rendered"
+  },
+  {
+    "slug": "nostter",
+    "verdict": "ok"
+  },
+  {
+    "slug": "threema-web",
+    "verdict": "ok"
+  },
+  {
+    "slug": "proton-mail",
+    "verdict": "ok"
+  },
+  {
+    "slug": "hey",
+    "verdict": "ok"
+  },
+  {
+    "slug": "fastmail",
+    "verdict": "ok"
+  },
+  {
+    "slug": "lofi-co",
+    "verdict": "ok",
+    "detail": "probed"
+  },
+  {
+    "slug": "wavepad-synth",
+    "verdict": "ok"
+  },
+  {
+    "slug": "xsound",
+    "verdict": "ok"
+  },
+  {
+    "slug": "audiomass",
+    "verdict": "ok"
+  },
+  {
+    "slug": "bandcamp",
+    "verdict": "none"
+  },
+  {
+    "slug": "ambient-mixer",
+    "verdict": "ok"
+  },
+  {
+    "slug": "radio-garden",
+    "verdict": "ok"
+  },
+  {
+    "slug": "poolsuite",
+    "verdict": "none"
+  },
+  {
+    "slug": "opencut",
+    "verdict": "ok"
+  },
+  {
+    "slug": "clideo",
+    "verdict": "none"
+  },
+  {
+    "slug": "veed",
+    "verdict": "ok",
+    "detail": "probed"
+  },
+  {
+    "slug": "kapwing",
+    "verdict": "ok"
+  },
+  {
+    "slug": "descript",
+    "verdict": "none"
+  },
+  {
+    "slug": "svgomg",
+    "verdict": "ok"
+  },
+  {
+    "slug": "codesandbox",
+    "verdict": "none"
+  },
+  {
+    "slug": "transform-tools",
+    "verdict": "ok"
+  },
+  {
+    "slug": "codeimage",
+    "verdict": "ok"
+  },
+  {
+    "slug": "json-crack",
+    "verdict": "ok"
+  },
+  {
+    "slug": "grep-app",
+    "verdict": "blocked"
+  },
+  {
+    "slug": "webhook-site",
+    "verdict": "ok"
+  },
+  {
+    "slug": "jwt-io",
+    "verdict": "ok"
+  },
+  {
+    "slug": "crontab-guru",
+    "verdict": "none"
+  },
+  {
+    "slug": "quickref",
+    "verdict": "none"
+  },
+  {
+    "slug": "explainshell",
+    "verdict": "none"
+  },
+  {
+    "slug": "carbon",
+    "verdict": "ok"
+  },
+  {
+    "slug": "codepen",
+    "verdict": "blocked"
+  },
+  {
+    "slug": "posthog",
+    "verdict": "ok"
+  },
+  {
+    "slug": "wakapi",
+    "verdict": "ok"
+  },
+  {
+    "slug": "netlify-drop",
+    "verdict": "none"
+  },
+  {
+    "slug": "penpot",
+    "verdict": "none"
+  },
+  {
+    "slug": "graphite",
+    "verdict": "none"
+  },
+  {
+    "slug": "css-gradient",
+    "verdict": "none"
+  },
+  {
+    "slug": "coolors",
+    "verdict": "ok"
+  },
+  {
+    "slug": "shots",
+    "verdict": "ok"
+  },
+  {
+    "slug": "remove-bg",
+    "verdict": "ok"
+  },
+  {
+    "slug": "haikei",
+    "verdict": "none"
+  },
+  {
+    "slug": "fontjoy",
+    "verdict": "none"
+  },
+  {
+    "slug": "type-scale",
+    "verdict": "none"
+  },
+  {
+    "slug": "whimsical",
+    "verdict": "none"
+  },
+  {
+    "slug": "lospec",
+    "verdict": "ok"
+  },
+  {
+    "slug": "figma",
+    "verdict": "ok"
+  },
+  {
+    "slug": "docuseal",
+    "verdict": "none"
+  },
+  {
+    "slug": "invoice-ninja",
+    "verdict": "ok"
+  },
+  {
+    "slug": "xe",
+    "verdict": "blocked"
+  },
+  {
+    "slug": "contrax",
+    "verdict": "ok",
+    "detail": "probed"
+  },
+  {
+    "slug": "plausible",
+    "verdict": "none"
+  },
+  {
+    "slug": "papermark",
+    "verdict": "login-walled",
+    "detail": "https://app.papermark.com"
+  },
+  {
+    "slug": "metabase",
+    "verdict": "ok",
+    "detail": "probed"
+  },
+  {
+    "slug": "umami",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kommit",
+    "verdict": "ok"
+  },
+  {
+    "slug": "languagetool",
+    "verdict": "ok"
+  },
+  {
+    "slug": "khan-academy",
+    "verdict": "none"
+  },
+  {
+    "slug": "brilliant",
+    "verdict": "none"
+  },
+  {
+    "slug": "ankiweb",
+    "verdict": "none"
+  },
+  {
+    "slug": "desmos",
+    "verdict": "ok"
+  },
+  {
+    "slug": "geogebra",
+    "verdict": "ok"
+  },
+  {
+    "slug": "wolfram-alpha",
+    "verdict": "none"
+  },
+  {
+    "slug": "scrimba",
+    "verdict": "ok"
+  },
+  {
+    "slug": "flexbox-froggy",
+    "verdict": "none"
+  },
+  {
+    "slug": "overleaf",
+    "verdict": "ok"
+  },
+  {
+    "slug": "narrow-one",
+    "verdict": "ok"
+  },
+  {
+    "slug": "gartic-phone",
+    "verdict": "none"
+  },
+  {
+    "slug": "skribbl",
+    "verdict": "none"
+  },
+  {
+    "slug": "retroarch-web",
+    "verdict": "none"
+  },
+  {
+    "slug": "wordle",
+    "verdict": "ok"
+  },
+  {
+    "slug": "backgammon-galaxy",
+    "verdict": "ok",
+    "detail": "probed"
+  },
+  {
+    "slug": "geoguessr",
+    "verdict": "ok"
+  },
+  {
+    "slug": "hackertyper",
+    "verdict": "ok"
+  },
+  {
+    "slug": "fasttrack",
+    "verdict": "none"
+  },
+  {
+    "slug": "cronometer",
+    "verdict": "none"
+  },
+  {
+    "slug": "inoreader",
+    "verdict": "ok"
+  },
+  {
+    "slug": "hnpwa",
+    "verdict": "ok"
+  },
+  {
+    "slug": "readwise-reader",
+    "verdict": "ok"
+  },
+  {
+    "slug": "openstreetmap",
+    "verdict": "ok"
+  },
+  {
+    "slug": "flightradar24",
+    "verdict": "none"
+  },
+  {
+    "slug": "felt",
+    "verdict": "none"
+  },
+  {
+    "slug": "bitwarden",
+    "verdict": "ok"
+  },
+  {
+    "slug": "qrcode-monkey",
+    "verdict": "none"
+  },
+  {
+    "slug": "word-counter",
+    "verdict": "none"
+  },
+  {
+    "slug": "notella",
+    "verdict": "ok"
+  },
+  {
+    "slug": "morse-code-translator",
+    "verdict": "ok"
+  },
+  {
+    "slug": "calculator-net",
+    "verdict": "ok"
+  },
+  {
+    "slug": "tableconvert",
+    "verdict": "ok"
+  },
+  {
+    "slug": "tinywow",
+    "verdict": "none"
+  },
+  {
+    "slug": "padloc",
+    "verdict": "ok"
+  },
+  {
+    "slug": "privatebin",
+    "verdict": "ok"
+  },
+  {
+    "slug": "giphy-gif-maker",
+    "verdict": "none"
+  },
+  {
+    "slug": "sharedrop",
+    "verdict": "none"
+  },
+  {
+    "slug": "2brew",
+    "verdict": "ok"
+  },
+  {
+    "slug": "unsplash",
+    "verdict": "blocked"
+  },
+  {
+    "slug": "polarr",
+    "verdict": "none"
+  },
+  {
+    "slug": "google-keep",
+    "verdict": "login-walled"
+  },
+  {
+    "slug": "kromans-reader",
+    "verdict": "ok"
+  },
+  {
+    "slug": "openrouter",
+    "verdict": "ok"
+  }
+]
