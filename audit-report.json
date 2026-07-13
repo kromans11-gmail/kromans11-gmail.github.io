@@ -26,8 +26,7 @@
   },
   {
     "slug": "vscode-web",
-    "verdict": "ok",
-    "detail": "rendered"
+    "verdict": "none"
   },
   {
     "slug": "squoosh",
@@ -180,7 +179,7 @@
   },
   {
     "slug": "bitmidi",
-    "verdict": "ok"
+    "verdict": "blocked"
   },
   {
     "slug": "joybox",
@@ -535,7 +534,7 @@
   },
   {
     "slug": "nostter",
-    "verdict": "ok"
+    "verdict": "blocked"
   },
   {
     "slug": "threema-web",
@@ -649,7 +648,7 @@
   },
   {
     "slug": "explainshell",
-    "verdict": "none"
+    "verdict": "blocked"
   },
   {
     "slug": "carbon",
@@ -685,7 +684,7 @@
   },
   {
     "slug": "coolors",
-    "verdict": "ok"
+    "verdict": "blocked"
   },
   {
     "slug": "shots",
@@ -804,7 +803,7 @@
   },
   {
     "slug": "gartic-phone",
-    "verdict": "none"
+    "verdict": "blocked"
   },
   {
     "slug": "skribbl",
@@ -857,7 +856,7 @@
   },
   {
     "slug": "flightradar24",
-    "verdict": "none"
+    "verdict": "blocked"
   },
   {
     "slug": "felt",
@@ -881,7 +880,7 @@
   },
   {
     "slug": "morse-code-translator",
-    "verdict": "ok"
+    "verdict": "blocked"
   },
   {
     "slug": "calculator-net",
@@ -933,6 +932,10 @@
   },
   {
     "slug": "openrouter",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-sports",
     "verdict": "ok"
   }
 ]
