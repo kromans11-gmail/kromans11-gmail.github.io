@@ -26,7 +26,8 @@
   },
   {
     "slug": "vscode-web",
-    "verdict": "none"
+    "verdict": "ok",
+    "detail": "rendered"
   },
   {
     "slug": "squoosh",
@@ -163,7 +164,7 @@
   },
   {
     "slug": "flipkart",
-    "verdict": "none"
+    "verdict": "blocked"
   },
   {
     "slug": "dev-to",
@@ -336,7 +337,8 @@
   },
   {
     "slug": "care-cards",
-    "verdict": "ok"
+    "verdict": "dead",
+    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
   },
   {
     "slug": "cat-safe-foods",
@@ -368,7 +370,7 @@
   },
   {
     "slug": "versus",
-    "verdict": "ok"
+    "verdict": "blocked"
   },
   {
     "slug": "alarmdj",
@@ -936,6 +938,14 @@
   },
   {
     "slug": "kromans-sports",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-wanted",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-docstranslate",
     "verdict": "ok"
   }
 ]

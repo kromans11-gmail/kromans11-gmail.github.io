@@ -15,7 +15,7 @@
     "highlyUseful": true,
     "spotlight": true,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "spotify",
@@ -32,7 +32,7 @@
     "highlyUseful": false,
     "spotlight": true,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "excalidraw",
@@ -51,7 +51,7 @@
     "highlyUseful": true,
     "spotlight": true,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "youtube-music",
@@ -68,7 +68,7 @@
     "icon": "🎵",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "pinterest",
@@ -84,7 +84,7 @@
     "icon": "📌",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "telegram-web",
@@ -100,7 +100,7 @@
     "icon": "✈️",
     "spotlight": true,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "vscode-web",
@@ -117,7 +117,7 @@
     "icon": "💻",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "squoosh",
@@ -135,7 +135,7 @@
     "icon": "🗜️",
     "spotlight": true,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "todoist",
@@ -152,7 +152,7 @@
     "icon": "✅",
     "spotlight": true,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "stackblitz",
@@ -168,7 +168,7 @@
     "icon": "⚡",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "uber",
@@ -185,7 +185,7 @@
     "icon": "🚗",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "starbucks",
@@ -202,7 +202,7 @@
     "icon": "☕",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "monkeytype",
@@ -220,7 +220,7 @@
     "icon": "⌨️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "proxx",
@@ -238,7 +238,7 @@
     "icon": "🪐",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "youtube",
@@ -255,7 +255,7 @@
     "icon": "▶️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "x",
@@ -271,7 +271,7 @@
     "icon": "🐦",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "tiktok",
@@ -287,7 +287,7 @@
     "icon": "🎬",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "github",
@@ -303,7 +303,7 @@
     "icon": "🐙",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "duolingo",
@@ -319,7 +319,7 @@
     "icon": "🦉",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "soundcloud",
@@ -336,7 +336,7 @@
     "icon": "🔊",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "chess-com",
@@ -352,7 +352,7 @@
     "icon": "♟️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "lichess",
@@ -369,7 +369,7 @@
     "icon": "♞",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "replit",
@@ -383,7 +383,7 @@
     "icon": "🛠️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "diagrams-net",
@@ -401,7 +401,7 @@
     "icon": "📊",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "weather-channel",
@@ -418,7 +418,7 @@
     "icon": "⛅",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "mastodon",
@@ -434,7 +434,7 @@
     "icon": "🐘",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "windy",
@@ -451,7 +451,7 @@
     "icon": "🌬️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "tldraw",
@@ -468,7 +468,7 @@
     "icon": "🖊️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "pixlr",
@@ -484,7 +484,7 @@
     "icon": "🖼️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "2048",
@@ -501,7 +501,7 @@
     "icon": "🔢",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "financial-times",
@@ -517,7 +517,7 @@
     "icon": "📰",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "pwabuilder",
@@ -534,7 +534,7 @@
     "icon": "🧰",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "gmail",
@@ -551,7 +551,7 @@
     "icon": "✉️",
     "spotlight": false,
     "verified": "unverifiable",
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "instagram",
@@ -567,7 +567,7 @@
     "icon": "📷",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "whatsapp-web",
@@ -583,7 +583,7 @@
     "icon": "💬",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "canva",
@@ -599,7 +599,7 @@
     "icon": "🎭",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "google-photos",
@@ -614,7 +614,7 @@
     "spotlight": false,
     "verified": false,
     "pwa": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "outlook",
@@ -632,7 +632,7 @@
     "spotlight": false,
     "verified": false,
     "pwa": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "google-meet",
@@ -649,7 +649,7 @@
     "spotlight": false,
     "verified": false,
     "pwa": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "bluesky",
@@ -666,7 +666,7 @@
     "spotlight": false,
     "verified": false,
     "pwa": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "flipkart",
@@ -683,7 +683,7 @@
     "spotlight": false,
     "verified": false,
     "pwa": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "dev-to",
@@ -701,7 +701,7 @@
     "spotlight": false,
     "verified": false,
     "pwa": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "pocket-casts",
@@ -718,7 +718,7 @@
     "spotlight": false,
     "verified": false,
     "pwa": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "tidal",
@@ -734,7 +734,7 @@
     "icon": "🌊",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "bitmidi",
@@ -748,7 +748,7 @@
     "icon": "🎹",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "joybox",
@@ -762,7 +762,7 @@
     "icon": "📻",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "lofi-music",
@@ -776,7 +776,7 @@
     "icon": "🎧",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "omnicam",
@@ -790,7 +790,7 @@
     "icon": "🎦",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "soundslice",
@@ -804,7 +804,7 @@
     "icon": "🎼",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "videotrim",
@@ -818,7 +818,7 @@
     "icon": "✂️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "remove-audio",
@@ -832,7 +832,7 @@
     "icon": "🔇",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "farmos",
@@ -846,7 +846,7 @@
     "icon": "🚜",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "justinvoice",
@@ -860,7 +860,7 @@
     "icon": "🧾",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "moneytracker",
@@ -874,7 +874,7 @@
     "icon": "💰",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "vaulted",
@@ -888,7 +888,7 @@
     "icon": "🏦",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "mtgstocks",
@@ -902,7 +902,7 @@
     "icon": "🃏",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "rydeen",
@@ -916,7 +916,7 @@
     "icon": "🗓️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "splittypie",
@@ -930,7 +930,7 @@
     "icon": "🥧",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "chitchatter",
@@ -944,7 +944,7 @@
     "icon": "🕵️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "emberclear",
@@ -958,7 +958,7 @@
     "icon": "🔐",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "3d-house-editor",
@@ -972,7 +972,7 @@
     "icon": "🏠",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "bundle",
@@ -986,7 +986,7 @@
     "icon": "📦",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "colorbeta",
@@ -1000,7 +1000,7 @@
     "icon": "🌈",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "devdocs",
@@ -1014,7 +1014,7 @@
     "icon": "📚",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "launchlet",
@@ -1028,7 +1028,7 @@
     "icon": "🚀",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "pixelcraft",
@@ -1042,7 +1042,7 @@
     "icon": "🟩",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "regex101",
@@ -1056,7 +1056,7 @@
     "icon": "🔍",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "themer",
@@ -1070,7 +1070,7 @@
     "icon": "🎨",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "booksie",
@@ -1084,7 +1084,7 @@
     "icon": "📖",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "epub-player",
@@ -1098,7 +1098,7 @@
     "icon": "🎧",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "swahili-dictionary",
@@ -1112,7 +1112,7 @@
     "icon": "🗣️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "unalengua-ipa-translator",
@@ -1126,7 +1126,7 @@
     "icon": "🔤",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "worddb",
@@ -1140,7 +1140,7 @@
     "icon": "📔",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "air-horner",
@@ -1154,7 +1154,7 @@
     "icon": "📢",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "cybercar",
@@ -1168,7 +1168,7 @@
     "icon": "🏎️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "falling-nikochan",
@@ -1182,7 +1182,7 @@
     "icon": "🎶",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "farmhand",
@@ -1196,7 +1196,7 @@
     "icon": "🌾",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "match-a-movie",
@@ -1210,7 +1210,7 @@
     "icon": "🎬",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "murlok-io",
@@ -1224,7 +1224,7 @@
     "icon": "⚔️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "pokedex",
@@ -1238,7 +1238,7 @@
     "icon": "🔴",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "slitherlinks",
@@ -1252,7 +1252,7 @@
     "icon": "🧩",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "soodoku",
@@ -1266,7 +1266,7 @@
     "icon": "9️⃣",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "aerko",
@@ -1280,7 +1280,7 @@
     "icon": "🏋️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "care-cards",
@@ -1294,7 +1294,7 @@
     "icon": "🫶",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "cat-safe-foods",
@@ -1308,7 +1308,7 @@
     "icon": "🐱",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "dog-safe-foods",
@@ -1322,7 +1322,7 @@
     "icon": "🐶",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "veganify",
@@ -1336,7 +1336,7 @@
     "icon": "🌱",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "brutalist-hacker-news",
@@ -1350,7 +1350,7 @@
     "icon": "📟",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "computerbase",
@@ -1364,7 +1364,7 @@
     "icon": "🖥️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "qi-reader",
@@ -1378,7 +1378,7 @@
     "icon": "📥",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "housing-go",
@@ -1392,7 +1392,7 @@
     "icon": "🏘️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "versus",
@@ -1406,7 +1406,7 @@
     "icon": "⚖️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "alarmdj",
@@ -1420,7 +1420,7 @@
     "icon": "⏰",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "anonynote",
@@ -1434,7 +1434,7 @@
     "icon": "📝",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "bulkpictools",
@@ -1448,7 +1448,7 @@
     "icon": "🖼️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "gpa-calculator",
@@ -1462,7 +1462,7 @@
     "icon": "🎓",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "mconverter",
@@ -1476,7 +1476,7 @@
     "icon": "🔄",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "omniconvert",
@@ -1490,7 +1490,7 @@
     "icon": "♻️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "nanocell-csv",
@@ -1504,7 +1504,7 @@
     "icon": "📑",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "passky",
@@ -1518,7 +1518,7 @@
     "icon": "🔑",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "pasteepad",
@@ -1532,7 +1532,7 @@
     "icon": "🗒️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "pdfgem",
@@ -1546,7 +1546,7 @@
     "icon": "📄",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "pomotimer",
@@ -1560,7 +1560,7 @@
     "icon": "🍅",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "ppresume",
@@ -1574,7 +1574,7 @@
     "icon": "📄",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "qr-code-scanner",
@@ -1588,7 +1588,7 @@
     "icon": "📱",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "super-productivity",
@@ -1602,7 +1602,7 @@
     "icon": "☑️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "taleforge",
@@ -1616,7 +1616,7 @@
     "icon": "📜",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "vizua",
@@ -1630,7 +1630,7 @@
     "icon": "🪄",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "wormhole",
@@ -1644,7 +1644,7 @@
     "icon": "🕳️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "ztable-io",
@@ -1658,7 +1658,7 @@
     "icon": "📈",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "closerintime",
@@ -1672,7 +1672,7 @@
     "icon": "⏳",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "what-can-do-today",
@@ -1686,7 +1686,7 @@
     "icon": "🧪",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "cryptpad",
@@ -1702,7 +1702,7 @@
     "icon": "🔐",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -1717,7 +1717,7 @@
     "icon": "📄",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "grist",
@@ -1731,7 +1731,7 @@
     "icon": "📊",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -1750,7 +1750,7 @@
     "icon": "📝",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "taskade",
@@ -1764,7 +1764,7 @@
     "icon": "✅",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "taiga",
@@ -1778,7 +1778,7 @@
     "icon": "📋",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "hyperdraft",
@@ -1796,7 +1796,7 @@
     "icon": "✍️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "notesnook",
@@ -1812,7 +1812,7 @@
     "icon": "📓",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "mermaid-live",
@@ -1828,7 +1828,7 @@
     "icon": "🧜",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "tana",
@@ -1842,7 +1842,7 @@
     "icon": "🧠",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "linear",
@@ -1856,7 +1856,7 @@
     "icon": "📐",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "cal-com",
@@ -1870,7 +1870,7 @@
     "icon": "📅",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "nocodb",
@@ -1884,7 +1884,7 @@
     "icon": "🗃️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "affine",
@@ -1898,7 +1898,7 @@
     "icon": "🧩",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "anytype",
@@ -1914,7 +1914,7 @@
     "icon": "🪐",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "n8n",
@@ -1928,7 +1928,7 @@
     "icon": "🔀",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -1943,7 +1943,7 @@
     "icon": "🧱",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -1958,7 +1958,7 @@
     "icon": "💬",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "pixelfed",
@@ -1972,7 +1972,7 @@
     "icon": "📸",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "jitsi-meet",
@@ -1988,7 +1988,7 @@
     "icon": "🎥",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "nostter",
@@ -2002,7 +2002,7 @@
     "icon": "⚡",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "threema-web",
@@ -2016,7 +2016,7 @@
     "icon": "🛡️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "proton-mail",
@@ -2030,7 +2030,7 @@
     "icon": "✉️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "hey",
@@ -2044,7 +2044,7 @@
     "icon": "👋",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "fastmail",
@@ -2058,7 +2058,7 @@
     "icon": "📧",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "lofi-co",
@@ -2072,7 +2072,7 @@
     "icon": "🎧",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "wavepad-synth",
@@ -2090,7 +2090,7 @@
     "icon": "🎹",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "xsound",
@@ -2106,7 +2106,7 @@
     "icon": "🎛️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "audiomass",
@@ -2124,7 +2124,7 @@
     "icon": "🎚️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "bandcamp",
@@ -2138,7 +2138,7 @@
     "icon": "🎵",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2153,7 +2153,7 @@
     "icon": "🌊",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "radio-garden",
@@ -2169,7 +2169,7 @@
     "icon": "📻",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "poolsuite",
@@ -2185,7 +2185,7 @@
     "icon": "🏖️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2200,7 +2200,7 @@
     "icon": "🎬",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "clideo",
@@ -2214,7 +2214,7 @@
     "icon": "✂️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2229,7 +2229,7 @@
     "icon": "🎞️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "kapwing",
@@ -2243,7 +2243,7 @@
     "icon": "🎦",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "descript",
@@ -2257,7 +2257,7 @@
     "icon": "🎙️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2276,7 +2276,7 @@
     "icon": "🖼️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "codesandbox",
@@ -2290,7 +2290,7 @@
     "icon": "📦",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2308,7 +2308,7 @@
     "icon": "🔄",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "codeimage",
@@ -2324,7 +2324,7 @@
     "icon": "🏞️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "json-crack",
@@ -2340,7 +2340,7 @@
     "icon": "🕸️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "grep-app",
@@ -2356,7 +2356,7 @@
     "icon": "🔎",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "webhook-site",
@@ -2372,7 +2372,7 @@
     "icon": "🪝",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "jwt-io",
@@ -2389,7 +2389,7 @@
     "icon": "🎫",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "crontab-guru",
@@ -2406,7 +2406,7 @@
     "icon": "⏰",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2423,7 +2423,7 @@
     "icon": "📑",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2441,7 +2441,7 @@
     "icon": "🐚",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2458,7 +2458,7 @@
     "icon": "⬛",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "codepen",
@@ -2472,7 +2472,7 @@
     "icon": "🖊️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "posthog",
@@ -2486,7 +2486,7 @@
     "icon": "🦔",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "wakapi",
@@ -2500,7 +2500,7 @@
     "icon": "📈",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "netlify-drop",
@@ -2516,7 +2516,7 @@
     "icon": "🚀",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2531,7 +2531,7 @@
     "icon": "🖋️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2548,7 +2548,7 @@
     "icon": "✏️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2566,7 +2566,7 @@
     "icon": "🌈",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2581,7 +2581,7 @@
     "icon": "🖌️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "shots",
@@ -2597,7 +2597,7 @@
     "icon": "🖼️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "remove-bg",
@@ -2611,7 +2611,7 @@
     "icon": "🪄",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "haikei",
@@ -2627,7 +2627,7 @@
     "icon": "🌀",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2645,7 +2645,7 @@
     "icon": "🔤",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2663,7 +2663,7 @@
     "icon": "🔠",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2678,7 +2678,7 @@
     "icon": "💭",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2693,7 +2693,7 @@
     "icon": "👾",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "figma",
@@ -2707,7 +2707,7 @@
     "icon": "✒️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "docuseal",
@@ -2721,7 +2721,7 @@
     "icon": "✒️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2736,7 +2736,7 @@
     "icon": "🧾",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "xe",
@@ -2750,7 +2750,7 @@
     "icon": "💱",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "contrax",
@@ -2764,7 +2764,7 @@
     "icon": "📜",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "plausible",
@@ -2778,7 +2778,7 @@
     "icon": "📉",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2793,7 +2793,7 @@
     "icon": "📄",
     "spotlight": false,
     "verified": "unverifiable",
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "metabase",
@@ -2807,7 +2807,7 @@
     "icon": "📊",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "umami",
@@ -2821,7 +2821,7 @@
     "icon": "🍜",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "kommit",
@@ -2839,7 +2839,7 @@
     "icon": "🃏",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "languagetool",
@@ -2853,7 +2853,7 @@
     "icon": "🖊️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "khan-academy",
@@ -2867,7 +2867,7 @@
     "icon": "🎓",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2882,7 +2882,7 @@
     "icon": "💡",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2897,7 +2897,7 @@
     "icon": "🗂️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2914,7 +2914,7 @@
     "icon": "📈",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "geogebra",
@@ -2928,7 +2928,7 @@
     "icon": "📏",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "wolfram-alpha",
@@ -2942,7 +2942,7 @@
     "icon": "🧮",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2957,7 +2957,7 @@
     "icon": "🖥️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "flexbox-froggy",
@@ -2974,7 +2974,7 @@
     "icon": "🐸",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -2989,7 +2989,7 @@
     "icon": "🍃",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "narrow-one",
@@ -3005,7 +3005,7 @@
     "icon": "🏹",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "gartic-phone",
@@ -3021,7 +3021,7 @@
     "icon": "📞",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -3039,7 +3039,7 @@
     "icon": "🖍️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -3056,7 +3056,7 @@
     "icon": "🕹️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -3074,7 +3074,7 @@
     "icon": "🟩",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "backgammon-galaxy",
@@ -3088,7 +3088,7 @@
     "icon": "🎲",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "geoguessr",
@@ -3102,7 +3102,7 @@
     "icon": "🌍",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "hackertyper",
@@ -3119,7 +3119,7 @@
     "icon": "⌨️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "fasttrack",
@@ -3137,7 +3137,7 @@
     "icon": "⏳",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -3152,7 +3152,7 @@
     "icon": "🥗",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -3167,7 +3167,7 @@
     "icon": "📰",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "hnpwa",
@@ -3184,7 +3184,7 @@
     "icon": "🗞️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "readwise-reader",
@@ -3198,7 +3198,7 @@
     "icon": "📖",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "openstreetmap",
@@ -3214,7 +3214,7 @@
     "icon": "🗺️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "flightradar24",
@@ -3228,7 +3228,7 @@
     "icon": "✈️",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -3243,7 +3243,7 @@
     "icon": "📍",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -3258,7 +3258,7 @@
     "icon": "🔑",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "qrcode-monkey",
@@ -3274,7 +3274,7 @@
     "icon": "🐒",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -3292,7 +3292,7 @@
     "icon": "🔢",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -3309,7 +3309,7 @@
     "icon": "🗒️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "morse-code-translator",
@@ -3326,7 +3326,7 @@
     "icon": "📡",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "calculator-net",
@@ -3342,7 +3342,7 @@
     "icon": "🧮",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "tableconvert",
@@ -3358,7 +3358,7 @@
     "icon": "🔁",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "tinywow",
@@ -3374,7 +3374,7 @@
     "icon": "🛠️",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -3389,7 +3389,7 @@
     "icon": "🔐",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "privatebin",
@@ -3406,7 +3406,7 @@
     "icon": "📋",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "giphy-gif-maker",
@@ -3420,7 +3420,7 @@
     "icon": "🎉",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -3438,7 +3438,7 @@
     "icon": "📤",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -3457,7 +3457,7 @@
     "icon": "☕",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "unsplash",
@@ -3471,7 +3471,7 @@
     "icon": "📷",
     "spotlight": false,
     "verified": false,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "polarr",
@@ -3485,7 +3485,7 @@
     "icon": "🌅",
     "spotlight": false,
     "verified": true,
-    "lastChecked": "2026-07-13",
+    "lastChecked": "2026-07-20",
     "pwa": false
   },
   {
@@ -3500,7 +3500,7 @@
     "icon": "📒",
     "spotlight": false,
     "verified": "unverifiable",
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "kromans-reader",
@@ -3518,7 +3518,7 @@
     "icon": "📖",
     "spotlight": true,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "openrouter",
@@ -3532,7 +3532,7 @@
     "icon": "🤖",
     "spotlight": true,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "kromans-sports",
@@ -3549,7 +3549,7 @@
     "icon": "🏟️",
     "spotlight": true,
     "verified": true,
-    "lastChecked": "2026-07-13"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "kromans-wanted",
@@ -3566,7 +3566,7 @@
     "highlyUseful": true,
     "spotlight": true,
     "verified": true,
-    "lastChecked": "2026-07-15"
+    "lastChecked": "2026-07-20"
   },
   {
     "slug": "kromans-docstranslate",
@@ -3585,6 +3585,6 @@
     "highlyUseful": true,
     "spotlight": true,
     "verified": true,
-    "lastChecked": "2026-07-19"
+    "lastChecked": "2026-07-20"
   }
 ]
