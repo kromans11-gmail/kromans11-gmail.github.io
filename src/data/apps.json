@@ -3567,5 +3567,24 @@
     "spotlight": true,
     "verified": true,
     "lastChecked": "2026-07-15"
+  },
+  {
+    "slug": "kromans-docstranslate",
+    "name": "kromans-DocsTranslate",
+    "url": "https://kromans-docstranslate-production.up.railway.app",
+    "category": "Productivity",
+    "tagline": "Translate a page of your document — pick your quality, see the cost first.",
+    "description": "DocsTranslate translates one page at a time (pasted text or a single-page PDF) at three quality levels, always quoting the price before you commit. Your first 9 pages are free — 3 at each quality level — so you can prove it works on your phone before buying a $9.95 Translation Pack, and the app checks your device is up to the job before it lets you pay. Installs to your home screen and needs no account. Personally built and verified by the Web App Finder curator.",
+    "popularity": 90,
+    "capabilities": [
+      "no-account",
+      "lightweight",
+      "file-system"
+    ],
+    "icon": "🌐",
+    "highlyUseful": true,
+    "spotlight": true,
+    "verified": true,
+    "lastChecked": "2026-07-19"
   }
 ]
