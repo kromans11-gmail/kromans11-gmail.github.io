@@ -44,7 +44,7 @@
   },
   {
     "slug": "uber",
-    "verdict": "blocked"
+    "verdict": "ok"
   },
   {
     "slug": "starbucks",
@@ -164,7 +164,7 @@
   },
   {
     "slug": "flipkart",
-    "verdict": "blocked"
+    "verdict": "none"
   },
   {
     "slug": "dev-to",
@@ -337,8 +337,7 @@
   },
   {
     "slug": "care-cards",
-    "verdict": "dead",
-    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
+    "verdict": "ok"
   },
   {
     "slug": "cat-safe-foods",
@@ -446,7 +445,8 @@
   },
   {
     "slug": "closerintime",
-    "verdict": "ok"
+    "verdict": "dead",
+    "detail": "unreachable: TimeoutError"
   },
   {
     "slug": "what-can-do-today",
@@ -462,7 +462,8 @@
   },
   {
     "slug": "grist",
-    "verdict": "none"
+    "verdict": "dead",
+    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
   },
   {
     "slug": "bangle-io",
