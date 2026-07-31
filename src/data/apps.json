@@ -3586,5 +3586,23 @@
     "spotlight": true,
     "verified": true,
     "lastChecked": "2026-07-27"
+  },
+  {
+    "slug": "principles-and-history-of-physics",
+    "name": "The Principles and History of Physics",
+    "url": "https://physics-book-b2m.pages.dev",
+    "category": "Education",
+    "tagline": "How physics came to be known, in the order it was worked out, with films.",
+    "description": "A full physics book that reads in the browser and keeps working with the connection off. Volume One runs from what the ancient world handed on, through Galileo, Kepler and Newton, in 31 pages and 13 short films. The films are worked out from the physics rather than drawn by hand: a thrown ball's path is arrived at twice, by two arguments with nothing in common, and they agree. Every page opens with a plain note before it does the thing properly, the words light up as they are read, and where the evidence for something is thin the book says so on the page. It can be taken one section at a time for anyone paying by the megabyte, copied freely, and passed from one phone to another with no internet in between. No account, no sign-in, and it records nothing about what you read.",
+    "popularity": 80,
+    "capabilities": [
+      "offline",
+      "no-account"
+    ],
+    "icon": "🔭",
+    "spotlight": true,
+    "verified": true,
+    "lastChecked": "2026-07-30",
+    "pwa": true
   }
 ]

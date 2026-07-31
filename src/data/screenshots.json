@@ -187,6 +187,24 @@
       "label": "AI Image Generator"
     }
   ],
+  "principles-and-history-of-physics": [
+    {
+      "src": "https://physics-book-b2m.pages.dev/content/parallax-1/_media/p1-11ba-action.poster.webp",
+      "label": "The path a thrown ball takes, found by comparing every path it could have taken"
+    },
+    {
+      "src": "https://physics-book-b2m.pages.dev/content/parallax-1/_media/p1-04b-parabola.poster.webp",
+      "label": "The same parabola derived the other way, from Newton's laws step by step"
+    },
+    {
+      "src": "https://physics-book-b2m.pages.dev/content/parallax-1/_media/p1-00-tusi.poster.webp",
+      "label": "The Tusi couple: circular motion producing a straight line"
+    },
+    {
+      "src": "https://physics-book-b2m.pages.dev/content/parallax-1/_media/p1-10-kepler.poster.webp",
+      "label": "Kepler's law of equal areas, swept out by a planet on its ellipse"
+    }
+  ],
   "proxx": [
     {
       "src": "https://proxx.app/assets/home-android-58d763a0.webp",
