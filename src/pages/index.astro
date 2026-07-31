@@ -18,16 +18,28 @@ const sorted = [...apps].sort((a, b) => b.popularity - a.popularity);
 // This build-time split is a default; a client script re-applies the same
 // formula with the visitor's current date so the rotation advances daily
 // without rebuilding the site.
+//
+// An app flagged "pinned" holds a Featured slot every day and never rotates
+// out. The remaining slots rotate through the rest of the pool as before, so
+// pinning one costs the rotation a slot rather than breaking it. Pinning is a
+// field on the app, not a slug written into this file, so the curator changes
+// it in apps.json like everything else.
 const pool = sorted.filter((app) => app.spotlight);
+const pinned = pool.filter((app) => app.pinned);
+const rotating = pool.filter((app) => !app.pinned);
 const FEATURED_COUNT = Math.min(3, pool.length);
+const rotatingSlots = Math.max(FEATURED_COUNT - pinned.length, 0);
 const dayOfYear = Math.floor(
   (Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000
 );
-const offset = pool.length ? dayOfYear % pool.length : 0;
-const featured = Array.from(
-  { length: FEATURED_COUNT },
-  (_, i) => pool[(offset + i) % pool.length]
-);
+const offset = rotating.length ? dayOfYear % rotating.length : 0;
+const featured = [
+  ...pinned,
+  ...Array.from(
+    { length: Math.min(rotatingSlots, rotating.length) },
+    (_, i) => rotating[(offset + i) % rotating.length]
+  ),
+];
 const featuredSlugs = new Set(featured.map((app) => app.slug));
 const highlyUseful = pool.filter((app) => !featuredSlugs.has(app.slug));
 
@@ -167,9 +179,16 @@ const categories = [...byCategory.entries()].sort(
     signals are on the roadmap.
   </p>
 
-  <script define:vars={{ poolSlugs: pool.map((app) => app.slug) }}>
+  <script
+    define:vars={{
+      poolSlugs: pool.map((app) => app.slug),
+      pinnedSlugs: pinned.map((app) => app.slug),
+    }}
+  >
     // Re-apply the daily Featured/Highly Useful rotation with the visitor's
     // current date, so the split stays fresh even if the site isn't rebuilt.
+    // This MUST match the build-time formula above, pinning included: if it
+    // does not, the page rearranges itself a moment after it loads.
     const featuredList = document.getElementById('featured-list');
     const usefulList = document.getElementById('useful-list');
     if (featuredList && usefulList && poolSlugs.length) {
@@ -179,15 +198,22 @@ const categories = [...byCategory.entries()].sort(
           row,
         ])
       );
+      const pinnedSet = new Set(pinnedSlugs);
+      const rotating = poolSlugs.filter((slug) => !pinnedSet.has(slug));
       const now = new Date();
       const dayOfYear = Math.floor(
         (now - new Date(now.getFullYear(), 0, 0)) / 86400000
       );
-      const offset = dayOfYear % poolSlugs.length;
       const count = Math.min(3, poolSlugs.length);
-      const featured = new Set(
-        Array.from({ length: count }, (_, i) => poolSlugs[(offset + i) % poolSlugs.length])
-      );
+      const slots = Math.max(count - pinnedSlugs.length, 0);
+      const offset = rotating.length ? dayOfYear % rotating.length : 0;
+      const featured = new Set([
+        ...pinnedSlugs,
+        ...Array.from(
+          { length: Math.min(slots, rotating.length) },
+          (_, i) => rotating[(offset + i) % rotating.length]
+        ),
+      ]);
       for (const slug of poolSlugs) {
         const row = rows.get(slug);
         if (row) (featured.has(slug) ? featuredList : usefulList).append(row);

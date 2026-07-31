@@ -3603,6 +3603,7 @@
     "spotlight": true,
     "verified": true,
     "lastChecked": "2026-07-30",
-    "pwa": true
+    "pwa": true,
+    "pinned": true
   }
 ]
