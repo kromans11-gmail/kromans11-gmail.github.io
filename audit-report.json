@@ -164,7 +164,8 @@
   },
   {
     "slug": "flipkart",
-    "verdict": "none"
+    "verdict": "dead",
+    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
   },
   {
     "slug": "dev-to",
@@ -336,8 +337,7 @@
   },
   {
     "slug": "care-cards",
-    "verdict": "dead",
-    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
+    "verdict": "ok"
   },
   {
     "slug": "cat-safe-foods",
@@ -833,8 +833,7 @@
   },
   {
     "slug": "fasttrack",
-    "verdict": "dead",
-    "detail": "HTTP 500"
+    "verdict": "none"
   },
   {
     "slug": "cronometer",
