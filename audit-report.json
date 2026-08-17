@@ -164,8 +164,7 @@
   },
   {
     "slug": "flipkart",
-    "verdict": "dead",
-    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
+    "verdict": "none"
   },
   {
     "slug": "dev-to",
@@ -313,7 +312,8 @@
   },
   {
     "slug": "match-a-movie",
-    "verdict": "ok"
+    "verdict": "dead",
+    "detail": "HTTP 509"
   },
   {
     "slug": "murlok-io",
@@ -733,8 +733,8 @@
   },
   {
     "slug": "contrax",
-    "verdict": "ok",
-    "detail": "probed"
+    "verdict": "dead",
+    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
   },
   {
     "slug": "plausible",
