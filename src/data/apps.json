@@ -3586,5 +3586,24 @@
     "spotlight": true,
     "verified": true,
     "lastChecked": "2026-08-17"
+  },
+  {
+    "slug": "pool-buddy",
+    "name": "Pool Buddy",
+    "url": "https://pool-buddy.de",
+    "category": "Utilities",
+    "tagline": "Smart pool water analysis, dosing calculations and maintenance guidance.",
+    "description": "Pool Buddy is a privacy-friendly web app for managing and maintaining private swimming pools. It helps pool owners evaluate water test results, calculate chemical dosages, track measurements and understand what to do next. Features include guided diagnostics, chlorine and pH calculations, CSI evaluation, OCLT support, maintenance reminders and intelligent trend analysis. Pool Buddy is designed to make pool care easier to understand, especially for beginners, while still providing advanced tools for experienced pool owners.",
+    "popularity": 40,
+    "capabilities": [
+      "offline",
+      "no-account",
+      "file-system"
+    ],
+    "icon": "🧰",
+    "spotlight": false,
+    "verified": false,
+    "lastChecked": "2026-08-20",
+    "addedAt": "2026-08-20"
   }
 ]

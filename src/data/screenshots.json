@@ -187,6 +187,24 @@
       "label": "AI Image Generator"
     }
   ],
+  "pool-buddy": [
+    {
+      "src": "https://pool-buddy.de/assets/screenshots/de-start.png",
+      "label": "Pool Buddy – Startbildschirm"
+    },
+    {
+      "src": "https://pool-buddy.de/assets/screenshots/de-diagnose.png",
+      "label": "Pool Buddy – Diagnose"
+    },
+    {
+      "src": "https://pool-buddy.de/assets/screenshots/de-verlauf.png",
+      "label": "Pool Buddy – Verlauf"
+    },
+    {
+      "src": "https://pool-buddy.de/assets/screenshots/de-premium.png",
+      "label": "Pool Buddy Premium – Funktionen im Überblick"
+    }
+  ],
   "proxx": [
     {
       "src": "https://proxx.app/assets/home-android-58d763a0.webp",
