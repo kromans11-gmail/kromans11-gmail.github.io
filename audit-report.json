@@ -445,8 +445,7 @@
   },
   {
     "slug": "closerintime",
-    "verdict": "dead",
-    "detail": "unreachable: TimeoutError"
+    "verdict": "ok"
   },
   {
     "slug": "what-can-do-today",
@@ -462,8 +461,7 @@
   },
   {
     "slug": "grist",
-    "verdict": "dead",
-    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
+    "verdict": "none"
   },
   {
     "slug": "bangle-io",
@@ -735,8 +733,8 @@
   },
   {
     "slug": "contrax",
-    "verdict": "ok",
-    "detail": "probed"
+    "verdict": "dead",
+    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
   },
   {
     "slug": "plausible",
@@ -947,6 +945,10 @@
   },
   {
     "slug": "kromans-docstranslate",
+    "verdict": "ok"
+  },
+  {
+    "slug": "principles-and-history-of-physics",
     "verdict": "ok"
   }
 ]
