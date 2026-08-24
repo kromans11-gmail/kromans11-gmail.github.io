@@ -164,7 +164,8 @@
   },
   {
     "slug": "flipkart",
-    "verdict": "none"
+    "verdict": "dead",
+    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
   },
   {
     "slug": "dev-to",
@@ -445,7 +446,8 @@
   },
   {
     "slug": "closerintime",
-    "verdict": "ok"
+    "verdict": "dead",
+    "detail": "unreachable: TimeoutError"
   },
   {
     "slug": "what-can-do-today",
@@ -697,7 +699,8 @@
   },
   {
     "slug": "haikei",
-    "verdict": "none"
+    "verdict": "dead",
+    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
   },
   {
     "slug": "fontjoy",
@@ -833,7 +836,8 @@
   },
   {
     "slug": "fasttrack",
-    "verdict": "none"
+    "verdict": "dead",
+    "detail": "unreachable: ETIMEDOUT"
   },
   {
     "slug": "cronometer",
@@ -948,7 +952,7 @@
     "verdict": "ok"
   },
   {
-    "slug": "principles-and-history-of-physics",
+    "slug": "pool-buddy",
     "verdict": "ok"
   }
 ]
