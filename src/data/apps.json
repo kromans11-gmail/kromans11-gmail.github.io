@@ -3605,5 +3605,25 @@
     "verified": false,
     "lastChecked": "2026-08-24",
     "addedAt": "2026-08-20"
+  },
+  {
+    "slug": "gif-resizer",
+    "name": "GIF Resizer",
+    "url": "https://gifresize.com",
+    "category": "Utilities",
+    "tagline": "Resize, shrink and optimize animated GIFs right in your browser — nothing gets uploaded.",
+    "description": "Free, privacy-first GIF resizer. Scale by percent or pixel width, cut color depth (256/128/64) to shrink file size, compare before/after previews, download in seconds. No uploads, no signup, no watermark — installable and works offline.",
+    "popularity": 40,
+    "capabilities": [
+      "offline",
+      "no-account",
+      "lightweight",
+      "file-system"
+    ],
+    "icon": "🧰",
+    "spotlight": false,
+    "verified": false,
+    "lastChecked": "2026-08-29",
+    "addedAt": "2026-08-29"
   }
 ]
