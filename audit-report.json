@@ -164,8 +164,7 @@
   },
   {
     "slug": "flipkart",
-    "verdict": "dead",
-    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
+    "verdict": "none"
   },
   {
     "slug": "dev-to",
@@ -313,8 +312,7 @@
   },
   {
     "slug": "match-a-movie",
-    "verdict": "dead",
-    "detail": "HTTP 509"
+    "verdict": "ok"
   },
   {
     "slug": "murlok-io",
@@ -446,8 +444,7 @@
   },
   {
     "slug": "closerintime",
-    "verdict": "dead",
-    "detail": "unreachable: TimeoutError"
+    "verdict": "ok"
   },
   {
     "slug": "what-can-do-today",
@@ -699,8 +696,7 @@
   },
   {
     "slug": "haikei",
-    "verdict": "dead",
-    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
+    "verdict": "none"
   },
   {
     "slug": "fontjoy",
@@ -745,8 +741,7 @@
   },
   {
     "slug": "papermark",
-    "verdict": "login-walled",
-    "detail": "https://app.papermark.com"
+    "verdict": "ok"
   },
   {
     "slug": "metabase",
@@ -836,8 +831,7 @@
   },
   {
     "slug": "fasttrack",
-    "verdict": "dead",
-    "detail": "unreachable: ETIMEDOUT"
+    "verdict": "none"
   },
   {
     "slug": "cronometer",
@@ -953,6 +947,10 @@
   },
   {
     "slug": "pool-buddy",
+    "verdict": "ok"
+  },
+  {
+    "slug": "gif-resizer",
     "verdict": "ok"
   }
 ]
