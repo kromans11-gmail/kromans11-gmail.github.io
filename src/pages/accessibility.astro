@@ -1,0 +1,86 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Accessibility Statement — Web App Finder"
+  description="Web App Finder's commitment to digital accessibility, compliance with WCAG 2.1/2.2 Level AA standards, and user feedback channels."
+>
+  <article class="detail">
+    <a class="back-link" href="/">← Back to home</a>
+    <h1>Accessibility Statement</h1>
+    <p class="note">Last updated: September 2026</p>
+
+    <div class="install-help">
+      <h2>1. Our Commitment</h2>
+      <p>
+        <strong>Web App Finder</strong> is dedicated to ensuring digital accessibility for all users, including individuals with disabilities. We continually improve the user experience for everyone and apply the relevant accessibility standards to make our directory barrier-free.
+      </p>
+    </div>
+
+    <div class="install-help">
+      <h2>2. Conformance Standard</h2>
+      <p>
+        This website strives to adhere to the <strong>Web Content Accessibility Guidelines (WCAG) 2.1 and 2.2 at Level AA</strong>. These guidelines outline best practices for making web content accessible to people with visual, auditory, motor, and cognitive disabilities, as well as ensuring compatibility with assistive technologies such as screen readers and keyboard-only navigation.
+      </p>
+    </div>
+
+    <div class="install-help">
+      <h2>3. Accessibility Measures Implemented</h2>
+      <p>
+        Key features built into Web App Finder to ensure accessibility include:
+      </p>
+      <ul>
+        <li>
+          <strong>Keyboard Navigability</strong>: All interactive controls (buttons, links, search filters, category selectors, and dialogs) are operable using standard keyboard navigation (Tab, Enter, Space, Escape, and Arrow keys).
+        </li>
+        <li>
+          <strong>Visible Focus Indicators</strong>: High-contrast focus outlines (<code>:focus-visible</code>) are rendered across all interactive elements so keyboard users can easily track focus.
+        </li>
+        <li>
+          <strong>Skip to Main Content Link</strong>: A skip navigation link is positioned at the very top of every page to allow keyboard and screen-reader users to bypass repeated header navigation.
+        </li>
+        <li>
+          <strong>Semantic HTML & Landmarks</strong>: Meaningful HTML5 structure (<code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>) is used to enable assistive devices to navigate page sections efficiently.
+        </li>
+        <li>
+          <strong>Accessible Names & Labels</strong>: Form inputs, search fields, dialogs, and buttons include descriptive labels or screen-reader-only text (<code>.sr-only</code>) providing context for every control.
+        </li>
+        <li>
+          <strong>Color Contrast</strong>: Text and interactive elements maintain color contrast ratios exceeding the WCAG AA minimum of 4.5:1 against their backgrounds in both Light and Dark color schemes.
+        </li>
+        <li>
+          <strong>Reduced Motion Support</strong>: The site respects users' operating system preferences for reduced motion (<code>prefers-reduced-motion: reduce</code>) by disabling non-essential transitions and animations.
+        </li>
+        <li>
+          <strong>Zoom & Reflow</strong>: The interface supports zooming up to 200% without loss of content or requiring horizontal scrolling on standard screens.
+        </li>
+      </ul>
+    </div>
+
+    <div class="install-help">
+      <h2>4. Third-Party Websites & Applications</h2>
+      <p>
+        Web App Finder is a discovery directory linking to external Progressive Web Apps and web applications developed and operated by independent third parties. While we ensure that Web App Finder itself is fully accessible, we do not control the code or accessibility conformance of external third-party applications.
+      </p>
+    </div>
+
+    <div class="install-help">
+      <h2>5. Feedback & Reporting Barriers</h2>
+      <p>
+        We welcome your feedback on the accessibility of Web App Finder. If you encounter any accessibility barrier or difficulty using any part of this site, please let us know:
+      </p>
+      <ul>
+        <li>
+          Open an issue on our <a href="https://github.com/kromans11-gmail/kromans11-gmail.github.io/issues" target="_blank" rel="noopener">GitHub Issues tracker</a>.
+        </li>
+        <li>
+          Use the <strong>⚠ Report a problem</strong> button on any app details page to report an issue with a listing.
+        </li>
+      </ul>
+      <p>
+        Please specify the web page or component where the issue occurred and the assistive technology you were using. We take accessibility reports seriously and aim to address them promptly.
+      </p>
+    </div>
+  </article>
+</Base>

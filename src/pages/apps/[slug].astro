@@ -94,6 +94,7 @@ const screenshots: { src: string; label?: string }[] =
         <label><input type="checkbox" value="adult" /> Adult content</label>
         <label><input type="checkbox" value="ads" /> Excessive ads or an immediate paywall</label>
       </fieldset>
+      <label for="warn-comment" class="sr-only">Describe the problem encountered with this app</label>
       <textarea
         id="warn-comment"
         minlength="10"
@@ -101,6 +102,7 @@ const screenshots: { src: string; label?: string }[] =
         rows="3"
         required
         placeholder="Required: describe what you saw (at least 10 characters)"
+        aria-label="Describe what you saw"
       ></textarea>
       <div class="actions">
         <button class="btn primary" type="submit">Send report</button>
@@ -110,11 +112,13 @@ const screenshots: { src: string; label?: string }[] =
     </form>
 
     <div class="comment-box" id="comment-box" hidden>
+      <label for="vote-comment" class="sr-only">Optional comment to post publicly with your vote</label>
       <textarea
         id="vote-comment"
         maxlength="500"
         rows="2"
         placeholder="Optional: say why it's useful — posted publicly with your vote"
+        aria-label="Say why it's useful"
       ></textarea>
     </div>
 

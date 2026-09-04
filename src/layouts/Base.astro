@@ -45,6 +45,7 @@ const { title, description } = Astro.props;
     }
   </head>
   <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
     <div class="offline-banner">You're offline — showing the cached catalog.</div>
     <header class="site">
       <div class="container">
@@ -59,7 +60,7 @@ const { title, description } = Astro.props;
         </button>
       </div>
     </header>
-    <main class="container">
+    <main class="container" id="main">
       <slot />
     </main>
     <footer class="site">
@@ -69,6 +70,7 @@ const { title, description } = Astro.props;
         <a href="/verification/">How verification works</a> ·
         <a href="/community/">Community directory</a> ·
         <a href="/add/">Add an app</a> ·
+        <a href="/accessibility/">Accessibility</a> ·
         <a href="/terms/">Terms & Disclaimers</a> ·
         <a href="/privacy/">Privacy Policy</a>
         <div class="legal-note">

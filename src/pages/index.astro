@@ -84,6 +84,7 @@ const categories = [...byCategory.entries()].sort(
       store.
     </p>
     <div class="search-wrap">
+      <label for="search" class="sr-only">Search web apps</label>
       <input
         id="search"
         type="search"
@@ -91,6 +92,7 @@ const categories = [...byCategory.entries()].sort(
         autocomplete="off"
         aria-label="Search apps"
       />
+      <label for="jump" class="sr-only">Jump to category</label>
       <select id="jump" aria-label="Jump to category">
         <option value="" selected>Categories…</option>
         <option value="featured">✨ Featured</option>
