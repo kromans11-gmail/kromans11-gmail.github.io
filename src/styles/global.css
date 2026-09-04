@@ -714,10 +714,194 @@ footer.site {
 
 #install-site {
   display: none;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.95rem;
 }
 
 #install-site.available {
-  display: inline-block;
+  display: inline-flex;
+}
+
+.install-site-icon {
+  flex-shrink: 0;
+}
+
+/* Install Guide Modal */
+.install-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.install-modal[hidden] {
+  display: none !important;
+}
+
+.install-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.install-modal-card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-bottom: none;
+  border-radius: 1.25rem 1.25rem 0 0;
+  width: 100%;
+  max-width: 32rem;
+  padding: 1.5rem;
+  box-shadow: 0 -4px 24px rgb(0 0 0 / 0.2);
+  animation: modalSlideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (min-width: 640px) {
+  .install-modal {
+    align-items: center;
+    padding: 1.5rem;
+  }
+  .install-modal-card {
+    border-radius: 1.25rem;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+@keyframes modalSlideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.install-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.install-modal-title-group {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.install-modal-app-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.install-modal-header h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.install-modal-subtitle {
+  margin: 0.25rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+
+.install-modal-close {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.install-modal-close:hover {
+  color: var(--text);
+  background: var(--badge-bg);
+}
+
+.install-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.install-steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: var(--badge-bg);
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.install-steps .step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-weight: 700;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.install-steps .step-text {
+  flex: 1;
+  line-height: 1.45;
+}
+
+.step-icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  padding: 0.15rem 0.35rem;
+  margin: 0 0.2rem;
+}
+
+.install-note {
+  margin: 1rem 0 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.install-modal-footer {
+  margin-top: 1.25rem;
+}
+
+.install-modal-footer .btn {
+  width: 100%;
+  text-align: center;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 .offline-banner {

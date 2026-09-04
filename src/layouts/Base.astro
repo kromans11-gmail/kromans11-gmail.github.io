@@ -21,6 +21,9 @@ const { title, description } = Astro.props;
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Web App Finder" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
@@ -46,7 +49,14 @@ const { title, description } = Astro.props;
     <header class="site">
       <div class="container">
         <a href="/" class="brand"><span>📦</span> Web App Finder</a>
-        <button id="install-site" class="btn primary">Install this app</button>
+        <button id="install-site" class="btn primary install-site-btn" aria-label="Install Web App Finder">
+          <svg class="install-site-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Install App</span>
+        </button>
       </div>
     </header>
     <main class="container">
@@ -62,6 +72,97 @@ const { title, description } = Astro.props;
         <a href="/add/">Add an app</a>
       </div>
     </footer>
+
+    <!-- Install Modal / Guide -->
+    <div id="install-modal" class="install-modal" hidden aria-hidden="true" role="dialog" aria-labelledby="install-modal-title">
+      <div class="install-modal-backdrop" id="install-modal-backdrop"></div>
+      <div class="install-modal-card">
+        <div class="install-modal-header">
+          <div class="install-modal-title-group">
+            <span class="install-modal-app-icon" aria-hidden="true">📦</span>
+            <div>
+              <h3 id="install-modal-title">Install Web App Finder</h3>
+              <p class="install-modal-subtitle">Add to your home screen for quick access and full offline use</p>
+            </div>
+          </div>
+          <button id="install-modal-close" class="install-modal-close" aria-label="Close dialog">&times;</button>
+        </div>
+
+        <div class="install-modal-body">
+          <!-- iOS instructions -->
+          <div id="install-guide-ios" class="install-guide" hidden>
+            <ol class="install-steps">
+              <li>
+                <span class="step-num">1</span>
+                <span class="step-text">
+                  Tap the <strong>Share</strong> button in Safari's toolbar:
+                  <span class="step-icon-badge" aria-label="Share button">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                      <polyline points="16 6 12 2 8 6"></polyline>
+                      <line x1="12" y1="2" x2="12" y2="15"></line>
+                    </svg>
+                  </span>
+                </span>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <span class="step-text">
+                  Scroll down and tap <strong>Add to Home Screen</strong>:
+                  <span class="step-icon-badge" aria-label="Add to Home Screen button">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="12" y1="8" x2="12" y2="16"></line>
+                      <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                  </span>
+                </span>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <span class="step-text">Tap <strong>Add</strong> in the top-right corner.</span>
+              </li>
+            </ol>
+            <p class="install-note ios-safari-note" hidden>Note: If using Chrome or Firefox on iOS, open this page in <strong>Safari</strong> to install it to your home screen.</p>
+          </div>
+
+          <!-- Android manual instructions -->
+          <div id="install-guide-android" class="install-guide" hidden>
+            <ol class="install-steps">
+              <li>
+                <span class="step-num">1</span>
+                <span class="step-text">
+                  Tap the browser menu (<strong>⋮</strong>) in the top-right corner.
+                </span>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <span class="step-text">
+                  Tap <strong>Install app</strong> or <strong>Add to Home screen</strong>.
+                </span>
+              </li>
+            </ol>
+          </div>
+
+          <!-- Desktop manual instructions -->
+          <div id="install-guide-desktop" class="install-guide" hidden>
+            <ol class="install-steps">
+              <li>
+                <span class="step-num">1</span>
+                <span class="step-text">
+                  Click the <strong>Install</strong> icon in the address bar (or browser menu <strong>⋮</strong> / <strong>⋯</strong> &rarr; <strong>Install app</strong>).
+                </span>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="install-modal-footer">
+          <button id="install-modal-gotit" class="btn primary">Got it</button>
+        </div>
+      </div>
+    </div>
+
     <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js');
@@ -76,20 +177,95 @@ const { title, description } = Astro.props;
 
       let deferredPrompt: any = null;
       const installBtn = document.getElementById('install-site');
+      const installModal = document.getElementById('install-modal');
+      const modalBackdrop = document.getElementById('install-modal-backdrop');
+      const modalClose = document.getElementById('install-modal-close');
+      const modalGotit = document.getElementById('install-modal-gotit');
+      const guideIos = document.getElementById('install-guide-ios');
+      const guideAndroid = document.getElementById('install-guide-android');
+      const guideDesktop = document.getElementById('install-guide-desktop');
+
+      const isStandalone =
+        window.matchMedia('(display-mode: standalone)').matches ||
+        (window.navigator as any).standalone === true;
+
+      const ua = navigator.userAgent;
+      const isIOS = /iPhone|iPad|iPod/.test(ua);
+      const isAndroid = /Android/.test(ua);
+      const isSafari = isIOS && /Safari/.test(ua) && !/CriOS|FxiOS|EdgiOS/.test(ua);
+
+      function openModal(platform: 'ios' | 'android' | 'desktop') {
+        if (!installModal) return;
+        if (guideIos) guideIos.hidden = platform !== 'ios';
+        if (guideAndroid) guideAndroid.hidden = platform !== 'android';
+        if (guideDesktop) guideDesktop.hidden = platform !== 'desktop';
+
+        if (platform === 'ios') {
+          const nonSafariNote = installModal.querySelector('.ios-safari-note') as HTMLElement | null;
+          if (nonSafariNote) nonSafariNote.hidden = isSafari;
+        }
+
+        installModal.hidden = false;
+        installModal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('modal-open');
+      }
+
+      function closeModal() {
+        if (!installModal) return;
+        installModal.hidden = true;
+        installModal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('modal-open');
+      }
+
+      modalBackdrop?.addEventListener('click', closeModal);
+      modalClose?.addEventListener('click', closeModal);
+      modalGotit?.addEventListener('click', closeModal);
+      addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && installModal && !installModal.hidden) {
+          closeModal();
+        }
+      });
+
+      // Show install button on mobile devices (iOS & Android) if not already in standalone mode
+      if (!isStandalone) {
+        if (isIOS || isAndroid) {
+          installBtn?.classList.add('available');
+        }
+      }
+
+      // Browser event for 1-click install (Chrome/Edge/Android)
       addEventListener('beforeinstallprompt', (e) => {
         e.preventDefault();
         deferredPrompt = e;
-        installBtn?.classList.add('available');
+        if (!isStandalone) {
+          installBtn?.classList.add('available');
+        }
       });
+
       installBtn?.addEventListener('click', async () => {
-        if (!deferredPrompt) return;
-        deferredPrompt.prompt();
-        await deferredPrompt.userChoice;
-        deferredPrompt = null;
-        installBtn.classList.remove('available');
+        if (deferredPrompt) {
+          deferredPrompt.prompt();
+          const choice = await deferredPrompt.userChoice;
+          if (choice && choice.outcome === 'accepted') {
+            installBtn.classList.remove('available');
+          }
+          deferredPrompt = null;
+          return;
+        }
+
+        // Show guided instructions when native 1-click prompt isn't directly invocable
+        if (isIOS) {
+          openModal('ios');
+        } else if (isAndroid) {
+          openModal('android');
+        } else {
+          openModal('desktop');
+        }
       });
+
       addEventListener('appinstalled', () => {
         installBtn?.classList.remove('available');
+        closeModal();
       });
     </script>
   </body>
