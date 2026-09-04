@@ -337,6 +337,34 @@ check('TOS-10', 'Terms of Service', 'Nominative Fair Use Trademark Notice', () =
   };
 });
 
+check('TOS-11', 'Terms of Service', 'Section 230 Communications Decency Act Immunity (47 U.S.C. § 230)', () => {
+  if (!termsFile) return { status: 'FAIL', details: 'Terms of Service missing.' };
+  const content = readFileContent(termsFile);
+  if (/230|Communications Decency Act|interactive computer service/i.test(content)) {
+    return { status: 'PASS', details: 'Section 230 CDA immunity clause protecting against third-party content liability found.', file: termsFile };
+  }
+  return {
+    status: 'WARN',
+    details: 'No Section 230 Communications Decency Act immunity clause detected in Terms.',
+    remediation: 'Cite 47 U.S.C. § 230 interactive computer service immunity to shield against user comments/reviews defamation liability.',
+    file: termsFile,
+  };
+});
+
+check('TOS-12', 'Terms of Service', 'U.S. Copyright Office Registered Designated Agent (17 U.S.C. § 512)', () => {
+  if (!termsFile) return { status: 'FAIL', details: 'Terms of Service missing.' };
+  const content = readFileContent(termsFile);
+  if (/DMCA-\d+|Designated Agent.*Copyright Office/i.test(content)) {
+    return { status: 'PASS', details: 'Official U.S. Copyright Office Designated Agent registration details found.', file: termsFile };
+  }
+  return {
+    status: 'WARN',
+    details: 'No official US Copyright Office registration number (DMCA-xxxxxxx) found in Terms.',
+    remediation: 'Register with the Copyright Office DMCA directory and publish your registration number and contact details.',
+    file: termsFile,
+  };
+});
+
 // ==========================================
 // 3. PRIVACY POLICY & DATA REGULATION
 // ==========================================
@@ -405,6 +433,34 @@ check('PRIV-05', 'Privacy Policy', 'Children’s Privacy (COPPA - Under 13 Notic
     status: 'WARN',
     details: 'No children\'s privacy notice in Privacy Policy.',
     remediation: 'State that the service does not knowingly collect personal data from children under 13.',
+    file: privacyFile,
+  };
+});
+
+check('PRIV-06', 'Privacy Policy', 'Anti-Wiretap & Session Replay Disclaimer (CIPA / State Wiretap Laws)', () => {
+  if (!privacyFile) return { status: 'FAIL', details: 'Privacy Policy missing.' };
+  const content = readFileContent(privacyFile);
+  if (/session replay|keystroke|wiretap|CIPA|eavesdrop/i.test(content)) {
+    return { status: 'PASS', details: 'Explicit anti-wiretap & session replay disclaimer found (shields against CIPA arbitration shakedowns).', file: privacyFile };
+  }
+  return {
+    status: 'WARN',
+    details: 'No explicit disclaimer regarding session replay, keystroke logging, or wiretapping found.',
+    remediation: 'Affirm that your site does not record user keystrokes or use session replay surveillance scripts.',
+    file: privacyFile,
+  };
+});
+
+check('PRIV-07', 'Privacy Policy', 'Statutory "Do Not Sell or Share" Declaration (CCPA / CPRA & TDPSA)', () => {
+  if (!privacyFile) return { status: 'FAIL', details: 'Privacy Policy missing.' };
+  const content = readFileContent(privacyFile);
+  if (/not sell.*share|never sold.*rented|cross-context behavioral/i.test(content)) {
+    return { status: 'PASS', details: 'Statutory non-sale and non-sharing declaration found in Privacy Policy.', file: privacyFile };
+  }
+  return {
+    status: 'WARN',
+    details: 'No statutory "Do Not Sell or Share" declaration detected in Privacy Policy.',
+    remediation: 'Declare affirmatively that you do not sell personal data or share it for cross-context behavioral ads.',
     file: privacyFile,
   };
 });
@@ -546,6 +602,18 @@ check('SCAM-02', 'Anti-Scam & Safety', 'Notice-and-Action Content Flagging Mecha
     status: 'WARN',
     details: 'No user reporting / flagging button detected for user-generated content.',
     remediation: 'Add a 1-click report button on user comments/posts to satisfy EU DSA notice-and-action rules.',
+  };
+});
+
+check('TRDM-01', 'Anti-Scam & Safety', 'Common-Law Trademark & Brand Notice (™)', () => {
+  const match = searchInFiles(codeFiles, /™|&trade;|&#8482;|common-law trademark/i);
+  if (match.found) {
+    return { status: 'PASS', details: `Proprietary trademark notice / ™ symbol found in ${match.file}.`, file: match.file };
+  }
+  return {
+    status: 'WARN',
+    details: 'No ™ symbol or proprietary brand notice detected in layout or code.',
+    remediation: 'Append ™ to your primary brand name and assert common-law trademark rights in Terms.',
   };
 });
 
