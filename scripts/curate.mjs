@@ -29,6 +29,47 @@
  * All human-readable results go to the run's summary page.
  */
 import { readFile, writeFile, appendFile } from 'node:fs/promises';
+import net from 'node:net';
+
+const KNOWN_SHORTENERS = new Set([
+  'bit.ly',
+  'tinyurl.com',
+  't.co',
+  'goo.gl',
+  'is.gd',
+  'buff.ly',
+  'ow.ly',
+  'rebrand.ly',
+  'cutt.ly',
+  'tiny.cc',
+  'shorturl.at',
+  'snip.ly',
+  'bl.ink',
+  'v.gd',
+  'clck.ru',
+  'trib.al',
+  'qr.ae',
+  'adf.ly',
+  'linktr.ee',
+  'shorte.st',
+]);
+
+const registrableDomain = (host) => host.split('.').slice(-2).join('.');
+const isIpAddress = (h) => net.isIP(h.replace(/^\[|\]$/g, '')) !== 0;
+const isShortener = (h) =>
+  KNOWN_SHORTENERS.has(registrableDomain(h).toLowerCase()) ||
+  KNOWN_SHORTENERS.has(h.toLowerCase());
+const isLocalOrInternal = (h) => {
+  const clean = h.toLowerCase();
+  return (
+    clean === 'localhost' ||
+    clean.endsWith('.local') ||
+    clean.endsWith('.internal') ||
+    clean.endsWith('.test') ||
+    clean.endsWith('.example') ||
+    clean.endsWith('.invalid')
+  );
+};
 
 const APPS_PATH = new URL('../src/data/apps.json', import.meta.url);
 const CAPABILITIES_PATH = new URL('../src/data/capabilities.ts', import.meta.url);
@@ -75,7 +116,6 @@ async function fail(msg) {
 
 const slugify = (s) =>
   s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const registrableDomain = (host) => host.split('.').slice(-2).join('.');
 
 async function checkUrl(url) {
   const result = { failures: [], warnings: [], manifestHref: null, finalUrl: null };
@@ -114,6 +154,15 @@ async function checkUrl(url) {
   const finalUrl = new URL(res.url);
   if (finalUrl.protocol !== 'https:') {
     result.failures.push(`served over ${finalUrl.protocol.replace(':', '')}, not HTTPS`);
+  }
+  if (isIpAddress(finalUrl.hostname)) {
+    result.failures.push(`redirects to a raw IP address (${finalUrl.hostname})`);
+  }
+  if (isShortener(finalUrl.hostname)) {
+    result.failures.push(`redirects to a URL shortening service (${finalUrl.hostname})`);
+  }
+  if (isLocalOrInternal(finalUrl.hostname)) {
+    result.failures.push(`redirects to an internal/private address (${finalUrl.hostname})`);
   }
   if (registrableDomain(finalUrl.hostname) !== registrableDomain(new URL(url).hostname)) {
     result.failures.push(`redirects off-domain to ${finalUrl.origin}`);
@@ -177,12 +226,25 @@ switch (action) {
     let url = env('APP');
     if (!url) await fail('The **app** field must be the web address to add.');
     if (!/^https?:\/\//i.test(url)) url = 'https://' + url;
+    let parsedUrl;
     try {
-      new URL(url);
+      parsedUrl = new URL(url);
     } catch {
       await fail(`“${url}” is not a valid web address.`);
     }
-    const domain = new URL(url).hostname.replace(/^www\./, '');
+    if (parsedUrl.protocol !== 'https:') {
+      await fail('The web address must use HTTPS.');
+    }
+    if (isIpAddress(parsedUrl.hostname)) {
+      await fail('Listings cannot use a raw IP address; provide the official domain name.');
+    }
+    if (isShortener(parsedUrl.hostname)) {
+      await fail('URL shorteners and redirect services are not accepted. Provide the official domain.');
+    }
+    if (isLocalOrInternal(parsedUrl.hostname)) {
+      await fail('Listings must be publicly reachable internet domains.');
+    }
+    const domain = parsedUrl.hostname.replace(/^www\./, '');
     const dup = apps.find(
       (a) => new URL(a.url).hostname.replace(/^www\./, '') === domain
     );
