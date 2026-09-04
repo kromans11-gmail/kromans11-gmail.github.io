@@ -11,6 +11,13 @@ export function getStaticPaths() {
 
 const { app } = Astro.props;
 
+let appHostname = '';
+try {
+  appHostname = new URL(app.url).hostname;
+} catch {
+  appHostname = app.url;
+}
+
 const screenshots: { src: string; label?: string }[] =
   (screenshotData as Record<string, { src: string; label?: string }[]>)[app.slug] ?? [];
 ---
@@ -81,6 +88,11 @@ const screenshots: { src: string; label?: string }[] =
       <button class="btn warn-btn" id="warn-btn" hidden>⚠ Report a problem</button>
       <a class="btn" href="/">← Back to home</a>
     </div>
+
+    <p class="external-disclaimer">
+      <span aria-hidden="true">🌐</span>
+      <span>External app: opens <code>{appHostname}</code> in a new tab. Web App Finder does not host, operate, or inspect external software.</span>
+    </p>
 
     <form class="comment-box warn-form" id="warn-form" hidden>
       <p><strong>Report a problem with {app.name}</strong> — goes privately to the curator, who reviews every report.</p>
@@ -206,9 +218,14 @@ const screenshots: { src: string; label?: string }[] =
     const btn = document.getElementById('vote-btn');
     const countEl = document.getElementById('vote-count');
     const commentBox = document.getElementById('comment-box');
-    const commentInput = document.getElementById('vote-comment');
+    const commentInput = document.getElementById('vote-comment') as HTMLTextAreaElement | null;
     const commentsSection = document.getElementById('comments');
     const commentList = document.getElementById('comment-list');
+    const warnBtn = document.getElementById('warn-btn');
+    const warnForm = document.getElementById('warn-form') as HTMLFormElement | null;
+    const warnComment = document.getElementById('warn-comment') as HTMLTextAreaElement | null;
+    const warnStatus = document.getElementById('warn-status');
+
     if (sb.url && sb.key && btn) {
       const headers = { apikey: sb.key, authorization: `Bearer ${sb.key}` };
 
@@ -249,12 +266,12 @@ const screenshots: { src: string; label?: string }[] =
 
       let count = 0;
       const render = () => {
-        countEl.textContent = String(count);
+        if (countEl) countEl.textContent = String(count);
         const hasVoted = voted().has(slug);
         btn.classList.toggle('voted', hasVoted);
         // The comment rides along with the vote, so the box only shows
         // before you have voted.
-        commentBox.hidden = hasVoted || btn.hidden;
+        if (commentBox) commentBox.hidden = hasVoted || btn.hidden;
       };
 
       const loadComments = async () => {
@@ -265,17 +282,43 @@ const screenshots: { src: string; label?: string }[] =
           );
           if (!res.ok) return;
           const rows = await res.json();
-          commentList.textContent = '';
+          if (commentList) commentList.textContent = '';
           for (const row of rows) {
             const li = document.createElement('li');
             const p = document.createElement('p');
             p.textContent = row.comment; // textContent: comments are untrusted
+
+            const metaDiv = document.createElement('div');
+            metaDiv.className = 'comment-meta';
+
             const time = document.createElement('time');
             time.textContent = new Date(row.created_at).toLocaleDateString();
-            li.append(p, time);
-            commentList.append(li);
+
+            const flagBtn = document.createElement('button');
+            flagBtn.type = 'button';
+            flagBtn.className = 'comment-flag-btn';
+            flagBtn.textContent = '🚩 Report comment';
+            flagBtn.setAttribute('aria-label', 'Report this comment as abusive or inappropriate');
+            flagBtn.addEventListener('click', () => {
+              if (!warnForm) return;
+              warnForm.hidden = false;
+              const abusiveCb = warnForm.querySelector<HTMLInputElement>(
+                '#warn-reasons input[value="abusive-comment"]'
+              );
+              if (abusiveCb) abusiveCb.checked = true;
+              const snippet = row.comment.length > 60 ? row.comment.slice(0, 57) + '...' : row.comment;
+              if (warnComment) {
+                warnComment.value = `Flagging comment "${snippet}": `;
+                warnComment.focus();
+              }
+              warnForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+
+            metaDiv.append(time, flagBtn);
+            li.append(p, metaDiv);
+            if (commentList) commentList.append(li);
           }
-          commentsSection.hidden = rows.length === 0;
+          if (commentsSection) commentsSection.hidden = rows.length === 0;
         } catch {}
       };
 
@@ -332,27 +375,25 @@ const screenshots: { src: string; label?: string }[] =
       // Problem reports: write-only to the private warnings table (no select
       // policy — reports are visible only to the curator). One per device per
       // app; commentary is required.
-      const warnBtn = document.getElementById('warn-btn');
-      const warnForm = document.getElementById('warn-form');
-      const warnComment = document.getElementById('warn-comment');
-      const warnStatus = document.getElementById('warn-status');
       const warnedKey = 'pwafinder-warned';
       const warned = () => new Set(JSON.parse(localStorage.getItem(warnedKey) ?? '[]'));
-      warnBtn.hidden = false;
-      if (warned().has(slug)) warnBtn.textContent = '⚠ Problem reported — thanks';
-      warnBtn.addEventListener('click', () => {
-        if (warned().has(slug)) return;
-        warnForm.hidden = !warnForm.hidden;
+      if (warnBtn) {
+        warnBtn.hidden = false;
+        if (warned().has(slug)) warnBtn.textContent = '⚠ Problem reported — thanks';
+        warnBtn.addEventListener('click', () => {
+          if (warned().has(slug) || !warnForm) return;
+          warnForm.hidden = !warnForm.hidden;
+        });
+      }
+      document.getElementById('warn-cancel')?.addEventListener('click', () => {
+        if (warnForm) warnForm.hidden = true;
       });
-      document.getElementById('warn-cancel').addEventListener('click', () => {
-        warnForm.hidden = true;
-      });
-      warnForm.addEventListener('submit', async (e) => {
+      warnForm?.addEventListener('submit', async (e) => {
         e.preventDefault();
-        const comment = warnComment.value.trim();
+        const comment = warnComment?.value.trim() ?? '';
         if (comment.length < 10) return;
         const reasons = [...warnForm.querySelectorAll('#warn-reasons input:checked')].map(
-          (c) => c.value
+          (c) => (c as HTMLInputElement).value
         );
         try {
           const res = await fetch(`${sb.url}/rest/v1/warnings`, {
@@ -365,15 +406,19 @@ const screenshots: { src: string; label?: string }[] =
             w.add(slug);
             localStorage.setItem(warnedKey, JSON.stringify([...w]));
             warnForm.hidden = true;
-            warnBtn.textContent = '⚠ Problem reported — thanks';
-            warnStatus.hidden = true;
+            if (warnBtn) warnBtn.textContent = '⚠ Problem reported — thanks';
+            if (warnStatus) warnStatus.hidden = true;
           } else {
+            if (warnStatus) {
+              warnStatus.textContent = 'Could not send the report — please try again later.';
+              warnStatus.hidden = false;
+            }
+          }
+        } catch {
+          if (warnStatus) {
             warnStatus.textContent = 'Could not send the report — please try again later.';
             warnStatus.hidden = false;
           }
-        } catch {
-          warnStatus.textContent = 'Could not send the report — please try again later.';
-          warnStatus.hidden = false;
         }
       });
     }

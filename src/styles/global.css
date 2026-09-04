@@ -415,6 +415,33 @@ header.site .container {
   color: var(--text-muted);
 }
 
+.comment-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+  padding-top: 0.3rem;
+  border-top: 1px dotted var(--border);
+}
+
+.comment-flag-btn {
+  background: none;
+  border: none;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.comment-flag-btn:hover,
+.comment-flag-btn:focus-visible {
+  color: var(--warn);
+  background: rgba(220, 38, 38, 0.08);
+}
+
 .verified-badge,
 .risk-badge,
 .unverifiable-badge,
@@ -623,8 +650,30 @@ header.site .container {
 .actions {
   display: flex;
   gap: 0.75rem;
-  margin: 1.25rem 0;
+  margin: 1.25rem 0 0.75rem;
   flex-wrap: wrap;
+}
+
+.external-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem 0 1.25rem;
+  line-height: 1.45;
+}
+
+.external-disclaimer code {
+  font-size: 0.82rem;
+  padding: 0.1rem 0.35rem;
+  background: var(--badge-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
 }
 
 .btn {
