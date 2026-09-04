@@ -49,6 +49,34 @@ const isLocalOrInternal = (h) => {
   );
 };
 
+const TRACKING_PARAMS = new Set([
+  'ref',
+  'aff',
+  'affiliate',
+  'ref_src',
+  'referrer',
+  'fbclid',
+  'gclid',
+  'msclkid',
+  'mc_eid',
+  'yclid',
+  'campaign',
+]);
+
+const stripTrackingParams = (urlObj) => {
+  const toDelete = [];
+  for (const [k] of urlObj.searchParams) {
+    const lower = k.toLowerCase();
+    if (lower.startsWith('utm_') || TRACKING_PARAMS.has(lower)) {
+      toDelete.push(k);
+    }
+  }
+  for (const k of toDelete) {
+    urlObj.searchParams.delete(k);
+  }
+  return toDelete.length > 0;
+};
+
 const lines = ['## Automated submission check', ''];
 let failed = false;
 const pass = (msg) => lines.push(`- ✅ ${msg}`);
@@ -72,7 +100,12 @@ try {
   } else if (isShortener(url.hostname)) {
     fail(`URL shorteners and redirect services (\`${url.hostname}\`) are not accepted. Please provide the app's direct official domain.`);
   } else {
-    pass(`URL is well-formed and uses HTTPS: \`${url.href}\``);
+    const stripped = stripTrackingParams(url);
+    if (stripped) {
+      pass(`Cleaned URL: stripped affiliate/marketing tracking parameters -> \`${url.href}\``);
+    } else {
+      pass(`URL is well-formed and uses HTTPS: \`${url.href}\``);
+    }
   }
 } catch {
   fail(`Could not parse a URL from the submission (got \`${raw || 'nothing'}\`)`);
@@ -96,6 +129,7 @@ if (url && !failed) {
     } else {
       pass(`Site is reachable (HTTP ${res.status})`);
       const final = new URL(res.url);
+      stripTrackingParams(final);
       if (final.protocol !== 'https:') fail('Final page is not served over HTTPS');
       if (isIpAddress(final.hostname)) fail(`Redirects to a raw IP address (\`${final.hostname}\`)`);
       if (isShortener(final.hostname)) fail(`Redirects to a URL shortening service (\`${final.hostname}\`)`);

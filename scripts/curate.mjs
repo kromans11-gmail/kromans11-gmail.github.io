@@ -71,6 +71,34 @@ const isLocalOrInternal = (h) => {
   );
 };
 
+const TRACKING_PARAMS = new Set([
+  'ref',
+  'aff',
+  'affiliate',
+  'ref_src',
+  'referrer',
+  'fbclid',
+  'gclid',
+  'msclkid',
+  'mc_eid',
+  'yclid',
+  'campaign',
+]);
+
+const stripTrackingParams = (urlObj) => {
+  const toDelete = [];
+  for (const [k] of urlObj.searchParams) {
+    const lower = k.toLowerCase();
+    if (lower.startsWith('utm_') || TRACKING_PARAMS.has(lower)) {
+      toDelete.push(k);
+    }
+  }
+  for (const k of toDelete) {
+    urlObj.searchParams.delete(k);
+  }
+  return toDelete.length > 0;
+};
+
 const APPS_PATH = new URL('../src/data/apps.json', import.meta.url);
 const CAPABILITIES_PATH = new URL('../src/data/capabilities.ts', import.meta.url);
 
@@ -126,7 +154,7 @@ async function checkUrl(url) {
       signal: AbortSignal.timeout(20000),
       headers: {
         'user-agent':
-          'Mozilla/5.0 (compatible; PWA-Finder-check/1.0; +https://pwafinder.example)',
+          'Mozilla/5.0 (compatible; WebAppFinder-check/1.0; +https://webappfinder.app)',
         accept: 'text/html,application/xhtml+xml',
       },
     });
@@ -152,6 +180,7 @@ async function checkUrl(url) {
     return result;
   }
   const finalUrl = new URL(res.url);
+  stripTrackingParams(finalUrl);
   if (finalUrl.protocol !== 'https:') {
     result.failures.push(`served over ${finalUrl.protocol.replace(':', '')}, not HTTPS`);
   }
@@ -244,6 +273,8 @@ switch (action) {
     if (isLocalOrInternal(parsedUrl.hostname)) {
       await fail('Listings must be publicly reachable internet domains.');
     }
+    stripTrackingParams(parsedUrl);
+    url = parsedUrl.href;
     const domain = parsedUrl.hostname.replace(/^www\./, '');
     const dup = apps.find(
       (a) => new URL(a.url).hostname.replace(/^www\./, '') === domain

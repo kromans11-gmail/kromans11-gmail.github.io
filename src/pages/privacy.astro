@@ -46,7 +46,17 @@ import Base from '../layouts/Base.astro';
     </div>
 
     <div class="install-help">
-      <h2>3. Data Transmitted to Remote Servers</h2>
+      <h2>3. Cookieless Operation & EU ePrivacy Compliance</h2>
+      <p>
+        <strong>Why We Do Not Display a Cookie Banner:</strong> Under the European Union ePrivacy Directive (Directive 2002/58/EC as amended) and UK PECR, cookie consent banners are only legally required for non-essential tracking cookies, third-party analytics cookies, or behavioral advertising identifiers.
+      </p>
+      <p>
+        Web App Finder uses <strong>zero advertising cookies, zero cross-site tracking beacons, and zero commercial profiling scripts</strong>. The minimal storage mechanisms we use (such as <code>localStorage</code> for pseudonymous voting integrity and service worker cache for offline availability) are strictly necessary for the technical operation and functional integrity of the site requested by the user, and are therefore exempt from cookie consent banner mandates.
+      </p>
+    </div>
+
+    <div class="install-help">
+      <h2>4. Data Transmitted to Remote Servers</h2>
       <p>
         Web App Finder only transmits data to backend servers when you explicitly initiate an action:
       </p>
@@ -58,10 +68,13 @@ import Base from '../layouts/Base.astro';
           <strong>Problem Reports (Warnings)</strong>: When you submit the "Report a problem" form, your selected reasons, explanation, app slug, and device ID are transmitted to a private database table. These reports are strictly confidential, never shown publicly, and used only by the curator to review potential scams, broken links, or harmful apps.
         </li>
       </ul>
+      <p>
+        <strong>External Manifest Screenshots:</strong> Screenshots displayed on app details pages are linked directly from the external URLs declared in the respective app's Web App Manifest. When your browser renders these preview images, it communicates directly with the third-party publisher's server, which may log your IP address in standard server request logs. These requests are sent with <code>referrerpolicy="no-referrer"</code> to prevent transmitting your browsing history to the external server.
+      </p>
     </div>
 
     <div class="install-help">
-      <h2>4. Privacy-Friendly Analytics (GoatCounter)</h2>
+      <h2>5. Privacy-Friendly Analytics (GoatCounter)</h2>
       <p>
         We use <a href="https://www.goatcounter.com" target="_blank" rel="noopener">GoatCounter</a> for aggregate website traffic statistics. GoatCounter is privacy-oriented and:
       </p>
@@ -74,7 +87,7 @@ import Base from '../layouts/Base.astro';
     </div>
 
     <div class="install-help">
-      <h2>5. Third-Party Service Providers</h2>
+      <h2>6. Third-Party Service Providers</h2>
       <p>
         The infrastructure supporting Web App Finder includes:
       </p>
@@ -86,7 +99,17 @@ import Base from '../layouts/Base.astro';
     </div>
 
     <div class="install-help">
-      <h2>6. Your Rights & Data Choices (GDPR & CCPA)</h2>
+      <h2>7. Children's Privacy (COPPA & Minor Protection)</h2>
+      <p>
+        Web App Finder is designed for general audiences and is not directed at children under 13 years of age. We do not knowingly collect, solicit, or maintain personally identifiable information from children under 13 in compliance with the Children's Online Privacy Protection Act (COPPA).
+      </p>
+      <p>
+        If you are a parent or legal guardian and believe your child under 13 has submitted personal information or comments to our site, please contact us via our <a href="https://github.com/kromans11-gmail/kromans11-gmail.github.io/issues" target="_blank" rel="noopener">GitHub repository</a> and we will promptly remove the data.
+      </p>
+    </div>
+
+    <div class="install-help">
+      <h2>8. Your Rights & Data Choices (GDPR & CCPA)</h2>
       <p>
         Because we do not require account registration, passwords, or personal profiles, we do not hold personal profiles linking your identity to your activity.
       </p>
