@@ -1,0 +1,66 @@
+name: Takedown or Delisting Request
+description: Request the removal, delisting, or update of an app listing, trademark, or manifest screenshot
+title: "[Takedown] "
+labels: ["delist-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Web App Finder Respects Intellectual Property & Developer Preferences**
+
+        Web App Finder is an independent, non-commercial discovery directory and search index. We do not host, store, or distribute the software or code of any external web apps.
+
+        If you are a developer, publisher, copyright holder, or trademark owner and wish to have your app removed from the directory, update inaccurate information, or report intellectual property concerns, please fill out this form. We honor valid delisting requests promptly.
+  - type: input
+    id: app-name
+    attributes:
+      label: App name
+      description: Name of the application as listed on Web App Finder
+      placeholder: e.g. My App
+    validations:
+      required: true
+  - type: input
+    id: listing-url
+    attributes:
+      label: Web App Finder listing URL or external URL
+      description: Link to the page on webappfinder.app or the official website
+      placeholder: https://webappfinder.app/apps/my-app/ or https://example.com
+    validations:
+      required: true
+  - type: dropdown
+    id: request-type
+    attributes:
+      label: Nature of the request
+      options:
+        - "Publisher Request: I am the app creator/publisher and want my app removed from the directory"
+        - "Publisher Request: I want to update my app's details, canonical URL, or category"
+        - "Copyright / DMCA: Notice of claimed copyright infringement (e.g. screenshots or description)"
+        - "Trademark: Inquiry regarding trademark use, logo, or brand representation"
+        - "Other legal or regulatory inquiry"
+    validations:
+      required: true
+  - type: input
+    id: requester-role
+    attributes:
+      label: Your relationship to the application / intellectual property
+      description: e.g. "Sole Developer", "Official Publisher", "Trademark Owner", "Authorized Legal Representative"
+      placeholder: e.g. Publisher / Developer
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details and explanation
+      description: Please describe your request in detail. For copyright or trademark claims, identify the specific work or mark and provide evidence or authoritative links demonstrating your ownership or authorization.
+      placeholder: Provide full details so the maintainer can verify and fulfill your request quickly...
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Declarations
+      options:
+        - label: I declare in good faith that I am the owner, or authorized to act on behalf of the owner, of the application or intellectual property referenced.
+          required: true
+        - label: I understand that Web App Finder will process and act on this request in good faith.
+          required: true
