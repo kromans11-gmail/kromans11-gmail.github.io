@@ -734,6 +734,25 @@ header.site .container {
   color: var(--text-muted);
 }
 
+.dmca-agent-box {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  padding: 0.85rem 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.dmca-agent-box h3 {
+  font-size: 0.95rem;
+  margin: 0 0 0.4rem;
+}
+
+.dmca-agent-box p {
+  margin: 0.35rem 0;
+  line-height: 1.45;
+}
+
 .app-form {
   display: grid;
   gap: 0.85rem;
