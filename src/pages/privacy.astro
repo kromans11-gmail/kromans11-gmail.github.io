@@ -1,0 +1,106 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Privacy Policy — Web App Finder"
+  description="How Web App Finder respects your privacy, handles client storage, and protects user data."
+>
+  <article class="detail">
+    <a class="back-link" href="/">← Back to home</a>
+    <h1>Privacy Policy</h1>
+    <p class="note">Last updated: September 2026</p>
+
+    <div class="install-help">
+      <h2>1. Privacy-First Philosophy</h2>
+      <p>
+        Web App Finder is designed to be lightweight, respectful, and transparent. We do not sell user data, we do not use third-party advertising networks, and we do not track you across the internet.
+      </p>
+    </div>
+
+    <div class="install-help">
+      <h2>2. Data Stored Locally on Your Device (Client Storage)</h2>
+      <p>
+        To provide an installable, offline-first Progressive Web App experience and support honest community feedback, the following data is stored locally in your browser's <code>localStorage</code> and Cache Storage:
+      </p>
+      <ul>
+        <li>
+          <strong><code>pwafinder-device</code></strong>: A randomly generated unique pseudonymous identifier (UUID). It is created solely to ensure fair voting (preventing multiple votes from the same browser on a single app) and to prevent automated spam in warning reports. It contains no personal identity, real name, email, or IP address.
+        </li>
+        <li>
+          <strong><code>pwafinder-voted</code></strong>: A list of app identifiers you have upvoted, stored locally so the user interface can highlight apps you already supported.
+        </li>
+        <li>
+          <strong><code>pwafinder-opens</code></strong>: A local counter tracking how many times you open an app from the directory. This data <em>never leaves your device</em> and is used solely to generate your private "📌 Personal PWA's" shelf.
+        </li>
+        <li>
+          <strong><code>pwafinder-warned</code></strong>: A local record of apps you reported a problem for, preventing duplicate submissions.
+        </li>
+        <li>
+          <strong>Service Worker Offline Cache</strong>: Caches directory HTML, stylesheet, and icon assets so Web App Finder continues to work when you have no internet connection.
+        </li>
+      </ul>
+      <p class="note">
+        You can delete all local data at any time by clearing your browser's site data / cache for <code>webappfinder.app</code>.
+      </p>
+    </div>
+
+    <div class="install-help">
+      <h2>3. Data Transmitted to Remote Servers</h2>
+      <p>
+        Web App Finder only transmits data to backend servers when you explicitly initiate an action:
+      </p>
+      <ul>
+        <li>
+          <strong>Community Votes & Public Comments</strong>: When you click the vote button on an app, the app slug, your pseudonymous <code>pwafinder-device</code> ID, and any optional public comment you type are sent to our database. Comments are published publicly on that app's page. You can withdraw your vote at any time by tapping the vote button again, which deletes your vote and comment from the database.
+        </li>
+        <li>
+          <strong>Problem Reports (Warnings)</strong>: When you submit the "Report a problem" form, your selected reasons, explanation, app slug, and device ID are transmitted to a private database table. These reports are strictly confidential, never shown publicly, and used only by the curator to review potential scams, broken links, or harmful apps.
+        </li>
+      </ul>
+    </div>
+
+    <div class="install-help">
+      <h2>4. Privacy-Friendly Analytics (GoatCounter)</h2>
+      <p>
+        We use <a href="https://www.goatcounter.com" target="_blank" rel="noopener">GoatCounter</a> for aggregate website traffic statistics. GoatCounter is privacy-oriented and:
+      </p>
+      <ul>
+        <li>Does <strong>not</strong> use tracking cookies or persistent tracking beacons.</li>
+        <li>Does <strong>not</strong> track users across different websites.</li>
+        <li>Does <strong>not</strong> collect or store personally identifiable information (PII).</li>
+        <li>Generates anonymized hashes of visits to measure total page views.</li>
+      </ul>
+    </div>
+
+    <div class="install-help">
+      <h2>5. Third-Party Service Providers</h2>
+      <p>
+        The infrastructure supporting Web App Finder includes:
+      </p>
+      <ul>
+        <li><strong>GitHub Pages</strong>: Static website hosting and open-source submission pipelines.</li>
+        <li><strong>Supabase</strong>: Cloud database provider used to store community votes, public comments, and private safety reports.</li>
+        <li><strong>GoatCounter</strong>: Cookieless, open aggregate website analytics.</li>
+      </ul>
+    </div>
+
+    <div class="install-help">
+      <h2>6. Your Rights & Data Choices (GDPR & CCPA)</h2>
+      <p>
+        Because we do not require account registration, passwords, or personal profiles, we do not hold personal profiles linking your identity to your activity.
+      </p>
+      <p>
+        Under applicable privacy laws (such as the EU GDPR and California CCPA):
+      </p>
+      <ul>
+        <li>You have the right to clear local data from your device at any time.</li>
+        <li>You can remove any comment and vote you posted by clicking "Withdraw vote" on the app's details page.</li>
+        <li>If you have any questions or data requests, you can contact the project maintainer via our <a href="https://github.com/kromans11-gmail/kromans11-gmail.github.io/issues" target="_blank" rel="noopener">GitHub repository</a>.</li>
+      </ul>
+      <p>
+        For our terms and liability disclaimers, please see our <a href="/terms/">Terms of Service & Legal Disclaimers</a>.
+      </p>
+    </div>
+  </article>
+</Base>

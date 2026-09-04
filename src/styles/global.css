@@ -712,6 +712,14 @@ footer.site {
   text-align: center;
 }
 
+.legal-note {
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  opacity: 0.85;
+}
+
 #install-site {
   display: none;
   align-items: center;
