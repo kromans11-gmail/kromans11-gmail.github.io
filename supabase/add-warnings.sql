@@ -8,7 +8,7 @@
 -- processed = true in the dashboard.
 
 create table public.warnings (
-  app_slug   text        not null,
+  app_slug   text        not null check (char_length(app_slug) <= 100 and app_slug ~ '^[a-z0-9-]+$'),
   device_id  uuid        not null,
   created_at timestamptz not null default now(),
   -- what kind of problem (checkboxes in the report form)

@@ -2,7 +2,7 @@
 -- Run this once in the Supabase dashboard: SQL Editor -> New query -> paste -> Run.
 
 create table public.votes (
-  app_slug   text        not null,
+  app_slug   text        not null check (char_length(app_slug) <= 100 and app_slug ~ '^[a-z0-9-]+$'),
   device_id  uuid        not null,
   created_at timestamptz not null default now(),
   comment    text        check (char_length(comment) <= 500), -- optional, shown publicly

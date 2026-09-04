@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Feeds & Sitemap
+Sitemap: https://webappfinder.app/feed.xml
