@@ -3625,5 +3625,41 @@
     "verified": false,
     "lastChecked": "2026-08-31",
     "addedAt": "2026-08-29"
+  },
+  {
+    "slug": "a-box-of-tools",
+    "name": "A Box of Tools",
+    "url": "https://abox.tools/",
+    "category": "Utilities",
+    "tagline": "35 file tools — image, video, audio, PDF, text — that never upload anything.",
+    "description": "A box of 35 single-purpose tools that run entirely in the browser: compress an image to an exact file size, merge or redact a PDF, crop a video, trim audio, read a QR code, format JSON, make a favicon. Each one does a single job and nothing else.\n\nNothing is uploaded — there is no account, no watermark and no server-side step. That is a property of the code rather than a privacy promise, and it is checkable: the site is open source (MIT) at https://github.com/A-Box-of-Tools/website and its build can be diffed against what is actually served. Every tool registers its own service worker and manifest, so each installs separately and keeps working with the network off. Available in 15 languages.",
+    "popularity": 40,
+    "capabilities": [
+      "offline",
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🧰",
+    "spotlight": false,
+    "verified": false,
+    "lastChecked": "2026-09-05",
+    "addedAt": "2026-09-05"
+  },
+  {
+    "slug": "studyarena",
+    "name": "StudyArena",
+    "url": "https://studyarena.com/",
+    "category": "Education",
+    "tagline": "Compare AI answers before seeing which model wrote each one.",
+    "description": "StudyArena lets students compare three AI answers, vote for the strongest, and reveal the models for free. New AI answers require an internet connection.",
+    "popularity": 40,
+    "capabilities": [
+      "no-account"
+    ],
+    "icon": "🎓",
+    "spotlight": false,
+    "verified": false,
+    "lastChecked": "2026-09-05",
+    "addedAt": "2026-09-05"
   }
 ]
