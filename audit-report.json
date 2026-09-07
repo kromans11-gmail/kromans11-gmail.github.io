@@ -312,7 +312,7 @@
   },
   {
     "slug": "match-a-movie",
-    "verdict": "ok"
+    "verdict": "blocked"
   },
   {
     "slug": "murlok-io",
@@ -951,6 +951,14 @@
   },
   {
     "slug": "gif-resizer",
+    "verdict": "ok"
+  },
+  {
+    "slug": "a-box-of-tools",
+    "verdict": "ok"
+  },
+  {
+    "slug": "studyarena",
     "verdict": "ok"
   }
 ]
