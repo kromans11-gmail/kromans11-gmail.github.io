@@ -3535,40 +3535,6 @@
     "lastChecked": "2026-09-07"
   },
   {
-    "slug": "kromans-sports",
-    "name": "kromans-Sports",
-    "url": "https://kromans-sports-production.up.railway.app",
-    "category": "Games & Leisure",
-    "tagline": "Live scores, finals, and results for the teams and golfers you follow.",
-    "description": "kromans-Sports tracks your teams across NFL, NBA, MLB, NHL, college sports, golf, and international soccer including the World Cup. Follow up to five teams free, see live scores while the app is open, browse championship and playoff games in every sport, and tap through to each team's full season results. Installs to your home screen and works without an account.",
-    "popularity": 40,
-    "capabilities": [
-      "no-account",
-      "lightweight"
-    ],
-    "icon": "🏟️",
-    "spotlight": true,
-    "verified": true,
-    "lastChecked": "2026-09-07"
-  },
-  {
-    "slug": "kromans-wanted",
-    "name": "kromans-Wanted",
-    "url": "https://kromans-wanted-production.up.railway.app",
-    "category": "Business & Finance",
-    "tagline": "Photograph incoming secondhand stock and instantly match it to the customers who asked for it.",
-    "description": "Built for the shop counter: staff photograph an arriving item, AI identifies it, and the app checks it against the list of open customer requests — showing who asked for it, when, and a one-tap email to tell them it came in. Typed and spoken descriptions work too, requests expire on a schedule you set, and both requests and scans keep printable logs. Personally built and verified by the Web App Finder curator.",
-    "popularity": 42,
-    "capabilities": [
-      "lightweight"
-    ],
-    "icon": "🎯",
-    "highlyUseful": true,
-    "spotlight": true,
-    "verified": true,
-    "lastChecked": "2026-09-07"
-  },
-  {
     "slug": "kromans-docstranslate",
     "name": "kromans-DocsTranslate",
     "url": "https://kromans-docstranslate-production.up.railway.app",
