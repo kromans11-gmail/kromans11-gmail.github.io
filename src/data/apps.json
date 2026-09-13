@@ -3505,10 +3505,10 @@
   {
     "slug": "kromans-reader",
     "name": "kromans-Reader",
-    "url": "https://reader-pwa-5w1.pages.dev",
+    "url": "https://kromans-reader.pages.dev",
     "category": "Education",
-    "tagline": "Photograph pages of a physical book and have them read aloud in order.",
-    "description": "Reader turns printed pages into audio: photograph the pages of a physical book and the app reads them back to you in order. Books are stored on your device, it works offline once installed, and no account is needed. Personally built and verified by the Web App Finder curator.",
+    "tagline": "Type, paste, or scan any text to have it read aloud smoothly.",
+    "description": "Reader turns printed text, documents, and books into audio: type or paste into the reading box, or photograph a document with your camera, and the app reads it aloud. Supports offline listening, speed controls, sequential strung reading boxes, and custom voices. Stored on your device, works offline once installed, and no account is needed. Personally built and verified by the Web App Finder curator.",
     "popularity": 90,
     "capabilities": [
       "offline",
@@ -3518,7 +3518,7 @@
     "icon": "📖",
     "spotlight": true,
     "verified": true,
-    "lastChecked": "2026-09-07"
+    "lastChecked": "2026-09-13"
   },
   {
     "slug": "openrouter",
