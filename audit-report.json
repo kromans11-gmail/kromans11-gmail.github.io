@@ -164,7 +164,8 @@
   },
   {
     "slug": "flipkart",
-    "verdict": "none"
+    "verdict": "dead",
+    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
   },
   {
     "slug": "dev-to",
@@ -312,7 +313,7 @@
   },
   {
     "slug": "match-a-movie",
-    "verdict": "blocked"
+    "verdict": "ok"
   },
   {
     "slug": "murlok-io",
@@ -728,7 +729,7 @@
   },
   {
     "slug": "xe",
-    "verdict": "blocked"
+    "verdict": "ok"
   },
   {
     "slug": "contrax",
@@ -931,14 +932,6 @@
   },
   {
     "slug": "openrouter",
-    "verdict": "ok"
-  },
-  {
-    "slug": "kromans-sports",
-    "verdict": "ok"
-  },
-  {
-    "slug": "kromans-wanted",
     "verdict": "ok"
   },
   {
