@@ -3507,13 +3507,13 @@
     "name": "kromans-Reader",
     "url": "https://kromans-reader.pages.dev",
     "category": "Education",
-    "tagline": "Type, paste, or scan any text to have it read aloud smoothly.",
-    "description": "Reader turns printed text, documents, and books into audio: type or paste into the reading box, or photograph a document with your camera, and the app reads it aloud. Supports offline listening, speed controls, sequential strung reading boxes, and custom voices. Stored on your device, works offline once installed, and no account is needed. Personally built and verified by the Web App Finder curator.",
+    "tagline": "Type, paste or photograph any text and hear it read aloud, sentence by sentence.",
+    "description": "Reader turns printed pages, documents and pasted text into speech. Type or paste into the Reading Box, or photograph a page, and press Play: each sentence is highlighted as it is read, with speed control from half to double and a Read Along view. Free to use with on-device scanning and your phone's voices, plus a downloadable offline English voice; cloud scanning with translation and summaries, and cloud voices, are optional and can be turned off in Settings. Save boxes to a Library, link them into a series that plays without stopping, listen with the screen off, or download an MP3. No account needed; your text stays on your device. Personally built and verified by the Web App Finder curator; explainer video: https://youtu.be/8ME0HpKRbek",
     "popularity": 90,
     "capabilities": [
-      "offline",
+      "lightweight",
       "no-account",
-      "lightweight"
+      "offline"
     ],
     "icon": "📖",
     "spotlight": true,
