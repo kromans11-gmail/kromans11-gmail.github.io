@@ -3627,5 +3627,41 @@
     "verified": false,
     "lastChecked": "2026-09-21",
     "addedAt": "2026-09-05"
+  },
+  {
+    "slug": "icyzip",
+    "name": "IcyZip",
+    "url": "https://icyzip.com/",
+    "category": "Utilities",
+    "tagline": "Pair two browsers to move end-to-end encrypted live text and one file.",
+    "description": "Pair two online browsers by QR code or link to synchronize live text and transfer one selected file up to 25 MiB. No account or app installation is required; both browsers must stay open during the transfer.",
+    "popularity": 40,
+    "capabilities": [
+      "no-account",
+      "file-system"
+    ],
+    "icon": "🧰",
+    "spotlight": false,
+    "verified": false,
+    "lastChecked": "2026-09-21",
+    "addedAt": "2026-09-21"
+  },
+  {
+    "slug": "bzo-battlezone-online",
+    "name": "BZO - Battlezone Online",
+    "url": "https://bz.rikers.org/",
+    "category": "Games & Leisure",
+    "tagline": "Multiplayer 3D tank game like BZFlag for desktop, mobile and VR",
+    "description": "BZFlag, (https://bzflag.org) has been around for over 30 years. BZO is a re-creation using Three.js and WebSocket. Gameplay is supported on Desktop, Mobile, and VR headsets.  You drive a Tank against other players. Servers have multiple game modes including Capture the Flag team play.",
+    "popularity": 40,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎮",
+    "spotlight": false,
+    "verified": false,
+    "lastChecked": "2026-09-21",
+    "addedAt": "2026-09-21"
   }
 ]

@@ -141,6 +141,20 @@
       "src": "https://excalidraw.com/screenshots/shapes.png"
     }
   ],
+  "icyzip": [
+    {
+      "src": "https://icyzip.com/pwa-screenshot-desktop.png",
+      "label": "IcyZip QR pairing screen on desktop"
+    },
+    {
+      "src": "https://icyzip.com/pwa-screenshot-android.png",
+      "label": "IcyZip installed PWA on Android"
+    },
+    {
+      "src": "https://icyzip.com/browser-file-transfer-demo.png",
+      "label": "IcyZip browser file transfer flow"
+    }
+  ],
   "mconverter": [
     {
       "src": "https://mconverter.eu/img/screenshots/mobile-home.png"
