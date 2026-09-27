@@ -3663,5 +3663,20 @@
     "verified": false,
     "lastChecked": "2026-09-21",
     "addedAt": "2026-09-21"
+  },
+  {
+    "slug": "strumfolio",
+    "name": "Strumfolio",
+    "url": "https://strumfolio.com/",
+    "category": "Media & Entertainment",
+    "tagline": "Songbook and chord chart reader for musicians, built on ChordPro.",
+    "description": "Keeps your songs as ChordPro text, so it can transpose, apply a capo and reflow the chart for any screen; a song stays readable offline once opened. The app needs a free account; the chord charts, capo calculator and ChordPro converter at strumfolio.com/tools work without one. Submitted by the developer.",
+    "popularity": 40,
+    "capabilities": [],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": false,
+    "lastChecked": "2026-09-27",
+    "addedAt": "2026-09-27"
   }
 ]
