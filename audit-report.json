@@ -164,8 +164,7 @@
   },
   {
     "slug": "flipkart",
-    "verdict": "dead",
-    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
+    "verdict": "none"
   },
   {
     "slug": "dev-to",
@@ -952,6 +951,18 @@
   },
   {
     "slug": "studyarena",
+    "verdict": "ok"
+  },
+  {
+    "slug": "icyzip",
+    "verdict": "ok"
+  },
+  {
+    "slug": "bzo-battlezone-online",
+    "verdict": "ok"
+  },
+  {
+    "slug": "strumfolio",
     "verdict": "ok"
   }
 ]
