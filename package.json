@@ -13,7 +13,8 @@
     "check": "node scripts/check-listings.mjs",
     "screenshots": "node scripts/fetch-screenshots.mjs",
     "audit:legal": "node audit-legal-protections.mjs",
-    "astro": "astro"
+    "astro": "astro",
+    "audit": "node ../Tools/pwa-audit/audit.mjs --dir dist"
   },
   "dependencies": {
     "astro": "^7.0.6"
