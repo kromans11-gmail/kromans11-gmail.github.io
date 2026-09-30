@@ -555,8 +555,13 @@ header.site .container {
     white-space: normal;
   }
 
+  /* flex-shrink: 0 above keeps a long badge list on one line, wider than
+     the phone; here it may shrink so the badges actually wrap. */
   .row .badges {
     flex-wrap: wrap;
+    flex-shrink: 1;
+    min-width: 0;
+    max-width: 100%;
   }
 }
 

@@ -202,6 +202,7 @@ const screenshots: { src: string; label?: string }[] =
   </article>
 
   <script define:vars={{ slug: app.slug, sb: SUPABASE }}>
+    // define:vars scripts reach the browser as written: plain JavaScript only, no TypeScript.
     // Count opens toward the home page's "Personal PWA's" section (two opens
     // pin the app there; the count lives only in this browser's storage).
     document.querySelector('.actions .btn.primary')?.addEventListener('click', () => {
@@ -218,12 +219,12 @@ const screenshots: { src: string; label?: string }[] =
     const btn = document.getElementById('vote-btn');
     const countEl = document.getElementById('vote-count');
     const commentBox = document.getElementById('comment-box');
-    const commentInput = document.getElementById('vote-comment') as HTMLTextAreaElement | null;
+    const commentInput = document.getElementById('vote-comment');
     const commentsSection = document.getElementById('comments');
     const commentList = document.getElementById('comment-list');
     const warnBtn = document.getElementById('warn-btn');
-    const warnForm = document.getElementById('warn-form') as HTMLFormElement | null;
-    const warnComment = document.getElementById('warn-comment') as HTMLTextAreaElement | null;
+    const warnForm = document.getElementById('warn-form');
+    const warnComment = document.getElementById('warn-comment');
     const warnStatus = document.getElementById('warn-status');
 
     if (sb.url && sb.key && btn) {
@@ -302,7 +303,7 @@ const screenshots: { src: string; label?: string }[] =
             flagBtn.addEventListener('click', () => {
               if (!warnForm) return;
               warnForm.hidden = false;
-              const abusiveCb = warnForm.querySelector<HTMLInputElement>(
+              const abusiveCb = warnForm.querySelector(
                 '#warn-reasons input[value="abusive-comment"]'
               );
               if (abusiveCb) abusiveCb.checked = true;
@@ -393,7 +394,7 @@ const screenshots: { src: string; label?: string }[] =
         const comment = warnComment?.value.trim() ?? '';
         if (comment.length < 10) return;
         const reasons = [...warnForm.querySelectorAll('#warn-reasons input:checked')].map(
-          (c) => (c as HTMLInputElement).value
+          (c) => c.value
         );
         try {
           const res = await fetch(`${sb.url}/rest/v1/warnings`, {
