@@ -127,15 +127,15 @@ function check(id, category, title, testFn) {
 }
 
 // ==========================================
-// 1. REPOSITORY GOVERNANCE & OPEN-SOURCE LIABILITY
+// 1. REPOSITORY GOVERNANCE & LICENCE LIABILITY
 // ==========================================
-check('GOV-01', 'Repository Governance', 'Open-Source License File (LICENSE)', () => {
+check('GOV-01', 'Repository Governance', 'License File (LICENSE)', () => {
   const licenseFile = findLegalFile(['LICENSE', 'LICENSE.md', 'LICENSE.txt']);
   if (!licenseFile) {
     return {
       status: 'FAIL',
       details: 'No LICENSE file found in repository root.',
-      remediation: 'Add an open-source LICENSE (e.g. MIT) to disclaim warranties and limit liability.',
+      remediation: 'Add a proprietary Romans Media LLC LICENSE (template: kromans-belonging-finder/LICENSE) with AS IS and liability clauses.',
     };
   }
   const content = readFileContent(licenseFile);
@@ -162,7 +162,7 @@ check('GOV-02', 'Repository Governance', 'package.json License Field', () => {
     return {
       status: 'WARN',
       details: 'package.json has no "license" property.',
-      remediation: 'Add "license": "MIT" (or appropriate SPDX identifier) to package.json.',
+      remediation: 'Add "license": "UNLICENSED" (proprietary, Romans Media LLC) to package.json.',
     };
   } catch {
     return { status: 'WARN', details: 'Could not parse package.json.' };

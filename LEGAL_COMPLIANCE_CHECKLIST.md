@@ -26,9 +26,9 @@ node audit-legal-protections.mjs /path/to/other-project --json
 
 ## Master Checklist: The 28 Essential Protections
 
-### 1. Repository Governance & Open-Source Liability
+### 1. Repository Governance & Licence Liability
 - [x] **`LICENSE` File in Root**: Must contain standard all-caps **AS IS**, **WITHOUT WARRANTY OF ANY KIND**, and **LIMITATION OF LIABILITY** clauses (e.g., MIT or Apache 2.0). Protects you from claims if someone forks, runs, or clones your code.
-- [x] **`package.json` License Field**: Explicit SPDX license identifier (e.g., `"license": "MIT"`).
+- [x] **`package.json` License Field**: Explicit license field; Romans Media LLC apps use `"license": "UNLICENSED"` (proprietary).
 - [x] **Security Policy (`SECURITY.md`)**:
   - Defines a private responsible disclosure channel (GitHub Security Advisories or direct email).
   - **Explicit No-Bounty / Anti-Extortion Clause**: States clearly that the project does *not* offer cash bounties or swag, deterring "beg bounty" extortion.

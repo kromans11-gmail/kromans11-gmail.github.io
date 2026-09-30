@@ -1,21 +1,23 @@
-MIT License
+Copyright (c) 2026 Romans Media LLC. All rights reserved.
 
-Copyright (c) 2026 Web App Finder Maintainers (https://webappfinder.app)
+Web App Finder, including its source code, design, text and graphics, is proprietary
+to Romans Media LLC.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+No part of it may be copied, modified, hosted, mirrored, republished,
+distributed, sold, sublicensed or used to create derivative works without
+prior written permission from Romans Media LLC.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Use of the app as offered by Romans Media LLC is governed by its Terms of
+Service (terms.html). Third-party components included in the app remain under
+their own licences (see node_modules/*/LICENSE and the package list in
+package.json).
+
+Contact: kromans.dev@gmail.com
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+ROMANS MEDIA LLC OR ITS MEMBERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+SOFTWARE, EXCEPT WHERE SUCH LIABILITY CANNOT BE EXCLUDED BY LAW.

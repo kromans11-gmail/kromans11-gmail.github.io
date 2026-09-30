@@ -2,7 +2,7 @@
 
 ## Overview
 
-Web App Finder ([`webappfinder.app`](https://webappfinder.app)) is an independent, non-commercial, open-source discovery directory for Progressive Web Apps (PWAs). The site is statically generated and hosted via GitHub Pages, with lightweight community features (voting, reviews, problem reporting) connected to Supabase using PostgreSQL Row Level Security (RLS).
+Web App Finder ([`webappfinder.app`](https://webappfinder.app)) is an independent, non-commercial discovery directory, operated by Romans Media LLC, for Progressive Web Apps (PWAs). The site is statically generated and hosted via GitHub Pages, with lightweight community features (voting, reviews, problem reporting) connected to Supabase using PostgreSQL Row Level Security (RLS).
 
 We take the security and integrity of our directory seriously and appreciate responsible security research conducted in good faith.
 
@@ -26,7 +26,7 @@ We strive to acknowledge receipt of legitimate security reports within **48–72
 
 ## ⚠️ Bug Bounty & Extortion Policy (Notice to Researchers)
 
-**Web App Finder is a free, hobbyist, open-source project with no commercial revenue, funding, or corporate backing.**
+**Web App Finder is a free, non-commercial service of Romans Media LLC with no commercial revenue or outside funding.**
 
 - **We DO NOT offer monetary compensation, cash rewards, bug bounties, swag, or certificates of recognition under any circumstances.**
 - Demands for payment, requests for "hall of fame" certificates, or threats of public disclosure / extortion ("beg bounties") will be ignored, rejected, and reported to GitHub Abuse and your email provider's fraud desk.
