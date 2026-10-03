@@ -3678,5 +3678,23 @@
     "verified": false,
     "lastChecked": "2026-09-28",
     "addedAt": "2026-09-27"
+  },
+  {
+    "slug": "getaskai",
+    "name": "GetAskAI",
+    "url": "https://getaskai.com/",
+    "category": "Productivity",
+    "tagline": "Free AI assistant you can pin to your home screen: ask, upload a PDF or photo, get sourced answers.",
+    "description": "No account, no download: type a question at getaskai.com, or add it from Chrome, Edge, Android or iOS so it launches in its own window like a native app. If a question depends on recent facts, it runs a quick search first and puts numbered links beneath the reply so each claim can be traced; it can also read an invoice, a contract or a photo of a device error code. Extra tools cover nearby places with ratings, reviews of a place, image search and video search, plus voice input. Works in 14 languages. Free and ad-supported; answers are machine-generated and occasionally off, which is why the links are shown.",
+    "popularity": 40,
+    "capabilities": [
+      "no-account",
+      "offline"
+    ],
+    "icon": "🗂️",
+    "spotlight": false,
+    "verified": false,
+    "lastChecked": "2026-10-03",
+    "addedAt": "2026-10-03"
   }
 ]
