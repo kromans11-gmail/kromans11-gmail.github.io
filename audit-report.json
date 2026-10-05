@@ -732,8 +732,8 @@
   },
   {
     "slug": "contrax",
-    "verdict": "dead",
-    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
+    "verdict": "ok",
+    "detail": "probed"
   },
   {
     "slug": "plausible",
@@ -963,6 +963,10 @@
   },
   {
     "slug": "strumfolio",
+    "verdict": "ok"
+  },
+  {
+    "slug": "getaskai",
     "verdict": "ok"
   }
 ]
