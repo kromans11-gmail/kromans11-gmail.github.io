@@ -3696,5 +3696,25 @@
     "verified": false,
     "lastChecked": "2026-10-05",
     "addedAt": "2026-10-03"
+  },
+  {
+    "slug": "bundle-of-joy",
+    "name": "Bundle of Joy",
+    "url": "https://app.bundleofjoy.love/",
+    "category": "Health & Lifestyle",
+    "tagline": "A shared baby tracker for feeds, diapers, medicine and growth.",
+    "description": "Log baby care in seconds and share the record with your partner. Free for two people and one baby, with growth charts, offline logging after setup, and no ads.",
+    "popularity": 40,
+    "capabilities": [
+      "offline",
+      "push",
+      "lightweight",
+      "file-system"
+    ],
+    "icon": "🌿",
+    "spotlight": false,
+    "verified": false,
+    "lastChecked": "2026-10-07",
+    "addedAt": "2026-10-07"
   }
 ]

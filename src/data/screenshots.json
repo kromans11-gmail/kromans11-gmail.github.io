@@ -53,6 +53,20 @@
       "src": "https://bundle.js.org/favicon/screenshot-error.png"
     }
   ],
+  "bundle-of-joy": [
+    {
+      "src": "https://app.bundleofjoy.love/listing/today.png",
+      "label": "Today: the last feed, diaper and medicine, with quick logging buttons"
+    },
+    {
+      "src": "https://app.bundleofjoy.love/listing/timeline-dark.png",
+      "label": "Shared timeline in dark mode, showing who logged each entry"
+    },
+    {
+      "src": "https://app.bundleofjoy.love/listing/growth.png",
+      "label": "Growth: weight measurements plotted against WHO growth standards"
+    }
+  ],
   "cat-safe-foods": [
     {
       "src": "https://catsafefoods.com/img/screenshot1.png"
