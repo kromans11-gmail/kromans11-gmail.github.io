@@ -368,7 +368,7 @@
   },
   {
     "slug": "versus",
-    "verdict": "blocked"
+    "verdict": "none"
   },
   {
     "slug": "alarmdj",
@@ -859,7 +859,7 @@
   },
   {
     "slug": "felt",
-    "verdict": "none"
+    "verdict": "ok"
   },
   {
     "slug": "bitwarden",
@@ -967,6 +967,10 @@
   },
   {
     "slug": "getaskai",
+    "verdict": "ok"
+  },
+  {
+    "slug": "bundle-of-joy",
     "verdict": "ok"
   }
 ]
