@@ -3716,5 +3716,23 @@
     "verified": false,
     "lastChecked": "2026-10-12",
     "addedAt": "2026-10-07"
+  },
+  {
+    "slug": "iqmaxxing",
+    "name": "IQMAXXING",
+    "url": "https://iqmaxxing.org/",
+    "category": "Health & Lifestyle",
+    "tagline": "Free brain training in the browser: dual, quad and 3D n-back, digit and Corsi span, reaction time, Stroop.",
+    "description": "No account and no ads. 23 games: n-back from single to quad, seven span tasks, reaction time, go/no-go, Stroop, relational reasoning, mental rotation, multiple object tracking and two arithmetic drills. Every run is saved to a personal log with records and progress charts. It is a training log, not an IQ test. Installable and works offline. Disclosure: I made it.",
+    "popularity": 40,
+    "capabilities": [
+      "offline",
+      "no-account"
+    ],
+    "icon": "🌿",
+    "spotlight": false,
+    "verified": false,
+    "lastChecked": "2026-10-16",
+    "addedAt": "2026-10-16"
   }
 ]
