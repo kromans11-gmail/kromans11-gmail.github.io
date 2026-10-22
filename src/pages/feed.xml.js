@@ -1,6 +1,6 @@
 // RSS feed of newly listed apps — the zero-account way to hear about new
 // listings (feed readers and mail-forwarding services can sit on top of it).
-import apps from '../data/apps.json';
+import apps from '../data/visibleApps';
 
 const SITE = 'https://webappfinder.app';
 const esc = (s) =>
