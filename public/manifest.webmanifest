@@ -1,7 +1,7 @@
 {
-  "name": "Web App Finder — discover the best Progressive Web Apps",
+  "name": "Web App Finder: web apps made by Romans Media LLC",
   "short_name": "Web App Finder",
-  "description": "A curated, ranked directory of the best Progressive Web Apps.",
+  "description": "The web apps made by Romans Media LLC.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
