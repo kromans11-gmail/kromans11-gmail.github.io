@@ -61,6 +61,22 @@ const { title, description } = Astro.props;
         </button>
       </div>
     </header>
+    <a
+      class="yt-banner"
+      href="https://www.youtube.com/@Kent-Science"
+      target="_blank"
+      rel="noopener"
+      aria-label="Watch Kent-Science on YouTube (opens in a new tab)"
+    >
+      <span class="yt-banner-inner">
+        <span class="yt-play" aria-hidden="true">&#9654;</span>
+        <span class="yt-text">
+          <strong>Kent-Science on YouTube: the people who built physics</strong>
+          <span>Narrated films, in historical order, on how Archimedes, Galileo, Kepler, Newton, Faraday, Maxwell and others made their discoveries, built from the original sources.</span>
+        </span>
+        <span class="yt-cta">Watch on YouTube</span>
+      </span>
+    </a>
     <main class="container" id="main">
       <slot />
     </main>
