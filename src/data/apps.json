@@ -3525,12 +3525,12 @@
     "name": "Galileo kromans-Series",
     "url": "https://kent-science-series.kromans-dev.workers.dev/",
     "category": "Education",
-    "tagline": "Watch the Galileo series in order, then every Kent-Science series in historical order.",
-    "description": "A guide to the Kent-Science YouTube films by Romans Media LLC. Start with the Galileo series in order, then move through every Kent-Science series in historical order: Archimedes, Kepler, Huygens, Newton, Faraday, Maxwell and more. Each video plays in the page and the next part starts on its own. Installs to your home screen, needs no account, and keeps nothing about you. Made by Romans Media LLC.",
-    "popularity": 80,
+    "tagline": "Watch the Galileo series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Galileo series, with 5 public parts and 1 Short at listing. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. New public videos appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
     "capabilities": [
-      "lightweight",
-      "no-account"
+      "no-account",
+      "lightweight"
     ],
     "icon": "🎬",
     "spotlight": false,
@@ -3752,5 +3752,165 @@
     "verified": false,
     "lastChecked": "2026-10-26",
     "addedAt": "2026-10-16"
+  },
+  {
+    "slug": "kromans-series-aristotle",
+    "name": "Aristotle kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/aristotle/",
+    "category": "Education",
+    "tagline": "Watch the Aristotle series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Aristotle series, with 1 public part and 0 Shorts at listing. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. New public videos appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "kromans-series-archimedes",
+    "name": "Archimedes kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/archimedes/",
+    "category": "Education",
+    "tagline": "Watch the Archimedes series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Archimedes series, with 3 public parts and 1 Short at listing. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. New public videos appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "kromans-series-ptolemy",
+    "name": "Ptolemy kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/ptolemy/",
+    "category": "Education",
+    "tagline": "Watch the Ptolemy series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Ptolemy series, with 2 public parts and 0 Shorts at listing. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. New public videos appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "kromans-series-gilbert",
+    "name": "Gilbert kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/gilbert/",
+    "category": "Education",
+    "tagline": "Watch the Gilbert series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Gilbert series, with 1 public part and 2 Shorts at listing. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. New public videos appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "kromans-series-tycho",
+    "name": "Tycho kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/tycho/",
+    "category": "Education",
+    "tagline": "Watch the Tycho series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Tycho series, with 3 public parts and 1 Short at listing. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. New public videos appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "kromans-series-fermat",
+    "name": "Fermat kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/fermat/",
+    "category": "Education",
+    "tagline": "Watch the Fermat series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Fermat series, with 1 public part and 0 Shorts at listing. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. New public videos appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "kromans-series-pascal",
+    "name": "Pascal kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/pascal/",
+    "category": "Education",
+    "tagline": "Watch the Pascal series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Pascal series, with 1 public part and 0 Shorts at listing. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. New public videos appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "kromans-series-huygens",
+    "name": "Huygens kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/huygens/",
+    "category": "Education",
+    "tagline": "Watch the Huygens series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Huygens series, with 3 public parts and 0 Shorts at listing. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. New public videos appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "kromans-series-faraday",
+    "name": "Faraday kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/faraday/",
+    "category": "Education",
+    "tagline": "Watch the Faraday series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Faraday series, with 2 public parts and 2 Shorts at listing. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. New public videos appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "kromans-series-maxwell",
+    "name": "Maxwell kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/maxwell/",
+    "category": "Education",
+    "tagline": "Watch the Maxwell series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Maxwell series, with 2 public parts and 1 Short at listing. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. New public videos appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
   }
 ]
