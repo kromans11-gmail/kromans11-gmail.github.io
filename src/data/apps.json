@@ -3521,6 +3521,23 @@
     "lastChecked": "2026-10-26"
   },
   {
+    "slug": "kromans-series",
+    "name": "kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/",
+    "category": "Education",
+    "tagline": "Watch the Kent-Science history of science series in order, from Galileo to every scientist in historical order.",
+    "description": "A guide to the Kent-Science YouTube films by Romans Media LLC. Start with the Galileo series in order, then move through every Kent-Science series in historical order: Archimedes, Kepler, Huygens, Newton, Faraday, Maxwell and more. Each video plays in the page and the next part starts on its own. Installs to your home screen, needs no account, and keeps nothing about you. Made by Romans Media LLC.",
+    "popularity": 80,
+    "capabilities": [
+      "lightweight",
+      "no-account"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true,
+    "lastChecked": "2026-10-27"
+  },
+  {
     "slug": "openrouter",
     "name": "OpenRouter",
     "url": "https://openrouter.ai",
