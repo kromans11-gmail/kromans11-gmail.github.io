@@ -336,6 +336,24 @@
       "label": "TaleForge Dashboard"
     }
   ],
+  "toolboxquote": [
+    {
+      "src": "https://appkitdemos.com/toolboxquote/store-screenshots/narrow-1-dashboard.png",
+      "label": "Paid, outstanding and overdue at a glance"
+    },
+    {
+      "src": "https://appkitdemos.com/toolboxquote/store-screenshots/narrow-2-invoice.png",
+      "label": "Branded invoice with a Pay online button"
+    },
+    {
+      "src": "https://appkitdemos.com/toolboxquote/store-screenshots/wide-1-dashboard.png",
+      "label": "Invoices and quotes dashboard"
+    },
+    {
+      "src": "https://appkitdemos.com/toolboxquote/store-screenshots/wide-2-reminder.png",
+      "label": "One-tap payment reminder"
+    }
+  ],
   "versus": [
     {
       "src": "https://versus.com/img/1_compare-min.png"

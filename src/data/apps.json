@@ -3912,5 +3912,24 @@
     "icon": "🎬",
     "spotlight": false,
     "verified": true
+  },
+  {
+    "slug": "toolboxquote",
+    "name": "ToolboxQuote",
+    "url": "https://appkitdemos.com/toolboxquote/",
+    "category": "Business & Finance",
+    "tagline": "Offline quotes, invoices and replies for solo trades",
+    "description": "Quoting and invoicing app for one-person trade businesses. Turn a quote into an invoice in one tap, track overdue jobs, send a prefilled payment reminder and copy 8 ready-made customer replies. Print or save as PDF. Works offline, no account; data stays on the device.",
+    "popularity": 40,
+    "capabilities": [
+      "offline",
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "💼",
+    "spotlight": false,
+    "verified": false,
+    "lastChecked": "2026-10-29",
+    "addedAt": "2026-10-29"
   }
 ]
