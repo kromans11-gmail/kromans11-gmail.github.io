@@ -197,6 +197,42 @@
       "src": "https://mconverter.eu/img/screenshots/mobile-convert-dark.png"
     }
   ],
+  "mealsolo": [
+    {
+      "src": "https://mealsolo.appkitdemos.com/screenshots/narrow-meals.png",
+      "label": "Meal library with recipe art and cost per serving"
+    },
+    {
+      "src": "https://mealsolo.appkitdemos.com/screenshots/narrow-week.png",
+      "label": "Weekly planner with starter week and budget meter"
+    },
+    {
+      "src": "https://mealsolo.appkitdemos.com/screenshots/narrow-cook.png",
+      "label": "What can I cook? ranks recipes by ingredients on hand (dark mode)"
+    },
+    {
+      "src": "https://mealsolo.appkitdemos.com/screenshots/wide-meals.png",
+      "label": "Meal library on desktop"
+    }
+  ],
+  "nightkettle": [
+    {
+      "src": "https://nightkettle.appkitdemos.com/screenshots/narrow.png",
+      "label": "Wind-down timer with a soft progress ring"
+    },
+    {
+      "src": "https://nightkettle.appkitdemos.com/screenshots/narrow-breathing.png",
+      "label": "Guided 4-7-8 breathing with an expanding orb"
+    },
+    {
+      "src": "https://nightkettle.appkitdemos.com/screenshots/narrow-insights.png",
+      "label": "Gentle sleep score and insights (sample data)"
+    },
+    {
+      "src": "https://nightkettle.appkitdemos.com/screenshots/wide.png",
+      "label": "Weekly stats, sleep score and insights on desktop (sample data)"
+    }
+  ],
   "passky": [
     {
       "src": "https://vault.passky.org/images/screenshots/1.jpg"
@@ -245,6 +281,16 @@
     {
       "src": "https://pool-buddy.de/assets/screenshots/de-premium.png",
       "label": "Pool Buddy Premium – Funktionen im Überblick"
+    }
+  ],
+  "proteinnudge": [
+    {
+      "src": "https://proteinnudge.appkitdemos.com/screenshots/narrow-390x844.png",
+      "label": "Today: daily totals, water and smart reminders"
+    },
+    {
+      "src": "https://proteinnudge.appkitdemos.com/screenshots/wide-1280x800.png",
+      "label": "Weekly report with intake, protein, water and side effects"
     }
   ],
   "proxx": [

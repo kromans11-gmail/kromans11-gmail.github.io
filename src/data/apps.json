@@ -3931,5 +3931,62 @@
     "verified": false,
     "lastChecked": "2026-10-29",
     "addedAt": "2026-10-29"
+  },
+  {
+    "slug": "mealsolo",
+    "name": "MealSolo",
+    "url": "https://mealsolo.appkitdemos.com/",
+    "category": "Shopping & Lifestyle",
+    "tagline": "Meal planner and grocery list for people who cook for one",
+    "description": "Meal planning for a table of one. 30 single-serving and batch-cook recipes, 'What can I cook?' from what's in your fridge, a weekly planner where leftovers fill the next day's lunch, an estimated budget, and a grocery list sorted by aisle. Works offline, no account.",
+    "popularity": 40,
+    "capabilities": [
+      "offline",
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🛍️",
+    "spotlight": false,
+    "verified": false,
+    "lastChecked": "2026-10-30",
+    "addedAt": "2026-10-30"
+  },
+  {
+    "slug": "nightkettle",
+    "name": "Nightkettle",
+    "url": "https://nightkettle.appkitdemos.com/",
+    "category": "Health & Lifestyle",
+    "tagline": "Calm wind-down timer, breathing, sounds and a sleep log",
+    "description": "A calm wind-down companion for the hour before bed: a 5-20 minute timer, animated 4-7-8 and box breathing, a rain, ocean, wind, fan and brown-noise mixer generated on the device, and a private sleep log with an explained score. Offline, no account. Not a medical device.",
+    "popularity": 40,
+    "capabilities": [
+      "offline",
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🌿",
+    "spotlight": false,
+    "verified": false,
+    "lastChecked": "2026-10-30",
+    "addedAt": "2026-10-30"
+  },
+  {
+    "slug": "proteinnudge",
+    "name": "ProteinNudge",
+    "url": "https://proteinnudge.appkitdemos.com/",
+    "category": "Health & Lifestyle",
+    "tagline": "Protein-first small-plate builder and water log",
+    "description": "A calm food and water log for people who eat smaller portions. Build a protein-first small plate, log water with one tap, note how you feel, and print a weekly summary to share with your clinician. Wellness tool, not medical advice. Works offline, no account.",
+    "popularity": 40,
+    "capabilities": [
+      "offline",
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🌿",
+    "spotlight": false,
+    "verified": false,
+    "lastChecked": "2026-10-30",
+    "addedAt": "2026-10-30"
   }
 ]
