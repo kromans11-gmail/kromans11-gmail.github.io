@@ -4020,5 +4020,21 @@
     "icon": "🎬",
     "spotlight": false,
     "verified": true
+  },
+  {
+    "slug": "kromans-series-hooke",
+    "name": "Hooke kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/hooke/",
+    "category": "Education",
+    "tagline": "Watch the Hooke series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Hooke series, with full-length films and Shorts. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. New public videos appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
   }
 ]
