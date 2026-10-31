@@ -3988,5 +3988,37 @@
     "verified": false,
     "lastChecked": "2026-10-30",
     "addedAt": "2026-10-30"
+  },
+  {
+    "slug": "kromans-series-franklin",
+    "name": "Franklin kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/franklin/",
+    "category": "Education",
+    "tagline": "Watch the Franklin series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Franklin series, with full-length films and Shorts. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. New public videos appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "kromans-series-apollonius",
+    "name": "Apollonius kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/apollonius/",
+    "category": "Education",
+    "tagline": "Watch the Apollonius series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Apollonius series, with full-length films and Shorts. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. New public videos appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
   }
 ]
