@@ -340,7 +340,8 @@
   },
   {
     "slug": "cat-safe-foods",
-    "verdict": "ok"
+    "verdict": "dead",
+    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
   },
   {
     "slug": "dog-safe-foods",
@@ -732,8 +733,8 @@
   },
   {
     "slug": "contrax",
-    "verdict": "ok",
-    "detail": "probed"
+    "verdict": "dead",
+    "detail": "HTTP 404"
   },
   {
     "slug": "plausible",
@@ -887,7 +888,7 @@
   },
   {
     "slug": "tableconvert",
-    "verdict": "ok"
+    "verdict": "none"
   },
   {
     "slug": "tinywow",
@@ -927,6 +928,10 @@
   },
   {
     "slug": "kromans-reader",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-galileo",
     "verdict": "ok"
   },
   {
@@ -975,6 +980,74 @@
   },
   {
     "slug": "iqmaxxing",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-aristotle",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-archimedes",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-ptolemy",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-gilbert",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-tycho",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-fermat",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-pascal",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-huygens",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-faraday",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-maxwell",
+    "verdict": "ok"
+  },
+  {
+    "slug": "toolboxquote",
+    "verdict": "ok"
+  },
+  {
+    "slug": "mealsolo",
+    "verdict": "ok"
+  },
+  {
+    "slug": "nightkettle",
+    "verdict": "ok"
+  },
+  {
+    "slug": "proteinnudge",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-franklin",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-apollonius",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-hooke",
     "verdict": "ok"
   }
 ]
