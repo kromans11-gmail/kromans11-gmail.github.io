@@ -4049,5 +4049,101 @@
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-11-02"
+  },
+  {
+    "slug": "kromans-series-euclid",
+    "name": "Euclid kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/euclid/",
+    "category": "Education",
+    "tagline": "Watch the Euclid series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Euclid series, with 4 available parts and 1 Short at listing. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. Planned parts show their production status. Verified Public and Unlisted copies appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "kromans-series-kepler",
+    "name": "Kepler kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/kepler/",
+    "category": "Education",
+    "tagline": "Watch the Kepler series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Kepler series, with 1 available part and 0 Shorts at listing. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. Planned parts show their production status. Verified Public and Unlisted copies appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "kromans-series-descartes",
+    "name": "Descartes kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/descartes/",
+    "category": "Education",
+    "tagline": "Watch the Descartes series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Descartes series, with 1 available part and 0 Shorts at listing. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. Planned parts show their production status. Verified Public and Unlisted copies appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "kromans-series-newton",
+    "name": "Newton kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/newton/",
+    "category": "Education",
+    "tagline": "Watch the Newton series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Newton series, with 2 available parts and 3 Shorts at listing. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. Planned parts show their production status. Verified Public and Unlisted copies appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "kromans-series-leibniz",
+    "name": "Leibniz kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/leibniz/",
+    "category": "Education",
+    "tagline": "Watch the Leibniz series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Leibniz series, with 0 available parts and 0 Shorts at listing. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. Planned parts show their production status. Verified Public and Unlisted copies appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
+  },
+  {
+    "slug": "kromans-series-halley",
+    "name": "Halley kromans-Series",
+    "url": "https://kent-science-series.kromans-dev.workers.dev/s/halley/",
+    "category": "Education",
+    "tagline": "Watch the Halley series in order, with automatic next-part playback.",
+    "description": "The Kent-Science Halley series, with 0 available parts and 0 Shorts at listing. Videos play through the YouTube player. Play the series in order, turn automatic next-part playback on or off, and open the all-series app. Planned parts show their production status. Verified Public and Unlisted copies appear when the shared catalog refreshes. Install the app on your home screen. Made by Romans Media LLC.",
+    "popularity": 60,
+    "capabilities": [
+      "no-account",
+      "lightweight"
+    ],
+    "icon": "🎬",
+    "spotlight": false,
+    "verified": true
   }
 ]
