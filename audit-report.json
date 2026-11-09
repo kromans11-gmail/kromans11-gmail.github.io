@@ -340,8 +340,7 @@
   },
   {
     "slug": "cat-safe-foods",
-    "verdict": "dead",
-    "detail": "unreachable: UND_ERR_CONNECT_TIMEOUT"
+    "verdict": "ok"
   },
   {
     "slug": "dog-safe-foods",
@@ -498,7 +497,8 @@
   },
   {
     "slug": "cal-com",
-    "verdict": "ok"
+    "verdict": "relink",
+    "to": "https://app.cal.com"
   },
   {
     "slug": "nocodb",
@@ -980,7 +980,8 @@
   },
   {
     "slug": "iqmaxxing",
-    "verdict": "ok"
+    "verdict": "dead",
+    "detail": "HTTP 530"
   },
   {
     "slug": "kromans-series-aristotle",
@@ -1048,6 +1049,38 @@
   },
   {
     "slug": "kromans-series-hooke",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-euclid",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-kepler",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-descartes",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-newton",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-leibniz",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-halley",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-copernicus",
+    "verdict": "ok"
+  },
+  {
+    "slug": "kromans-series-romer",
     "verdict": "ok"
   }
 ]
