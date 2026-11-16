@@ -48,7 +48,8 @@
   },
   {
     "slug": "starbucks",
-    "verdict": "ok"
+    "verdict": "dead",
+    "detail": "unreachable: ENOTFOUND"
   },
   {
     "slug": "monkeytype",
@@ -661,7 +662,8 @@
   },
   {
     "slug": "posthog",
-    "verdict": "ok"
+    "verdict": "dead",
+    "detail": "unreachable: ECONNRESET"
   },
   {
     "slug": "wakapi",
@@ -980,8 +982,7 @@
   },
   {
     "slug": "iqmaxxing",
-    "verdict": "dead",
-    "detail": "HTTP 530"
+    "verdict": "ok"
   },
   {
     "slug": "kromans-series-aristotle",
