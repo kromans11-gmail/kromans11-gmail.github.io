@@ -169,6 +169,16 @@
       "label": "IcyZip browser file transfer flow"
     }
   ],
+  "intaj-invoice": [
+    {
+      "src": "https://intaj.shop/assets/img/invoice/screen-wide.png",
+      "label": "Invoice form with live preview"
+    },
+    {
+      "src": "https://intaj.shop/assets/img/invoice/screen-narrow.png",
+      "label": "Invoice preview on a phone"
+    }
+  ],
   "kromans-reader": [
     {
       "src": "https://kromans-reader.pages.dev/screenshots/home.png"

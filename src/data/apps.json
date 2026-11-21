@@ -4185,5 +4185,20 @@
     "spotlight": false,
     "verified": true,
     "lastChecked": "2026-11-16"
+  },
+  {
+    "slug": "intaj-invoice",
+    "name": "Intaj Invoice",
+    "url": "https://intaj.shop/tools/invoice-generator/",
+    "category": "Productivity",
+    "tagline": "Free invoice and quote maker in the browser. 57 currencies, several taxes, PDF download. No sign-up; documents stay on the device and it works offline.",
+    "description": "Free invoice and quote maker. No sign-up; your documents stay on your device.",
+    "popularity": 40,
+    "capabilities": [],
+    "icon": "🗂️",
+    "spotlight": false,
+    "verified": false,
+    "lastChecked": "2026-11-21",
+    "addedAt": "2026-11-21"
   }
 ]
