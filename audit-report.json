@@ -89,7 +89,7 @@
   },
   {
     "slug": "lichess",
-    "verdict": "ok"
+    "verdict": "blocked"
   },
   {
     "slug": "replit",
@@ -141,7 +141,7 @@
   },
   {
     "slug": "whatsapp-web",
-    "verdict": "ok"
+    "verdict": "login-walled"
   },
   {
     "slug": "canva",
@@ -245,7 +245,7 @@
   },
   {
     "slug": "3d-house-editor",
-    "verdict": "ok"
+    "verdict": "blocked"
   },
   {
     "slug": "bundle",
@@ -369,7 +369,7 @@
   },
   {
     "slug": "versus",
-    "verdict": "none"
+    "verdict": "ok"
   },
   {
     "slug": "alarmdj",
@@ -662,8 +662,7 @@
   },
   {
     "slug": "posthog",
-    "verdict": "dead",
-    "detail": "unreachable: ECONNRESET"
+    "verdict": "ok"
   },
   {
     "slug": "wakapi",
@@ -671,7 +670,8 @@
   },
   {
     "slug": "netlify-drop",
-    "verdict": "none"
+    "verdict": "ok",
+    "detail": "probed"
   },
   {
     "slug": "penpot",
@@ -687,7 +687,7 @@
   },
   {
     "slug": "coolors",
-    "verdict": "blocked"
+    "verdict": "ok"
   },
   {
     "slug": "shots",
@@ -1082,6 +1082,10 @@
   },
   {
     "slug": "kromans-series-romer",
+    "verdict": "ok"
+  },
+  {
+    "slug": "intaj-invoice",
     "verdict": "ok"
   }
 ]
